@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Learnpoint Draft",
+        "url": "/group/posts.html",
+        "content": "Home Grupper [[name]] Posts Posts [[title]] [[content]]"
+    },
+    {
+        "title": "Learnpoint Draft",
+        "url": "/index.html",
+        "content": "Home Grupper [[name]] Home Home"
+    }
+]
