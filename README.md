@@ -1,30 +1,40 @@
-# draft
+# Draft
 
-*Template for making Learnpoint design drafts.*
+*Draft is a template for writing Learnpoint design drafts.*
 
-## Requirements
+### Requirements
 
-1. Install [Deno](https://deno.land/manual/getting_started/installation)
-2. Install [Piko](https://github.com/learnpoint/piko)
+1. [Deno](https://deno.land/manual/getting_started/installation)
+2. [Piko](https://github.com/learnpoint/piko)
 
-## Using draft
+### Using Draft
 
-1. Create a new Learnpoint design draft named ```button```. This command will create a folder named ```button``` and copy the files from this repo into that folder:
+Let's say you want to draft a new idea for a Learnpoint dashboard...
+
+1. Create a new draft named ```dashboard-idea```:
 
     ```bash
-    $ piko copy learnpoint/draft button
+    $ piko copy learnpoint/draft dashboard-idea
     ```
+
+    This command will create a new folder named ```dashboard-idea``` and copy the files from ```learnpoint/draft``` into that folder.
 
 2. Move into the created folder:
 
     ```bash
-    $ cd button
+    $ cd dashboard-idea
     ```
 
-3. Start the dev server:
+3. Start the Piko dev server:
 
     ```bash
     $ piko dev
     ```
 
 4. Navigate to ```http://127.0.0.1:3333```.
+
+5. Open your editor and write your draft in ```dashboard-idea/src```.
+
+### Contributing
+
+If you don't want to make a new draft, but instead want to improve this template, then create a fork of this repo, write your improvements, and make a pull request.
