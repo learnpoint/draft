@@ -4,28 +4,28 @@
 
 ### Requirements
 
-1. [Deno](https://deno.land/manual/getting_started/installation)
-2. [Piko](https://github.com/learnpoint/piko)
+- [Install Deno](https://deno.land/manual/getting_started/installation) on your computer.
+- [Install Piko](https://github.com/learnpoint/piko) on your computer.
 
-### Using Draft
+### Use Draft
 
-Let's say you want to draft a new idea for a Learnpoint dashboard...
+Let's say you want to draft an idea for the Learnpoint gradebook...
 
-1. Create a new draft named ```dashboard-idea```:
-
-    ```bash
-    $ piko copy learnpoint/draft dashboard-idea
-    ```
-
-    This command will create a new folder named ```dashboard-idea``` and copy the files from ```learnpoint/draft``` into that folder.
-
-2. Move into the created folder:
+1. Create a new draft named ```gradebook-idea```:
 
     ```bash
-    $ cd dashboard-idea
+    $ piko copy learnpoint/draft gradebook-idea
     ```
 
-3. Start the Piko dev server:
+    The command above will create a new folder named ```gradebook-idea``` and copy the files from ```learnpoint/draft``` into that folder.
+
+2. Move into folder:
+
+    ```bash
+    $ cd gradebook-idea
+    ```
+
+3. Start the dev server:
 
     ```bash
     $ piko dev
@@ -33,8 +33,8 @@ Let's say you want to draft a new idea for a Learnpoint dashboard...
 
 4. Navigate to ```http://127.0.0.1:3333```.
 
-5. Open your editor and write your draft in ```dashboard-idea/src```.
+5. Open your editor and write your draft in ```gradebook-idea/src```.
 
-### Contributing
+### Contribute
 
-If you don't want to make a new draft, but instead want to improve this template, then create a fork of this repo, write your improvements, and make a pull request.
+If you're a Learnpoint developer, feel free to fork this repo, write improvements, and make pull requests. Thank you!
