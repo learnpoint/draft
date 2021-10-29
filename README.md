@@ -7,7 +7,7 @@
 - [Install Deno](https://deno.land/manual/getting_started/installation) on your computer.
 - [Install Piko](https://github.com/learnpoint/piko) on your computer.
 
-### Use Draft
+### How to use Draft
 
 Let's say you want to draft an idea for the Learnpoint gradebook...
 
@@ -19,21 +19,16 @@ Let's say you want to draft an idea for the Learnpoint gradebook...
 
     The command above will create a new folder named ```gradebook-idea``` and copy the files from ```learnpoint/draft``` into that folder.
 
-2. Move into folder:
+2. Move into the new folder and start the dev server:
 
     ```bash
     $ cd gradebook-idea
-    ```
-
-3. Start the dev server:
-
-    ```bash
     $ piko dev
     ```
 
-4. Navigate to ```http://127.0.0.1:3333```.
+3. Navigate to ```http://127.0.0.1:3333```.
 
-5. Open your editor and write your draft in ```gradebook-idea/src```.
+4. Open your editor and write your draft in ```gradebook-idea/src```.
 
 ### Contribute
 
