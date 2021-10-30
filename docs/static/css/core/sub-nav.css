@@ -1,0 +1,26 @@
+.sub-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sub-nav li {
+    list-style: none;
+}
+
+.sub-nav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit;
+    border-right: 1px solid #ccc;
+}
+
+.sub-nav li a.SELECTED {
+    background-color: #f3f3f3;
+}

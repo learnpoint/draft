@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.is-mobile .page {
+    padding: 0;
+}
+
+
+
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+
+.page__breadcrumb {
+    margin: 0 8px 12px;
+}
+
+.is-mobile .page__breadcrumb {
+    margin: 16px 8px 12px;
+}
+
+
+
+/* ==========================================================================
+   Sheet
+   ========================================================================== */
+
+.page__sheet {
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+}
+
+.is-mobile .page__sheet {
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}
+
+.is-mobile .page__breadcrumb + .page__sheet {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.page__header {
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.is-mobile .page__header {
+    padding: 16px;
+}
+
+
+
+/* ==========================================================================
+   Space Between
+   ========================================================================== */
+
+.page__space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+
+/* ==========================================================================
+   Tools Group
+   ========================================================================== */
+
+.page__tools-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+
+
+/* ==========================================================================
+   Content Wrap
+   ========================================================================== */
+
+.page__content-wrap {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.is-mobile .page__content-wrap {
+    padding: 24px 16px;
+}
+
+
+
+/* ==========================================================================
+   Content Fullwidth Wrap
+   ========================================================================== */
+
+.page__content-fullwidth-wrap {
+    padding: 32px;
+}
+
+.is-mobile .page__content-fullwidth-wrap {
+    padding: 24px 16px;
+}

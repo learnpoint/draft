@@ -1,0 +1,16 @@
+<!-- header.html, { title: "Posts" } -->
+<!-- sub-nav.html -->
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <h1>Posts</h1>
+            <posts where="{course_id: utils.getLocationParam('course_id')}">
+                <h3>[[title]]</h3>
+                <p>[[content]]</p>
+            </posts>
+        </div>
+    </div>
+</div>
+
+<!-- footer.html -->

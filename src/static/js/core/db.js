@@ -8,6 +8,7 @@
         save: save
     }
 
+    // Export
     const db = window.db = Object.create(prototype);
 
     document.addEventListener('DOMContentLoaded', async () => {

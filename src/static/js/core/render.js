@@ -1,16 +1,22 @@
 (function () {
 
+    // Export
+    const render = window.render = {
+        ready: 'render.ready'
+    }
+
     document.addEventListener(db.ready, () => {
-        render(document.body, db);
+        runRender(document.body, db);
         document.documentElement.classList.remove('render__rendering');
+        document.dispatchEvent(new Event(render.ready));
     });
 
-    function render(scope, data) {
+    function runRender(scope, data) {
         if (scope.matches(matcher(data))) {
             hydrate(scope, data[scope.tagName.toLowerCase()]);
         } else {
             for (const child of scope.children) {
-                render(child, data);
+                runRender(child, data);
             }
         }
     }

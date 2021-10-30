@@ -1,12 +1,17 @@
 [
     {
-        "title": "Learnpoint Draft",
-        "url": "/group/posts.html",
-        "content": "Home Grupper [[name]] Posts Posts [[title]] [[content]]"
+        "title": "Home",
+        "url": "/index.html",
+        "content": "Home Grupper [[name]] Home Welcome"
     },
     {
-        "title": "Learnpoint Draft",
-        "url": "/index.html",
-        "content": "Home Grupper [[name]] Home Home"
+        "title": "Posts",
+        "url": "/pages/group/content/index.html",
+        "content": "Home Grupper [[name]] Posts Content Posts Content"
+    },
+    {
+        "title": "Posts",
+        "url": "/pages/group/posts/index.html",
+        "content": "Home Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
     }
 ]
