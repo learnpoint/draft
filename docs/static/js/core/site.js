@@ -10,7 +10,7 @@ document.addEventListener(render.ready, () => {
 
         const locationCourseId = utils.getLocationParam('course_id');
         const linkCourseId = utils.getUrlParam(link.href, 'course_id');
-        if(locationCourseId === linkCourseId) {
+        if (locationCourseId && locationCourseId === linkCourseId) {
             link.classList.add('SELECTED');
             continue;
         }
