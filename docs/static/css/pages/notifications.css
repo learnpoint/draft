@@ -1,0 +1,9 @@
+.notifications {
+    list-style: none;
+    padding: 0;
+}
+
+.notification {
+    padding: 1em 0;
+    border-bottom: 1px solid #eee;
+}
