@@ -21,6 +21,11 @@ document.addEventListener(render.ready, () => {
     const links = subNav.querySelectorAll('li a');
 
     for (const link of links) {
+        if (link.href === location.href) {
+            link.classList.add('SELECTED');
+            continue;
+        }
+
         let linkPath = (new URL(link.href).pathname);
 
         if (linkPath === locationPath) {
