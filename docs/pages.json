@@ -2,16 +2,21 @@
     {
         "title": "Home",
         "url": "/index.html",
-        "content": "Home Grupper [[name]] Home Welcome"
+        "content": "Home Notifications Grupper [[name]] Home Home"
     },
     {
-        "title": "Posts",
+        "title": "Home",
+        "url": "/notifications.html",
+        "content": "Home Notifications Grupper [[name]] Home Notifications Hej"
+    },
+    {
+        "title": "Content",
         "url": "/pages/group/content/index.html",
-        "content": "Home Grupper [[name]] Posts Content Posts Content"
+        "content": "Home Notifications Grupper [[name]] Content Content Posts Content"
     },
     {
         "title": "Posts",
         "url": "/pages/group/posts/index.html",
-        "content": "Home Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
+        "content": "Home Notifications Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
     }
 ]
