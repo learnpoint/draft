@@ -1,9 +1,32 @@
+.notifications__settings-link {
+    float: right;
+}
+
+.notifications__status {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
 .notifications {
     list-style: none;
     padding: 0;
+    margin-top: 0;
 }
+
+
+.notifications__new li::before {
+}
+
 
 .notification {
     padding: 1em 0;
     border-bottom: 1px solid #eee;
+}
+
+
+.notifications__view-all {
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 0 24px 0;
 }

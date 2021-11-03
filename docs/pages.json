@@ -17,6 +17,11 @@
     {
         "title": "Home",
         "url": "/pages/notifications/index.html",
-        "content": "Home Notifications Grupper [[name]] Home Notifications Anna commented on LIA plats Stig approved the LIA plats"
+        "content": "Home Notifications Grupper [[name]] Home Inställningar Notifieringar Nytt för dig Anna commented on LIA plats Stig approved the LIA plats You have a survey to respond Sammy has added a new post Tidigare sedda Stig approved the LIA plats You have a survey to respond Sammy has added a new post Ladda fler notifieringar..."
+    },
+    {
+        "title": "Home",
+        "url": "/pages/notifications/settings.html",
+        "content": "Home Notifications Grupper [[name]] Home Inställningar"
     }
 ]
