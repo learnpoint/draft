@@ -6,12 +6,12 @@
     },
     {
         "title": "Content",
-        "url": "/pages/group/content/index.html",
+        "url": "/pages/group/content.html",
         "content": "Home Notifications Grupper [[name]] Content Content Posts Content"
     },
     {
         "title": "Posts",
-        "url": "/pages/group/posts/index.html",
+        "url": "/pages/group/posts.html",
         "content": "Home Notifications Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
     },
     {

@@ -5,21 +5,18 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/svg+xml" href="/static/img/core/favicon.svg" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
-    <script src="/static/js/core/db.js"></script>
-    <script src="/static/js/core/render.js"></script>
-    <script src="/static/js/core/utils.js"></script>
-    <script src="/static/js/core/is-mobile.js"></script>
-    <script src="/static/js/core/site.js"></script>
+    <script src="/scripts/core/db.js"></script>
+    <script src="/scripts/core/render.js"></script>
+    <script src="/scripts/core/utils.js"></script>
+    <script src="/scripts/core/is-mobile.js"></script>
+    <script src="/scripts/core/site.js"></script>
 
-    <link rel="stylesheet" href="/static/css/core/render.css">
-    <link rel="stylesheet" href="/static/css/core/body.css">
-    <link rel="stylesheet" href="/static/css/core/site.css">
-    <link rel="stylesheet" href="/static/css/core/page.css">
-
-    <link rel="stylesheet" href="/static/css/pages/notifications.css">
-    <link rel="stylesheet" href="/static/css/pages/notifications-settings.css">
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
 </head>
 
 <body class="body">
@@ -37,7 +34,7 @@
         <ul>
             <courses>
                 <li>
-                    <a href="/pages/group/content/?course_id=[[id]]">
+                    <a href="/pages/group/content.html?course_id=[[id]]">
                         [[name]]
                     </a>
                 </li>
@@ -50,6 +47,9 @@
     </div>
 
     <main class="site__main">
+
+<link rel="stylesheet" href="/styles/pages/notifications/index.css">
+
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
@@ -59,45 +59,45 @@
             </div>
 
             <div class="notifications__status">Nytt för dig</div>
-                <ul class="notifications__new">
-                    <li class="notification">
-                        <span class="notification__avatar"></span>
-                        Anna commented on a LIA plats
-                        <span class="notification__date">Nov 3</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> Stig approved a LIA plats
-                        <span class="notification__date">Nov 3</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> You have a survey to respond for Javascript 3
-                        <span class="notification__date">Nov 3</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> Sammy has added a new post in Informationsarkitektur
-                        <span class="notification__date">Nov 2</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> You have 5 new posts in Examensarbete
-                        <span class="notification__expand">+</span>
-                    </li>
-                </ul>
-                <div class="notifications__status">Tidigare sedda</div>
-                <ul class="notifications__previous">
-                    <li class="notification">
-                        <span class="notification__avatar"></span> Stig registered a LIA plats
-                        <span class="notification__date">Oct 28</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> You have a survey to respond
-                        <span class="notification__date">Oct 25</span>
-                    </li>
-                    <li class="notification">
-                        <span class="notification__avatar"></span> Sammy has added a new post
-                        <span class="notification__date">Oct 22</span>
-                    </li>
-                </ul>
-                <div class="notifications__view-all">Ladda fler notifieringar...</div>
+            <ul class="notifications__new">
+                <li class="notification">
+                    <img class="notification__avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                    Anna commented on a LIA plats
+                    <span class="notification__date">Nov 3</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> Stig approved a LIA plats
+                    <span class="notification__date">Nov 3</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> You have a survey to respond for Javascript 3
+                    <span class="notification__date">Nov 3</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> Sammy has added a new post in Informationsarkitektur
+                    <span class="notification__date">Nov 2</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> You have 5 new posts in Examensarbete
+                    <span class="notification__expand">+</span>
+                </li>
+            </ul>
+            <div class="notifications__status">Tidigare sedda</div>
+            <ul class="notifications__previous">
+                <li class="notification">
+                    <span class="notification__avatar"></span> Stig registered a LIA plats
+                    <span class="notification__date">Oct 28</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> You have a survey to respond
+                    <span class="notification__date">Oct 25</span>
+                </li>
+                <li class="notification">
+                    <span class="notification__avatar"></span> Sammy has added a new post
+                    <span class="notification__date">Oct 22</span>
+                </li>
+            </ul>
+            <div class="notifications__view-all">Ladda fler notifieringar...</div>
         </div>
     </div>
 </div>
