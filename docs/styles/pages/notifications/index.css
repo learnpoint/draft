@@ -1,70 +1,104 @@
+.notifications {
+    padding-top: 36px
+}
+
 .notifications__header {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
 }
 
 .notifications__title {
     margin-bottom: 4px;
 }
 
+.notifications__new,
+.notifications__previously-seen {
+    padding: 0 120px;
+}
+
+.notifications__previously-seen {
+    background-color: #f1f1f1;
+    border-top:1px solid #ccc;
+}
+
 .notifications__settings-link {
-    /* float: right; */
     color: #0079f2;
-    color: #000
-    /* text-decoration: none; */
+    color: #000;
+    display:none;
 }
 
 .notifications__status {
     font-weight: 700;
     font-size: 16px;
-    margin-top: 24px;;
+    padding: 24px 0;
+    cursor: pointer;
+    text-align: center;
 }
 
-.notifications__new,
-.notifications__previous {
+.notifications__new-list,
+.notifications__previous-list {
     list-style: none;
     padding: 0;
-    margin-top: 0;
+    margin-top: -2px;
 }
 
 .notifications__new {
    font-weight: 600;
 }
 
-.notifications__previous {
+.notifications__previous-list,
+.notification__group {
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
 }
 
- .expandable-button {
-     transition: 0.4s;
-}
-
- .expandable-btn {
-}
-
-  #expandable-panel {
-     display: none;
-     background-color: #f1f1f1;
+.notifications__previous-list.EXPAND,
+.notification__group.EXPAND {
+    /* display: block; */
+    overflow:hidden;
+    transition:max-height 0.3s ease-out; 
+    height:auto;
+    max-height:310px; 
 }
 
 .notification {
     line-height: 1.3;
     padding: 1em 0;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     display: flex;
     gap:8px;
     align-items: center;
+    cursor: pointer;
 }
 
 .notification:last-child {
     border-bottom: none;
 }
 
-.notification__avatar {
+.notification__avatar,
+.notification__avatar-group {
     width: 2.5em;
     height: 2.5em;
+    line-height: 2.5em;
     border-radius: 50%;
-    background-color: #eee;
-    border: 1px solid #ccc;
+    /* background-color: #eee; */
+    border: 1px solid #aaa; 
+}
+
+.notification__avatar img {
+    width: 1.1em;
+    height: 1.1em;
+    padding: 12px;
+}
+
+.notification__avatar-group {
+    margin-left: -32px;
+}
+
+.notification__content {
+    flex:1;
 }
 
 .notification__description {
@@ -72,17 +106,11 @@
 }
 
 .notification__date,
-.notification__group,
+.notification__group-name,
 .notification__separator {
     font-size: 14px;
     font-weight: normal;
     color: #666;
-}
-
-.notification__expand {
-    flex: 1;
-    text-align: right;
-    font-size: 18px;
 }
 
 .notifications__view-all {
@@ -90,3 +118,8 @@
     text-align: center;
     padding: 40px 0 24px 0;
 }
+
+.notification__actions {
+    opacity: 0.8;
+}
+
