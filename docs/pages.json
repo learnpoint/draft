@@ -2,26 +2,26 @@
     {
         "title": "Home",
         "url": "/index.html",
-        "content": "Home Nytt Grupper [[name]] Home Home"
+        "content": "Home Händelser Grupper [[name]] Home Home"
     },
     {
         "title": "Content",
         "url": "/pages/group/content.html",
-        "content": "Home Nytt Grupper [[name]] Content Content Posts Content"
+        "content": "Home Händelser Grupper [[name]] Content Content Posts Content"
     },
     {
         "title": "Posts",
         "url": "/pages/group/posts.html",
-        "content": "Home Nytt Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
+        "content": "Home Händelser Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
     },
     {
         "title": "Home",
         "url": "/pages/notifications/index.html",
-        "content": "Home Nytt Grupper [[name]] Home Nytt Inställningar Nytt för dig --> You have a loggbook post to write Javascript 3 • Nov 3 Stig commented on a LIA plats Javascript 3 • Nov 3 You have a LIA plats to approve Javascript 3 • Nov 3 You have a survey to respond Javascript 3 • Nov 3 Sammy has added a new post Informationsarkitektur • Nov 2 3 new posts in Examensarbete + --> Stefan has added a new post Examensarbete • Oct 27 Ted has added a new post Examensarbete • Oct 24 Göran has added a new post Examensarbete • Oct 22 Tidigare sedda Stig registered a LIA plats LIA • Oct 28 You have a survey to respond LIA • Oct 25 Sammy has added a new post Informationsarkitektur • Oct 22 Ladda fler notifieringar..."
+        "content": "Home Händelser Grupper [[name]] Home Nya händelser Inställningar Nytt för dig --> You have a loggbook post to write Javascript 3 • Nov 3 Stig commented on a LIA plats Javascript 3 • Nov 3 You have a LIA plats to approve Javascript 3 • Nov 3 You have a survey to respond Javascript 3 • Nov 3 Sammy has added a new post Informationsarkitektur • Nov 2 +1 3 new submissions in Examensarbete Stefan has submitted Examensarbete • Oct 27 Ted has submitted Examensarbete • Oct 24 Göran has submitted Examensarbete • Oct 22 John has submitted Informationsarkitektur • Oct 25 3 new submissions Examensarbete • Oct 10 - Oct 20 Camilla and 2 others submitted in Examensarbete Senaste händelsen okt 10 Tidigare sedda händelser Stig registered a LIA plats LIA • Oct 28 You have a survey to respond LIA • Oct 25 Sammy has added a new post Informationsarkitektur • Oct 22 Se fler tidigare händelser..."
     },
     {
         "title": "Home",
         "url": "/pages/notifications/settings.html",
-        "content": "Home Nytt Grupper [[name]] Home Inställningar Vad vill du bli notifierad om? Hur vill du bli notifierad? När vill du bli notifierad?"
+        "content": "Home Händelser Grupper [[name]] Home Inställningar Vad vill du bli notifierad om? Hur vill du bli notifierad? När vill du bli notifierad?"
     }
 ]

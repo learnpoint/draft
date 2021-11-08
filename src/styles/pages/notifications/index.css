@@ -47,7 +47,7 @@
 }
 
 .notifications__previous-list,
-.notification__group {
+.notification__group-items {
     /* display: none; */
     overflow: hidden;
     max-height: 0;
@@ -55,12 +55,12 @@
 }
 
 .notifications__previous-list.EXPAND,
-.notification__group.EXPAND {
+.notification__group.EXPAND .notification__group-items {
     /* display: block; */
     overflow:hidden;
-    transition:max-height 0.3s ease-out; 
+    transition:max-height 0.3s ease-out;
     height:auto;
-    max-height:310px; 
+    max-height:310px;
 }
 
 .notification {
@@ -71,6 +71,13 @@
     gap:8px;
     align-items: center;
     cursor: pointer;
+}
+
+.notification__group.EXPAND {
+    background-color: #f2f2f2;
+    padding: 0 16px;
+    border-radius: 6px;
+    margin: 0 -16px;
 }
 
 .notification:last-child {
@@ -84,7 +91,7 @@
     line-height: 2.5em;
     border-radius: 50%;
     /* background-color: #eee; */
-    border: 1px solid #aaa; 
+    border: 1px solid #aaa;
 }
 
 .notification__avatar img {
@@ -95,6 +102,17 @@
 
 .notification__avatar-group {
     margin-left: -32px;
+}
+
+.notification__avatar-group-number {
+    margin-left: -32px;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    background: #d7d7d7;
+    text-align: center;
 }
 
 .notification__content {
@@ -122,4 +140,3 @@
 .notification__actions {
     opacity: 0.8;
 }
-
