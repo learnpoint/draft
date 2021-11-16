@@ -47,7 +47,8 @@
     </div>
 
     <div class="site__header">
-        Nyheter
+        <img src="/images/pages/list.svg" />
+        <span>Nyheter</span>
     </div>
 
     <main class="site__main">
@@ -69,18 +70,17 @@
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
-            <!-- <h1>Newsfeed</h1> -->
             <div class="post__add">
-                <a class="button PRIMARY BIG" href="add-post.html?course_id=1">Ny inlägg</a>
+                <a class="button PRIMARY BIG" href="add-post.html?course_id=1">Skriv nyhet</a>
             </div>
             <posts where="{course_id: utils.getLocationParam('course_id')}">
                 <div class="post">
-                    <user where="{user_id: post.user_id}">
-                        <img class="post__avatar" src=[[image_url]]>
+                    <user>
+                        <img class="post__avatar" src="[[image_url]]">
                     </user>
                     <div>
                         <h3>[[title]]</h3>
-                        <user where="{user_id: post.user_id}">
+                        <user>
                             <div class="post__meta-data">
                                 <span>[[name]]</span>
                                 <span>•</span>

@@ -5,19 +5,19 @@
         "content": "Home Händelser Grupper [[name]] Home Home"
     },
     {
-        "title": "Content",
+        "title": "Skriv nyhet",
         "url": "/pages/group/add-post.html",
-        "content": "Home Händelser Grupper [[name]] Content Innehåll Nyheter Nyheter Avbryt"
+        "content": "Home Händelser Grupper [[name]] Skriv nyhet Innehåll Nyheter ← Nyheter Avbryt"
     },
     {
         "title": "Innehåll",
         "url": "/pages/group/content.html",
-        "content": "Home Händelser Grupper [[name]] Innehåll Innehåll Nyheter Content"
+        "content": "Home Händelser Grupper [[name]] Innehåll Innehåll Nyheter Innehåll"
     },
     {
         "title": "Nyheter",
         "url": "/pages/group/posts.html",
-        "content": "Home Händelser Grupper [[name]] Nyheter Innehåll Nyheter Newsfeed --> Ny inlägg [[title]] [[name]] • Igår [[content]]"
+        "content": "Home Händelser Grupper [[name]] Nyheter Innehåll Nyheter Skriv nyhet [[title]] [[name]] • Igår [[content]]"
     },
     {
         "title": "Home",

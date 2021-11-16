@@ -47,6 +47,9 @@
    ========================================================================== */
 
 .site__header {
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
     border-bottom: 1px solid #ddd;
     height: 45px;
     line-height: 45px;
@@ -55,7 +58,7 @@
     right: 0;
     top: 0;
     background: #fff;
-    padding-left: 16px;
+    padding-left: 12px;
     font-weight: bold;
 }
 
