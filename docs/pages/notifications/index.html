@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Händelser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
-    <script src="/scripts/core/db.js"></script>
-    <script src="/scripts/core/render.js"></script>
-    <script src="/scripts/core/utils.js"></script>
-    <script src="/scripts/core/is-mobile.js"></script>
-    <script src="/scripts/core/lazy-src.js"></script>
-    <script src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
 
     <link rel="stylesheet" href="/styles/core/render.css">
     <link rel="stylesheet" href="/styles/core/body.css">
@@ -37,7 +37,7 @@
         <ul>
             <courses>
                 <li>
-                    <a href="/pages/group/content.html?course_id=[[id]]">
+                    <a href="/pages/group/posts.html?course_id=[[id]]">
                         [[name]]
                     </a>
                 </li>
@@ -47,11 +47,12 @@
 
     <div class="site__header">
         <img src="/images/pages/list.svg" />
-        <span>Home</span>
+        <span>Händelser</span>
     </div>
 
     <main class="site__main">
 
+<script defer src="/scripts/pages/notifications/index.js"></script>
 <link rel="stylesheet" href="/styles/pages/notifications/index.css">
 
 <div class="page">
@@ -262,9 +263,6 @@
         </div>
     </div>
 </div>
-
-<script src="/scripts/pages/notifications/index.js"></script>
-
 
 </main>
 </body>

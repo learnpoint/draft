@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
-    <script src="/scripts/core/db.js"></script>
-    <script src="/scripts/core/render.js"></script>
-    <script src="/scripts/core/utils.js"></script>
-    <script src="/scripts/core/is-mobile.js"></script>
-    <script src="/scripts/core/lazy-src.js"></script>
-    <script src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
 
     <link rel="stylesheet" href="/styles/core/render.css">
     <link rel="stylesheet" href="/styles/core/body.css">
@@ -37,7 +37,7 @@
         <ul>
             <courses>
                 <li>
-                    <a href="/pages/group/content.html?course_id=[[id]]">
+                    <a href="/pages/group/posts.html?course_id=[[id]]">
                         [[name]]
                     </a>
                 </li>
@@ -51,16 +51,16 @@
     </div>
 
     <main class="site__main">
-<script src="/scripts/components/sub-nav.js"></script>
+<script defer src="/scripts/components/sub-nav.js"></script>
 <link rel="stylesheet" href="/styles/components/sub-nav.css">
 
 <nav class="sub-nav">
     <ul>
         <li>
-            <a href="/pages/group/content.html">Innehåll</a>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
         </li>
         <li>
-            <a href="/pages/group/posts.html">Nyheter</a>
+            <a href="/pages/group/content.html" data-select="content.html">Innehåll</a>
         </li>
     </ul>
 </nav>

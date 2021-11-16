@@ -1,6 +1,5 @@
 document.addEventListener(render.ready, () => {
-    const subNav = document.querySelector('.sub-nav');
-    const links = subNav.querySelectorAll('li a');
+    const links = document.querySelectorAll('.sub-nav li a');
     const courseId = utils.getLocationParam('course_id');
 
     for (const link of links) {
@@ -15,21 +14,14 @@ document.addEventListener(render.ready, () => {
 });
 
 document.addEventListener(render.ready, () => {
-    let locationPath = (new URL(location.href).pathname);
-
-    const subNav = document.querySelector('.sub-nav');
-    const links = subNav.querySelectorAll('li a');
+    const links = document.querySelectorAll('.sub-nav li a');
 
     for (const link of links) {
-        if (link.href === location.href) {
-            link.classList.add('SELECTED');
-            continue;
-        }
-
-        let linkPath = (new URL(link.href).pathname);
-
-        if (linkPath === locationPath) {
-            link.classList.add('SELECTED');
+        const selects = link.getAttribute('data-select').split(' ');
+        for (const select of selects) {
+            if (location.href.includes(select)) {
+                link.classList.add('SELECTED');
+            }
         }
     }
 });
