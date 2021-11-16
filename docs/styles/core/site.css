@@ -21,7 +21,7 @@
 
 .site__left-nav ul {
     margin: 0 0 1em;
-    padding: 0; 
+    padding: 0;
 }
 
 .site__left-nav li {
@@ -38,9 +38,8 @@
 .site__left-nav a.SELECTED,
 .is-desktop .site__left-nav a:hover {
     color: #fff;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
 }
-
 
 
 /* ==========================================================================
@@ -50,13 +49,15 @@
 .site__header {
     border-bottom: 1px solid #ddd;
     height: 45px;
+    line-height: 45px;
     position: fixed;
     left: 248px;
     right: 0;
     top: 0;
     background: #fff;
+    padding-left: 16px;
+    font-weight: bold;
 }
-
 
 
 /* ==========================================================================

@@ -1,4 +1,4 @@
-<!-- header.html, { title: "Posts" } -->
+<!-- header.html, { title: "Nyheter" } -->
 <link rel="stylesheet" href="/styles/pages/group/posts.css">
 <!-- sub-nav.html -->
 
@@ -7,26 +7,26 @@
         <div class="page__content-wrap">
             <!-- <h1>Newsfeed</h1> -->
             <div class="post__add">
-                <input type="button" class="button PRIMARY BIG" value="Ny inlägg">
+                <a class="button PRIMARY BIG" href="add-post.html?course_id=1">Ny inlägg</a>
             </div>
-            <posts where="{course_id: utils.getLocationParam('course_id')}">      
+            <posts where="{course_id: utils.getLocationParam('course_id')}">
                 <div class="post">
-                    <user where="{user_id: post.user_id}">              
-                        <img  class="post__avatar" src="[[image_url]]">
+                    <user where="{user_id: post.user_id}">
+                        <img class="post__avatar" src=[[image_url]]>
                     </user>
                     <div>
                         <h3>[[title]]</h3>
-                        <user where="{user_id: post.user_id}">     
+                        <user where="{user_id: post.user_id}">
                             <div class="post__meta-data">
                                 <span>[[name]]</span>
                                 <span>•</span>
                                 <span>Igår</span>
-                            </div>         
+                            </div>
                         </user>
                         <p class="post__content">[[content]]</p>
                     </div>
-                </div>      
-               
+                </div>
+
             </posts>
         </div>
     </div>

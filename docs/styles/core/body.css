@@ -1,6 +1,6 @@
 .body {
     font-family: -apple-system, "Segoe UI", Helvetica, sans-serif;
-    line-height:1.5;
+    line-height: 1.5;
     color: #323C46;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -8,4 +8,11 @@
     margin: 0;
     overflow-y: scroll;
     background-color: #f3f3f3;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #0079f2;
+    background-color: transparent;
 }

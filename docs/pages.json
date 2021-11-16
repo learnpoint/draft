@@ -6,13 +6,18 @@
     },
     {
         "title": "Content",
-        "url": "/pages/group/content.html",
-        "content": "Home Händelser Grupper [[name]] Content Content Newsfeed Content"
+        "url": "/pages/group/add-post.html",
+        "content": "Home Händelser Grupper [[name]] Content Innehåll Nyheter Nyheter Avbryt"
     },
     {
-        "title": "Posts",
+        "title": "Innehåll",
+        "url": "/pages/group/content.html",
+        "content": "Home Händelser Grupper [[name]] Innehåll Innehåll Nyheter Content"
+    },
+    {
+        "title": "Nyheter",
         "url": "/pages/group/posts.html",
-        "content": "Home Händelser Grupper [[name]] Posts Content Newsfeed Newsfeed --> [[title]] [[name]] • Igår [[content]]"
+        "content": "Home Händelser Grupper [[name]] Nyheter Innehåll Nyheter Newsfeed --> Ny inlägg [[title]] [[name]] • Igår [[content]]"
     },
     {
         "title": "Home",
