@@ -7,6 +7,7 @@
 
     document.addEventListener(db.ready, () => {
         runRender(document.body, db);
+        evalExpressions(document.documentElement);
         document.documentElement.classList.remove('render__rendering');
         document.dispatchEvent(new Event(render.ready));
     });
@@ -27,7 +28,7 @@
 
     function hydrate(scope, data) {
         if (Array.isArray(data)) {
-            if(scope.hasAttribute('where')) {
+            if (scope.hasAttribute('where')) {
                 data = data.where(scope.getAttribute('where'));
             }
             const templateHTML = scope.innerHTML;
@@ -76,6 +77,15 @@
 
             return val;
         });
+    }
+
+    function evalExpressions(scope) {
+        const html = scope.innerHTML.replace(/{{.*?}}/g, match => {
+            const expression = match.replace('{{', '').replace('}}', '').trim();
+            return eval(expression);
+        });
+
+        scope.innerHTML = html;
     }
 
 })();

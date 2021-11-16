@@ -4,14 +4,14 @@
 
 <div class="page">
     <div class="page__breadcrumb">
-        <a href="posts.html?course_id=1">← Nyheter</a>
+        <a href="posts.html?course_id={{utils.getLocationParam('course_id');}}">← Nyheter</a>
     </div>
     <div class="page__sheet">
         <div class="page__content-wrap">
             <input type="text" placeholder="Titel" class="add-post__textbox">
             <trix-editor class="trix-content" placeholder="Skriv nyhet..."></trix-editor>
             <div class="add-post__actions">
-                <a class="button BIG" href="posts.html?course_id=1">Avbryt</a>
+                <a class="button BIG" href="posts.html?course_id={{utils.getLocationParam('course_id');}}">Avbryt</a>
                 <input type="button" value="Spara" class="button PRIMARY BIG">
             </div>
         </div>

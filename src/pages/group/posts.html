@@ -6,7 +6,7 @@
     <div class="page__sheet">
         <div class="page__content-wrap">
             <div class="post__add">
-                <a class="button PRIMARY BIG" href="add-post.html?course_id=1">Skriv nyhet</a>
+                <a class="button PRIMARY BIG" href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Skriv nyhet</a>
             </div>
             <posts where="{course_id: utils.getLocationParam('course_id')}">
                 <div class="post">
