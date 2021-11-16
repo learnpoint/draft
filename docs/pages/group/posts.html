@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/styles/core/body.css">
     <link rel="stylesheet" href="/styles/core/site.css">
     <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
 </head>
 
 <body class="body">
@@ -47,6 +48,7 @@
     </div>
 
     <main class="site__main">
+<link rel="stylesheet" href="/styles/pages/group/posts.css">
 <script src="/scripts/components/sub-nav.js"></script>
 <link rel="stylesheet" href="/styles/components/sub-nav.css">
 
@@ -56,7 +58,7 @@
             <a href="/pages/group/content.html">Content</a>
         </li>
         <li>
-            <a href="/pages/group/posts.html">Posts</a>
+            <a href="/pages/group/posts.html">Newsfeed</a>
         </li>
     </ul>
 </nav>
@@ -65,10 +67,28 @@
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
-            <h1>Posts</h1>
-            <posts where="{course_id: utils.getLocationParam('course_id')}">
-                <h3>[[title]]</h3>
-                <p>[[content]]</p>
+            <!-- <h1>Newsfeed</h1> -->
+            <div class="post__add">
+                <input type="button" class="button PRIMARY BIG" value="Ny inlägg">
+            </div>
+            <posts where="{course_id: utils.getLocationParam('course_id')}">      
+                <div class="post">
+                    <user where="{user_id: post.user_id}">              
+                        <img  class="post__avatar" src="[[image_url]]">
+                    </user>
+                    <div>
+                        <h3>[[title]]</h3>
+                        <user where="{user_id: post.user_id}">     
+                            <div class="post__meta-data">
+                                <span>[[name]]</span>
+                                <span>•</span>
+                                <span>Igår</span>
+                            </div>         
+                        </user>
+                        <p class="post__content">[[content]]</p>
+                    </div>
+                </div>      
+               
             </posts>
         </div>
     </div>

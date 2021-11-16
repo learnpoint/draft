@@ -1,13 +1,32 @@
 <!-- header.html, { title: "Posts" } -->
+<link rel="stylesheet" href="/styles/pages/group/posts.css">
 <!-- sub-nav.html -->
 
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
-            <h1>Posts</h1>
-            <posts where="{course_id: utils.getLocationParam('course_id')}">
-                <h3>[[title]]</h3>
-                <p>[[content]]</p>
+            <!-- <h1>Newsfeed</h1> -->
+            <div class="post__add">
+                <input type="button" class="button PRIMARY BIG" value="Ny inlägg">
+            </div>
+            <posts where="{course_id: utils.getLocationParam('course_id')}">      
+                <div class="post">
+                    <user where="{user_id: post.user_id}">              
+                        <img  class="post__avatar" src="[[image_url]]">
+                    </user>
+                    <div>
+                        <h3>[[title]]</h3>
+                        <user where="{user_id: post.user_id}">     
+                            <div class="post__meta-data">
+                                <span>[[name]]</span>
+                                <span>•</span>
+                                <span>Igår</span>
+                            </div>         
+                        </user>
+                        <p class="post__content">[[content]]</p>
+                    </div>
+                </div>      
+               
             </posts>
         </div>
     </div>

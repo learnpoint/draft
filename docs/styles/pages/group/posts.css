@@ -1,0 +1,41 @@
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+    display: flex;
+}
+
+.post:last-child {
+    border:none;
+}
+
+.post__add {
+    text-align: center;
+    margin: 32px 0;;
+}
+
+.post__avatar {
+    width: 52px;
+    height: 52px; 
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.post__content {
+    width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post__meta-data {
+    color: #888;
+    font-size: 14px;;
+}
+
+.post p {
+   margin: 0; 
+}
+
+.post h3 {
+    margin: 0; 
+ }

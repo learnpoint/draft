@@ -7,12 +7,12 @@
     {
         "title": "Content",
         "url": "/pages/group/content.html",
-        "content": "Home Händelser Grupper [[name]] Content Content Posts Content"
+        "content": "Home Händelser Grupper [[name]] Content Content Newsfeed Content"
     },
     {
         "title": "Posts",
         "url": "/pages/group/posts.html",
-        "content": "Home Händelser Grupper [[name]] Posts Content Posts Posts [[title]] [[content]]"
+        "content": "Home Händelser Grupper [[name]] Posts Content Newsfeed Newsfeed --> [[title]] [[name]] • Igår [[content]]"
     },
     {
         "title": "Home",
