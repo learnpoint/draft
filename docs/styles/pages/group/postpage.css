@@ -1,0 +1,52 @@
+.postpage__actions {
+    float: right;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+.postpage__heading {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.postpage__divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px auto;
+    max-width: 200px;
+}
+
+.author__card {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 8px 0 0;
+}
+
+.author__card img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author__card-meta {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.postpage__post-content {
+    margin-top: 20px;
+}
+
+.postpage__post img {
+    max-width: 100%;
+}
+
+.postpage__post {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
