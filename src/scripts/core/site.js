@@ -16,3 +16,10 @@ document.addEventListener(render.ready, () => {
         }
     }
 });
+
+document.addEventListener('click', event => {
+    if (!event.target.matches('.site__header-hamburger')) {
+        return;
+    }
+    document.documentElement.classList.toggle('LEFTNAV-TOGGLED');
+});

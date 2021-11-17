@@ -46,7 +46,7 @@
     </div>
 
     <div class="site__header">
-        <img src="/images/pages/list.svg" />
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <span>Skriv nyhet</span>
     </div>
 
@@ -81,8 +81,8 @@
             <input type="text" placeholder="Titel" class="add-post__textbox">
             <trix-editor class="trix-content" placeholder="Skriv nyhet..."></trix-editor>
             <div class="add-post__actions">
-                <a class="button BIG" href="posts.html?course_id={{utils.getLocationParam('course_id');}}">Avbryt</a>
-                <input type="button" value="Spara" class="button PRIMARY BIG">
+                <a class="button" href="posts.html?course_id={{utils.getLocationParam('course_id');}}">Avbryt</a>
+                <input type="button" value="Spara" class="button PRIMARY">
             </div>
         </div>
     </div>
