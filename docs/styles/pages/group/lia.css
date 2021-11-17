@@ -1,0 +1,48 @@
+.lia__content-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.lia__content-header-avatar {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.lia__content-header-avatar img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.lia__content-header-name {
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.lia__content-actions {
+}
+
+.lia__content {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.lia__content-change {
+    background-color: rgba(0,0,0,.024);
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.lia__content-item {
+    margin-bottom: 20px;
+}
+
+.lia__content-item-label {
+    font-weight: 600;
+}

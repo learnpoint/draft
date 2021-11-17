@@ -7,22 +7,27 @@
     {
         "title": "Skriv nyhet",
         "url": "/pages/group/add-post.html",
-        "content": "Home Händelser Grupper [[name]] Skriv nyhet Nyheter Innehåll ← Nyheter Avbryt"
+        "content": "Home Händelser Grupper [[name]] Skriv nyhet Nyheter Innehåll LIA ← Nyheter Avbryt"
     },
     {
         "title": "Innehåll",
         "url": "/pages/group/content.html",
-        "content": "Home Händelser Grupper [[name]] Innehåll Nyheter Innehåll Innehåll"
+        "content": "Home Händelser Grupper [[name]] Innehåll Nyheter Innehåll LIA Innehåll"
+    },
+    {
+        "title": "LIA",
+        "url": "/pages/group/lia.html",
+        "content": "Home Händelser Grupper [[name]] LIA Nyheter Innehåll LIA Anna Kronér Arbetsbeskrivning har ändrats av skolan sedan det senaste godkännandet. LIA-platsen Knäckebrödets Byggentreprenad Knäckebrödsvägen 3, 563 21 Knäckebrödet Period 2022-03-11 - 2022-05-10 Godkänd av skolan Nej Kursplan Visa kursplan Arbetsbeskrivning Arbeta med byggprojektplanering och processoptimering i mindre byggprojekt. Instruktioner för handledare Du har angivits som handledare för denna LIA-praktik. Kontrollera att informationen är korrekt innan du godkänner ditt åtagande som handledare."
     },
     {
         "title": "Postpage",
         "url": "/pages/group/postpage.html",
-        "content": "Home Händelser Grupper [[name]] Postpage Nyheter Innehåll ← Nyheter En nyhetstitel som visas på nyhetssidan Publicerat av Emma Jones • 27 jul 2018 Etiam sodales massa nulla, eu eleifend orci mattis suscipit. Fusce mattis neque non neque venenatis sodales. Morbi id justo et ligula posuere condimentum in non nisl. Sed sem sapien, bibendum ac luctus ullamcorper, euismod ornare dolor. Aenean id posuere nisl, malesuada tempor nulla. Vestibulum vitae massa finibus, dignissim nisi vel, tempor nibh. Nullam sed mauris et ex feugiat dictum. Sed scelerisque ultricies ipsum ut pharetra. Sed libero lorem, consequat et nisi suscipit, porta rutrum urna. Vestibulum augue lacus, euismod id maximus id, varius in risus. Ut eget facilisis magna. Curabitur luctus eu ante non placerat. Maecenas ultrices erat sit amet elit laoreet, sed mattis orci rutrum. Proin semper dolor et lorem ultricies semper. Vivamus ultricies augue vel purus hendrerit dignissim. In eros urna, scelerisque eget semper sed, finibus et elit."
+        "content": "Home Händelser Grupper [[name]] Postpage Nyheter Innehåll LIA ← Nyheter En nyhetstitel som visas på nyhetssidan Publicerat av Emma Jones • 27 jul 2018 Etiam sodales massa nulla, eu eleifend orci mattis suscipit. Fusce mattis neque non neque venenatis sodales. Morbi id justo et ligula posuere condimentum in non nisl. Sed sem sapien, bibendum ac luctus ullamcorper, euismod ornare dolor. Aenean id posuere nisl, malesuada tempor nulla. Vestibulum vitae massa finibus, dignissim nisi vel, tempor nibh. Nullam sed mauris et ex feugiat dictum. Sed scelerisque ultricies ipsum ut pharetra. Sed libero lorem, consequat et nisi suscipit, porta rutrum urna. Vestibulum augue lacus, euismod id maximus id, varius in risus. Ut eget facilisis magna. Curabitur luctus eu ante non placerat. Maecenas ultrices erat sit amet elit laoreet, sed mattis orci rutrum. Proin semper dolor et lorem ultricies semper. Vivamus ultricies augue vel purus hendrerit dignissim. In eros urna, scelerisque eget semper sed, finibus et elit."
     },
     {
         "title": "Nyheter",
         "url": "/pages/group/posts.html",
-        "content": "Home Händelser Grupper [[name]] Nyheter Nyheter Innehåll Skriv nyhet [[title]] [[name]] • Igår [[content]]"
+        "content": "Home Händelser Grupper [[name]] Nyheter Nyheter Innehåll LIA Skriv nyhet [[title]] [[name]] • Igår [[content]]"
     },
     {
         "title": "Händelser",
