@@ -22,7 +22,7 @@ trix-toolbar .trix-button-row {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
     padding: 16px 0 10px;

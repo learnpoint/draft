@@ -5,12 +5,12 @@
 }
 
 .post:last-child {
-    border:none;
+    border: none;
 }
 
 .post__add {
     text-align: center;
-    margin: 32px 0;;
+    margin: 32px 0;
 }
 
 .post__avatar {
@@ -21,7 +21,7 @@
 }
 
 .post__content {
-    width: 700px;
+    max-width: 700px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -29,17 +29,18 @@
 
 .post__meta-data {
     color: #888;
-    font-size: 14px;;
+    font-size: 14px;
+    ;
 }
 
 .post p {
-   margin: 0;
+    margin: 0;
 }
 
 .post h3 {
     margin: 0;
- }
+}
 
- h3 a {
-     color: #323C46;
- }
+h3 a {
+    color: #323C46;
+}
