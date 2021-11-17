@@ -57,6 +57,7 @@
     height: 45px;
     line-height: 45px;
     position: fixed;
+    z-index: 1;
     left: 248px;
     right: 0;
     top: 0;
