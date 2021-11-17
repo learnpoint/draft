@@ -13,6 +13,10 @@
     padding: 1.2em 0 0;
 }
 
+.is-mobile:not(.LEFTNAV-TOGGLED) .site__left-nav {
+    left: -248px;
+}
+
 .site__left-nav h3 {
     font-size: 1em;
     padding: 2px 12px;
@@ -49,7 +53,6 @@
 .site__header {
     display: flex;
     align-items: center;
-    gap: 0 6px;
     border-bottom: 1px solid #ddd;
     height: 45px;
     line-height: 45px;
@@ -58,9 +61,18 @@
     right: 0;
     top: 0;
     background: #fff;
-    padding-left: 12px;
     font-weight: bold;
 }
+
+.is-mobile:not(.LEFTNAV-TOGGLED) .site__header {
+    left: 0;
+}
+
+.site__header-hamburger {
+    padding: .5em .5em .5em .8em;
+    cursor: pointer;
+}
+
 
 
 /* ==========================================================================
@@ -70,4 +82,8 @@
 .site__main {
     margin-top: 45px;
     margin-left: 248px;
+}
+
+.is-mobile:not(.LEFTNAV-TOGGLED) .site__main {
+    margin-left: 0;
 }
