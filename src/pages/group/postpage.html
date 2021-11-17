@@ -1,33 +1,51 @@
 <!-- header.html, { title: "Postpage" } -->
-<link rel="stylesheet" href="/styles/pages/group/postpage.css">
 <!-- sub-nav.html -->
+
+<script defer src="/scripts/pages/notifications/index.js"></script>
+
+<link rel="stylesheet" href="/styles/pages/group/postpage.css">
+<script defer type="text/javascript" src="/scripts/core/trix-core.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/core/trix.css">
 
 <div class="page">
     <div class="page__breadcrumb">
         <a href="posts.html?course_id={{utils.getLocationParam('course_id');}}">← Nyheter</a>
     </div>
     <div class="page__sheet">
-        <img class="postpage__actions" src="/images/pages/three-dots.svg" />
         <div class="page__content-wrap">
-            <div class="postpage__post">
-                <h1 class="postpage__heading">En nyhetstitel som visas på nyhetssidan</h1>
-                <hr class="postpage__divider">
-                <div class="author__card">
-                    <img src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/8.jpg" />
+            <div id="edit" class="postpage">
+                <img class="postpage__actions" src="/images/pages/edit.svg" data-element="expand-btn" data-target="edit" />
+                <div class="postpage__post" id="edit">
+                    <h1 class="postpage__heading">En nyhetstitel som visas på nyhetssidan</h1>
+                    <hr class="postpage__divider">
+                    <div class="author__card">
+                        <img src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
                         <div class="author__card-meta">
                             Publicerat av Emma Jones • 27 jul 2018
                         </div>
                     </div>
-                <p class="postpage__post-content">Etiam sodales massa nulla, eu eleifend orci mattis suscipit. Fusce mattis neque non neque venenatis sodales. Morbi id justo et ligula posuere condimentum in non nisl.
-                    Sed sem sapien, bibendum ac luctus ullamcorper, euismod ornare dolor. Aenean id posuere nisl, malesuada tempor nulla. Vestibulum vitae massa finibus, dignissim nisi vel, tempor nibh. Nullam sed mauris et ex feugiat dictum.
-                    <br><br>
-                    Sed scelerisque ultricies ipsum ut pharetra. Sed libero lorem, consequat et nisi suscipit, porta rutrum urna. Vestibulum augue lacus, euismod id maximus id, varius in risus. Ut eget facilisis magna. Curabitur luctus eu ante non placerat.
-                    Maecenas ultrices erat sit amet elit laoreet, sed mattis orci rutrum. Proin semper dolor et lorem ultricies semper. Vivamus ultricies augue vel purus hendrerit dignissim. In eros urna, scelerisque eget semper sed, finibus et elit.
-                </p>
-                <img src="/images/pages/bicycle.jpg">
+                    <p class="postpage__post-content">Etiam sodales massa nulla, eu eleifend orci mattis suscipit. Fusce mattis neque non neque venenatis sodales. Morbi id justo et ligula posuere condimentum in non nisl. Sed sem sapien, bibendum ac luctus ullamcorper, euismod ornare dolor.
+                        Aenean id posuere nisl, malesuada tempor nulla. Vestibulum vitae massa finibus, dignissim nisi vel, tempor nibh. Nullam sed mauris et ex feugiat dictum.
+                        <br><br> Sed scelerisque ultricies ipsum ut pharetra. Sed libero lorem, consequat et nisi suscipit, porta rutrum urna. Vestibulum augue lacus, euismod id maximus id, varius in risus. Ut eget facilisis magna. Curabitur luctus eu
+                        ante non placerat. Maecenas ultrices erat sit amet elit laoreet, sed mattis orci rutrum. Proin semper dolor et lorem ultricies semper. Vivamus ultricies augue vel purus hendrerit dignissim. In eros urna, scelerisque eget semper
+                        sed, finibus et elit.
+                    </p>
+                    <img src="/images/pages/bicycle.jpg">
+                </div>
+                <div class="postpage__post-edit">
+                    <input type="text" placeholder="Titel" class="postpage__textbox" autofocus value="En nyhetstitel som visas på nyhetssidan">
+                    <trix-editor class="trix-content" placeholder="Skriv nyhet..." input="message"></trix-editor>
+                    <input type="hidden" id="message" value="<p>Etiam sodales massa nulla, eu eleifend orci mattis suscipit. Fusce mattis neque non neque venenatis sodales. Morbi id justo et ligula posuere condimentum in non nisl. Sed sem sapien, bibendum ac luctus ullamcorper, euismod ornare dolor.
+                    Aenean id posuere nisl, malesuada tempor nulla. Vestibulum vitae massa finibus, dignissim nisi vel, tempor nibh. Nullam sed mauris et ex feugiat dictum.
+                    <br><br> Sed scelerisque ultricies ipsum ut pharetra. Sed libero lorem, consequat et nisi suscipit, porta rutrum urna. Vestibulum augue lacus, euismod id maximus id, varius in risus. Ut eget facilisis magna. Curabitur luctus eu
+                    ante non placerat. Maecenas ultrices erat sit amet elit laoreet, sed mattis orci rutrum. Proin semper dolor et lorem ultricies semper. Vivamus ultricies augue vel purus hendrerit dignissim. In eros urna, scelerisque eget semper
+                    sed, finibus et elit  <br><br><img src=/images/pages/bicycle.jpg></p>" </div>
+                    <div class="postpage__edit-actions">
+                        <a class="button" data-element="collapse-btn" data-target="edit">Avbryt</a>
+                        <input type="button" value="Spara" class="button PRIMARY" data-element="collapse-btn" data-target="edit">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- footer.html -->
+    <!-- footer.html -->
