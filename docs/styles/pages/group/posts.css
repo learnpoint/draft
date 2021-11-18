@@ -22,15 +22,20 @@
 
 .post__content {
     max-width: 700px;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
+.is-mobile .post__content {
+    max-width: 100%;
+}
+
 .post__meta-data {
     color: #888;
     font-size: 14px;
-    ;
+    margin-top: -1px;
 }
 
 .post p {

@@ -22,8 +22,7 @@
     margin-left: 8px;
 }
 
-.lia__content-actions {
-}
+.lia__content-actions {}
 
 .lia__content {
     max-width: 640px;
@@ -31,12 +30,52 @@
 }
 
 .lia__content-change {
-    background-color: rgba(0,0,0,.024);
+    background-color: rgba(0, 0, 0, .024);
     padding: 24px;
     margin: 32px auto;
     border-radius: 16px;
     text-align: center;
     max-width: 320px;
+}
+
+.lia__content-change-inline {
+    background-color: rgba(0, 0, 0, .024);
+    border: 1px solid #ddd;
+    padding: 4px 6px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -4px;
+    font-weight: 600;
+    /* color: #e00000; */
+}
+
+.lia__content-change.ONE {
+    padding: 24px;
+    text-align: center;
+    background-color: transparent;
+    max-width: 420px;
+    color: #e00000;
+}
+
+.lia__content-change.TWO {
+    background-color: rgba(0, 0, 0, .024);
+    border: 1px solid #ddd;
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 420px;
+    font-weight: 600;
+}
+
+.lia__content-change.THREE {
+    background-color: rgba(0, 0, 0, .024);
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 420px;
 }
 
 .lia__content-item {
@@ -45,4 +84,15 @@
 
 .lia__content-item-label {
     font-weight: 600;
+}
+
+.lia__content-item-edited-label {
+    color: #444;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, .024);
+    padding: 0 8px 2px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #ddd;
 }
