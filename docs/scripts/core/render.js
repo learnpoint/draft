@@ -6,9 +6,11 @@
     }
 
     document.addEventListener(db.ready, () => {
+        const renderStart = Date.now();
         runRender(document.body, db);
         evalExpressions(document.documentElement);
         document.documentElement.classList.remove('render__rendering');
+        console.log('Render:', Date.now() - renderStart, 'ms');
         document.dispatchEvent(new Event(render.ready));
     });
 
@@ -80,12 +82,32 @@
     }
 
     function evalExpressions(scope) {
-        const html = scope.innerHTML.replace(/{{.*?}}/g, match => {
+        for (const attribute of scope.attributes) {
+            if (hasExpressions(attribute.value)) {
+                scope.setAttribute(attribute.name, replaceExpressions(attribute.value))
+            }
+        }
+
+        for (const child of scope.childNodes) {
+            if (child.nodeType === Node.TEXT_NODE) {
+                if (hasExpressions(child.textContent)) {
+                    child.textContent = replaceExpressions(child.textContent);
+                }
+            } else if (child.nodeType === Node.ELEMENT_NODE) {
+                evalExpressions(child);
+            }
+        }
+    }
+
+    function hasExpressions(str) {
+        return str.includes('{{');
+    }
+
+    function replaceExpressions(str) {
+        return str.replace(/{{.*?}}/g, match => {
             const expression = match.replace('{{', '').replace('}}', '').trim();
             return eval(expression);
         });
-
-        scope.innerHTML = html;
     }
 
 })();
