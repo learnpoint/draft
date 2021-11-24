@@ -13,6 +13,33 @@
     margin: 32px 0;
 }
 
+.post__continue-writing-draft {
+    display: block;
+}
+
+.post__continue-writing-draft > a {
+    display: block;
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.post__links-to-draft {
+    display: none;
+    padding: 8px 16px;
+    margin: 0 0 24px;
+    background-color: rgba(0,0,0,.04);
+    border-radius: 12px;
+}
+
+.post__continue-writing-draft.EXPANDED .post__links-to-draft {
+    display: block;
+}
+
+.post__links-to-draft > a{
+    display: block;
+    padding: 1px;
+}
+
 .post__avatar {
     width: 52px;
     height: 52px;
