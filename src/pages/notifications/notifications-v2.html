@@ -1,63 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="render__rendering">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Händelser</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
-
-    <script defer src="/scripts/core/db.js"></script>
-    <script defer src="/scripts/core/render.js"></script>
-    <script defer src="/scripts/core/utils.js"></script>
-    <script defer src="/scripts/core/is-mobile.js"></script>
-    <script defer src="/scripts/core/site.js"></script>
-    <script defer src="/scripts/core/lazy-src.js"></script>
-    <script defer src="/scripts/core/expandable.js"></script>
-
-    <link rel="stylesheet" href="/styles/core/render.css">
-    <link rel="stylesheet" href="/styles/core/body.css">
-    <link rel="stylesheet" href="/styles/core/site.css">
-    <link rel="stylesheet" href="/styles/core/page.css">
-    <link rel="stylesheet" href="/styles/core/button.css">
-
-</head>
-
-<body class="body">
-
-    <div class="site__left-nav">
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/">Händelser</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/notifications-v1.html">Händelser II</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/notifications-v2.html">Händelser III</a>
-            </li>
-        </ul>
-        <h3>Grupper</h3>
-        <ul>
-            <courses>
-                <li>
-                    <a href="/pages/group/posts.html?course_id=[[id]]">
-                        [[name]]
-                    </a>
-                </li>
-            </courses>
-        </ul>
-    </div>
-
-    <div class="site__header">
-        <img class="site__header-hamburger" src="/images/pages/list.svg" />
-        <span>Händelser</span>
-    </div>
-
-    <main class="site__main">
+<!-- header.html, { title: 'Händelser' } -->
 
 <script defer src="/scripts/pages/notifications/index.js"></script>
 <link rel="stylesheet" href="/styles/pages/notifications/index.css">
@@ -67,7 +8,7 @@
         <div class="notifications">
             <div class="notifications__header">
                 <h1 class="notifications__title">Ny händelser</h1>
-                <a class="notifications__settings-link" href="settings.html">Inställningar</a>
+                <!-- <a class="notifications__settings-link" href="settings.html">Inställningar</a> -->
             </div>
             <div class="notifications__new">
                 <ul class="notifications__new-list">
@@ -245,56 +186,11 @@
                 </ul>
             </div>
             <!-- <hr> -->
-            <div class="notifications__previously-seen">
-                <div class="notifications__previously-seen-items">
-
-
-                    <div class="notifications__status" data-element="expand-btn" data-target="previous">Tidigare sedda
-                        händelser
-                    </div>
-                    <ul id="previous" class="notifications__previous-list">
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">Stig registered a LIA plats</span>
-                                <span class="notification__group-name">LIA</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 28</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/8.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">You have a survey to respond</span>
-                                <span class="notification__group-name">LIA</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 25</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">Sammy has added a new post</span>
-                                <span class="notification__group-name">Informationsarkitektur</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 22</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notifications__view-all">Se fler tidigare händelser...</li>
-                    </ul>
-                </div>
+            <div style="text-align: center;padding: 16px 0 32px;">
+                <a href="previous-notifications.html" style="color: #000; font-weight: bold;">Se tidigare händelser...</li>
             </div>
         </div>
     </div>
 </div>
 
-</main>
-</body>
-
-</html>
+<!-- footer.html -->

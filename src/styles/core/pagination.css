@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+   .pagination {
+    display:flex;
+    overflow:hidden;
+    opacity:1;
+    transition:opacity 1s;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+}
+
+.pagination.SHOW {
+    opacity: 1;
+    display:flex;
+}
+
+
+
+/* ==========================================================================
+   Container
+   ========================================================================== */
+
+.pagination__container {
+    padding:32px 0;
+}
+
+.is-mobile .pagination__container {
+    padding:24px 0;
+}
+
+
+
+/* ==========================================================================
+   Previous / Nex Link
+   ========================================================================== */
+
+.pagination__previous-link,
+.pagination__next-link {
+    width: 32px;
+    height: 32px;
+    margin: 0 3px;
+    border-radius: 50%;
+    background-color: #fff;
+    flex: 0 0 auto;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-desktop .pagination__previous-link:hover,
+.is-desktop .pagination__next-link:hover {
+    text-decoration:none;
+    color:#000;
+}
+
+.pagination__previous-link.DISABLED,
+.pagination__next-link.DISABLED,
+.pagination__previous-link.DISABLED:hover,
+.pagination__next-link.DISABLED:hover {
+    opacity: 0.3;
+}
+
+
+
+/* ==========================================================================
+   Previous / Nex Link Icon
+   ========================================================================== */
+
+.pagination__previous-link-icon,
+.pagination__next-link-icon {
+    width:12px;
+    height:12px;
+    width:14px;
+    height:14px;
+    opacity: 0.6;
+    display:block;
+}
+
+
+
+/* ==========================================================================
+   Page Link List
+   ========================================================================== */
+
+.pagination__page-link-list {
+    display: flex;
+    padding:0;
+    margin:0;
+}
+
+
+
+/* ==========================================================================
+   Page Link
+   ========================================================================== */
+
+.pagination__page-link {
+    display:block;
+    width:32px;
+    height:32px;
+    line-height:32px;
+    flex:0 0 auto;
+    text-align:center;
+    margin:0 2px;
+    background-color:#fff;
+    border-radius:50%;
+    color: #666;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+}
+
+.is-desktop .pagination__page-link:hover {
+    text-decoration:none;
+    color:#000;
+}
+
+.pagination__page-link.CURRENT,
+.is-desktop .pagination__page-link.CURRENT:hover {
+    color: #fff;
+    pointer-events: none;
+    background-color: #777;
+    border-color: #777;
+}
+
+.pagination__page-link.ELLIPSIS,
+.is-desktop .pagination__page-link.ELLIPSIS:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+    pointer-events: none;
+}
+
+.pagination__page-link.ELLIPSIS::after {
+    display: block;
+    position: absolute;
+    content: ' \22EF ';
+    color: #999;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    top: 0;
+    left: 0;
+}
+
+.pagination__page-link.HIDDEN {
+    display: none;
+}

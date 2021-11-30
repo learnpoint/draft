@@ -161,14 +161,14 @@
 
                     <div id="group" class="notification__group">
                         <li class="notification">
-                            <img class="notification__avatar"
+                            <!-- <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                             <img class="notification__avatar-group"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                            <div class="notification__avatar-group-number">+1</div>
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" /> -->
+                            <div class="notification__avatar" style="background: #e4e4e4;text-align: center;">+3</div>
                             <span class="notification__content">
                                 <span class="notification__description" data-element="expand-btn" data-target="group">
-                                    3 nya inlämningar i Examensarbete</span>
+                                Nya inlämningar i Examensarbete</span>
                             </span>
                             <img class="notification__group-actions" src="/images/pages/chevron-down.svg" />
                         </li>
@@ -178,7 +178,7 @@
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                                 <span class="notification__content">
-                                    <span class="notification__description">Stefan har lämnat in</span>
+                                    <span class="notification__description">Stefan har lämnat in inlämningsuppgift</span>
                                     <span class="notification__group-name">Examensarbete</span>
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 27</span>
@@ -189,7 +189,7 @@
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
                                 <span class="notification__content">
-                                    <span class="notification__description">Ted har lämnat in uppgift X</span>
+                                    <span class="notification__description">Ted har lämnat in inlämningsuppgift</span>
                                     <span class="notification__group-name">Examensarbete</span>
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 24</span>
@@ -200,7 +200,7 @@
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                                 <span class="notification__content">
-                                    <span class="notification__description">Göran has submitted</span>
+                                    <span class="notification__description">Göran har lämnat in inlämningsuppgift</span>
                                     <span class="notification__group-name">Examensarbete</span>
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 22</span>
@@ -215,44 +215,22 @@
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                         <span class="notification__content">
-                            <span class="notification__description">John har lämnat in</span>
+                            <span class="notification__description">John har publicerat en nyhet</span>
                             <span class="notification__group-name">Informationsarkitektur</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Oct 25</span>
                         </span>
                         <img class="notification__actions" src="/images/pages/three-dots.svg" />
                     </li>
-                    <li class="notification">
-                        <img class="notification__avatar" src="/images/pages/users.png" />
-                        <span class="notification__content">
-                            <span class="notification__description">3 nya inlämningar för kursdelsnamn</span>
-                            <span class="notification__group-name">Examensarbete</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Oct 10 - Oct 20</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
-                    </li>
-                    <li class="notification">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Camilla och 2 andra har lämnat in i
-                                Examensarbete</span>
-                            <span class="notification__date">Senaste händelsen okt 10</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
-                    </li>
                 </ul>
             </div>
             <!-- <hr> -->
             <div class="notifications__previously-seen">
                 <div class="notifications__previously-seen-items">
-
-
-                    <div class="notifications__status" data-element="expand-btn" data-target="previous">Tidigare sedda
+                    <div class="notifications__status">Tidigare sedda
                         händelser
                     </div>
-                    <ul id="previous" class="notifications__previous-list">
+                    <ul>
                         <li class="notification">
                             <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
@@ -286,8 +264,9 @@
                             </span>
                             <img class="notification__actions" src="/images/pages/three-dots.svg" />
                         </li>
-                        <li class="notifications__view-all">Se fler tidigare händelser...</li>
+                      
                     </ul>
+                    <div class="notifications__view-all">Se fler tidigare händelser...</div>
                 </div>
             </div>
         </div>
