@@ -96,3 +96,9 @@
     font-weight: 600;
     border: 1px solid #ddd;
 }
+
+.lia__content-item-descripton-changed::before {
+    content: "⬤";
+    color: #0780ff;
+
+}
