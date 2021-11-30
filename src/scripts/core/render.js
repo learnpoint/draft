@@ -10,7 +10,7 @@
         runRender(document.body, db);
         evalExpressions(document.documentElement);
         document.documentElement.classList.remove('render__rendering');
-        console.log('Render:', Date.now() - renderStart, 'ms');
+        console.debug('Draft render:', Date.now() - renderStart, 'ms');
         document.dispatchEvent(new Event(render.ready));
     });
 

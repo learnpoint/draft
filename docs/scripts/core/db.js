@@ -15,7 +15,7 @@
         const loadDatabaseStart = Date.now();
         await load();
         decorate();
-        console.log('Load database:', Date.now() - loadDatabaseStart, 'ms')
+        console.debug('Load draft database:', Date.now() - loadDatabaseStart, 'ms')
         document.dispatchEvent(new Event(db.ready));
     });
 

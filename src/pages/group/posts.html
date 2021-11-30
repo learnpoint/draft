@@ -9,6 +9,13 @@
             <div class="post__add">
                 <a class="button PRIMARY BIG" href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Skriv nyhet</a>
             </div>
+            <div class="post__continue-writing-draft" data-component="expandable">
+                <a href data-element="expandable.toggle-button">Continue writing your draft...</a>
+                <div class="post__links-to-draft">
+                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Lorem ipsum</a>
+                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Nam ipsum risus</a>
+                </div>
+            </div>
             <posts where="{course_id: utils.getLocationParam('course_id')}">
                 <div class="post">
                     <user>
