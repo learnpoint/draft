@@ -78,6 +78,44 @@
     max-width: 420px;
 }
 
+.lia__content-change.FOUR {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 420px;
+    border-left: 7px solid #3C9AF4;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.lia__content-change.FIVE {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 420px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.lia__content-change-icon {
+    text-align: center;
+}
+
+.lia__content-change-close {
+    float: right;
+    color: grey;
+}
+
+
+.lia__content-change-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .lia__content-item {
     margin-bottom: 20px;
 }
@@ -100,5 +138,4 @@
 .lia__content-item-descripton-changed::before {
     content: "⬤";
     color: #0780ff;
-
 }
