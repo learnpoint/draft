@@ -30,7 +30,7 @@ hr {
 
 .notifications__previously-seen {
     background-color: #f1f1f1;
-    border-top: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
 }
 
 .notifications__settings-link {
@@ -48,7 +48,8 @@ hr {
 }
 
 .notifications__new-list,
-.notifications__previous-list {
+.notifications__previous-list,
+.notifications__previous-list-open {
     list-style: none;
     padding: 0;
     margin-top: -2px;
@@ -58,7 +59,7 @@ hr {
     font-weight: 600;
 }
 
-.notifications__previous-list, 
+.notifications__previous-list,
 .notification__group-items {
     /* display: none; */
     overflow: hidden;
