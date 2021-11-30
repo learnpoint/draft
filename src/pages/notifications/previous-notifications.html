@@ -1,72 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" class="render__rendering">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Händelser</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
-
-    <script defer src="/scripts/core/db.js"></script>
-    <script defer src="/scripts/core/render.js"></script>
-    <script defer src="/scripts/core/utils.js"></script>
-    <script defer src="/scripts/core/is-mobile.js"></script>
-    <script defer src="/scripts/core/site.js"></script>
-    <script defer src="/scripts/core/lazy-src.js"></script>
-    <script defer src="/scripts/core/expandable.js"></script>
-
-    <link rel="stylesheet" href="/styles/core/render.css">
-    <link rel="stylesheet" href="/styles/core/body.css">
-    <link rel="stylesheet" href="/styles/core/site.css">
-    <link rel="stylesheet" href="/styles/core/page.css">
-    <link rel="stylesheet" href="/styles/core/button.css">
-
-</head>
-
-<body class="body">
-
-    <div class="site__left-nav">
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/">Händelser</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/notifications-v1.html">Händelser II</a>
-            </li>
-            <li>
-                <a href="/pages/notifications/notifications-v2.html">Händelser III</a>
-            </li>
-        </ul>
-        <h3>Grupper</h3>
-        <ul>
-            <courses>
-                <li>
-                    <a href="/pages/group/posts.html?course_id=[[id]]">
-                        [[name]]
-                    </a>
-                </li>
-            </courses>
-        </ul>
-    </div>
-
-    <div class="site__header">
-        <img class="site__header-hamburger" src="/images/pages/list.svg" />
-        <span>Händelser</span>
-    </div>
-
-    <main class="site__main">
+<!-- header.html, { title: 'Händelser' } -->
 
 <script defer src="/scripts/pages/notifications/index.js"></script>
 <link rel="stylesheet" href="/styles/pages/notifications/index.css">
+<link rel="stylesheet" href="/styles/core/pagination.css">
+
 
 <div class="page">
+    <div class="page__breadcrumb">
+        <a href="/pages/notifications/notifications-v2.html">← Ny händelser</a><!-- <span> /</span><span> Tidigare händelser</span> -->
+    </div>
     <div class="page__sheet">
         <div class="notifications">
             <div class="notifications__header">
-                <h1 class="notifications__title">Ny händelser</h1>
+                <h1 class="notifications__title">Tidigare händelser</h1>
                 <a class="notifications__settings-link" href="settings.html">Inställningar</a>
             </div>
             <div class="notifications__new">
@@ -104,7 +50,7 @@
                             <img src="/images/pages/check-square.svg" />
                         </div>
                         <span class="notification__content">
-                            <span class="notification__description">Din skola X har godkänt en LIA-plats åt dig</span>
+                            <span class="notification__description">Din skola har godkänt en LIA-plats åt dig</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 7</span>
@@ -157,9 +103,62 @@
                         </span>
                         <img class="notification__actions" src="/images/pages/three-dots.svg" />
                     </li>
-
-
-                    <div id="group" class="notification__group">
+                    <li class="notification">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Tina har publicerat en nyhet</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 2</span>
+                        </span>
+                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                    </li>
+                    <li class="notification">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Tina har publicerat en nyhet</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 2</span>
+                        </span>
+                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                    </li>
+                    <li class="notification">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/3.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">John har publicerat en nyhet</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 2</span>
+                        </span>
+                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                    </li>
+                    <li class="notification">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Per har publicerat en nyhet</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 2</span>
+                        </span>
+                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                    </li>
+                    <li class="notification">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Sara har publicerat en nyhet</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 2</span>
+                        </span>
+                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                    </li>
+                    <!-- <div id="group" class="notification__group">
                         <li class="notification">
                             <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
@@ -210,91 +209,29 @@
 
                         </div>
 
-                    </div>
-                    <li class="notification">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">John har lämnat in</span>
-                            <span class="notification__group-name">Informationsarkitektur</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Oct 25</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                    </li>
-                    <li class="notification">
-                        <img class="notification__avatar" src="/images/pages/users.png" />
-                        <span class="notification__content">
-                            <span class="notification__description">3 nya inlämningar för kursdelsnamn</span>
-                            <span class="notification__group-name">Examensarbete</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Oct 10 - Oct 20</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
-                    </li>
-                    <li class="notification">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Camilla och 2 andra har lämnat in i
-                                Examensarbete</span>
-                            <span class="notification__date">Senaste händelsen okt 10</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
-                    </li>
+                    </div> -->
+
+                    <!-- <li class="notifications__view-all">Se fler tidigare händelser...</li> -->
                 </ul>
-            </div>
-            <!-- <hr> -->
-            <div class="notifications__previously-seen">
-                <div class="notifications__previously-seen-items">
-
-
-                    <div class="notifications__status" data-element="expand-btn" data-target="previous">Tidigare sedda
-                        händelser
+                <div class="pagination__container">
+                    <div class="pagination">
+                        <a class="pagination__previous-link">
+                            <img src="/images/pages/angle-left.png" class="pagination__previous-link-icon"/>
+                        </a>
+                        <div class="pagination__page-link-list" data-pagination="page-link-list">
+                            <a class="pagination__page-link CURRENT" >1</a>
+                            <a class="pagination__page-link" >2</a>
+                            <a class="pagination__page-link" >3</a>
+                            <a class="pagination__page-link" >4</a>
+                        </div>
+                        <a class="pagination__next-link">
+                            <img src="/images/pages/angle-right.png" class="pagination__next-link-icon" />
+                        </a>
                     </div>
-                    <ul id="previous" class="notifications__previous-list">
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">Stig registered a LIA plats</span>
-                                <span class="notification__group-name">LIA</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 28</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/8.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">You have a survey to respond</span>
-                                <span class="notification__group-name">LIA</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 25</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
-                            <span class="notification__content">
-                                <span class="notification__description">Sammy has added a new post</span>
-                                <span class="notification__group-name">Informationsarkitektur</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Oct 22</span>
-                            </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                        </li>
-                        <li class="notifications__view-all">Se fler tidigare händelser...</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-</main>
-</body>
-
-</html>
+<!-- footer.html -->

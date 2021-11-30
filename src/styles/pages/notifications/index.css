@@ -58,7 +58,7 @@ hr {
     font-weight: 600;
 }
 
-/* .notifications__previous-list, */
+.notifications__previous-list, 
 .notification__group-items {
     /* display: none; */
     overflow: hidden;
