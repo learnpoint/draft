@@ -8,11 +8,12 @@
         <div class="notifications">
             <div class="notifications__header">
                 <h1 class="notifications__title">Ny händelser</h1>
-                <a class="notifications__settings-link" href="settings.html">Inställningar</a>
             </div>
+            
             <div class="notifications__new">
+                <div class="notifications__mark-as-read">Mark all as read</div>
                 <ul class="notifications__new-list">
-                    <li class="notification">
+                    <li class="notification" data-component="expandable"> 
                         <div class="notification__avatar">
                             <img src="/images/pages/book.svg" />
                         </div>
@@ -25,10 +26,16 @@
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Nov 10</span>
                             </div>
+                        </div>                        
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
                         </div>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <div class="notification__avatar">
                             <img src="/images/pages/book.svg" />
                         </div>
@@ -38,9 +45,15 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 10</span>
                         </div>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <div class="notification__avatar">
                             <img src="/images/pages/check-square.svg" />
                         </div>
@@ -50,9 +63,15 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 7</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
                         <span class="notification__content">
@@ -61,9 +80,15 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 3</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <div class="notification__avatar">
                             <img src="/images/pages/check-square.svg" />
                         </div>
@@ -73,9 +98,15 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 3</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <div class="notification__avatar">
                             <img src="/images/pages/clipboard.svg" />
                         </div>
@@ -85,9 +116,15 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 3</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                         <span class="notification__content">
@@ -96,26 +133,28 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 2</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
 
 
                     <div id="group" class="notification__group">
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
-                            <img class="notification__avatar-group"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                            <div class="notification__avatar-group-number">+1</div>
+                        <li class="notification" data-component="expandable">
+                            <div class="notification__avatar-summary">+3</div>
                             <span class="notification__content">
                                 <span class="notification__description" data-element="expand-btn" data-target="group">
-                                    3 nya inlämningar i Examensarbete</span>
+                                    Nya inlämningar i Examensarbete</span>
                             </span>
                             <img class="notification__group-actions" src="/images/pages/chevron-down.svg" />
                         </li>
 
                         <div class="notification__group-items">
-                            <li class="notification">
+                            <li class="notification" data-component="expandable">
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                                 <span class="notification__content">
@@ -124,9 +163,15 @@
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 27</span>
                                 </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                                <div class="notification__actions">
+                                    <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                    <div class="notification__actions-menu">
+                                        <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="notification">
+                            <li class="notification" data-component="expandable">
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
                                 <span class="notification__content">
@@ -135,9 +180,15 @@
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 24</span>
                                 </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                                <div class="notification__actions">
+                                    <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                    <div class="notification__actions-menu">
+                                        <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="notification">
+                            <li class="notification" data-component="expandable">
                                 <img class="notification__avatar"
                                     src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                                 <span class="notification__content">
@@ -146,13 +197,19 @@
                                     <span class="notification__separator">•</span>
                                     <span class="notification__date">Oct 22</span>
                                 </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                                <div class="notification__actions">
+                                    <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                    <div class="notification__actions-menu">
+                                        <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                        <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                    </div>
+                                </div>
                             </li>
 
                         </div>
 
                     </div>
-                    <li class="notification">
+                    <li class="notification" data-component="expandable">
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                         <span class="notification__content">
@@ -161,27 +218,13 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Oct 25</span>
                         </span>
-                        <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                    </li>
-                    <li class="notification">
-                        <img class="notification__avatar" src="/images/pages/users.png" />
-                        <span class="notification__content">
-                            <span class="notification__description">3 nya inlämningar för kursdelsnamn</span>
-                            <span class="notification__group-name">Examensarbete</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Oct 10 - Oct 20</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
-                    </li>
-                    <li class="notification">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Camilla och 2 andra har lämnat in i
-                                Examensarbete</span>
-                            <span class="notification__date">Senaste händelsen okt 10</span>
-                        </span>
-                        <img class="notification__actions" src="/images/pages/chevron-down.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -190,11 +233,11 @@
                 <div class="notifications__previously-seen-items">
 
 
-                    <div class="notifications__status" data-element="expand-btn" data-target="previous">Tidigare sedda
+                    <div class="notifications__status" >Tidigare sedda
                         händelser
                     </div>
-                    <ul id="previous" class="notifications__previous-list">
-                        <li class="notification">
+                    <ul id="previous" style="padding:0 ;">
+                        <li class="notification" data-component="expandable">
                             <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
                             <span class="notification__content">
@@ -203,9 +246,15 @@
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Oct 28</span>
                             </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                            <div class="notification__actions">
+                                <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                <div class="notification__actions-menu">
+                                    <div class="notification__actions-menu-item">Mark as unread</div>
+                                    <div class="notification__actions-menu-item">Unsubscribe from email notifications</div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="notification">
+                        <li class="notification" data-component="expandable">
                             <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/8.jpg" />
                             <span class="notification__content">
@@ -214,9 +263,15 @@
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Oct 25</span>
                             </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                            <div class="notification__actions">
+                                <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                <div class="notification__actions-menu">
+                                    <div class="notification__actions-menu-item">Mark as unread</div>
+                                    <div class="notification__actions-menu-item">Unsubscribe</div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="notification">
+                        <li class="notification" data-component="expandable">
                             <img class="notification__avatar"
                                 src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                             <span class="notification__content">
@@ -225,10 +280,17 @@
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Oct 22</span>
                             </span>
-                            <img class="notification__actions" src="/images/pages/three-dots.svg" />
+                            <div class="notification__actions">
+                                <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button"/>
+                                <div class="notification__actions-menu">
+                                    <div class="notification__actions-menu-item">Mark as unread</div>
+                                    <div class="notification__actions-menu-item">Unsubscribe from email notifications</div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="notifications__view-all">Se fler tidigare händelser...</li>
+                       
                     </ul>
+                    <div class="notifications__view-all">Se fler tidigare händelser...</div>
                 </div>
             </div>
         </div>

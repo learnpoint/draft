@@ -13,16 +13,15 @@
 
 .notifications__new {
     padding: 0 24px;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
 }
 
 .notifications__previously-seen-items {
     padding: 0 24px;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
 }
-
 
 hr {
     margin: 0;
@@ -31,6 +30,12 @@ hr {
 .notifications__previously-seen {
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
+}
+
+.notifications__mark-as-read {
+    text-align: right;
+    margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .notifications__settings-link {
@@ -79,12 +84,17 @@ hr {
 .notification {
     line-height: normal;
     /* line-height: 1; */
-    padding: 1em 0;
+    padding: 1em .2em;
     /* border-bottom: 1px solid #eee; */
     display: flex;
     gap: 8px;
     align-items: center;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.notification.EXPANDED  {
+    background-color: rgba(0,0,0,.04);
 }
 
 .notification__group.EXPAND {
@@ -112,6 +122,16 @@ hr {
     width: 1.1em;
     height: 1.1em;
     padding: 12px;
+}
+
+.notification__avatar-summary {
+    border: 1px solid #aaa;
+    background: #d7d7d7;
+    text-align: center;
+    line-height: 2.5em;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .notification__avatar-group {
@@ -152,6 +172,71 @@ hr {
 }
 
 .notification__actions {
+    position: relative;
+}
+
+.notification__actions-menu {
+    display: none;
+    margin: 0 0 24px;
+    border-radius: 4px;
+    position: absolute;
+    right:0;
+    width:180px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 14px;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+   
+}
+
+.notification__actions-menu-inline {
+    display: none;
+    position: absolute;
+    right:14px;
+    top:-8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    z-index: 100;
+    width: 360px;
+}
+
+
+.notification.EXPANDED .notification__actions-menu {
+    display: block;
+}
+
+.notification.EXPANDED .notification__actions-menu-inline {
+    display: flex;
+    gap:8px;
+}
+
+.notification__actions-menu-item {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 8px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.notification__actions-menu-item:last-child {
+    border-bottom: none;
+}
+
+.notification__actions-menu-inline .notification__actions-menu-item{
+    border: 1px solid #ddd; 
+    background-color: #fff;   
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+.notification__actions-icon {
+    opacity: 0.8;
+}
+
+.notification__actions-menu-item-icon {
     opacity: 0.8;
 }
 
