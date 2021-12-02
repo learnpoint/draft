@@ -169,7 +169,8 @@ hr {
     font-weight: 600;
     text-align: center;
     padding: 40px 0 24px 0;
-}
+    display: block;
+} 
 
 .notification__actions {
     position: relative;
