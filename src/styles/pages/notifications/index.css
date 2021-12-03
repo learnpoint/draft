@@ -84,7 +84,8 @@ hr {
 .notification {
     line-height: normal;
     /* line-height: 1; */
-    padding: 1em .2em;
+    padding: .6em .4em;
+    margin: 8px 0;
     /* border-bottom: 1px solid #eee; */
     display: flex;
     gap: 8px;
@@ -181,11 +182,11 @@ hr {
     margin: 0 0 24px;
     border-radius: 4px;
     position: absolute;
-    right:0;
-    width:180px;
+    right:20px;
+    top:0px;
+    width:140px;
     box-sizing: border-box;
     background-color: #fff;
-    font-size: 14px;
     z-index: 100;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
    
@@ -216,7 +217,7 @@ hr {
     padding: 12px 8px;
     border-bottom: 1px solid #ddd;
     display: flex;
-    gap: 8px;
+    /* gap: 8px; */
     font-weight: normal;
     line-height: 1.1;
 }
@@ -239,6 +240,7 @@ hr {
 
 .notification__actions-menu-item-icon {
     opacity: 0.8;
+    display: none;
 }
 
 .notification__content-long {
