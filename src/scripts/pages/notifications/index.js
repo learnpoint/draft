@@ -30,6 +30,8 @@ document.addEventListener(render.ready, () => {
     }
   
     function moveItem(e) {
+        console.log(e.target);
+        e.target.innerText == "Mark as read" ? e.target.innerText = 'Mark as unread' : e.target.innerText = "Mark as read";
         let moveTo = this.closest("#new") == newList ? previousList : newList;
         let itemTobeMoved = this.parentElement.parentElement.parentElement;
         console.log(moveTo);
