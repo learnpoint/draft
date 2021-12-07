@@ -1,6 +1,14 @@
+.notifications__header {
+    display: flex;
+    align-items:center;
+    margin-bottom: 1em;
+}
+
 .notifications__title {
     font-size: 1.6em;
     padding: 0 0 0 8px;
+    flex:1;
+    margin:0;
 }
 
 .notifications__new {
@@ -27,7 +35,6 @@ hr {
 
 .notifications__mark-as-read {
     text-align: right;
-    margin-bottom: 16px;
     cursor: pointer;
 }
 
