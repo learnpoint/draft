@@ -98,15 +98,23 @@ hr {
     background-color: rgba(0,0,0,.04);
 }
 
+.notification:last-child {
+    border-bottom: none;
+}
+
+.notification__group {
+    margin-top:-12px;
+}
+
 .notification__group.EXPAND {
     background-color: #f2f2f2;
     padding: 0 16px;
     border-radius: 6px;
-    margin: 0 -16px;
+    margin: -12px -16px 20px;
 }
 
-.notification:last-child {
-    border-bottom: none;
+.notification__group-items {
+    margin:-16px 0 16px;
 }
 
 .notification__avatar,
