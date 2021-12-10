@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+.notification-settings__title{
+    font-size: 1.6em;
+}
+
 .notification-settings__heading {
     font-weight: 700;
 }
