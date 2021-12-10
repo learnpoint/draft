@@ -34,7 +34,7 @@
                 <a href="/pages/notifications/">Aviseringar</a>
             </li>
             <li>
-                <a href="/pages/notifications/notifications-v1.html">Händelser I</a>
+                <a href="/pages/notifications/notifications-v1.html">Notiser</a>
             </li>
         </ul>
         <h3>Grupper</h3>
@@ -65,7 +65,8 @@
             <div class="notifications__new">
                 <div class="notifications__header">
                     <h1 class="notifications__title">Aviseringar</h1>
-                    <div class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Mark all as read</div>
+                    <div class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa</div> 
+                    <a class="notifications__settings-link" href="/pages/notifications/settings.html"><img src="/images/pages/cog.svg"/> </a>
                 </div>             
                 <ul id="new" class="notifications__new-list">
                     <li class="notification" data-component="expandable">
@@ -199,7 +200,13 @@
                             <span class="notification__description" data-element="expand-btn" data-target="group">
                                 Nya inlämningar i Examensarbete</span>
                         </span>
-                        <img class="notification__group-actions" src="/images/pages/chevron-down.svg" />
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg" data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img src="/images/pages/check.svg" class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg" class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
                     </li>
 
                     <div class="notification__group-items">
@@ -222,7 +229,7 @@
                         <li class="notification" data-component="expandable">
                             <img class="notification__avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
                             <span class="notification__content">
-                                <span class="notification__description">Ted har lämnat in uppgift X</span>
+                                <span class="notification__description">Ted har lämnat in</span>
                                 <span class="notification__group-name">Examensarbete</span>
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Oct 24</span>
@@ -238,7 +245,7 @@
                         <li class="notification" data-component="expandable">
                             <img class="notification__avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                             <span class="notification__content">
-                                <span class="notification__description">Göran has submitted</span>
+                                <span class="notification__description">Göran har lämnat in</span>
                                 <span class="notification__group-name">Examensarbete</span>
                                 <span class="notification__separator">•</span>
                                 <span class="notification__date">Oct 22</span>

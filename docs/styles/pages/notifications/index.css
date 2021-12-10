@@ -1,7 +1,9 @@
 .notifications__header {
     display: flex;
     align-items:center;
-    margin-bottom: 1em;
+    margin: 1em 0 1.5em;
+    gap: 8px;
+    line-height: 1;
 }
 
 .notifications__title {
@@ -9,10 +11,18 @@
     padding: 0 0 0 8px;
     flex:1;
     margin:0;
+    align-self:center;
+}
+
+.notifications__settings-link {
+   color: inherit;
+   align-self:center;
+   margin-top: 6px;
+   opacity: 0.8;
 }
 
 .notifications__new {
-    padding: 32px 24px 48px;
+    padding: 32px 24px 0;
     max-width: 640px;
     margin: 0 auto;
 }
@@ -38,11 +48,6 @@ hr {
     cursor: pointer;
 }
 
-.notifications__settings-link {
-    color: #0079f2;
-    color: #000;
-    display: none;
-}
 
 .notifications__status {
     font-weight: 700;
@@ -103,7 +108,7 @@ hr {
 }
 
 .notification__group {
-    margin-top:-12px;
+    margin-top:-16px;
 }
 
 .notification__group.EXPAND {
