@@ -17,9 +17,9 @@
 .notifications__empty {
     text-align: center;
     padding: 64px;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     max-width: 300px;
-    margin: 48px auto;
+    margin: 0px auto;
     border-radius: 8px;
     display: none;
 }
@@ -27,7 +27,7 @@
 .notifications__settings-link {
    color: inherit;
    align-self:center;
-   margin-top: 6px;
+   margin: 6px 4px 0 0;
    opacity: 0.8;
 }
 

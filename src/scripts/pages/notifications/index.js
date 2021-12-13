@@ -40,7 +40,7 @@ document.addEventListener(render.ready, () => {
         const newList = document.getElementById("new");
         const previousList = document.getElementById("previous");
         let moveTo = e.target.closest("#new") == newList ? previousList : newList;
-        let itemTobeMoved = e.target.parentElement.parentElement.parentElement;
+        let itemTobeMoved = e.target.closest(".notification");
         moveTo.prepend(itemTobeMoved);
     }
 
@@ -61,7 +61,7 @@ document.addEventListener(render.ready, () => {
             li.querySelector('[data-element="move-btn"] > span').innerText = "Mark as unread";
             previousList.prepend(li);
         });
-        
+
     }
     
     const moveButtons = document.querySelectorAll('[data-element="move-btn"]');
