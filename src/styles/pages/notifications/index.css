@@ -14,6 +14,16 @@
     align-self:center;
 }
 
+.notifications__empty {
+    text-align: center;
+    padding: 64px;
+    background-color: #f2f2f2;
+    max-width: 300px;
+    margin: 48px auto;
+    border-radius: 8px;
+    display: none;
+}
+
 .notifications__settings-link {
    color: inherit;
    align-self:center;
@@ -271,4 +281,12 @@ hr {
     overflow: hidden;
     flex: 1;
     min-width: 0;
+}
+
+.SHOW {
+    display: block;
+}
+
+.HIDE {
+    display: none;
 }

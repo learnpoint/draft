@@ -1,28 +1,27 @@
 document.addEventListener(render.ready, () => {
 
-    const togglers = Array.from(document.querySelectorAll('[data-element="expand-btn"]'));
-    const collapsebuttons = Array.from(document.querySelectorAll('[data-element="collapse-btn"]'));
-    const moveButtons = document.querySelectorAll('[data-element="move-btn"]');
-    const markAllAsReadButtun = document.querySelector('[data-element="mark-all-as-read-btn"]');
-    const newList = document.getElementById("new");
-    const previousList = document.getElementById("previous");
-
     document.addEventListener('click', (ev) => {
 
         const elm = ev.target;
 
-        if(elm == markAllAsReadButtun) {
-            markAllAsRead();
+        if(elm == document.querySelector('[data-element="mark-all-as-read-btn"]')) {
+            markAllAsRead(elm);
+            return;
         }
         
+        const togglers = Array.from(document.querySelectorAll('[data-element="expand-btn"]'));
         if (togglers.includes(elm)) {
             const selector = elm.getAttribute('data-target');
             toggle(selector);
+            return;
         }
+
+        const collapsebuttons = Array.from(document.querySelectorAll('[data-element="collapse-btn"]'));
         if (collapsebuttons.includes(elm)) {
             const selector = elm.getAttribute('data-target');
             collapse(selector);
         }
+
     }, false);
 
 
@@ -36,27 +35,38 @@ document.addEventListener(render.ready, () => {
         target.classList.remove('EXPAND');
     }
 
-    function moveItem(e) {
-        console.log(e.target);
+    const  moveItem = (e) => {
         e.target.innerText == "Mark as read" ? e.target.innerText = 'Mark as unread' : e.target.innerText = "Mark as read";
-        let moveTo = this.closest("#new") == newList ? previousList : newList;
-        let itemTobeMoved = this.parentElement.parentElement.parentElement;
-        console.log(moveTo);
+        const newList = document.getElementById("new");
+        const previousList = document.getElementById("previous");
+        let moveTo = e.target.closest("#new") == newList ? previousList : newList;
+        let itemTobeMoved = e.target.parentElement.parentElement.parentElement;
         moveTo.prepend(itemTobeMoved);
     }
 
-    function markAllAsRead() {
+    const markAllAsRead = (readButton) => {
+
+        const newList = document.getElementById("new");
+        const previousList = document.getElementById("previous");
+
+        const emptyMessage = document.getElementById("empty");
+        emptyMessage.classList.add("SHOW");
+
+        const groupItem = document.getElementById("group");
+        groupItem.classList.add("HIDE");
+        readButton.classList.add("HIDE");
+
         const listItems = newList.querySelectorAll('.notification');
-        console.log(listItems);
         listItems.forEach(li => {
-            console.log( li.querySelector('[data-element="move-btn"] > span'));
             li.querySelector('[data-element="move-btn"] > span').innerText = "Mark as unread";
             previousList.prepend(li);
         });
+        
     }
-
-    for (var i = 0; i < moveButtons.length; i++) {
-        moveButtons[i].addEventListener("click", moveItem);
-    }
+    
+    const moveButtons = document.querySelectorAll('[data-element="move-btn"]');
+    moveButtons.forEach(moveButton => {
+        moveButton.addEventListener("click", moveItem);
+    });
 
 });
