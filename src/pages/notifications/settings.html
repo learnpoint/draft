@@ -3,13 +3,54 @@
 <link rel="stylesheet" href="/styles/pages/notifications/settings.css">
 
 <div class="page">
+    <div class="page__breadcrumb">
+        <a href="/pages/notifications">← Aviseringar</a><!-- <span> /</span><span> Tidigare händelser</span> -->
+    </div>
     <div class="page__sheet">
         <div class="page__content-wrap">
-            <h1>Email Inställningar</h1>
-            <div class="notification-settings__heading">Vad vill du bli notifierad om?</div>
-            <div class="notification-settings__heading">Hur vill du bli notifierad?</div>
-            <div class="notification-settings__heading">När vill du bli notifierad?</div>
+            <div class="notification-settings">
+                <h1 class="notification-settings__title">Avisering inställningar</h1>
 
+                <div class="notification-settings__section">
+                    <h3>
+                        Grupper
+                    </h3>
+                    <p class="notification-settings__section-decription">Slå av/på learnpoint aviseringar för grupper</p>
+                    <div class="notification-settings__section-item">
+                        <label for="js" class="notification-settings__label">Javascript 3</label>
+                        <input type="checkbox" id="js" name="Email Notifications" checked>
+                    </div>
+                    <div class="notification-settings__section-item">
+                        <label for="lia" class="notification-settings__label">Lärende i arbete</label>
+                        <input type="checkbox" id="lia" name="Email Notifications" checked>
+                    </div>
+                    <div class="notification-settings__section-item">
+                        <label for="ex" class="notification-settings__label">Examensarbete</label>
+                        <input type="checkbox" id="ex" name="Email Notifications" checked>
+                    </div>
+                    <div class="notification-settings__section-item">
+                        <label for="pj" class="notification-settings__label">Projectmetodik</label>
+                        <input type="checkbox" id="pj" name="Email Notifications" checked>
+                    </div>
+                    <div class="notification-settings__section-item">
+                        <label for="in" class="notification-settings__label">Informationsarkitektur</label>
+                        <input type="checkbox" id="in" name="Email Notifications">
+                    </div>
+                </div>
+
+
+                <div class="notification-settings__section">
+                    <h3>
+                        Email aviseringar
+                    </h3>
+                    <div class="notification-settings__section-item">
+                        <label for="Email" class="notification-settings__label">Få email aviseringar</label>
+                        <input type="checkbox" id="Email" name="Email Notifications" checked>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="notification-settings__heading">Hur vill du bli notifierad?</div>
+            <div class="notification-settings__heading">När vill du bli notifierad?</div> -->
         </div>
     </div>
 </div>

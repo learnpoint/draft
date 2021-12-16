@@ -1,18 +1,38 @@
-.notifications {
-    padding-top: 36px
-}
-
 .notifications__header {
-    text-align: center;
-    margin-bottom: 36px;
+    display: flex;
+    align-items:center;
+    margin: 1em 0 1.5em;
+    gap: 8px;
+    line-height: 1;
 }
 
 .notifications__title {
-    margin-bottom: 4px;
+    font-size: 1.6em;
+    padding: 0 0 0 8px;
+    flex:1;
+    margin:0;
+    align-self:center;
+}
+
+.notifications__empty {
+    text-align: center;
+    padding: 64px;
+    /* background-color: #f2f2f2; */
+    max-width: 300px;
+    margin: 0px auto;
+    border-radius: 8px;
+    display: none;
+}
+
+.notifications__settings-link {
+   color: inherit;
+   align-self:center;
+   margin: 6px 4px 0 0;
+   opacity: 0.8;
 }
 
 .notifications__new {
-    padding: 0 24px;
+    padding: 32px 24px 0;
     max-width: 640px;
     margin: 0 auto;
 }
@@ -28,21 +48,16 @@ hr {
 }
 
 .notifications__previously-seen {
-    background-color: #f1f1f1;
-    border-top: 1px solid #ccc;
+    padding: 32px 0;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
 }
 
 .notifications__mark-as-read {
     text-align: right;
-    margin-bottom: 16px;
     cursor: pointer;
 }
 
-.notifications__settings-link {
-    color: #0079f2;
-    color: #000;
-    display: none;
-}
 
 .notifications__status {
     font-weight: 700;
@@ -103,7 +118,7 @@ hr {
 }
 
 .notification__group {
-    margin-top:-12px;
+    margin-top:-16px;
 }
 
 .notification__group.EXPAND {
@@ -266,4 +281,12 @@ hr {
     overflow: hidden;
     flex: 1;
     min-width: 0;
+}
+
+.SHOW {
+    display: block;
+}
+
+.HIDE {
+    display: none;
 }
