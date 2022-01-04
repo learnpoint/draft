@@ -88,3 +88,26 @@
     text-align: center;
     max-width: 320px;
 }
+
+.content__cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__card {
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, .024); */
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.content__card-image {
+    width: 36px;
+    height: 36px;
+}
+
+.content__card-text {
+    font-weight: 600;
+}
