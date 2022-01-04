@@ -1,6 +1,11 @@
 .coursegrade__container {
-    padding: 24px 22px;
+    padding: 24px 0;
 }
+
+.is-mobile .coursegrade__container {
+    padding: 0 5px;
+}
+
 
 .coursegrade__container-status {
     display: flex;
@@ -38,8 +43,16 @@
     display: flex;
 }
 
+.is-mobile .coursegrade__container-content-wrapper {
+    display: inline;
+}
+
 .coursegrade__container-content-wrapper-coursegrade-panel {
     width: 50%;
+}
+
+.is-mobile .coursegrade__container-content-wrapper-coursegrade-panel {
+    width: 100%;
 }
 
 .coursegrade__container-content-wrapper-courseitem-panel {
@@ -47,6 +60,13 @@
     border-left: 1px solid #ddd;
     padding: 0 24px;
 }
+
+.is-mobile .coursegrade__container-content-wrapper-courseitem-panel {
+    width: 100%;
+    border-left: none;
+    padding: 0;
+}
+
 
 .coursegrade__container-item {
     margin-bottom: 24px;
