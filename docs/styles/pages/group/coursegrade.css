@@ -56,3 +56,24 @@
     font-weight: 600;
     font-size: 17px;
 }
+
+.coursegrade__container-courseitem {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.coursegrade__container-courseitem-text {
+    flex: 1;
+}
+
+.coursegrade__container-courseitem-status-text {
+    font-weight: 600;
+}
+
+.coursegrade__container-courseitem-image-check {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
