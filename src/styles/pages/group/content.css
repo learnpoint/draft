@@ -1,0 +1,26 @@
+.content__section {
+    margin-bottom: 24px;
+}
+
+.content__section-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content__section-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.content__section-dot {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 2px solid #aaaaaa;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
