@@ -15,6 +15,12 @@
     flex: 1;
 }
 
+.content__info-course {
+    font-size: 13px;
+    color: #888;
+    flex: 1;
+}
+
 .content__section {
     margin-bottom: 24px;
 }
@@ -29,7 +35,6 @@
 .content__section-items {
     display: flex;
     align-items: center;
-    /* margin-bottom: 4px; */
     padding: 8px 0;
     border-top: 1px solid #eee;
 }
