@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="render__rendering">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Innehåll 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
+
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
+    <script defer src="/scripts/core/expandable.js"></script>
+
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
+
+</head>
+
+<body class="body">
+
+    <div class="site__left-nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/">Aviseringar</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notiser</a>
+            </li>
+        </ul>
+        <h3>Grupper</h3>
+        <ul>
+            <courses>
+                <li>
+                    <a href="/pages/group/posts.html?course_id=[[id]]">
+                        [[name]]
+                    </a>
+                </li>
+            </courses>
+        </ul>
+    </div>
+
+    <div class="site__header">
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
+        <span>Innehåll 2</span>
+    </div>
+
+    <main class="site__main">
+<script defer src="/scripts/components/sub-nav.js"></script>
+<link rel="stylesheet" href="/styles/components/sub-nav.css">
+
+<nav class="sub-nav">
+    <ul>
+        <li>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
+        </li>
+        <li>
+            <a href="/pages/group/content.html" data-select="content.html">Innehåll</a>
+        </li>
+        <li>
+            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
+        </li>
+        <li>
+            <a href="/pages/group/coursegrade.html" data-select="coursegrade.html">Kursbetyg</a>
+        </li>
+    </ul>
+</nav>
+<link rel="stylesheet" href="/styles/pages/group/content2.css">
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="content__container">
+                <div class="content__info">
+                    <div class="content__info-title">Kursinnehåll</div>
+                    <div class="content__info-grading-text">VG</div>
+                    <img class="content__info-grading-image" src="/images/pages/green-check.png" />
+                </div>
+                <div class="content__section">
+                    <div class="content__section-title">About Jacascript</div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">What is advanced Javascript?</span>
+                            <span class="content__section-items-text-due-date">Senast klar 26 nov 2022</span>
+                        </div>
+                        <div class="content__section-items-grade">G</div>
+                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
+                    </div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">What can we do with Javascript?</span>
+                        </div>
+                        <div class="content__section-items-grade">VG</div>
+                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
+                    </div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">About effective coding</span>
+                        </div>
+                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
+                    </div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">Best way to learn how to code</span>
+                        </div>
+                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
+                    </div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">Learning traps</span>
+                            <span class="content__section-items-text-due-date">1 feb 2022 09:00 - 3 feb 11:00</span>
+                        </div>
+                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
+                    </div>
+                </div>
+                <div class="content__section">
+                    <div class="content__section-title">Async Javascript</div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">What is asynchronous Javascript?</span>
+                        </div>
+                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
+                    </div>
+                    <div class="content__section-items">
+                        <div class="content__section-items-text">
+                            <span class="content__section-items-text-name">How to write async code</span>
+                        </div>
+                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+</body>
+
+</html>
