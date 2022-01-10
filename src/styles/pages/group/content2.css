@@ -3,7 +3,6 @@
 }
 
 .content__info {
-    margin-bottom: 32px;
     display: flex;
     align-items: center;
 }
@@ -11,7 +10,7 @@
 .content__info-title {
     font-size: 26px;
     font-weight: bold;
-    padding: 8px;
+    padding: 0 8px;
     margin-bottom: -4px;
     flex: 1;
 }
@@ -23,7 +22,7 @@
 }
 
 .content__section {
-    margin-top: 24px;
+    margin-top: 32px;
 }
 
 .content__section-heading {
