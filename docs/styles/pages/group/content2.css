@@ -1,5 +1,5 @@
 .content__container {
-    padding: 32px 0;
+    padding: 24px 0;
 }
 
 .content__info {
@@ -11,6 +11,7 @@
 .content__info-title {
     font-size: 26px;
     font-weight: bold;
+    padding: 8px;
     margin-bottom: -4px;
     flex: 1;
 }
@@ -22,7 +23,14 @@
 }
 
 .content__section {
+    margin-top: 24px;
+}
+
+.content__section-heading {
+    font-size: 26px;
+    font-weight: bold;
     margin-bottom: 24px;
+    padding: 0 8px;
 }
 
 .content__section-title {
@@ -30,13 +38,15 @@
     line-height: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    padding: 0 8px;
 }
 
 .content__section-items {
     display: flex;
     align-items: center;
-    padding: 8px 0;
-    border-top: 1px solid #eee;
+    padding: 8px;
+    border-radius: 6px;
+    /* border-top: 1px solid #eee; */
 }
 
 .content__section-items-text {
@@ -44,7 +54,11 @@
 }
 
 .content__section-items-text:hover {
-    color: #0079f2;
+    /* color: #0079f2; */
+}
+
+.content__section-items:hover {
+    background-color: #ecf5fc;
 }
 
 .content__section-items-text-due-date {
@@ -61,6 +75,18 @@
     height: 20px;
     margin-left: 8px;
 }
+
+.content__section-grade {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.content__section-grade-title {
+    flex: 1;
+    font-weight: bold;
+}
+
 
 .content__separator {
     border: none;
