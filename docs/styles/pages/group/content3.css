@@ -2,21 +2,34 @@
     padding: 32px 0;
 }
 
+.is-mobile .content__container {
+    padding: 0;
+}
+
 .content__info {
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-right: 40px;
     display: flex;
     align-items: center;
+    float: right;
+}
+
+.is-mobile .content__info {
+    padding-top: 16px;
+    padding-right: 16px;
+    float: none;
+    justify-content: flex-end;
 }
 
 .content__info-2 {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .content__info-title {
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: -4px;
     flex: 1;
 }
 
@@ -26,9 +39,20 @@
 }
 
 .content__flexbox-image {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     margin-right: 8px;
+}
+
+.content__flexbox-coursegrade {
+    border-left: 1px solid #ddd;
+    padding-left: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.is-mobile .content__flexbox-coursegrade {
+    border-left: 0px;
 }
 
 .content__flexbox-coursegrade-title {
@@ -48,7 +72,7 @@
 }
 
 .content__section-info-title {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 32px;
 }
@@ -111,7 +135,7 @@
 .content__info-grading-image {
     width: 36px;
     height: 36px;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .content__no-grade-yet {

@@ -10,6 +10,7 @@
 .coursegrade__container-status {
     display: flex;
     align-items: center;
+    padding: 24px 0;
 }
 
 .coursegrade__container-status-info {
