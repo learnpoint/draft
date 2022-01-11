@@ -1,14 +1,8 @@
 .content__container {
-    padding: 32px 0;
+    padding: 24px 0;
 }
 
 .content__info {
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-}
-
-.content__info-2 {
     display: flex;
     align-items: center;
 }
@@ -16,41 +10,26 @@
 .content__info-title {
     font-size: 26px;
     font-weight: bold;
+    padding: 0 8px;
     margin-bottom: -4px;
     flex: 1;
 }
 
-.content__flexbox {
-    display: flex;
-    align-items: center;
-}
-
-.content__flexbox-image {
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
-}
-
-.content__flexbox-coursegrade-title {
-    font-size: 14px;
-    line-height: 14px;
+.content__info-course {
+    font-size: 13px;
     color: #888;
-}
-
-.content__flexbox-coursegrade-status {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: right;
+    flex: 1;
 }
 
 .content__section {
-    margin-bottom: 24px;
+    margin-top: 32px;
 }
 
-.content__section-info-title {
-    font-size: 35px;
+.content__section-heading {
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    padding: 0 8px;
 }
 
 .content__section-title {
@@ -58,16 +37,36 @@
     line-height: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    padding: 0 8px;
 }
 
 .content__section-items {
     display: flex;
     align-items: center;
-    margin-bottom: 4px;
+    padding: 8px;
+    border-radius: 6px;
+    /* border-top: 1px solid #eee; */
+}
+
+.content__section-items-text {
+    flex: 1;
+}
+
+.content__section-items-text:hover {
+    /* color: #0079f2; */
 }
 
 .content__section-items:hover {
-    color: #0079f2;
+    background-color: #ecf5fc;
+}
+
+.content__section-items-text-due-date {
+    color: #aaa;
+    margin-left: 4px;
+}
+
+.content__section-items-grade {
+    font-weight: 600;
 }
 
 .content__section-items-image {
@@ -75,6 +74,18 @@
     height: 20px;
     margin-right: 8px;
 }
+
+.content__section-grade {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.content__section-grade-title {
+    flex: 1;
+    font-weight: bold;
+}
+
 
 .content__separator {
     border: none;

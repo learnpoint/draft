@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+.content__info-2 {
+    display: flex;
+    align-items: center;
+}
+
 .content__info-title {
     font-size: 26px;
     font-weight: bold;
@@ -33,13 +38,19 @@
 }
 
 .content__flexbox-coursegrade-status {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-align: right;
 }
 
 .content__section {
     margin-bottom: 24px;
+}
+
+.content__section-info-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 
 .content__section-title {
