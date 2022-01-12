@@ -25,6 +25,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+    float: right;
+}
+
+.is-mobile .content__info-2 {
+    float: none;
+    justify-content: flex-end;
 }
 
 .content__info-title {
