@@ -37,7 +37,7 @@
 .coursegrade__separator {
     border: none;
     border-top: 1px solid #ddd;
-    margin: 24px 0;
+    margin: 32px 0;
 }
 
 .coursegrade__separator2 {
@@ -45,7 +45,6 @@
     border-top: 1px solid #ddd;
     margin: 0;
 }
-
 
 .coursegrade__container-content-wrapper {
     display: flex;

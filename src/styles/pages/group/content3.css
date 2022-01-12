@@ -88,10 +88,13 @@
     display: flex;
     align-items: center;
     margin-bottom: 4px;
+    color: #0079f2;
 }
 
 .content__section-items:hover {
     color: #0079f2;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .content__section-items-image {
