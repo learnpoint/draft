@@ -1,0 +1,180 @@
+.content__container {
+    padding: 32px 0;
+}
+
+.is-mobile .content__container {
+    padding: 0;
+}
+
+.content__info {
+    padding-top: 32px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.is-mobile .content__info {
+    padding-top: 16px;
+    padding-right: 16px;
+    float: none;
+    justify-content: flex-end;
+}
+
+.content__info-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    float: right;
+}
+
+.is-mobile .content__info-2 {
+    float: none;
+    justify-content: flex-end;
+}
+
+.content__info-title {
+    font-size: 26px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.content__flexbox {
+    display: flex;
+    align-items: center;
+}
+
+.content__flexbox-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.content__flexbox-coursegrade {
+    border-left: 1px solid #ddd;
+    padding-left: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.is-mobile .content__flexbox-coursegrade {
+    border-left: 0px;
+}
+
+.content__flexbox-coursegrade-title {
+    font-size: 14px;
+    line-height: 14px;
+    color: #888;
+}
+
+.content__flexbox-coursegrade-status {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.content__section {
+    margin-bottom: 24px;
+}
+
+.content__section-info-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.content__section-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content__section-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    color: #0079f2;
+}
+
+.content__section-items:hover {
+    color: #0079f2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content__section-items-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.content__separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+.content__item {
+    margin-bottom: 24px;
+}
+
+.content__item-name {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.content__info-grading {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.content__info-grading-title {
+    font-size: 26px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.content__info-grading-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content__info-grading-image {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+.content__no-grade-yet {
+    background-color: rgba(0, 0, 0, .024);
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.content__cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content__card {
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, .024); */
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.content__card-image {
+    width: 36px;
+    height: 36px;
+}
+
+.content__card-text {
+    font-weight: 600;
+}
