@@ -108,7 +108,6 @@ hr {
 
 .notifications__previous-list,
 .notification__group-items {
-    /* display: none; */
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease-out;
@@ -116,7 +115,6 @@ hr {
 
 .notifications__previous-list.EXPAND,
 .notification__group.EXPAND .notification__group-items {
-    /* display: block; */
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     height: auto;
@@ -128,10 +126,8 @@ hr {
     /* line-height: 1.1; */
     padding: .6em .4em;
     margin: 8px 0;
-    /* border-bottom: 1px solid #eee; */
     display: flex;
     gap: 8px;
-    /* align-items: center; */
     cursor: pointer;
     border-radius: 4px;
 }
@@ -165,14 +161,13 @@ hr {
     height: 2.8em;
     line-height: 2.5em;
     border-radius: 50%;
-    /* background-color: #eee; */
-    border: 1px solid #aaa;
+    background-color: #0079f2; 
 }
 
 .notification__avatar img {
-    width: 1.1em;
-    height: 1.1em;
-    padding: 14px;
+    /* width: 1.1em;
+    height: 1.1em; */
+    padding: 12px 10px;
 }
 
 .notification__avatar-summary {
