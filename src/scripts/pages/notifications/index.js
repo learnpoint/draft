@@ -53,7 +53,7 @@ document.addEventListener(render.ready, () => {
         emptyMessage.classList.add("SHOW");
 
         const groupItem = document.getElementById("group");
-        groupItem.classList.add("HIDE");
+        // groupItem.classList.add("HIDE");
         readButton.classList.add("HIDE");
 
         const listItems = newList.querySelectorAll('.notification');

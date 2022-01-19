@@ -161,13 +161,20 @@ hr {
     height: 2.8em;
     line-height: 2.5em;
     border-radius: 50%;
-    background-color: #0079f2; 
+    box-sizing: border-box;
+}
+
+.notification__avatar.ICON {
+    background-color: #e5e5e5; 
 }
 
 .notification__avatar img {
-    /* width: 1.1em;
-    height: 1.1em; */
-    padding: 12px 10px;
+    width: 1.9em;
+    height: 1.9em; 
+    position: relative;
+    top:10px;
+    left:8px;
+    /* padding: 12px 10px; */
 }
 
 .notification__avatar-summary {
