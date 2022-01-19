@@ -169,12 +169,11 @@ hr {
 }
 
 .notification__avatar img {
-    width: 1.9em;
-    height: 1.9em; 
+    width: 2.2em;
+    height: 2.2em; 
     position: relative;
-    top:10px;
-    left:8px;
-    /* padding: 12px 10px; */
+    top:8px;
+    left:5px;
 }
 
 .notification__avatar-summary {
