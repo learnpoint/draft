@@ -168,12 +168,41 @@ hr {
     background-color: #e5e5e5; 
 }
 
+.notification__avatar.ICON-WORK {
+    background-color: #f77838; 
+}
+
+.notification__avatar.ICON-LIA {
+    background-color: #349634; 
+}
+
+
+.notification__avatar.ICON-SURVEY{
+    background-color: #5ca3ea; 
+}
+
+.notification__avatar.ICON-BOOK {
+    background-color: #f89f0f; 
+}
+
+.notification__avatar.ICON-FILE {
+    background-color: #f0c82c;
+}
+
+.notification__avatar.ICON-GRADE {
+    background-color: #5d67f1; 
+}
+
+.notification__avatar.ICON-SUBMISSION {
+    background-color: #5d67f1; 
+}
+
 .notification__avatar img {
-    width: 2.2em;
-    height: 2.2em; 
+    width: 2em;
+    height: 2em; 
     position: relative;
-    top:8px;
-    left:5px;
+    top:9px;
+    left:6.5px;
 }
 
 .notification__avatar-summary {
