@@ -78,7 +78,7 @@
                         <img class="notification__avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/3.jpg"/>       
                         <div class="notification__content">
                             <div class="notification__description">Sista veckan för denna kurs!</div>                                               
-                            <span class="notification__group-name">Nyhet</span>
+                            <span class="notification__group-name" style="font-weight: 600; color: #323C46;">Nyhet</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Hasse Hansson</span>
                             <span class="notification__separator">•</span>
@@ -104,8 +104,8 @@
                         </div>
                         <div class="notification__content">
                             <div class="notification__description">
-                                Skriv om din praktik i loggboken </div>                               
-                                <span class="notification__group-name">Loggbok</span>
+                                Skriv om din praktik</div>                               
+                                <span class="notification__group-name" style="font-weight: 600; color: #323C46;">Loggbok</span>
                                 <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
@@ -152,8 +152,8 @@
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
                         <span class="notification__content">
-                            <span class="notification__description">Re: Sista veckan för denna kurs! </span>
-                            <span class="notification__group-name">Kommentar</span>
+                            <span class="notification__description">Re: Sista veckan för denna kurs!</span>
+                            <span class="notification__group-name">Kommentar - 5</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Pelle Persson</span>
                             <span class="notification__separator">•</span>
@@ -178,7 +178,7 @@
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                         <span class="notification__content">
                             <span class="notification__description">Re: Uppföljning av Genomgång av grunder - Stig Berg</span>
-                            <span class="notification__group-name">Kommentar </span>
+                            <span class="notification__group-name">Kommentar</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Stefen Lindberg</span>
                             <span class="notification__separator">•</span>
@@ -228,7 +228,7 @@
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
                         <span class="notification__content">
                             <span class="notification__description">Re: Genomgång av grunder - Sarah Nilsson</span>
-                            <span class="notification__group-name">Kommentar </span>
+                            <span class="notification__group-name">Kommentar</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Sarah Nilsson</span>
                             <span class="notification__separator">•</span>
@@ -253,9 +253,34 @@
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
                         <span class="notification__content">
                             <span class="notification__description">Re: Betyg - Genomgång av grunder - Sarah Nilsson</span>
-                            <span class="notification__group-name">Kommentar </span>
+                            <span class="notification__group-name"> 5 nya Kommentarer</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Sarah Nilsson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Informationsarkitektur</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 6</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Genomgång av grunder - Sarah Nilsson</span>
+                            <span class="notification__group-name">6 nya Kommentarer</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Sarah Nilsson och 3 andra</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Informationsarkitektur</span>
                             <span class="notification__separator">•</span>
@@ -373,7 +398,7 @@
                     </li>                         
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-WORK">
-                            <img src="/images/pages/noun-briefcase.svg" />
+                            <img src="/images/pages/noun-briefcase.svg"/>
                         </div>
                         <span class="notification__content">
                             <span class="notification__description">LIA-platsen har ändrats och behöver godkännas</span>
@@ -399,7 +424,7 @@
                     </li>
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-WORK">
-                            <img src="/images/pages/noun-work.svg" />
+                            <img src="/images/pages/noun-work.svg"/>
                         </div>
                         <span class="notification__content">
                             <span class="notification__description">LIA-platsen har ändrats och behöver godkännas</span>
@@ -423,7 +448,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="notification" data-component="expandable">
+                    <!-- <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-LIA">
                             <img src="/images/pages/noun-check-1.svg" style="width: 42px; height:42px; left: 2px;top: 6px;" />
                         </div>
@@ -448,7 +473,7 @@
                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-GRADE">
                             <img src="/images/pages/noun-grade.svg" />
@@ -475,15 +500,140 @@
                     </li>
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-GRADE">
-                            <img src="/images/pages/noun-grading.svg" />
+                            <img src="/images/pages/noun-ribbon.svg" />
                         </div>
                         <span class="notification__content">
-                            <span class="notification__description">Du har fått ditt betyg - Examensarbete</span>
+                            <span class="notification__description">Examensarbete har betygsätts</span>
                             <span class="notification__group-name">Betyg</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 7</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-grading.svg" />
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Du har fått ett betyg - Examensarbete</span>
+                            <span class="notification__group-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Re: ViaEcole AB - Stig Berg</span>
+                            <span class="notification__group-name">Kommentarer</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Lärande i arbete</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
+                        <span class="notification__new-comment-count">2</span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Sista veckan för denna kurs!  </span>
+                            <span class="notification__group-name"><span class="notification__new-comment-count">5</span>Kommentarer</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Pelle Persson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Lärande i arbete</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Sista veckan för denna kurs! <span class="notification__new-comment-count">5</span> </span>
+                            <span class="notification__group-name">Kommentar</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Pelle Persson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Lärande i arbete</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Uppföljning av Genomgång av grunder - Stig Berg</span>
+                            <span class="notification__group-name">Kommentarer <span class="notification__new-comment-count">2</span> </span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stefen Lindberg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Informationsarkitektur</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 6</span>
                         </span>
                         <div class="notification__actions">
                             <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
@@ -507,11 +657,9 @@
                             <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
                             <div class="notification__content">
-                                Sarah Nilsson har lämnat in
+                                Re: Uppföljning av Genomgång av grunder - Sarah Nilsson
                                 <div>
                                     <span class="notification__group-name">Inlämning</span>
-                                    <span class="notification__separator">•</span>
-                                    <span class="notification__group-name">Genomgång av grunder</span>
                                     <span class="notification__separator">•</span>
                                     <span class="notification__group-name">Javascript 3</span>
                                     <span class="notification__separator">•</span>
@@ -680,8 +828,7 @@
                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
-                    </li>
-                  
+                    </li>                
                     <li class="notification" data-component="expandable">
                         <img class="notification__avatar"
                             src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
