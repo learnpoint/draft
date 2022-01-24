@@ -127,8 +127,7 @@ hr {
     padding: .6em .4em;
     margin: 4px 0;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 12px;
     cursor: pointer;
     border-radius: 4px;
 }
@@ -156,6 +155,13 @@ hr {
     margin:-16px 0 16px;
 }
 
+.notification__avatar-wrapper {
+    position:relative;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+}
+
 .notification__avatar,
 .notification__avatar-group {
     width: 2.5em;
@@ -163,6 +169,7 @@ hr {
     line-height: 2.5em;
     border-radius: 50%;
     box-sizing: border-box;
+    position:relative;
 }
 
 .notification__avatar.ICON {
@@ -257,6 +264,51 @@ hr {
     background-color: #CBEEFA;
     border-radius: 6px;
     font-size: 12px;
+}
+
+.notification__avatar-new-comment-count {
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #54c5ea;
+    border-radius: 6px;
+    font-size: 12px;
+    position: absolute;
+    right:-8px;
+    bottom: -4px;
+    color: #fff;
+}
+
+.notification__avatar-new-comment-bubble {
+	position: absolute;
+	background: #54c5ea;
+	border-radius: .4em;
+    height: 20px;
+    width: 22px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    z-index: 2;
+    top: -7px;
+    right:-8px;
+    font-size:12px;
+}
+
+.notification__avatar-new-comment-bubble:after {
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #54c5ea;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -3.5px;
+    margin-bottom: -4px;
 }
 
 .notifications__view-all {
