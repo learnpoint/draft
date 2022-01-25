@@ -125,7 +125,7 @@ hr {
     line-height: normal;
     line-height: 1.2; 
     padding: .6em .4em;
-    margin: 4px 0;
+    margin: 2px 0;
     display: flex;
     gap: 12px;
     cursor: pointer;
@@ -170,6 +170,10 @@ hr {
     border-radius: 50%;
     box-sizing: border-box;
     position:relative;
+}
+
+.notification__avatar.ICON-NEWS {
+    background-color: #ff2d55
 }
 
 .notification__avatar.ICON {
@@ -244,6 +248,12 @@ hr {
 
 .notification__description {
     display: block;
+}
+
+.notification__type-name {
+    font-size: 14px;
+    font-weight: 600; 
+    color: #323C46;
 }
 
 .notification__date,
