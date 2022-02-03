@@ -48,6 +48,11 @@
     /* border-top: 1px solid #eee; */
 }
 
+.content__section-items::before {
+    content: "\1F7B3";
+    margin-right: 8px;
+}
+
 .content__section-items-text {
     flex: 1;
 }
