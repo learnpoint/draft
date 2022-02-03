@@ -48,7 +48,7 @@
 }
 
 .content__section-items::before {
-    content: "🞳";
+    /* content: "\1F7B3"; */
     margin-right: 8px;
 }
 
