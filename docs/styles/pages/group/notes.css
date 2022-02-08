@@ -154,6 +154,12 @@ textarea {
     margin-bottom: 3px;
 }
 
+textarea:focus, input:focus{
+    outline-style: none;
+    border: 1px solid #0780ff;
+    box-shadow: 0 0 3px #0780ff;
+}
+
 .textbox {
     margin: 0;
     font-size: 14px;
