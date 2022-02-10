@@ -1,0 +1,185 @@
+a {
+    color: unset;
+    text-decoration: underline;
+}
+
+.page__header2 {
+    padding: 24px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+}
+
+
+.no-content {
+    background-color: rgba(0, 0, 0, .024);
+    padding: 24px;
+    margin: 32px auto;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.notes__actions {
+    margin: 0 auto;
+}
+
+.notes {
+    border-bottom: 1px solid #ddd;
+    padding: 24px 0;
+}
+
+.notes:last-child {
+    border-bottom: unset;
+}
+
+.notes__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 64px;
+    margin-bottom: 8px;
+}
+
+.notes__header2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.notes__avatar {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 8px;
+}
+
+.notes__title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.notes__dots {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.notes__paragraph {
+    margin-bottom: 24px;
+}
+
+.notes__meta {
+    font-size: 12px;
+    color: #888;
+}
+
+.notes__text {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.notes__text2 {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.notes__text2:last-child {
+    border-bottom: unset;
+}
+
+
+
+/* Form design */
+
+.notes__form {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.submit {
+    margin-bottom: 16px;
+}
+
+.notes__title2 {
+    margin: 40px 0 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.notes__description {
+    margin: 0 0 20px;
+
+}
+
+input[type="text" i] {
+    display: block;
+    width: 100%;
+}
+
+input[id="rubrik" i] {
+    height: 25px;
+}
+
+input[type="file" i] {
+    font-size: 15px;
+    padding: 8px 0;
+}
+
+textarea {
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    transition-property: border-color, box-shadow;
+    transition-duration: .2s;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-appearance: none;
+}
+
+.label {
+    margin-bottom: 3px;
+}
+
+textarea:focus, input:focus{
+    outline-style: none;
+    border: 1px solid #0780ff;
+    box-shadow: 0 0 3px #0780ff;
+}
+
+.textbox {
+    margin: 0;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    transition-property: border-color, box-shadow;
+    transition-duration: .2s;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-appearance: none;
+}
+
+.notes__actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0;
+    gap: 8px;
+}
