@@ -1,6 +1,7 @@
 document.addEventListener('click', event => {
 
-    if (!event.target.matches('[data-element="expandable.toggle-button"]')) {
+    const toggler = event.target;
+    if (!toggler.matches('[data-element="expandable.toggle-button"]')) {
         collapseAll();
         return;
     }
@@ -12,10 +13,9 @@ document.addEventListener('click', event => {
 
     // if link or button:
     event.preventDefault();
-
+    toggler.setAttribute('aria-expanded', toggler.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
     expandable.classList.toggle('EXPANDED');
-
-    
+  
 });
 
 

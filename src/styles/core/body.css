@@ -16,3 +16,7 @@ a {
     color: #0079f2;
     background-color: transparent;
 }
+
+a:focus {
+    outline: 2px solid #000
+}
