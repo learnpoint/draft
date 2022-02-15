@@ -413,6 +413,22 @@ hr {
     padding: 8px;
 }
 
+
+.notification__actions-menu-close-button {
+    width: 32px;
+    height: 32px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border:none; 
+    background-color: transparent;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/close.svg");
+    color: transparent;
+    float: right;
+}
+
 .notification__actions-menu-item-button {
     width: 100%;
     -moz-appearance: none;
@@ -427,6 +443,11 @@ hr {
 
 .notification__actions-menu-item-button:focus {
     outline: 2px solid #000;
+}
+
+
+.notification__actions-menu-item-button:last-child {  
+    border-bottom:none;
 }
 
 

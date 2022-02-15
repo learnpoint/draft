@@ -19,7 +19,7 @@
 
                 <div class="notifications__empty" id="empty">Inga nya aviseringar</div>
                 <div id="new" class="notifications__new-list">
-                    <a href="" class="notification" data-component="expandable" role="link">
+                    <a href="" class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-NEWS">
                             <img src="/images/pages/noun-announcement.svg" />
                         </div>
@@ -33,22 +33,20 @@
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 10</span>
-                        </div>
+                        </div>                                       
                         <div class="notification__actions">
                             <button type="button" class="notification__actions-button"
                                 data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
-                                aria-label="More options">
+                                aria-label="More options">                            
                             </button>
-                            <div class="notification__actions-menu" role="menu">
-                                <button class="notification__actions-menu-item-button" data-element="move-btn"><img
-                                        src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Mark as unread</span>
                                 </button>
-                                <button class="notification__actions-menu-item-button"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Unsubscribe</span>
                                 </button>
-                                <button class="notification__actions-menu-item-button"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Set aside</span>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Set aside</span>
                                 </button>
                             </div>
                         </div>
@@ -71,19 +69,17 @@
                         </div>
                         <div class="notification__actions">
                             <button type="button" class="notification__actions-button"
-                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                data-element="expandable.toggle-button" aria-expanded="false"
                                 aria-label="More options">                            
                             </button>
-                            <div class="notification__actions-menu" role="menu">
-                                <button class="notification__actions-menu-item-button" data-element="move-btn"><img
-                                        src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button"><span>Mark as unread</span>
                                 </button>
-                                <button class="notification__actions-menu-item-button"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span>
+                                <button type="button" class="notification__actions-menu-item-button"><span>Unsubscribe</span>
                                 </button>
-                                <button class="notification__actions-menu-item-button"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Set aside</span>
+                                <button type="button" class="notification__actions-menu-item-button"><span>Set aside</span>
                                 </button>
                             </div>
                         </div>
