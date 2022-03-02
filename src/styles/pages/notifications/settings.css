@@ -1,5 +1,5 @@
 .notification-settings {
-    max-width: 480px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -15,6 +15,14 @@
     border-bottom: 1px solid #ddd;
 }
 
+.notification-settings__section:last-child {
+    border-bottom: none;
+}
+
+.notification-settings__section-group {
+    margin-bottom: 2em;
+}
+
 .notification-settings__section-title {
     margin: 0 0 .5em;
     font-size: 1.6em;
@@ -27,7 +35,7 @@
 }
 
 .notification-settings__section-item {
-    margin-bottom: 1em;
+    margin-bottom: .6em;
 }
 
 .notification-settings__label {

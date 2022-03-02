@@ -144,15 +144,18 @@
    keyboard-focus:focus
    ========================================================================== */
 
+.button:focus,
 .button.keyboard-focus:focus {
     box-shadow: 0 0 1px 3px rgba(0,0,0,.2);
     outline:none;
 }
 
+.button.PRIMARY:focus,
 .button.PRIMARY.keyboard-focus:focus {
     box-shadow: 0 0 1px 3px rgba(60, 154, 244, .6);
 }
 
+.button.DANGER:focus,
 .button.DANGER.keyboard-focus:focus {
     box-shadow: 0 0 1px 3px rgba(237, 67, 55, .6);
 }
