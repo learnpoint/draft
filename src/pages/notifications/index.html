@@ -4,6 +4,92 @@
 <link rel="stylesheet" href="/styles/pages/notifications/index.css">
 
 
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="notifications">
+            <div class="notifications__new">
+                <div class="notifications__header">
+                    <h1 class="notifications__title">Accessible popovers</h1>
+                    <a href="" class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa
+                    </a>
+                    <a class="notifications__settings-link" style="margin-right: 16px;" href="/pages/notifications/settings.html"><img
+                            src="/images/pages/cog.svg" aria-label="Notification settings" /> </a>
+                </div>
+
+                <div class="notifications__empty" id="empty">Inga nya aviseringar</div>
+                <div id="new" class="notifications__new-list">
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-NEWS">
+                            <img src="/images/pages/noun-announcement.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Sista veckan för denna kurs!</div>
+                            <span class="notification__type-name">Nyhet</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Mark as unread</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Unsubscribe</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Set aside</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-NEWS">
+                            <img src="/images/pages/noun-announcement.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Sista veckan för denna kurs!</div>
+                            <span class="notification__type-name">Kommentar på nyhet</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button"><span>Mark as unread</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button"><span>Unsubscribe</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button"><span>Set aside</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="page">
     <div class="page__sheet">
         <div class="notifications">
@@ -27,7 +113,7 @@
                         <div class="notification__avatar ICON-NEWS">
                             <img src="/images/pages/noun-announcement.svg" />
                         </div>
-                     
+
                         <div class="notification__content">
                             <div class="notification__description">Sista veckan för denna kurs!</div>
                             <span class="notification__type-name">Nyhet</span>
@@ -38,15 +124,17 @@
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 10</span>
                         </div>
-                        <div class="notification__actions">
+                        <div class="notification__actions">                           
                             <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
                                 data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
+                            <div class="notification__actions-menu" role="menu">
                                 <div class="notification__actions-menu-item" data-element="move-btn"><img
                                         src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
+                                </div>
                                 <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -60,7 +148,7 @@
                             <img src="/images/pages/noun-announcement.svg" />
                             <span class="notification__avatar-new-comment-bubble">13</span>
                         </div>
-                     
+
                         <div class="notification__content">
                             <div class="notification__description">Re: Sista veckan för denna kurs!</div>
                             <span class="notification__type-name">Kommentar på nyhet</span>
@@ -110,7 +198,8 @@
                     </li>
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-SURVEY">
-                            <img src="/images/pages/noun-clipboard.svg" style="width:1.5em; height:1.5em; left:8px; top:8px;" />
+                            <img src="/images/pages/noun-clipboard.svg"
+                                style="width:1.5em; height:1.5em; left:8px; top:8px;" />
                         </div>
                         <span class="notification__content">
                             <span class="notification__description">Du har en enkät att besvara</span>
@@ -164,7 +253,7 @@
                         <span class="notification__content">
                             <span class="notification__description">Re: Genomgång av grunder - Johny Fridlund</span>
                             <span class="notification__type-name">Kommentar på inlämning</span>
-                            <span class="notification__separator">•</span>                         
+                            <span class="notification__separator">•</span>
                             <span class="notification__group-name">Stig Berg</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Informationsarkitektur</span>
@@ -285,7 +374,7 @@
                             </div>
                         </div>
                     </li> -->
-               
+
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-GRADE">
                             <img src="/images/pages/noun-document-tick.svg" />
@@ -307,7 +396,7 @@
                                         src="/images/pages/check.svg"
                                         class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
                                 <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
                     </li>
@@ -335,7 +424,7 @@
                             </div>
                         </div>
                     </li>
-                    
+
                     </li>
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-WORK">
@@ -416,9 +505,12 @@
                                 </div>
                             </div>
                             <div class="notification__actions">
-                                <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                    data-element="expandable.toggle-button" />
-                                <div class="notification__actions-menu">
+                                <button type="button" class="notification__actions-button"
+                                    data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                    aria-label="More options">
+                                    <img class="notification__actions-icon" src="/images/pages/three-dots.svg" />
+                                </button>
+                                <div class="notification__actions-menu" role="menu">
                                     <div class="notification__actions-menu-item" data-element="move-btn"><img
                                             src="/images/pages/check.svg"
                                             class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
@@ -431,7 +523,8 @@
                         </li>
                         <li class="notification" data-component="expandable">
                             <div class="notification__avatar ICON-SURVEY">
-                                <img src="/images/pages/noun-clipboard.svg" style="width:1.5em; height:1.5em; left:8px; top:8px;"/>
+                                <img src="/images/pages/noun-clipboard.svg"
+                                    style="width:1.5em; height:1.5em; left:8px; top:8px;" />
                             </div>
                             <span class="notification__content">
                                 <span class="notification__description">
@@ -527,8 +620,8 @@
                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
-                    </li>                   
-               
+                    </li>
+
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar ICON-SURVEY">
                             <img src="/images/pages/noun-clipboard-5.svg" />
@@ -604,7 +697,7 @@
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                             <span class="notification__avatar-new-comment-bubble">20</span>
                         </div>
                         <span class="notification__content">
@@ -683,7 +776,7 @@
                         </div> -->
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                             <span class="notification__avatar-new-comment-bubble">20</span>
                         </div>
                         <span class="notification__content">
@@ -807,10 +900,10 @@
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
                             <span class="notification__avatar-new-comment-bubble">20</span>
                         </div>
-                     
+
                         <div class="notification__content">
                             <div class="notification__description">Re: Sista veckan för denna kurs!</div>
                             <span class="notification__group-name">Kommentar</span>
@@ -836,7 +929,7 @@
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
                             <span class="notification__avatar-new-comment-bubble">5</span>
                         </div>
                         <span class="notification__content">
@@ -864,7 +957,7 @@
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/10.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/10.jpg" />
                             <span class="notification__avatar-new-comment-bubble">9</span>
                         </div>
                         <span class="notification__content">
@@ -892,7 +985,7 @@
                     <li class="notification" data-component="expandable">
                         <div class="notification__avatar-wrapper">
                             <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
+                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
                             <span class="notification__avatar-new-comment-bubble">9</span>
                         </div>
                         <span class="notification__content">

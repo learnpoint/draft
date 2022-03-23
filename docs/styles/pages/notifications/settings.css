@@ -15,6 +15,10 @@
     border-bottom: 1px solid #ddd;
 }
 
+.notification-settings__section:last-child {
+    border-bottom: none;
+}
+
 .notification-settings__section-group {
     margin-bottom: 2em;
 }

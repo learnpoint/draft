@@ -48,7 +48,7 @@
 
 .notifications__new,
 .notifications__unread {
-    padding: 32px 24px 0;
+    padding: 32px 24px;
     max-width: 640px;
     margin: 0 auto;
 }
@@ -87,6 +87,8 @@ hr {
 .notifications__mark-as-read {
     text-align: right;
     cursor: pointer;
+    color: inherit;
+    text-decoration:none;
 }
 
 
@@ -130,6 +132,8 @@ hr {
     gap: 12px;
     cursor: pointer;
     border-radius: 4px;
+    text-decoration:none;
+    color: inherit;
 }
 
 .notification.EXPANDED  {
@@ -252,8 +256,6 @@ hr {
 
 .notification__type-name {
     font-size: 14px;
-    /* font-weight: 600;  */
-    /* color: #323C46; */
     color: #666;
 }
 
@@ -334,12 +336,32 @@ hr {
     margin-left: 16px;
 }
 
+.notification__actions-button {
+    background-image: url("/images/pages/three-dots.svg");
+    background-size: 16px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border:none; 
+    background-color: transparent;
+}
+
+.notification__actions-button:focus {
+   background-color: #fff;
+   outline: 2px solid #000;
+}
+
+
 .notification__actions-menu {
     display: none;
     margin: 0 0 24px;
     border-radius: 4px;
     position: absolute;
-    right:20px;
+    right:40px;
     top:0px;
     width:120px;
     box-sizing: border-box;
@@ -389,6 +411,43 @@ hr {
     background-color: #fff;   
     border-radius: 8px;
     padding: 8px;
+}
+
+
+.notification__actions-menu-close-button {
+    width: 32px;
+    height: 32px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border:none; 
+    background-color: transparent;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/pages/close.svg");
+    color: transparent;
+    float: right;
+}
+
+.notification__actions-menu-item-button {
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border:none; 
+    background-color: transparent;
+    border-bottom:1px solid #ddd;
+    padding: 8px 14px;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.notification__actions-menu-item-button:focus {
+    outline: 2px solid #000;
+}
+
+
+.notification__actions-menu-item-button:last-child {  
+    border-bottom:none;
 }
 
 
