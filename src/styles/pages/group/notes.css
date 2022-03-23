@@ -36,10 +36,12 @@ a {
 
 .notes__header {
     display: flex;
-    align-items: center;
-    gap: 16px;
+    align-items: flex-start;
+    /* gap: 16px; */
     height: 64px;
     margin-bottom: 8px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .notes__header2 {
@@ -64,9 +66,27 @@ a {
 }
 
 .notes__dots {
-    margin-left: auto;
     width: 20px;
     height: 20px;
+    margin-left:auto;
+}
+
+.notes__actions-menu {
+    display: none;
+    background-color: #fff;
+    z-index: 100;
+    width: 120px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    margin-left:auto;
+    box-sizing: border-box;
+}
+
+.notes__actions-menu-item {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    display: flex;
 }
 
 .notes__paragraph {
