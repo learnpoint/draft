@@ -24,7 +24,7 @@
    ========================================================================== */
 
 .pagination__container {
-    padding:32px 0;
+    padding:0 0 32px 0;
 }
 
 .is-mobile .pagination__container {

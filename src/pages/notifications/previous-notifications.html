@@ -7,48 +7,71 @@
 
 <div class="page">
     <div class="page__breadcrumb">
-        <a href="/pages/notifications">← Ny aviseringar</a><!-- <span> /</span><span> Tidigare händelser</span> -->
+        <a href="/pages/notifications">← Aviseringar</a><!-- <span> /</span><span> Tidigare händelser</span> -->
     </div>
     <div class="page__sheet">
-        <div class="notifications">
+        <div class="notifications">              
             <div class="notifications__new">
                 <div class="notifications__header">
-                    <h1 class="notifications__title">Tidigare aviseringar</h1>               
-                     <a class="notifications__settings-link" href="/pages/notifications/settings.html"><img src="/images/pages/cog.svg"/> </a>
+                    <h1 class="notifications__title">Aviseringar</h1>               
+                    <div class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa
+                    </div>
+                    <a class="notifications__settings-link" href="/pages/notifications/settings.html"><img
+                            src="/images/pages/cog.svg" /> </a>
                 </div>
-                <ul class="notifications__new-list">
+                <div class="notifications__empty" id="empty">Inga nya aviseringar</div>
+                <ul id="new" class="notifications__new-list">
                     <li class="notification" data-component="expandable">
-                        <div class="notification__avatar">
-                            <img src="/images/pages/book.svg" />
+                        <!-- <div class="notification__avatar-wrapper">
+                            <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/3.jpg" />
+                            <span class="notification__avatar-new-comment-bubble">20</span>
+                        </div> -->
+                        <div class="notification__avatar ICON-NEWS">
+                            <img src="/images/pages/noun-announcement.svg" />
                         </div>
-                        <div class="notification__content-long">
-                            We are going to test a notification description that has a long text. Lets see how it works
-                            with the design we have today
-                            <!-- <div class="notification__description-long"></div> -->
-                            <div>
-                                <span class="notification__group-name">Javascript 3</span>
-                                <span class="notification__separator">•</span>
-                                <span class="notification__date">Nov 10</span>
-                            </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Sista veckan för denna kurs!</div>
+                            <span class="notification__type-name">Nyhet</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
                         </div>
-                        <div class="notification__actions">
+                        <div class="notification__actions">                           
                             <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
                                 data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
+                            <div class="notification__actions-menu" role="menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
                                         class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
                                 </div>
                                 <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="notification" data-component="expandable">
-                        <div class="notification__avatar">
-                            <img src="/images/pages/book.svg" />
+                        <!-- <div class="notification__avatar-wrapper">
+                            <img class="notification__avatar"
+                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/3.jpg" />
+                            <span class="notification__avatar-new-comment-bubble">20</span>
+                        </div> -->
+                        <div class="notification__avatar ICON-NEWS">
+                            <img src="/images/pages/noun-announcement.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
                         </div>
+
                         <div class="notification__content">
-                            <div class="notification__description">Dags att skriva i loggboken</div>
+                            <div class="notification__description">Re: Sista veckan för denna kurs!</div>
+                            <span class="notification__type-name">Kommentar på nyhet</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 10</span>
@@ -57,20 +80,227 @@
                             <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
                                 data-element="expandable.toggle-button" />
                             <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
                                 <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
                     </li>
                     <li class="notification" data-component="expandable">
-                        <div class="notification__avatar">
-                            <img src="/images/pages/check-square.svg" />
+                        <div class="notification__avatar ICON-BOOK">
+                            <img src="/images/pages/noun-book-2.svg" />
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__description">
+                                Skriv om din praktik</div>
+                            <span class="notification__type-name">Loggbok</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SURVEY">
+                            <img src="/images/pages/noun-clipboard.svg"
+                                style="width:1.5em; height:1.5em; left:8px; top:8px;" />
                         </div>
                         <span class="notification__content">
-                            <span class="notification__description">Din skola har godkänt en LIA-plats åt dig</span>
+                            <span class="notification__description">Du har en enkät att besvara</span>
+                            <span class="notification__type-name">Enkät</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 3</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-download.svg" />
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Genomgång av grunder - Johny Fridlund</span>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Informationsarkitektur</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Oct 25</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-download.svg" />
+                            <span class="notification__avatar-new-comment-bubble">2</span>
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Genomgång av grunder - Johny Fridlund</span>
+                            <span class="notification__type-name">Kommentar på inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Informationsarkitektur</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Oct 25</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-WORK">
+                            <img src="/images/pages/noun-work.svg" />
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Stig Berg - ViaEcole AB har ändrats och behöver
+                                godkännas</span>
+                            <span class="notification__type-name">LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 3</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-WORK">
+                            <img src="/images/pages/noun-work.svg" />
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Stig Berg - ViaEcole AB behöver godkännas</span>
+                            <span class="notification__type-name">LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 3</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-WORK">
+                            <img src="/images/pages/noun-work.svg" />
+                            <span class="notification__avatar-new-comment-bubble">2</span>
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Stig Berg - ViaEcole AB</span>
+                            <span class="notification__type-name">Kommentar på LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 3</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-LIA">
+                            <img src="/images/pages/noun-check-1.svg" style="width: 42px; height:42px; left: 2px;top: 6px;" />
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Du har en ny LIA-plats att godkänna</span>
+                            <span class="notification__group-name">LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg - ViaEcole AB</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 3</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li> -->
+
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-document-tick.svg" />
+                            <span class="notification__avatar-new-comment-bubble">2</span>
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Examensarbete</span>
+                            <span class="notification__type-name">Kommentar på kursdel</span>
+                            <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__date">Nov 7</span>
@@ -79,260 +309,98 @@
                             <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
                                 data-element="expandable.toggle-button" />
                             <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
                                 <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
                                         class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
                             </div>
                         </div>
                     </li>
                     <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-grade.svg" />
+                        </div>
                         <span class="notification__content">
-                            <span class="notification__description">Stig har skrivit en kommentar</span>
+                            <span class="notification__description">Examensarbete har betygsätts</span>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    </li>
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-WORK">
+                            <img src="/images/pages/noun-work.svg" />
+                            <span class="notification__avatar-new-comment-bubble">2</span>
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Re: Stig Berg - ViaEcole AB</span>
+                            <span class="notification__type-name">Kommentar på LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
                             <span class="notification__group-name">Lärande i arbete</span>
                             <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 3</span>
+                            <span class="notification__date">Nov 7</span>
                         </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <div class="notification__avatar">
-                            <img src="/images/pages/check-square.svg" />
-                        </div>
-                        <span class="notification__content">
-                            <span class="notification__description">Du har en LIA-plats att godkänna</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 3</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <div class="notification__avatar">
-                            <img src="/images/pages/clipboard.svg" />
-                        </div>
-                        <span class="notification__content">
-                            <span class="notification__description">Du har en enkät att besvara</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 3</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Sammy har publicerat en nyhet</span>
-                            <span class="notification__group-name">Informationsarkitektur</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Tina har publicerat en nyhet</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Tina har publicerat en nyhet</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/3.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">John har publicerat en nyhet</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Per har publicerat en nyhet</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="notification" data-component="expandable">
-                        <img class="notification__avatar"
-                            src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
-                        <span class="notification__content">
-                            <span class="notification__description">Sara har publicerat en nyhet</span>
-                            <span class="notification__group-name">Javascript 3</span>
-                            <span class="notification__separator">•</span>
-                            <span class="notification__date">Nov 2</span>
-                        </span>
-                        <div class="notification__actions">
-                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
-                                data-element="expandable.toggle-button" />
-                            <div class="notification__actions-menu">
-                                <div class="notification__actions-menu-item"><img src="/images/pages/check.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Mark as unread</span>
-                                </div>
-                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
-                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- <div id="group" class="notification__group">
-                        <li class="notification">
-                            <img class="notification__avatar"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
-                            <img class="notification__avatar-group"
-                                src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                            <div class="notification__avatar-group-number">+1</div>
-                            <span class="notification__content">
-                                <span class="notification__description" data-element="expand-btn" data-target="group">
-                                    3 nya inlämningar i Examensarbete</span>
-                            </span>
-                            <img class="notification__group-actions" src="/images/pages/chevron-down.svg" />
-                        </li>
 
-                        <div class="notification__group-items">
-                            <li class="notification">
-                                <img class="notification__avatar"
-                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
-                                <span class="notification__content">
-                                    <span class="notification__description">Stefan har lämnat in</span>
-                                    <span class="notification__group-name">Examensarbete</span>
-                                    <span class="notification__separator">•</span>
-                                    <span class="notification__date">Oct 27</span>
-                                </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                            </li>
-                            <li class="notification">
-                                <img class="notification__avatar"
-                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/7.jpg" />
-                                <span class="notification__content">
-                                    <span class="notification__description">Ted har lämnat in uppgift X</span>
-                                    <span class="notification__group-name">Examensarbete</span>
-                                    <span class="notification__separator">•</span>
-                                    <span class="notification__date">Oct 24</span>
-                                </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                            </li>
-                            <li class="notification">
-                                <img class="notification__avatar"
-                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/9.jpg" />
-                                <span class="notification__content">
-                                    <span class="notification__description">Göran has submitted</span>
-                                    <span class="notification__group-name">Examensarbete</span>
-                                    <span class="notification__separator">•</span>
-                                    <span class="notification__date">Oct 22</span>
-                                </span>
-                                <img class="notification__actions" src="/images/pages/three-dots.svg" />
-                            </li>
-
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
                         </div>
+                    </li>
+                    <!-- <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-WORK">
+                            <img src="/images/pages/noun-briefcase-1.svg" />
+                            <span class="notification__avatar-new-comment-count">2</span>
+                        </div>
+                        <span class="notification__content">
+                            <span class="notification__description">Re: ViaEcole AB - Stig Berg</span>
+                            <span class="notification__type-name">LIA-plats</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Lärande i arbete</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 7</span>
+                        </span>
 
-                    </div> -->
-
-                    <!-- <li class="notifications__view-all">Se fler tidigare händelser...</li> -->
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li> -->
                 </ul>
+            </div>
                 <div class="pagination__container">
                     <div class="pagination">
                         <a class="pagination__previous-link">
@@ -350,7 +418,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
