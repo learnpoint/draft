@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="render__rendering">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Betyg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
+
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
+    <script defer src="/scripts/core/expandable.js"></script>
+
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
+
+</head>
+
+<body class="body">
+
+    <div class="site__left-nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/">Aviseringar</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notiser</a>
+            </li>
+        </ul>
+        <h3>Grupper</h3>
+        <ul>
+            <courses>
+                <li>
+                    <a href="/pages/group/posts.html?course_id=[[id]]">
+                        [[name]]
+                    </a>
+                </li>
+            </courses>
+        </ul>
+    </div>
+
+    <div class="site__header">
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
+        <span>Betyg</span>
+    </div>
+
+    <main class="site__main">
+<link rel="stylesheet" href="/styles/pages/group/grade.css">
+<script defer src="/scripts/components/sub-nav.js"></script>
+<link rel="stylesheet" href="/styles/components/sub-nav.css">
+
+<nav class="sub-nav">
+    <ul>
+        <li>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
+        </li>
+        <li>
+            <a href="/pages/group/content.html" data-select="content.html">Innehåll</a>
+        </li>
+        <li>
+            <a href="/pages/group/content2.html" data-select="content2.html">Innehåll 2</a>
+        </li>
+        <li>
+            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll 3</a>
+        </li>
+        <li>
+            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
+        </li>
+        <li>
+            <a href="/pages/group/coursegrade.html" data-select="coursegrade.html">Kursbetyg</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade.html" data-select="grade.html">Betyg</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="page">
+    <!-- <div class="page__sheet"> -->
+        <!-- <div class="page__content-wrap"> -->
+
+            <div class="grade">
+
+                <div class="grade__A" style="width: 240px; height: 120px;">
+                </div>
+
+                <div class="grade__B" style="max-width: 1089px; height: 120px; left: 240px;">
+                    <div class="grade__courseparts-row">
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"><b>Kursbetyg</b></div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name">Inlämning 1</div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name">Inlämning 2</div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name">Inlämning 3</div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name">Inlämning 4</div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"></div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"></div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"></div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"></div>
+                        </div>
+                        <div class="grade__coursepart-cell">
+                            <div class="grade__coursepart-cell-name"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grade__C" style="max-height: 1051px; width: 240px; top: 120px;">
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                    <div class="grade__student-row">
+                        <div class="grade__student">
+                            <div class="grade__student-avatar"><img
+                                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg">
+                            </div>
+                            <div class="grade__student-name">Erik Eriksson</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grade__D" style="max-width: 699px; max-height: 1068px; top: 120px; left: 240px;">
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell-not-passed">-</div>
+                        <div class="grade__grade-cell-passed">VG</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell-not-passed">IG</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-not-passed">-</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-not-passed">IG</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell-not-passed">IG</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell-passed">G</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                    <div class="grade__grade-row">
+                        <div class="grade__grade-cell-not-passed">IG</div>
+                        <div class="grade__grade-cell-not-passed">-</div>
+                        <div class="grade__grade-cell-not-passed">-</div>
+                        <div class="grade__grade-cell-not-passed">IG</div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                        <div class="grade__grade-cell"></div>
+                    </div>
+                </div>
+
+                <div class="grade__border" style="width: 890px; height: 610px;"></div>
+            </div>
+
+        <!-- </div> -->
+
+    <!-- </div> -->
+
+</div>
+
+
+</main>
+</body>
+
+</html>

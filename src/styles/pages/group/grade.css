@@ -1,0 +1,155 @@
+.grade {
+    width: 880px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 32px auto;
+}
+
+.grade__A {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc; */
+}
+
+.grade__B {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    /* border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc; */
+    background-color: #fff;
+}
+
+.grade__C {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.grade__D {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.grade__courseparts-row {
+    display: flex;
+}
+
+.grade__coursepart-cell {
+    width: 64px;
+    height: 120px;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+}
+
+.grade__coursepart-cell-name {
+    cursor: pointer;
+    display: block;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    position: relative;
+    top: 100%;
+    width: 120px;
+    height: 63px;
+    padding: 18px 0 0 8px;
+}
+
+.grade__student-row {
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.grade__student-row:nth-child(even) {
+    background-color: rgba(0,0,0,.04);
+}
+
+.grade__student-row:last-child {
+    border-bottom: unset;
+}
+
+.grade__student {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.grade__student-avatar img {
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.grade__grade-row {
+    display: flex;
+}
+
+.grade__grade-cell {
+    width: 64px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.grade__grade-row:nth-child(even) .grade__grade-cell {
+    background-color: rgba(0,0,0,.04);
+}
+
+.grade__grade-row:last-child .grade__grade-cell,
+.grade__grade-row:last-child .grade__grade-cell-not-passed,
+.grade__grade-row:last-child .grade__grade-cell-passed {
+    border-bottom: unset;
+}
+
+.grade__grade-cell-not-passed {
+    width: 64px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8e8e8;
+    color: #bb0000;
+}
+
+.grade__grade-cell-passed {
+    width: 64px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    flex-shrink: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #e8f8ec;
+    color: #008800;
+}
+
+.grade__border {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 1px #ccc;
+    pointer-events: none;
+}

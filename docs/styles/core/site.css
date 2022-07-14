@@ -54,7 +54,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    height: 45px;
+    height: 55px;
     line-height: 45px;
     position: fixed;
     z-index: 1;
@@ -72,7 +72,7 @@
 .site__header-hamburger {
     padding: .5em .5em .5em .8em;
     cursor: pointer;
-    width: 22px;
+    width: 25px;
 }
 
 
@@ -82,7 +82,7 @@
    ========================================================================== */
 
 .site__main {
-    margin-top: 45px;
+    margin-top: 55px;
     margin-left: 248px;
 }
 
