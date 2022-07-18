@@ -74,7 +74,7 @@
 }
 
 .grade__student-row:nth-child(even) {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
 }
 
 .grade__student-row:last-child {
@@ -111,8 +111,16 @@
     border-bottom: 1px solid #ddd;
 }
 
+.grade__grade-cell-content {
+    display: block;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .grade__grade-row:nth-child(even) .grade__grade-cell {
-    background-color: rgba(0,0,0,.04);
+    background-color: rgba(0, 0, 0, .04);
 }
 
 .grade__grade-row:last-child .grade__grade-cell,
@@ -127,10 +135,10 @@
     line-height: 40px;
     text-align: center;
     flex-shrink: 0;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     background-color: #f8e8e8;
     color: #bb0000;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .grade__grade-cell-passed {
@@ -152,4 +160,28 @@
     left: 0;
     box-shadow: 0 0 0 1px #ccc;
     pointer-events: none;
+}
+
+.grade__not-published {
+    border-left: 10px solid transparent;
+    border-right: 10px solid #0780ff;
+    border-bottom: 10px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    display: block;
+}
+
+.grade__not-published-2 {
+    height: 8px;
+    width: 8px;
+    background-color: #0780ff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    display: block;
+    margin: 3px 3px 0 0;
 }
