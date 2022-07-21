@@ -174,14 +174,3 @@
     display: block;
 }
 
-.grade__not-published-2 {
-    height: 8px;
-    width: 8px;
-    background-color: #0780ff;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    display: block;
-    margin: 3px 3px 0 0;
-}

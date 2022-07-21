@@ -1,26 +1,64 @@
 .grade {
-    width: 880px;
+    width: 890px;
     position: relative;
     box-sizing: border-box;
     margin: 32px auto;
 }
 
+.grade__zero {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.grade__add-color-scheme-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .1s ease;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    border-radius: 3px;
+    min-width: 190px;
+    z-index: 10;
+    transform-origin: top left;
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+.grade__add-color-scheme.EXPANDED .grade__add-color-scheme-menu  {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.grade__add-color-scheme-menu-item {
+    padding: 16px;
+    color: #000;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
 .grade__A {
     position: absolute;
     z-index: 3;
-    top: 0;
+    top: 55px;
     left: 0;
     background-color: #fff;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    /* border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc; */
 }
 
 .grade__B {
     position: absolute;
     z-index: 2;
-    top: 0;
+    top: 55px;
     overflow: hidden;
     border-bottom: 1px solid #ccc;
     /* border-left: 1px solid #ccc;
@@ -160,7 +198,6 @@
     text-align: center;
     flex-shrink: 0;
     border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     background-color: #fef8e8;
     color: #d8aa47;
 }
@@ -174,3 +211,14 @@
     pointer-events: none;
 }
 
+.grade__not-published {
+    height: 8px;
+    width: 8px;
+    background-color: #0780ff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    display: block;
+    margin: 3px 3px 0 0;
+}
