@@ -1,0 +1,87 @@
+.discussion {
+    max-width: 640px;
+    margin: 48px auto;
+}
+
+.discussion__comments {
+    margin: 2em 0;
+}
+
+.discussion__comment {
+    display: flex;
+    gap: .7em;
+    margin: 1.4em 0;
+}
+
+.discussion__commented-by {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.discussion__commented-by img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.discussion__add-comment-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    height: 40px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.discussion__commented-by-name {
+    font-weight: 600;
+}
+
+.discussion__comment-replies {
+    display: block;
+    text-decoration: none;
+    color: #0079f2;
+    font-size: 14px;
+}
+
+.discussion__comment-replies {
+    display: block;
+    text-decoration: none;
+    color: #0079f2;
+    font-size: 14px;
+}
+
+.discussion__comment-thread {
+    margin-left: 48px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.discussion__comment-thread-item {
+    display: flex;
+    gap: .7em;
+    margin: 1.4em 0;    
+}
+
+.discussion__comment-no-of-replies {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.discussion__back-link a {
+    text-decoration: none;
+    color: #0079f2;
+    font-size: 14px;
+}
+
+.discussion__back-link {
+    margin: -28px 0 -20px; 
+}
