@@ -36,6 +36,18 @@
         "content": "Nyheter Innehåll Innehåll 2 Innehåll 3 LIA Kursbetyg Betyg Betyg 2 Discussion Kursinnehåll VG --> About Jacascript What is advanced Javascript? Senast klar 26 nov 2022 What can we do with Javascript? About effective coding Best way to learn how to code Learning traps 1 feb 2022 09:00 - 3 feb 11:00 Async Javascript What is asynchronous Javascript? How to write async code Kursbetyg VG VG --> About Jacascript What is advanced Javascript? Senast klar 26 nov 2022 What can we do with Javascript? About effective coding Best way to learn how to code Learning traps 1 feb 2022 09:00 - 3 feb 11:00 Async Javascript What is asynchronous Javascript? How to write async code"
     },
     {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/course-item-comments.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/course-item.html",
+        "content": ""
+    },
+    {
         "title": "Kursbetyg",
         "description": "",
         "url": "/pages/group/coursegrade.html",
