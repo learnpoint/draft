@@ -1,10 +1,12 @@
 .discussion {
     max-width: 640px;
-    margin: 48px auto;
+    margin: 32px auto;
 }
 
 .discussion__comments {
     margin: 2em 0 0;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 .discussion__comment {
@@ -26,7 +28,7 @@
     border-radius: 50%;
 }
 
-.discussion__add-comment-input {
+.discussion__add-input {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -39,6 +41,7 @@
     height: 40px;
     border: 1px solid #ccc;
     box-shadow: none;
+    margin: 1em 0;
 }
 
 .discussion__commented-by-name {
@@ -60,7 +63,6 @@
 }
 
 .discussion__comment-thread {
-    border-radius: 4px;
 }
 
 .discussion__comment-thread-item {
@@ -81,5 +83,38 @@
 }
 
 .discussion__back-link {
-    margin: -28px 0 -20px; 
+    margin: -10px 0; 
+}
+
+.discussion__post {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding: 1.2em 0;
+}
+
+.discussion__post:last-child {
+    border-bottom:none;
+}
+
+.discussion__posted-by-name {
+    font-weight: normal;
+}
+
+.discussion__post-content  {
+    display: block;
+}
+
+.discussion__post-content * {
+    color: #000;
+}
+
+.discussion__post-content div {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.discussion__posted-by-name,
+.discussion__posted-date, 
+.discussion__post-replies  {
+    font-size: 14px;
 }

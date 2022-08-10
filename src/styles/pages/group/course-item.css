@@ -16,7 +16,7 @@
 
 .course-item__menu-tabs {
     display: flex;
-    margin: .5em 0 2.5em;
+    margin: 1.5em 0 2em;
     align-items: center;
     justify-content: center;
 }
