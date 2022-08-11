@@ -72,16 +72,16 @@
         "content": "Nyheter Innehåll Innehåll 2 Innehåll 3 LIA Kursbetyg Betyg Betyg 2 Chat Forum --> --> Välj färgschema Standard Färger Förstärkta färger Kursbetyg Inlämning 1 Inlämning 2 Inlämning 3 Inlämning 4 Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson G G G VG G - IG G - G G VG IG IG G - G G IG G G IG G G VG G G G G VG VG G G VG IG - - G G --> -->"
     },
     {
-        "title": "Discussion",
-        "description": "",
-        "url": "/pages/group/group-chat.html",
-        "content": ""
-    },
-    {
         "title": "Betyg 3",
         "description": "",
         "url": "/pages/group/grade3.html",
         "content": "Nyheter Innehåll Innehåll 2 Innehåll 3 LIA Kursbetyg Betyg Betyg 2 Discussion --> --> Kursbetyg Inlämning 1 Inlämning 2 Inlämning 3 Inlämning 4 Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson Erik Eriksson --> -->"
+    },
+    {
+        "title": "Discussion",
+        "description": "",
+        "url": "/pages/group/group-chat.html",
+        "content": ""
     },
     {
         "title": "LIA",

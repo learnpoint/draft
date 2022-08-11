@@ -154,7 +154,6 @@
     height: 100%;
     position: relative;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
 }
 
 .grade__grade-row:nth-child(even) .grade__grade-cell {
@@ -173,8 +172,8 @@
     line-height: 40px;
     text-align: center;
     flex-shrink: 0;
-    background-color: #f8e8e8;
     color: #bb0000;
+    font-weight: 600;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
@@ -187,19 +186,8 @@
     flex-shrink: 0;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    background-color: #e8f8ec;
     color: #008800;
-}
-
-.grade__grade-cell-not-published {
-    width: 64px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    flex-shrink: 0;
-    border-right: 1px solid #ddd;
-    background-color: #fef8e8;
-    color: #d8aa47;
+    font-weight: 600;
 }
 
 .grade__border {
@@ -212,13 +200,13 @@
 }
 
 .grade__not-published {
-    height: 8px;
-    width: 8px;
-    background-color: #0780ff;
-    border-radius: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #0780ff;
+    border-bottom: 10px solid transparent;
+    height: 0;
+    width: 0;
     position: absolute;
     right: 0;
     z-index: 2;
     display: block;
-    margin: 3px 3px 0 0;
 }
