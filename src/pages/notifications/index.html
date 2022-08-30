@@ -5,13 +5,12 @@
 <link rel="stylesheet" type="text/css" href="/styles/core/button.css">
 
 
-<!-- 
 <div class="page">
     <div class="page__sheet">
         <div class="notifications">
             <div class="notifications__new">
                 <div class="notifications__header">
-                    <h1 class="notifications__title">Accessible popovers</h1>
+                    <h1 class="notifications__title">Icons for grade notifications</h1>
                     <a href="" class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa
                     </a>
                     <a class="notifications__settings-link" style="margin-right: 16px;" href="/pages/notifications/settings.html"><img
@@ -21,15 +20,277 @@
                 <div class="notifications__empty" id="empty">Inga nya aviseringar</div>
                 <div id="new" class="notifications__new-list">
                     <a href="" class="notification" data-component="expandable">
-                        <div class="notification__avatar ICON-NEWS">
-                            <img src="/images/pages/noun-announcement.svg" />
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-grade.svg" />
                         </div>
 
                         <div class="notification__content">
-                            <div class="notification__description">Sista veckan för denna kurs!</div>
-                            <span class="notification__type-name">Nyhet</span>
+                            <div class="notification__description">Examensarbete har betygsätts</div>
+                            <span class="notification__type-name">Betyg</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-pass.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Examensarbete har betygsätts</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-certificate-1.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Examensarbete har betygsätts</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-document-star.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Examensarbete har betygsätts</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-graduate.svg" style=" width: 2.2em; height: 2.2em; left: 3px; top: 7px;"/>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Examensarbete har betygsätts</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-grading.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Examensarbete</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-done.svg" style=" width: 2.2em; height: 2.2em; left: 3px; top: 7px;"/>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Examensarbete</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-GRADE">
+                            <img src="/images/pages/noun-ribbon.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Examensarbete</div>
+                            <span class="notification__type-name">Betyg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Hasse Hansson</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Stänga av notifierinagar för denna grupp</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="notifications">
+            <div class="notifications__new">
+                <div class="notifications__header">
+                    <h1 class="notifications__title">Icons for submission notifications</h1>
+                    <a href="" class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa
+                    </a>
+                    <a class="notifications__settings-link" style="margin-right: 16px;" href="/pages/notifications/settings.html"><img
+                            src="/images/pages/cog.svg" aria-label="Notification settings" /> </a>
+                </div>
+
+                <div class="notifications__empty" id="empty">Inga nya aviseringar</div>
+                <div id="new" class="notifications__new-list">
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-download.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Arrays in Javascript - Stig Berg har lämnat in</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>
@@ -53,14 +314,76 @@
                         </div>
                     </a>
                     <a href="" class="notification" data-component="expandable">
-                        <div class="notification__avatar ICON-NEWS">
-                            <img src="/images/pages/noun-announcement.svg" />
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-form-submission.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Arrays in Javascript - Stig Berg har lämnat in</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Mark as unread</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Unsubscribe</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Set aside</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-assignment.svg" />
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Arrays in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>                                       
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-haspopup="true" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" role="menuitem" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                </button>
+                                <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-file.svg" />
                             <span class="notification__avatar-new-comment-bubble">13</span>
                         </div>
 
                         <div class="notification__content">
-                            <div class="notification__description">Re: Sista veckan för denna kurs!</div>
-                            <span class="notification__type-name">Kommentar på nyhet</span>
+                            <div class="notification__description">Re: Objects in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Stig Berg</span>
                             <span class="notification__separator">•</span>
@@ -76,12 +399,134 @@
                             <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
                                 <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
                                  Close</button>   
-                                <button type="button" class="notification__actions-menu-item-button"><span>Mark as unread</span>
-                                </button>
-                                <button type="button" class="notification__actions-menu-item-button"><span>Unsubscribe</span>
-                                </button>
-                                <button type="button" class="notification__actions-menu-item-button"><span>Set aside</span>
-                                </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-download-file.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Objects in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-attachment.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Objects in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-document-tick-1.svg" />
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Objects in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                 </button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-SUBMISSION">
+                            <img src="/images/pages/noun-to-down.svg" style=" width: 1.6em; height: 1.6em; left: 7px; top: 7px;"/>
+                            <span class="notification__avatar-new-comment-bubble">13</span>
+                        </div>
+
+                        <div class="notification__content">
+                            <div class="notification__description">Re: Objects in Javascript</div>
+                            <span class="notification__type-name">Inlämning</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <button type="button" class="notification__actions-button"
+                                data-element="expandable.toggle-button" aria-expanded="false"
+                                aria-label="More options">                            
+                            </button>
+                            <div class="notification__actions-menu" role="menu" data-element="expandable.menu" tabindex="0">
+                                <button type="button" data-element="expandable.collapse-button" class="notification__actions-menu-close-button">
+                                 Close</button>   
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Markera som oläst</span>
+                                 </button>
+                                 <button type="button" class="notification__actions-menu-item-button" role="menuitem" ><span>Slå av notifierinagar för den gruppen</span>
+                                 </button>
                             </div>
                         </div>
                     </a>
@@ -89,7 +534,9 @@
             </div>
         </div>
     </div>
-</div> -->
+</div> 
+
+
 <div class="page">
     <div class="page__sheet">
         <div class="notifications">
