@@ -9,7 +9,7 @@
     transition:opacity 1s;
     justify-content:center;
     align-items:center;
-    margin:0 auto;
+    margin:24px auto;
 }
 
 .pagination.SHOW {

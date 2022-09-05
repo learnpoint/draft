@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Trimmed Table
+   ========================================================================== */
+
+   .trimmed-table {
+    opacity:0;
+    transition:opacity .1s;
+}
+
+.trimmed-table.READY {
+    opacity:1;
+}
+
+
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+.trimmed-table__table {
+    box-sizing:border-box;
+    display: table;
+    width:100%;
+}
+
+.is-mobile .trimmed-table__table {
+}
+
+
+
+/* ==========================================================================
+   Row
+   ========================================================================== */
+
+.trimmed-table__row {
+    display: table-row;
+    break-inside: avoid-page; /* Print style */
+    
+    margin: 4px 0;
+}
+
+.trimmed-table__row.HEADER {
+    font-weight:600;
+    font-weight:bold;
+}
+
+
+
+/* ==========================================================================
+   Cell
+   ========================================================================== */
+
+.trimmed-table__row > * {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 14px 8px;
+    border-bottom:1px solid #e5e5e5;
+    border-top:1px solid #e5e5e5;
+    white-space: nowrap;
+    line-height:1.3;
+}
+
+.trimmed-table__row:last-child > * {
+    border-bottom: 0;
+}
+
+.print .trimmed-table__row:last-child > * {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.trimmed-table__row > *.TRIMMED {
+    display: none;
+}
+
+/* Useful when big images creates extra high rows, like profile images for example */
+.trimmed-table__table.NARROW .trimmed-table__row > * {
+    padding:10px 8px;
+}
+
+.trimmed-table__row a {
+    color: inherit;
+}
