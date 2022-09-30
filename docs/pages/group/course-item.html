@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/styles/core/page.css">
     <link rel="stylesheet" href="/styles/core/button.css">
     <link rel="stylesheet" href="/styles/core/table.css">
+    <link rel="stylesheet" href="/styles/core/textbox.css">
 
 </head>
 
@@ -87,15 +88,17 @@
 
 <div class="page">
     <div class="page__sheet">
-        <div class="page__content-wrap">
-            <div class="course-item">
+        <div class="course-item">
+            <img class="course-item__completion-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+            <div class="course-item__content">
                 <h2 class="course-item__page-title">What is advanced Javascript?</h2>
                 <div class="course-item__menu-tabs">
                     <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item.html">
                         Content
                     </a>
                     <a class="course-item__menu-tab" href="/pages/group/course-item-comments.html">
-                        Discussion
+                        Work
                     </a>
                 </div>
                 <div class="course-item__content-text">
@@ -123,7 +126,43 @@
                     finibus
                     est, eu malesuada massa elit non massa. Quisque tristique risus eget quam tempor facilisis.
                 </div>
+                <div class="course-item__work-link">
+                    <a href="/pages/group/course-item-comments.html" class="button PRIMARY HUGE">Starta inlämning</a>
+                </div>
             </div>
+            <link rel="stylesheet" href="/styles/components/comments-widget.css">
+
+<div class="comments-widget">
+    <div class="comments-widget__notification print__hide">        
+        <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>    
+    </div>
+    <div class="comments-widget__content">
+        <div class="comments-widget__comments">
+            <div class="comments-widget__information-panel" >
+                <div class="comments-widget__information-title">
+                    Aviseringar för kommentarer
+                </div>
+                <div class="comments-widget__information-paragraph" id="divCommentInformationSubscribe" >
+                    Klicka på ikonen (klockan) uppe till höger för att stänga av eller slå på aviseringar.
+                </div>
+                <div class="comments-widget__information-paragraph" id="divCommentInformationSubscribeDisabled">
+                    För att slå på aviseringar behöver du registreras som medlem i gruppen.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments-widget__footer " data-element="comments-widget.new-post-form">
+        <div class="comments-widget__new-post-input">
+            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar..."  Rows="2" style="    resize: none;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 48px;
+        ">
+        </div>
+        <a class="comments-widget__new-post-button"></a>  
+    </div>
+</div>
+
         </div>
     </div>
 </div>

@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Comments Widget
+   ========================================================================== */
+
+   .comments-widget {
+    position: relative;
+    border-top: 1px solid #d9d9d9;
+    background-color: #f4f4f4;
+}
+
+.print .comments-widget {
+    background-color: #fff;
+}
+
+
+
+/* ==========================================================================
+   Notification
+   ========================================================================== */
+
+.comments-widget__notification {
+    position:absolute;
+    right:16px;
+    top:12px;
+    z-index: 1;
+}
+
+.is-mobile .comments-widget__notification {
+    right:4px;
+    top:6px;
+}
+
+
+
+/* ==========================================================================
+   Notification Icon
+   ========================================================================== */
+
+.comments-widget__notification-icon-enabled,
+.comments-widget__notification-icon-disabled {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    vertical-align: baseline;
+}
+
+.comments-widget__notification-icon-enabled {
+    background-image: url('/images/pages/notification-bell-0780ff.svg')
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.comments-widget__content {
+    padding: 48px 32px 0;
+    min-height: 218px;
+    box-sizing: border-box;
+    animation: comments-widget__loaded-comments--fade-in .5s ease;
+    display: flex;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.is-mobile .comments-widget__content {
+    padding: 32px 16px 0;
+}
+
+
+
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+.comments-widget__comments {
+   width:100%;
+   word-break:break-word;
+   overflow-wrap:break-word;
+}
+
+
+
+/* ==========================================================================
+   Information Panel
+   ========================================================================== */
+
+.comments-widget__information-panel {
+    padding: 16px;
+    margin: 20px auto 60px;
+    text-align: center;
+    color: #444;
+    font-size: 14px;
+    max-width: 320px;
+}
+
+.is-mobile .comments-widget__information-panel {
+    min-width: unset;
+    margin: 16px auto 30px;
+}
+
+
+.comments-widget__information-title {
+     font-weight: bold;
+     margin-bottom: 6px;
+     color: #777;
+}
+
+.comments-widget__information-paragraph-icon {
+     width:12px;
+     height:12px;
+     display:inline;
+     line-height:20px;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+   .comments-widget__footer {
+    background-color: rgba(0,0,0,.03);
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    align-items: flex-end;
+}
+
+.is-mobile .comments-widget__footer {
+    display:none;
+}
+
+.is-mobile .comments-widget--open .comments-widget__footer {
+    display:flex;
+    padding:8px;
+}
+
+
+
+/* ==========================================================================
+   New Post Input
+   ========================================================================== */
+
+.comments-widget__new-post-input {
+    flex:1;
+}
+
+
+
+/* ==========================================================================
+   New Post Button
+   ========================================================================== */
+
+.comments-widget__new-post-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 8px;
+    background-color: #3C9AF4;
+    background-color: #0780ff;
+    text-align: center;
+    background-image: url('/images/pages/send_80_0_ffffff_none.png');
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position:11px 13px;
+    cursor: pointer;
+}
+
+
+

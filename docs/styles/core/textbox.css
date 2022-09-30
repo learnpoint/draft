@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Textbox
+   ========================================================================== */
+
+   .textbox {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 6px;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    transition-property: border-color, box-shadow;
+    transition-duration: .2s;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.textbox,
+.textbox *,
+.textbox *::before,
+.textbox *::after {
+    box-sizing: border-box;
+}
+
+
+
+/* ==========================================================================
+   Sizes
+   ========================================================================== */
+
+.textbox.TINY {
+    font-size:12px;
+    line-height:16px;
+    padding:3px 5px;
+}
+
+.textbox.SMALL {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 4px 5px;
+}
+
+.textbox.LARGE {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 5px 7px;
+}
+
+.textbox.BIG {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px 8px;
+}
+
+.textbox.HUGE {
+    font-size:18px;
+    line-height:24px;
+    padding:8px 10px;
+}
+
+.textbox.MASSIVE {
+    font-size:20px;
+    line-height:28px;
+    padding:9px 10px;
+}
+
+.textbox.BLOCK, .input-collection.BLOCK .textbox, .is-mobile .input-collection.DYNAMIC .textbox {
+    display: block;
+    width: 100%;
+}

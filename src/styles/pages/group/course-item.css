@@ -1,5 +1,5 @@
 .course-item {
-    padding:  1em 0 2em 0;
+    position:relative;
 }
 
 .course-item__page-title {
@@ -47,10 +47,49 @@
     border-left: 0;
 }
 
+.course-item__content {
+    padding: 48px;
+}
+
 .course-item__content-text {
     margin:0 auto;
     font-size: 18px;
     line-height: 30px;
-    max-width: 600px;
+    max-width: 640px;
+}
 
+.course-item__work-link{
+    text-align: center;
+    margin: 32px 0 0;
+}
+
+.course-item__work-info {
+}
+
+.course-item__work-info-item {
+    margin-bottom: 24px;
+}
+
+.course-item__work-info-name {
+    font-size: 13px;
+    color: #333;
+    line-height: 14px;
+    margin: 2px 0;
+    font-weight: 600;
+}
+
+.course-item__work-info-value {
+    font-size: 13px;
+    color: #000;
+    margin: 2px 0;
+}
+
+.course-item__completion-icon {
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 0 4px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
 }
