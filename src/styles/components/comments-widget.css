@@ -15,21 +15,79 @@
 
 
 /* ==========================================================================
-   Notification
+   Header
    ========================================================================== */
 
-.comments-widget__notification {
+   .comments-widget__header {
+    display: flex;
     position:absolute;
-    right:16px;
-    top:12px;
+    right:0;
+    top:0;
+    left:0;
     z-index: 1;
+    padding: 4px;
 }
 
-.is-mobile .comments-widget__notification {
-    right:4px;
-    top:6px;
+
+
+/* ==========================================================================
+   Info
+   ========================================================================== */
+
+   .comments-widget__info {
+    flex: 1;
+    color: #222;
+    font-size: 14px;
+    display: flex;
+    align-items:center;
+    /* font-weight: 600; */
+    display: flex;
+    align-items:center;
 }
 
+
+
+/* ==========================================================================
+   Group icon
+   ========================================================================== */
+
+.comments-widget__info-group-icon {
+    width: 32px;
+    height: 32px;
+    opacity: .6;
+    padding: 6px 0 0 4px;
+}
+
+.comments-widget__avatar-group {
+   
+}
+
+.comments-widget__avatar-group,
+.comments-widget__avatar-people {
+    margin: 8px 0 8px 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.comments-widget__people {
+    padding: 8px 0 8px 12px;
+    font-size: 14px; 
+}
+
+.comments-widget__avatar {
+    width: 1.6em;
+    height: 1.6em; 
+    border-radius: 50%;
+}
+
+.comments-widget__avatar-group .comments-widget__avatar:not(:first-child) {
+    margin-left: -6px;
+}
+
+.comments-widget__avatar:last-child {
+    margin-left :0;
+    padding: 4px 0 0 4px; 
+}
 
 
 /* ==========================================================================
@@ -53,6 +111,10 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     vertical-align: baseline;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    z-index: 1;
 }
 
 .comments-widget__notification-icon-enabled {
@@ -101,7 +163,7 @@
     margin: 20px auto 60px;
     text-align: center;
     color: #444;
-    font-size: 14px;
+    font-size: 13px;
     max-width: 320px;
 }
 
@@ -136,10 +198,6 @@
     padding: 10px;
     border-top: 1px solid #ddd;
     align-items: flex-end;
-}
-
-.is-mobile .comments-widget__footer {
-    display:none;
 }
 
 .is-mobile .comments-widget--open .comments-widget__footer {

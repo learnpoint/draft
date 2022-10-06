@@ -33,7 +33,10 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/pages/notifications/">Aviseringar</a>
+                <a href="/pages/notifications/">Aviseringar</a>              
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
             </li>
         </ul>
         <h3>Grupper</h3>
@@ -78,7 +81,7 @@
             <a href="/pages/group/group-chat.html" data-select="group-chat.html">Chat</a>
         </li>  
         <li>
-            <a href="/pages/group/discussion.html" data-select="discussion.html">Forum</a>
+            <a href="/pages/group/discussion.html" data-select="discussion.html">Discussion</a>
         </li>
     </ul>
 </nav>
@@ -127,25 +130,39 @@
                             Ej inlämnad
                         </div>
                     </div>
+                    
+                <div class="course-item__work-submit">
+                    <input type="button" class="button PRIMARY " value="Lägg till"/> <span>eller släpp fil här</span>
+                </div>
                 </div> 
-                <input type="button" class="button PRIMARY " value="Lägg till fil"/> <span>eller släpp fil här</span>
+                
             </div>
             <link rel="stylesheet" href="/styles/components/comments-widget.css">
 
 <div class="comments-widget">
-    <div class="comments-widget__notification print__hide">        
-        <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>    
+    <div class="comments-widget__header"> 
+        <div class="comments-widget__info">
+            <div class="comments-widget__people">
+                <!-- <span>Chatt med Ulrika Isaksson</span> -->
+            </div>
+            <!-- <span>Gruppkommentarer</span>
+            <span>•</span>
+           <span>24 medlemmar</span>  -->
+        </div>    
+        <div class="comments-widget__notification">
+            <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>
+        </div>
     </div>
     <div class="comments-widget__content">
         <div class="comments-widget__comments">
-            <div class="comments-widget__information-panel" >
+            <div class="comments-widget__information-panel">
                 <div class="comments-widget__information-title">
                     Aviseringar för kommentarer
                 </div>
-                <div class="comments-widget__information-paragraph" id="divCommentInformationSubscribe" >
+                <div class="comments-widget__information-paragraph">
                     Klicka på ikonen (klockan) uppe till höger för att stänga av eller slå på aviseringar.
                 </div>
-                <div class="comments-widget__information-paragraph" id="divCommentInformationSubscribeDisabled">
+                <div class="comments-widget__information-paragraph">
                     För att slå på aviseringar behöver du registreras som medlem i gruppen.
                 </div>
             </div>
@@ -153,16 +170,15 @@
     </div>
     <div class="comments-widget__footer " data-element="comments-widget.new-post-form">
         <div class="comments-widget__new-post-input">
-            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar..."  Rows="2" style="    resize: none;
+            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar till lärare..." Rows="2" style="    resize: none;
             overflow: hidden;
             box-sizing: border-box;
             height: 48px;
         ">
         </div>
-        <a class="comments-widget__new-post-button"></a>  
+        <a class="comments-widget__new-post-button"></a>
     </div>
 </div>
-
         </div>
     </div>
 </div>
