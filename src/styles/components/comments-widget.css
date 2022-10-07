@@ -86,8 +86,13 @@
 
 .comments-widget__avatar:last-child {
     margin-left :0;
-    padding: 4px 0 0 4px; 
 }
+
+.comments-widget__avatar-group .comments-widget__avatar:last-child {
+    margin-left: 0;
+    padding-left: 6px;
+}
+
 
 
 /* ==========================================================================

@@ -1,6 +1,6 @@
 .discussion {
-        /* max-width: 640px;
-        margin: 32px auto; */
+        max-width: 600px;
+        margin: 32px auto; 
 }
 
 .discussion__comments {
@@ -38,13 +38,13 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
-    min-height: 40px;
+    /* min-height: 40px; */
     font-family: inherit;
     font-size: inherit;
     padding: 8px;
     border-radius: 4px;
     outline: none;
-    height: 40px;
+    /* height: 40px; */
     border: 1px solid #ccc;
     box-shadow: none;
 }
@@ -91,12 +91,24 @@
     margin: -10px 0; 
 }
 
+
+.discussion__post:first-child {
+    margin: 16px 64px;
+}
+
+
 .discussion__post {
     display: block;
     background-color: #fff;
     padding: 24px;
     margin: 28px 64px;
     border-radius: 6px;
+}
+
+.discussion__post-item {
+    display: block;
+    padding: 24px 0;
+    color: #000;
 }
 
 .is-mobile .discussion__post {
@@ -107,7 +119,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight:bold;
-    margin-bottom:12px;
+    margin-bottom:8px;
 }
 
 .discussion__post:last-child {
@@ -143,6 +155,14 @@
     padding: 16px 0 0 0;
     display: flex;
     gap: 6px;
+}
+
+.discussion__post-item .discussion__post-info {
+    margin: 16px 0 0 0;
+    padding: 0;
+    display: flex;
+    gap: 6px;
+    border-top: none;
 }
 
 .discussion__post-meta-data {
