@@ -1,0 +1,30 @@
+.study-groups {
+    max-width: 840px;
+    margin: 64px auto;
+}
+
+.study-groups__title {
+    margin-bottom: 8px;
+    margin-top: 64px;
+}
+
+.study-groups__section {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.study-group {
+    width: 265px;
+    height: 150px; 
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 6px;
+    padding: 60px 16px 16px 16px;
+    text-align: center;
+    font-weight: 600;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor:pointer;
+}

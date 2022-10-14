@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Nyheter</title>
+    <title>Study Groups</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -53,7 +53,7 @@
 
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
-        <span>Nyheter</span>
+        <span>Study Groups</span>
     </div>
 
     <main class="site__main">
@@ -89,45 +89,35 @@
     </ul>
 </nav>
 
-<link rel="stylesheet" href="/styles/pages/group/posts.css">
+<link rel="stylesheet" href="/styles/pages/group/study-groups.css">
 
-<div class="page">
-    <div class="page__sheet">
-        <div class="page__content-wrap">
-            <div class="post__add">
-                <a class="button PRIMARY BIG" href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Skriv nyhet</a>
-            </div>
-            <div class="post__continue-writing-draft" data-component="expandable">
-                <a href data-element="expandable.toggle-button">Continue writing your draft...</a>
-                <div class="post__links-to-draft">
-                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Lorem ipsum</a>
-                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Nam ipsum risus</a>
+
+<div>
+    <div>
+        <div class="study-groups">
+
+            <h4 class="study-groups__title">All study groups</h4>
+            <div class="study-groups__section">
+                <div class="study-group">
+                    Classroom
+                </div>
+                <div class="study-group">
+                    Study together 
                 </div>
             </div>
-            <posts where="{course_id: utils.getLocationParam('course_id')}">
-                <div class="post">
-                    <user>
-                        <img class="post__avatar" lazy-src="[[image_url]]">
-                    </user>
-                    <div>
-                        <h3><a href="postpage.html?course_id={{utils.getLocationParam('course_id');}}">[[title]]</a></h3>
-                        <user>
-                            <div class="post__meta-data">
-                                <span>[[name]]</span>
-                                <span>•</span>
-                                <span>Igår</span>
-                            </div>
-                        </user>
-                        <!-- <p class="post__content">[[content]]</p> -->
-                    </div>
-                </div>
 
-            </posts>
+            <h4 class="study-groups__title">My study groups</h4>
+            <div class="study-groups__section">
+                <div class="study-group">
+                    Group work - final project
+                </div>
+                <div class="study-group">
+                    Understanding closures
+                </div>
+                <div class="study-group">
+                    Preparing for exam
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-</main>
-</body>
-
-</html>
