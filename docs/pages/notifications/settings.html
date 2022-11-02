@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inställningar för aviseringar</title>
+    <title>Inställningar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -53,7 +53,17 @@
 
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
-        <span>Inställningar för aviseringar</span>
+        <div class="site__header-group-info">
+            <span>Inställningar</span>
+            <!-- <div class="site__header-meta">
+                <span>Kurs</span>
+                <span>•</span>
+                <span>JS32020</span>
+                <span>•</span>
+                <img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"/>
+            </div> -->
+        </div>
+    
     </div>
 
     <main class="site__main">
@@ -61,7 +71,7 @@
 <link rel="stylesheet" href="/styles/pages/notifications/settings.css">
 <link rel="stylesheet" href="/styles/core/pagination.css">
 
-<div class="page">
+<!-- <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
             <div class="notification-settings">
@@ -83,7 +93,131 @@
                 <div class="notification-settings__section">
 
                     <h3 class="notification-settings__section-title">
-                        Aktuella grupper
+                        Muted groups
+                    </h3>
+                    <div class="notification-settings__section-item">
+                        <div class="trimmed-table READY">
+                            <div class="trimmed-table__table">
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon"/> 
+                                        <a>Arbetsmiljö och säkerhet</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
+                                        <a>Flygmotorlära</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
+                                        <a>Flygmotorunderhåll
+                                            turbinmotorer</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a style="display: block; text-align: center; padding:0; padding-top: 24px;">Visa alla grupper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="notification-settings">
+                <h1 class="notification-settings__title">Inställningar för aviseringar</h1>
+                <div class="notification-settings__section">
+                    <h3 class="notification-settings__section-title">
+                        Epost
+                    </h3>
+                    <div class="notification-settings__section-item">
+                        <label class="notification-settings__label">
+                            <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
+                            <div>
+                                <span class="notification-settings__label-title">Skicka e-post när jag får nya
+                                    aviseringar</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="notification-settings__section">
+
+                    <h3 class="notification-settings__section-title">
+                        Muted groups
+                    </h3>
+                    <input type="text" placeholder="Search groups to mute" class="textbox BLOCK BIG" style="margin: 16px 0;">
+                    <div class="notification-settings__section-item">
+                        <div class="trimmed-table READY">
+                            <div class="trimmed-table__table">
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon"/> 
+                                        <a>Arbetsmiljö och säkerhet</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
+                                        <a>Flygmotorlära</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
+                                        <a>Flygmotorunderhåll
+                                            turbinmotorer</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="notification-settings">
+                <h1 class="notification-settings__title">Inställningar för aviseringar</h1>
+                <div class="notification-settings__section">
+                    <h3 class="notification-settings__section-title">
+                        Epost
+                    </h3>
+                    <div class="notification-settings__section-item">
+                        <label class="notification-settings__label">
+                            <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
+                            <div>
+                                <span class="notification-settings__label-title">Skicka e-post när jag får nya
+                                    aviseringar</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="notification-settings__section">
+
+                    <h3 class="notification-settings__section-title">
+                        Mina grupper
                     </h3>
                     <p class="notification-settings__section-decription">Slå av/på learnpoint aviseringar för grupper
                     </p>
@@ -128,62 +262,6 @@
                                     </div>
                                 </div>
 
-                                <div class="trimmed-table__row">
-                                    <div>
-                                        <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon" /> 
-                                        <a>Bestämmelser och regelverk</a>
-                                    </div>
-                                    <div>
-                                        <span>FMT14_8</span>
-                                    </div>
-                                    <div>
-                                        <span>Kurs</span>
-                                    </div>
-                                    <div>
-                                        <span>2022-01-01</span>
-                                    </div>
-                                    <div>
-                                        <span>2022-06-30</span>
-                                    </div>
-                                </div>
-
-                                <div class="trimmed-table__row">
-                                    <div>
-                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
-                                        <a>Flygmotorlära</a>
-                                    </div>
-                                    <div>
-                                        <span>FMT14_9</span>
-                                    </div>
-                                    <div>
-                                        <span>Kurs</span>
-                                    </div>
-                                    <div>
-                                        <span>2022-01-01</span>
-                                    </div>
-                                    <div>
-                                        <span>2023-06-30</span>
-                                    </div>
-                                </div>
-
-                                <div class="trimmed-table__row">
-                                    <div>
-                                        <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
-                                        <a>Flygmotorunderhåll kolvmotorer</a>
-                                    </div>
-                                    <div>
-                                        <span>FMT14_3</span>
-                                    </div>
-                                    <div>
-                                        <span>Kurs</span>
-                                    </div>
-                                    <div>
-                                        <span>2022-01-01</span>
-                                    </div>
-                                    <div>
-                                        <span>2023-06-30</span>
-                                    </div>
-                                </div>
 
                                 <div class="trimmed-table__row">
                                     <div>
@@ -250,8 +328,147 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
+<!-- <div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="notification-settings">
+                <h1 class="notification-settings__title">Inställningar för aviseringar</h1>
+                <div class="notification-settings__section">
+                    <h3 class="notification-settings__section-title">
+                        Epost
+                    </h3>
+                    <div class="notification-settings__section-item">
+                        <label class="notification-settings__label">
+                            <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
+                            <div>
+                                <span class="notification-settings__label-title">Skicka e-post när jag får nya
+                                    aviseringar</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="notification-settings__section">
+
+                    <h3 class="notification-settings__section-title">
+                        Grupper
+                    </h3>
+                    <p class="notification-settings__section-decription">Slå av/på learnpoint aviseringar för grupper
+                    </p>
+                    <div class="notification-settings__tools-group">
+                        <span class="notification-settings__radio"><input  type="radio"  checked="checked"><label >Mina grupper</label></span>
+                        <span class="notification-settings__radio"><input  type="radio" ><label >Alla grupper</label></span>
+                    </div>
+                    <div class="notification-settings__section-item">
+                        <div class="trimmed-table READY">
+                            <div class="trimmed-table__table">
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
+                                        <a>Ekonomiassistent 2022</a>
+                                    </div>
+                                    <div>
+                                        <span>EK22</span>
+                                    </div>
+                                    <div>
+                                        <span>Klass</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-08-17</span>
+                                    </div>
+                                    <div>
+                                        <span>2024-06-30</span>
+                                    </div>
+                                </div>
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon"/> 
+                                        <a>Arbetsmiljö och säkerhet</a>
+                                    </div>
+                                    <div>
+                                        <span>FMT14_5</span>
+                                    </div>
+                                    <div>
+                                        <span>Kurs</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-07-01</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-12-31</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-off-aaaaaa.svg" class="notification-settings__icon" /> 
+                                        <a>Flygmotorunderhåll
+                                            turbinmotorer</a>
+                                    </div>
+                                    <div>
+                                        <span>FMT14_4</span>
+                                    </div>
+                                    <div>
+                                        <span>Kurs</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-01-01</span>
+                                    </div>
+                                    <div>
+                                        <span>2023-06-30</span>
+                                    </div>
+                                </div>
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon" /> 
+                                        <a>Grundläggande teori och praktik</a>
+                                    </div>
+                                    <div>
+                                        <span>EK15_GTP</span>
+                                    </div>
+                                    <div>
+                                        <span>Kurs</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-02-15</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-03-06</span>
+                                    </div>
+                                </div>
+
+                                <div class="trimmed-table__row">
+                                    <div>
+                                        <img src="/images/pages/notification-bell-0780ff.svg" class="notification-settings__icon"/> 
+                                        <a>LIA - Flygplats</a>
+                                    </div>
+                                    <div>
+                                        <span>FMT14_7</span>
+                                    </div>
+                                    <div>
+                                        <span>Kurs</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-01-01</span>
+                                    </div>
+                                    <div>
+                                        <span>2022-06-30</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a style="display: block; text-align: center; padding-top:24px;">Visa alla grupper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- 
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
@@ -323,13 +540,13 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
             <div class="notification-settings">
-                <h1 class="notification-settings__title">Inställningar för aviseringar</h1>
+                <h1 class="notification-settings__title">Inställningar</h1>
                 <div class="notification-settings__section">
                     <h3 class="notification-settings__section-title">
                         Epost
@@ -338,15 +555,14 @@
                         <label class="notification-settings__label">
                             <input type="checkbox" checked>
                             <div>
-                                <span class="notification-settings__label-title">Skicka aviseringar via epost</span>
-                                <span class="notification-settings__label-description">Skickas under kontorstid</span>
+                                <span class="notification-settings__label-title">Skicka e-post när jag får nya aviseringar</span>
                             </div>
                         </label>
                     </div>
                 </div>
                 <div class="notification-settings__section">
                     <h3 class="notification-settings__section-title">
-                        Aktuella grupper
+                        Mina grupper
                     </h3>
                     <p class="notification-settings__section-decription">Slå av/på learnpoint aviseringar för grupper
                     </p>
@@ -422,7 +638,7 @@
     </div>
 </div>
 
-<div class="page">
+<!-- <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
             <div class="notification-settings">
@@ -1440,7 +1656,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 </main>
 </body>

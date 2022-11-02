@@ -4,14 +4,12 @@
 }
 
 .notification-settings__title {
-    font-size: 2.2em;
+    font-size: 1.5em;
     text-align: center;
-    margin-bottom: 1em;
 }
 
 .notification-settings__section {
-    /* margin-bottom: 1.6em; */
-    padding-bottom: 1.6em;
+    margin-bottom: 2em;
     /* border-bottom: 1px solid #ddd; */
 }
 
@@ -24,23 +22,25 @@
 }
 
 .notification-settings__section-title {
-    margin: 0 0 .5em;
-    font-size: 1.6em;
+    margin: 0;
+    font-size: 1.4em;
     font-weight: 600;
 }
 
 .notification-settings__section-decription {
     margin: 0 0 10px 0;
     color: #777;
+    font-size:14px;
 }
 
 .notification-settings__section-item {
-    margin-bottom: .6em;
+    /* margin-bottom: .6em; */
 }
 
 .notification-settings__label {
     display: flex;
-    gap: 12px;
+    gap: 4px;
+    align-items:flex-start;
 }
 
 .notification-settings__label-title {
@@ -56,8 +56,9 @@
 }
 
 input[type=checkbox] {
-    transform: scale(1.6);
-    margin-right: 4px;
+    transform: scale(1.5);
+    margin-right: 8px;
+    margin-top: 9px;
 }
 
 .notification-settings__section-item.group-name {
@@ -71,6 +72,7 @@ input[type=checkbox] {
     text-align: right;
     gap: 4px;
     color: #777;
+    font-size: 13px;
 }
 
 .notification-settings__group-info {
@@ -79,8 +81,19 @@ input[type=checkbox] {
 }
 
 .notification-settings__icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     position: relative; 
     top: 4px;
+}
+
+.notification-settings__tools-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.notification-settings__radio input[type=radio] {
+    transform: scale(1.5);
 }

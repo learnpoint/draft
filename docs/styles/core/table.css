@@ -54,8 +54,8 @@
     display: table-cell;
     vertical-align: middle;
     padding: 14px 8px;
-    border-bottom:1px solid #e5e5e5;
-    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5; 
+    /* border-top:1px solid #e5e5e5; */
     white-space: nowrap;
     line-height:1.3;
 }

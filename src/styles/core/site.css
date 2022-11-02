@@ -54,8 +54,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    height: 55px;
-    line-height: 45px;
+    height: 50px;
     position: fixed;
     z-index: 1;
     left: 248px;
@@ -75,6 +74,18 @@
     width: 25px;
 }
 
+.site__header-group-info {
+    line-height: 18px;
+}
+
+.site__header-meta {
+    font-weight: normal;
+    color: #777;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
 
 
 /* ==========================================================================
@@ -82,7 +93,7 @@
    ========================================================================== */
 
 .site__main {
-    margin-top: 55px;
+    margin-top: 50px;
     margin-left: 248px;
 }
 
