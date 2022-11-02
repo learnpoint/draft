@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>{{ title || Draft }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -54,22 +54,16 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Home</span>
+            <span>{{ title || Page }}</span>
+            <div class="site__header-meta">
+                <span>{{ Type || Kurs }}</span>
+                <span>•</span>
+                <span>JS32020</span>
+                <span>•</span>
+                <a href="/pages/group/about.html" style="padding-top:4px;"><img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"/></a>
+            </div>
         </div>
     
     </div>
 
     <main class="site__main">
-
-<div class="page">
-    <div class="page__sheet">
-        <div class="page__content-wrap">
-            <h1>Learnpoint Draft</h1>
-        </div>
-    </div>
-</div>
-
-</main>
-</body>
-
-</html>

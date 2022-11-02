@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Nyheter</title>
+    <title>Javascript 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -54,7 +54,14 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Nyheter</span>
+            <span>Javascript 3</span>
+            <div class="site__header-meta">
+                <span>Kurs</span>
+                <span>•</span>
+                <span>JS32020</span>
+                <span>•</span>
+                <a href="/pages/group/about.html" style="padding-top:4px;"><img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"/></a>
+            </div>
         </div>
     
     </div>
@@ -92,45 +99,22 @@
     </ul>
 </nav>
 
-<link rel="stylesheet" href="/styles/pages/group/posts.css">
+<link rel="stylesheet" href="/styles/pages/group/about.css">
+
 
 <div class="page">
     <div class="page__sheet">
         <div class="page__content-wrap">
-            <div class="post__add">
-                <a class="button PRIMARY BIG" href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Skriv nyhet</a>
-            </div>
-            <div class="post__continue-writing-draft" data-component="expandable">
-                <a href data-element="expandable.toggle-button">Continue writing your draft...</a>
-                <div class="post__links-to-draft">
-                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Lorem ipsum</a>
-                    <a href="add-post.html?course_id={{utils.getLocationParam('course_id');}}">Nam ipsum risus</a>
-                </div>
-            </div>
-            <posts where="{course_id: utils.getLocationParam('course_id')}">
-                <div class="post">
-                    <user>
-                        <img class="post__avatar" lazy-src="[[image_url]]">
-                    </user>
-                    <div>
-                        <h3><a href="postpage.html?course_id={{utils.getLocationParam('course_id');}}">[[title]]</a></h3>
-                        <user>
-                            <div class="post__meta-data">
-                                <span>[[name]]</span>
-                                <span>•</span>
-                                <span>Igår</span>
-                            </div>
-                        </user>
-                        <!-- <p class="post__content">[[content]]</p> -->
+            <div class="about">
+                <div class="about__notifications-confirmation">
+                    <h3 class="about__notifications-confirmation-title">Vill du slå på aviseringar för JavaScript 3?</h3>
+                    <div class="about__notifications-confirmation-content">Lorem ipsum dolor sit amet, consectetur adipiscing elitccumsan eget a arcu. Donec felis dolor, posuere eu vulputate ut, porttitor nec enim. </div>
+                    <div class="about__notifications-confirmation-actions">            
+                        <input type="button" value="Avbryt" class="button">
+                        <input type="button" value="Slå på" class="button PRIMARY">
                     </div>
                 </div>
-
-            </posts>
+            </div>
         </div>
     </div>
 </div>
-
-</main>
-</body>
-
-</html>

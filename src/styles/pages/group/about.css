@@ -1,0 +1,27 @@
+.about {
+    max-width: 400px;
+    margin: 48px auto;
+    
+    text-align: center;
+}
+
+.about__title {
+}
+
+.about__notifications-confirmation {
+   
+}
+
+.about__notifications-confirmation-title {
+    margin:0 0 8px;
+}
+
+.about__notifications-confirmation-content {
+    font-size: 16px;
+    color: #666;
+    margin:0 0 12px 0;
+}
+
+.about__notifications-confirmation-actions {
+   
+}
