@@ -4,6 +4,12 @@ document.addEventListener(render.ready, () => {
 
         const elm = ev.target;
 
+        if(elm == document.querySelector('[data-element="notification-icon"]')) {
+            const target = document.getElementById("header-meta");
+            target.classList.toggle('OPEN');
+            return;
+        }
+
         if(elm == document.querySelector('[data-element="mark-all-as-read-btn"]')) {
             markAllAsRead(elm);
             return;
@@ -21,6 +27,8 @@ document.addEventListener(render.ready, () => {
             const selector = elm.getAttribute('data-target');
             collapse(selector);
         }
+
+      
 
     }, false);
 

@@ -99,10 +99,16 @@
    Content Wrap
    ========================================================================== */
 
+.page__content {
+    padding: 32px;
+    position: relative;
+}
+
 .page__content-wrap {
     max-width: 768px;
     margin: 0 auto;
     padding: 32px;
+    position: relative;
 }
 
 .is-mobile .page__content-wrap {

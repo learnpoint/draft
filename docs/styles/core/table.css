@@ -53,7 +53,7 @@
 .trimmed-table__row > * {
     display: table-cell;
     vertical-align: middle;
-    padding: 14px 8px;
+    padding: 14px 0px;
     border-bottom:1px solid #e5e5e5; 
     /* border-top:1px solid #e5e5e5; */
     white-space: nowrap;

@@ -14,6 +14,7 @@
     <script defer src="/scripts/core/site.js"></script>
     <script defer src="/scripts/core/lazy-src.js"></script>
     <script defer src="/scripts/core/expandable.js"></script>
+    <script defer src="/scripts/pages/notifications/index.js"></script>
 
     <link rel="stylesheet" href="/styles/core/render.css">
     <link rel="stylesheet" href="/styles/core/body.css">
@@ -33,10 +34,10 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/pages/notifications/">Aviseringar</a>              
+                <a href="/pages/notifications/">Aviseringar</a>
             </li>
             <li>
-                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>
             </li>
         </ul>
         <h3>Grupper</h3>
@@ -55,15 +56,23 @@
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
             <span>{{ title || Page }}</span>
-            <div class="site__header-meta">
+            <div class="site__header-meta" id="header-meta">
                 <span>{{ Type || Kurs }}</span>
                 <span>•</span>
                 <span>JS32020</span>
                 <span>•</span>
-                <a href="/pages/group/about.html" style="padding-top:4px;"><img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"/></a>
+                <img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"
+                    data-element="notification-icon" />
+                <div class="site__header-meta-popup-info">
+                    <div class="site__header-meta-popup-info-title">Du har stängt av aviseringar</div>
+                
+                    <div class="site__header-meta-popup-info-content">Du kan slå på aviseringar i <a
+                            href="/pages/group/about.html">gruppens om sida</a> genom att klicka på klockan uppe till
+                        höger.</div>
+                </div>
             </div>
         </div>
-    
+
     </div>
 
     <main class="site__main">
