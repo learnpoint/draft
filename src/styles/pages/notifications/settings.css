@@ -57,7 +57,7 @@
 input[type=checkbox] {
     transform: scale(1.5);
     margin-right: 8px;
-    margin-top: 9px;
+    margin-top: 7px;
 }
 
 .notification-settings__section-item.group-name {
