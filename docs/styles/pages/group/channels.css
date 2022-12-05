@@ -1,0 +1,50 @@
+.channels {
+    
+}
+
+.channels__tabs {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 8px;
+    margin-top: 1em;
+}
+
+.channels__tab {
+    border-radius: 6px;
+    padding: 4px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.channels__tab.ACTIVE {
+    background-color: #777;
+    color: #fff;    
+}
+
+.channels__channel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 2em 0;
+}
+
+.channels__channel {
+    width: 237px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.channels__channel a.channels__channel-name {
+    color: inherit;
+}
+
+.channels__channel-add {
+    
+}
