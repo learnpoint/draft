@@ -1,17 +1,58 @@
 .channels {
+   
+}
+
+.channels__title {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.channels__container {
+    display: flex;
+}
+
+.channels__left-panel {
+    padding: 16px;
+}
+
+.channels__right-panel {
+    flex:1; 
+    border-left: 1px solid #bbb;   
+    /* background-color: #f2f2f2; */
+}
+
+.channels__right-panel h3 {
+    padding: 16px;
+    margin: 0;
     
+}
+
+.channels__menu {
+    max-height: 546px;
+    overflow-y: scroll;
+}
+
+.channels__menu-item {
+    padding: 6px 16px;
+    cursor: pointer;
+}
+
+.channels__menu-item.SELECTED {
+    background-color: #444;
+    color: #fff;
 }
 
 .channels__tabs {
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 8px;
-    margin-top: 1em;
+    /* gap: 8px; */
+    margin: 2em 0;
 }
 
 .channels__tab {
-    border-radius: 6px;
+    /* border-radius: 6px; */
     padding: 4px 20px;
     border: 1px solid #ddd;
     cursor: pointer;
@@ -22,18 +63,35 @@
     color: #fff;    
 }
 
-.channels__channel-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-    margin: 2em 0;
+.channels__tab:last-child {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
 }
 
-.channels__channel {
-    width: 237px;
+.channels__tab:first-child {
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.channels__channel-list {
+    flex-wrap: wrap;
+    gap: 28px;
+    display: none;
+    padding-bottom: 24px;
+}
+
+.channels__section-tiles {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.channels__section-tile {
+    width: 160px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 40px;
+    padding: 24px;
     box-sizing: border-box;
     text-align: center;
     font-weight: 600;
@@ -41,10 +99,136 @@
     font-size: 16px;
 }
 
+.channels__section-tile a {
+    color: inherit
+}
+
+.channels__section.EXPANDED .channels__channel-list {
+    display: flex;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.channels__section h2 {
+    cursor: pointer;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+}
+
+.channels__section.EXPANDED h2 {
+    border-bottom: none;
+}
+
+.channels__channel,
+.channels__channel-add {
+    width: 236px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    /* text-align: center; */
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.channels__channel-add {
+    text-align:center;
+}
+
+.channels__add-icon {
+    padding: 26px;
+}
+
+.channels__channel-members-count {
+    padding: 6px 0 0;
+    border-top: 1px solid #ddd;
+    color: #888;
+    margin-top: 32px;
+    font-size: 13px;
+}
+
+/* 
+.channels__channel.RED {
+    background-color: #e6d6d6;
+}
+
+.channels__channel.YELLOW {
+    background-color:#e8e6d7;
+}
+
+.channels__channel.GREEN {
+    background-color:#e2f5e2;
+} */
+
 .channels__channel a.channels__channel-name {
     color: inherit;
 }
 
-.channels__channel-add {
-    
+.channels__tags {
+    border-left: 1px solid #ddd;
+    padding: 24px;
+
+}
+
+.channels__tag {
+    background-color:#666;
+    border-radius: 6px;
+    color: #fff;
+    padding:6px 16px;
+    margin: 4px 0;
+    font-size: 12px;  
+    display: inline-block;
+    cursor: pointer;
+}
+
+.channels__new-section {
+    display: flex;
+    align-items: center;
+    padding: 16px 0; 
+    gap: 4px;
+}
+
+.channels__new-section-icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+.add-channel {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.add-channel__name,
+.add-channel__description {
+    margin-top: 24px;
+}
+
+.add-channel__name-label,
+.add-channel__description-label {
+   font-weight: 600;
+}
+
+.add-channel__actions {
+    margin: 32px 0 24px;
+    text-align: right;
+}
+
+.add-channel__tags {
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.add-channel__tag {
+    background-color:#666;
+    border-radius: 6px;
+    color: #fff;
+    padding:8px 16px;
+    margin: 16px 0;
+    font-size: 12px  
 }

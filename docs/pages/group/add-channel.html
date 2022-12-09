@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>JavaScript 3</title>
+    <title>Javascript 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -14,7 +14,6 @@
     <script defer src="/scripts/core/site.js"></script>
     <script defer src="/scripts/core/lazy-src.js"></script>
     <script defer src="/scripts/core/expandable.js"></script>
-    <script defer src="/scripts/pages/notifications/index.js"></script>
 
     <link rel="stylesheet" href="/styles/core/render.css">
     <link rel="stylesheet" href="/styles/core/body.css">
@@ -34,10 +33,10 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/pages/notifications/">Aviseringar</a>
+                <a href="/pages/notifications/">Aviseringar</a>              
             </li>
             <li>
-                <a href="/pages/notifications/notifications-v1.html">Notifications</a>
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
             </li>
         </ul>
         <h3>Grupper</h3>
@@ -55,24 +54,9 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>JavaScript 3</span>
-            <div class="site__header-meta" id="header-meta">
-                <span>Kurs</span>
-                <span>•</span>
-                <span>JS32020</span>
-                <span>•</span>
-                <img src="/images/pages/notification-bell-off-aaaaaa.svg" width="14" height="14"
-                    data-element="notification-icon" style="opacity: 0.8;"/>
-                <div class="site__header-meta-popup-info">
-                    <div class="site__header-meta-popup-info-title">Du har stängt av aviseringar</div>
-                
-                    <div class="site__header-meta-popup-info-content">Du kan slå på aviseringar i <a
-                            href="/pages/group/about.html">gruppens om sida</a> genom att klicka på klockan uppe till
-                        höger.</div>
-                </div>
-            </div>
+            <span>Javascript 3</span>
         </div>
-
+    
     </div>
 
     <main class="site__main">
@@ -114,26 +98,59 @@
     </ul>
 </nav>
 
-<link rel="stylesheet" href="/styles/pages/group/about.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
 
 
 <div class="page">
+    <div class="page__breadcrumb">
+        <a href="/pages/group/channels.html">
+            Channels
+        </a>
+        <span>
+            /
+        </span>
+        <span>
+            Add channel
+        </span>
+    </div>
     <div class="page__sheet">
-        <div class="page__content">
-            <div class="about">
-                <div class="about__notification-confirmation">
-                    <h3 class="about__notification-confirmation-title">
-                        Vill du slå på aviseringar?
-                    </h3>
-                    <div class="about__notification-confirmation-content">
-                        Du vill få aviseringar om ny LIA-kommentar, ny kursdelskommentar, ny nyhetskommentar, och
-                        godkännande av LIA-plats från JavaScript 3
-
+        <div class="page__content-wrap">
+            <div class="add-channel">
+                <div class="add-channel__name">
+                    <span class="add-channel__name-label">
+                        Name
+                    </span>
+                    <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                </div>
+                <div class="add-channel__description">
+                    <span class="add-channel__description-label">
+                        Description
+                    </span>
+                    <input type="text" placeholder="Description" class="textbox BIG BLOCK">
+                </div>
+                <!-- <div class="add-channel__description">
+                    <span class="add-channel__description-label">
+                        Tags
+                    </span>
+                    <input type="text" class="textbox BIG BLOCK">
+                </div>
+                <div class="add-channel__tags">
+                    <div class="add-channel__tag">
+                        JS
                     </div>
-                    <div class="about__notification-confirmation-actions">
-                        <a class="button" href="about.html">Avbryt</a>
-                        <a class="button PRIMARY" href="about.html">Slå på</a>
+                    <div class="add-channel__tag">
+                        React
                     </div>
+                    <div class="add-channel__tag">
+                        Final project
+                    </div>
+                    <div class="add-channel__tag">
+                        Assignment - React
+                    </div>
+                </div> -->
+                <div class="add-channel__actions">
+                    <a class="button LARGE" href="/pages/group/channels.html">Avbryt</a>
+                    <input type="button" value="Spara" class="button PRIMARY LARGE">
                 </div>
             </div>
         </div>

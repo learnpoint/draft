@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="render__rendering">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
+
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
+    <script defer src="/scripts/core/expandable.js"></script>
+
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
+    <link rel="stylesheet" href="/styles/core/table.css">
+    <link rel="stylesheet" href="/styles/core/textbox.css">
+
+</head>
+
+<body class="body">
+
+    <div class="site__left-nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/">Aviseringar</a>              
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
+            </li>
+        </ul>
+        <h3>Grupper</h3>
+        <ul>
+            <courses>
+                <li>
+                    <a href="/pages/group/content3.html?course_id=[[id]]">
+                        [[name]]
+                    </a>
+                </li>
+            </courses>
+        </ul>
+    </div>
+
+    <div class="site__header">
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
+        <div class="site__header-group-info">
+            <span>Javascript 3</span>
+        </div>
+    
+    </div>
+
+    <main class="site__main">
+<script defer src="/scripts/components/sub-nav.js"></script>
+<link rel="stylesheet" href="/styles/components/sub-nav.css">
+
+<nav class="sub-nav">
+    <ul>
+        <li>
+            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll</a>
+        </li>
+        <li>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
+        </li>
+        <li>
+            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade.html" data-select="/grade.html">Betyg</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade2.html" data-select="grade2.html">Betyg 2</a>
+        </li>          
+        <li>
+            <a href="/pages/group/group-chat.html" data-select="group-chat.html">Chat</a>
+        </li>  
+        <li>
+            <a href="/pages/group/discussion.html" data-select="discussion.html">Discussion</a>
+        </li>
+        <li>
+            <a href="/pages/group/channels.html" data-select="channels.html">Channels</a>
+        </li>
+        <li>
+            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 2</a>
+        </li>
+        <li>
+            <a href="/pages/group/about.html" data-select="about.html">Om</a>
+        </li>
+    </ul>
+</nav>
+
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
+
+<div class="page">
+    <div class="page__breadcrumb">
+        <a href="/pages/group/channels-2-home.html">
+            Channels
+        </a>
+        <span>
+            /
+        </span>
+        <span>
+            Week 1
+        </span>
+    </div>
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="channels">
+                <div class="channels__tabs">
+                    <div class="channels__tab ACTIVE">
+                        All
+                    </div>
+                    <div class="channels__tab">
+                        Mine
+                    </div>
+                    <div class="channels__tab">
+                        Archived
+                    </div>
+                </div>
+                <div class="channels__section EXPANDED" data-component="expandable">
+                    <div class="channels__channel-list">
+                        <div class="channels__channel">
+                            <div>
+                            <a href="/pages/group/add-channel.html" title="Add channel"> <img
+                                    src="/images/pages/plus-lg.svg" class="notification-settings__icon" /> </a></div>
+                                    <span>Add channel</span>
+                        </div>
+                        <div class="channels__channel">
+                           <div><img
+                            src="/images/pages/high-voltage.svg" class="notification-settings__icon" /></div> 
+                            <a href="/pages/group/channel.html" class="channels__channel-name">General</a>
+                        </div>
+                        <div class="channels__channel">
+                            <div><img
+                                src="/images/pages/exploding-head.svg" class="notification-settings__icon" /></div> 
+                            Announcements
+                        </div>
+                        <div class="channels__channel">
+                            <div><img
+                                src="/images/pages/Group.svg" class="notification-settings__icon" /></div> 
+                            Questions
+                        </div>
+                        <div class="channels__channel">
+                            <div><img
+                             src="/images/pages/grinning-face-with-big-eyes.svg" class="notification-settings__icon" /></div> 
+                             Design
+                         </div>
+                         <div class="channels__channel">
+                             <div><img
+                                 src="/images/pages/crossed-fingers.svg" class="notification-settings__icon" /></div> 
+                             Group project
+                         </div>
+                         <div class="channels__channel">
+                             <div><img
+                                 src="/images/pages/Fire.svg" class="notification-settings__icon" /></div> 
+                             Final project
+                         </div>
+                    </div>
+                </div>
+
+                <!-- <div class="channels__tags">
+                    
+                    <div>
+                        <div class="channels__tag">
+                            Assignment - React
+                        </div>
+                    </div>
+                    <div>
+                        <div class="channels__tag">
+                            Final project
+                        </div>
+                    </div>
+                    <div>
+                        <div class="channels__tag">
+                            JS
+                        </div>
+                    </div>
+                    <div>
+                        <div class="channels__tag">
+                            React
+                        </div>
+                    </div>
+                    <div>
+                        <div class="channels__tag">
+                            UX Design
+                        </div>
+                    </div>
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
