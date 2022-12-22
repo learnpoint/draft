@@ -87,10 +87,14 @@
             <a href="/pages/group/discussion.html" data-select="discussion.html">Discussion</a>
         </li>
         <li>
-            <a href="/pages/group/channels.html" data-select="channels.html">Channels</a>
+            <a href="/pages/group/channels-2.html" data-select="channels-2.html">Channels </a>
         </li>
         <li>
-            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 2</a>
+            <a href="/pages/group/channels.html" data-select="channels.html">Channels 2</a>
+        </li>
+       
+        <li>
+            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 3</a>
         </li>
         <li>
             <a href="/pages/group/about.html" data-select="about.html">Om</a>
@@ -100,15 +104,17 @@
 
 <link rel="stylesheet" href="/styles/pages/group/discussion.css">
 <link rel="stylesheet" href="/styles/pages/group/channels.css">
-
+<script defer src="/scripts/pages/notifications/index.js"></script>
 
 
 <div class="channels__container">
     <div class="channels__left-panel">
         <div class="discussion">
-            <div class="discussion__actions">
+            <div class="discussion__header">
                 <!-- <button class="button">Add people</button> -->
                 <div class="discussion__channel-title">General</div>
+                <img src="/images/pages/person-fill-add.svg" title="Add members"
+                    class="discussion__add-people-button" />
                 <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
             </div>
             <div class="discussion__comments">
@@ -271,8 +277,39 @@
                                 S</span>
                             <span class="discussion__comment-meta"><span>18 Nov</span></span>
                         </div>
-                        <div>Vestibulum ac elementum mi, sed
-                            commodo libero. Duis ac nisi vitae nulla interdum posuere.</div>
+                        <div class="discussion__comment-poll">
+                            <div class="discussion__comment-poll-question">
+                                Which one of these topics would you all like to discuss tomorrow?
+                            </div>
+                            <div class="discussion__comment-poll-options">
+                                <div class="discussion__comment-poll-option">
+                                    Async/await
+                                </div>
+                                <div class="discussion__comment-poll-option">
+                                    Promises
+                                </div>
+                                <div class="discussion__comment-poll-option">
+                                    Closures
+                                </div>
+                                <div class="discussion__comment-poll-action">
+                                    <button class="button">Vote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-1.jpg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
+                                H</span>
+                            <span class="discussion__comment-meta"><span>20 Nov</span></span>
+                        </div>
+                        <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
+                            nulla et
+                            sollicitudin laoreet, eros lectus consectetur leo</div>
                         <div class="discussion__comment-reply">Reply</div>
                     </div>
                 </div>
@@ -283,7 +320,19 @@
         </div>
     </div>
     <div class="channels__right-panel">
-        <h3>Channels</h3>
+        <div class="channels__right-panel-header" data-component="expandable">
+            <h3>Channels</h3>
+            <img class="channels__right-panel-actions" src="/images/pages/three-dots-vertical.svg"
+                data-element="expandable.toggle-button" />
+            <div class="channels__actions-menu-items">
+                <div class="channels__actions-menu-item">
+                    Add channel
+                </div>
+                <div class="channels__actions-menu-item">
+                    Add section
+                </div>
+            </div>
+        </div>
         <div class="channels__menu">
             <div class="channels__menu-item SELECTED">
                 General
@@ -304,7 +353,7 @@
                         Design thinking
                     </div>
                     <div class="channels__menu-item">
-                        Creative solutions 
+                        Creative solutions
                     </div>
                     <div class="channels__menu-item">
                         Design frameworks
@@ -318,7 +367,7 @@
                         React
                     </div>
                     <div class="channels__menu-item">
-                        Classes 
+                        Classes
                     </div>
                     <div class="channels__menu-item">
                         Functions

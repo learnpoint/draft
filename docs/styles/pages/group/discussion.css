@@ -1,11 +1,10 @@
 .discussion {
-        max-width: 720px;
+        max-width: 680px;
         margin: 0 auto; 
 }
 
-.discussion__actions {
+.discussion__header {
     display: flex;
-    justify-content:space-between;
     align-items: center;
 }
 
@@ -14,24 +13,42 @@
 }
 
 .discussion__action-back {
-    width: 32px;
-    height: 32px;
+    flex: 1;
+    text-align: left;
+    margin-bottom: -4px;
+}
+
+.discussion__action-back-button {
+    /* width: 32px;
+    height: 32px; */
 }
 
 .discussion__channel-title {
     font-weight: 600;
     font-size: 22px;
+    flex:1;
 }
 
 .discussion__subscribe-button {
     width: 20px;
     height: 20px;
+    text-align:right;    
+    cursor: pointer; 
+}
+
+.discussion__add-people-button {
+    width: 20px;
+    height: 20px;
+    opacity: .5;
+    margin-right: 10px;
+    cursor: pointer;    
 }
 
 .discussion__comments {
     margin: 1em 0 0;
     max-height: 500px;
     overflow-y: scroll;
+    padding: 6px 0;
     border-top: 1px solid #ddd;
 }
 
@@ -268,4 +285,33 @@
     border-radius: 50%;
     flex-shrink: 0;
     display:none;
+}
+
+.discussion__comment-poll {
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 8px;
+    width: 340px;
+}
+
+.discussion__comment-poll-question {
+    font-weight:bold;
+}
+
+.discussion__comment-poll-options {
+  margin: 12px 0 0;   
+  font-size: 14px;
+}
+
+.discussion__comment-poll-option {
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.discussion__comment-poll-action {
+    text-align: right;
+    margin: 16px 0 0;
 }

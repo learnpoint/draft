@@ -87,10 +87,14 @@
             <a href="/pages/group/discussion.html" data-select="discussion.html">Discussion</a>
         </li>
         <li>
-            <a href="/pages/group/channels.html" data-select="channels.html">Channels</a>
+            <a href="/pages/group/channels-2.html" data-select="channels-2.html">Channels </a>
         </li>
         <li>
-            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 2</a>
+            <a href="/pages/group/channels.html" data-select="channels.html">Channels 2</a>
+        </li>
+       
+        <li>
+            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 3</a>
         </li>
         <li>
             <a href="/pages/group/about.html" data-select="about.html">Om</a>
@@ -104,9 +108,8 @@
 <div class="channels__container">
     <div class="channels__left-panel">
         <div class="discussion">
-            <div class="discussion__actions">
-                <a class="discussion__action-back" href="/pages/group/channels-3.html"" ><img src="
-                    /images/pages/arrow-left-short.svg" /></a>
+            <div class="discussion__header">
+                <a class="discussion__action-back" href="/pages/group/channels-3.html"><img src="/images/pages/arrow-left-short.svg" class="discussion__action-back-button"/></a>
                 <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
             </div>
             <div class="discussion__comments">
@@ -176,8 +179,10 @@
                         <img src="/images/pages/users/user-4.jpeg" />
                     </div>
                     <div class="discussion__comment-content">
-                        <div class="discussion__commented-by-name">Siri S</div>Duis ac nisi vitae nulla interdum
-                        posuere.
+                        <div class="discussion__commented-by-name">Siri S</div>
+                      <div  class="discussion__comment-poll">
+
+                      </div>
                     </div>
                 </div>
             </div>
@@ -187,7 +192,18 @@
         </div>
     </div>
     <div class="channels__right-panel">
-        <h3>Channels</h3>
+        <div class="channels__right-panel-header"  data-component="expandable">
+            <h3>Channels</h3>
+            <img class="channels__right-panel-actions" src="/images/pages/three-dots-vertical.svg" data-element="expandable.toggle-button" />
+            <div class="channels__actions-menu-items">
+                <div class="channels__actions-menu-item">
+                    Add channel
+                </div>
+                <div class="channels__actions-menu-item">
+                    Add section
+                </div>
+            </div>
+        </div>
         <div class="channels__menu">
             <div class="channels__menu-item SELECTED">
                 General
