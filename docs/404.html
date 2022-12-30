@@ -26,7 +26,46 @@
 </head>
 
 <body class="body">
+    <link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
 
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Add channel</h3>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+            </div>
+            <div class="modal__body">
+                <div class="add-channel">
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Name
+                        </span>
+                        <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__description">
+                        <span class="add-channel__description-label">
+                            Description
+                        </span>
+                        <input type="text" placeholder="Description" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__actions">
+                        <button class="button LARGE" data-element="modal-close-button">Avbryt</button>
+                        <input type="button" value="Spara" class="button PRIMARY LARGE">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal__actions">
+                <button type="button" class="button" >Close</button>
+                <button type="button" class="button PRIMARY">Save</button>
+            </div> -->
+        </div>
+    </div>
+</div>   
     <div class="site__left-nav">
         <ul>
             <li>
@@ -60,6 +99,8 @@
     </div>
 
     <main class="site__main">
+
+ 
 
 <div class="page">
     <div class="page__sheet">

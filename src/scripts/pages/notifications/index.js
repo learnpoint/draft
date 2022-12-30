@@ -1,8 +1,26 @@
 document.addEventListener(render.ready, () => {
 
+    var commentsContainer = document.getElementById("comments");
+    if(!commentsContainer) {
+        return;
+    }
+    commentsContainer.scrollTo(0, commentsContainer.scrollHeight);
+
     document.addEventListener('click', (ev) => {
 
         const elm = ev.target;
+
+        if(elm == document.querySelector('[data-element="modal-open-button"]')) {
+            const target = document.getElementById("modal");
+            target.classList.add('OPEN');
+            return;
+        }
+
+        if(elm == document.querySelector('[data-element="modal-close-button"]')) {
+            const target = document.getElementById("modal");
+            target.classList.remove('OPEN');
+            return;
+        }
 
         if(elm == document.querySelector('[data-element="notification-icon"]')) {
             const target = document.getElementById("header-meta");

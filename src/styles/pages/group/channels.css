@@ -11,11 +11,11 @@
 .channels__container {
     display: flex;
     max-width: 960px;
-    margin: 48px auto;
+    margin: 0 auto 8px;
 }
 
 .channels__left-panel {
-    padding: 1em;
+    /* padding: 0 1em 1em 1em; */
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
     border-radius: 6px;
@@ -24,7 +24,13 @@
 .channels__right-panel {
    padding:8px 20px;
    width: 160px;
+   position: relative;
 }
+
+.channels__right-panel-content {
+    position: sticky;
+    top: 60px;
+ }
 
 .channels__right-panel-header {
      display: flex;
@@ -33,7 +39,7 @@
 }
 
 .channels__right-panel h3 {
-    padding:8px 4px;
+    padding:8px 4px 8px 10px;
     margin: 0;
     flex:1; 
 }
@@ -201,10 +207,9 @@
     width: 236px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 8px;
+    padding: 12px;
     box-sizing: border-box;
     /* text-align: center; */
-    font-weight: 600;
     line-height: 22px;
     font-size: 16px;
 }
@@ -219,10 +224,12 @@
 
 .channels__channel-members-count {
     padding: 6px 0 0;
-    border-top: 1px solid #ddd;
     color: #888;
     margin-top: 32px;
-    font-size: 13px;
+    font-size: 12px;
+    display: flex;
+    align-items:center;
+    gap: 4px;
 }
 
 /* 
@@ -273,8 +280,8 @@
 
 
 .add-channel {
-    max-width: 400px;
-    margin: 0 auto;
+    /* max-width: 400px;
+    margin: 0 auto; */
 }
 
 .add-channel__name,
@@ -288,7 +295,7 @@
 }
 
 .add-channel__actions {
-    margin: 32px 0 24px;
+    margin: 32px 0 8px;
     text-align: right;
 }
 

@@ -26,7 +26,46 @@
 </head>
 
 <body class="body">
+    <link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
 
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Add channel</h3>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+            </div>
+            <div class="modal__body">
+                <div class="add-channel">
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Name
+                        </span>
+                        <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__description">
+                        <span class="add-channel__description-label">
+                            Description
+                        </span>
+                        <input type="text" placeholder="Description" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__actions">
+                        <button class="button LARGE" data-element="modal-close-button">Avbryt</button>
+                        <input type="button" value="Spara" class="button PRIMARY LARGE">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal__actions">
+                <button type="button" class="button" >Close</button>
+                <button type="button" class="button PRIMARY">Save</button>
+            </div> -->
+        </div>
+    </div>
+</div>   
     <div class="site__left-nav">
         <ul>
             <li>
@@ -60,6 +99,8 @@
     </div>
 
     <main class="site__main">
+
+ 
 <script defer src="/scripts/components/sub-nav.js"></script>
 <link rel="stylesheet" href="/styles/components/sub-nav.css">
 
@@ -92,10 +133,10 @@
         <li>
             <a href="/pages/group/channels.html" data-select="channels.html">Channels 2</a>
         </li>
-       
+<!--        
         <li>
             <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels 3</a>
-        </li>
+        </li> -->
         <li>
             <a href="/pages/group/about.html" data-select="about.html">Om</a>
         </li>
@@ -119,7 +160,7 @@
                         Archived
                     </div>
                 </div>
-                <div class="channels__section" data-component="expandable">
+                <div class="channels__section EXPANDED" data-component="expandable">
                     <h2 data-element="expandable.toggle-button">General channels</h2>
                     <div class="channels__channel-list">
                         <div class="channels__channel-add">
@@ -127,7 +168,7 @@
                                     src="/images/pages/plus-lg.svg" class="channels__add-icon" /> </a>
                         </div>
                         <div class="channels__channel">
-                            <div class="channels__channel-name"> <a href="/pages/group/channel.html"
+                            <div class="channels__channel-name"> <a href="/pages/group/channels-3.html"
                                     class="channels__channel-name">General</a></div>
                             <div class="channels__channel-members-count">35 members</div>
                         </div>
@@ -141,7 +182,7 @@
                         </div>
                         <div class="channels__channel">
                             <div class="channels__channel-name">Internships</div>
-                            <div class="channels__channel-members-count">35 members</div>
+                            <div class="channels__channel-members-count"><span>35 members</span> <span>•</span><span>Join</span></div>
                         </div>
                         <div class="channels__channel">
                             <div class="channels__channel-name">CV writing</div>
@@ -150,7 +191,7 @@
                     </div>
                 </div>
                 <div class="channels__section" data-component="expandable">
-                    <h2 data-element="expandable.toggle-button">Week 1</h2>
+                    <h2 data-element="expandable.toggle-button">Design</h2>
                     <div class="channels__channel-list">
                         <div class="channels__channel-add">
 
@@ -169,7 +210,7 @@
                     </div>
                 </div>
                 <div class="channels__section" data-component="expandable">
-                    <h2 data-element="expandable.toggle-button">Week 2</h2>
+                    <h2 data-element="expandable.toggle-button">JS questions</h2>
                     <div class="channels__channel-list">
                         <div class="channels__channel-add">
                             <a href="/pages/group/add-channel.html" title="Add channel"> <img
@@ -194,54 +235,6 @@
                             <div class="channels__channel-name">Group - code</div>
                             <div class="channels__channel-members-count">4 members</div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="channels__section" data-component="expandable">
-                    <h2 data-element="expandable.toggle-button">Week 3</h2>
-                    <div class="channels__channel-list">
-                        <div class="channels__channel-add">
-                            <a href="/pages/group/add-channel.html" title="Add channel"> <img
-                                    src="/images/pages/plus-lg.svg" class="channels__add-icon" /> </a>
-                        </div>
-                        <div class="channels__channel YELLOW">
-                            <div class="channels__channel-name">Assignment - 3</div>
-                            <div class="channels__channel-members-count">4 members</div>
-                        </div>
-                        <div class="channels__channel RED">
-                            <div class="channels__channel-name">Assignment - 4</div>
-                            <div class="channels__channel-members-count">4 members</div>
-                        </div>
-                        <div class="channels__channel YELLOW">
-                            <div class="channels__channel-name">Group - design</div>
-                            <div class="channels__channel-members-count">4 members</div>
-
-                        </div>
-                        <div class="channels__channel GREEN">
-                            <div class="channels__channel-name">Group - JS</div>
-                            <div class="channels__channel-members-count">4 members</div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="channels__section" data-component="expandable">
-                    <h2 data-element="expandable.toggle-button">Week 4</h2>
-                    <div class="channels__channel-list">
-                        <div class="channels__channel-add">
-                            <a href="/pages/group/add-channel.html" title="Add channel"> <img
-                                    src="/images/pages/plus-lg.svg" class="channels__add-icon" /> </a>
-                        </div>
-                        <div class="channels__channel YELLOW">
-                            <div class="channels__channel-name"> Assignment - 5</div>
-                            <div class="channels__channel-members-count">4 members</div>
-                        </div>
-                        <div class="channels__channel RED">
-                            <div class="channels__channel-name"> Assignment - 6</div>
-                            <div class="channels__channel-members-count">4 members</div>
-                        </div>
-                        <div class="channels__channel GREEN">
-                            <div class="channels__channel-name">Final project</div>
-                            <div class="channels__channel-members-count">4 members</div>
                         </div>
                     </div>
                 </div>
