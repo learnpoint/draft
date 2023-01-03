@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" class="render__rendering">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
+
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
+    <script defer src="/scripts/core/expandable.js"></script>
+
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
+    <link rel="stylesheet" href="/styles/core/table.css">
+    <link rel="stylesheet" href="/styles/core/textbox.css">
+
+</head>
+
+<body class="body">
+    <link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
+
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Add channel</h3>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+            </div>
+            <div class="modal__body">
+                <div class="add-channel">
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Name
+                        </span>
+                        <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                    </div>
+                    <!-- <div class="add-channel__description">
+                        <span class="add-channel__description-label">
+                            Description
+                        </span>
+                        <input type="text" placeholder="Description" class="textbox BIG BLOCK">
+                    </div> -->
+                    <div class="add-channel__actions">
+                        <button class="button LARGE" data-element="modal-close-button">Avbryt</button>
+                        <input type="button" value="Spara" class="button PRIMARY LARGE">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal__actions">
+                <button type="button" class="button" >Close</button>
+                <button type="button" class="button PRIMARY">Save</button>
+            </div> -->
+        </div>
+    </div>
+</div>   
+    <div class="site__left-nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/">Aviseringar</a>              
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
+            </li>
+        </ul>
+        <h3>Grupper</h3>
+        <ul>
+            <courses>
+                <li>
+                    <a href="/pages/group/content3.html?course_id=[[id]]">
+                        [[name]]
+                    </a>
+                </li>
+            </courses>
+        </ul>
+    </div>
+
+    <div class="site__header">
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
+        <div class="site__header-group-info">
+            <span>Javascript 3</span>
+        </div>
+    
+    </div>
+
+    <main class="site__main">
+
+ 
+<script defer src="/scripts/components/sub-nav.js"></script>
+<link rel="stylesheet" href="/styles/components/sub-nav.css">
+
+<nav class="sub-nav">
+    <ul>
+        <li>
+            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll</a>
+        </li>
+        <li>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
+        </li>
+        <li>
+            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade.html" data-select="/grade.html">Betyg</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade2.html" data-select="grade2.html">Betyg 2</a>
+        </li>          
+        <li>
+            <a href="/pages/group/group-chat.html" data-select="group-chat.html">Chat</a>
+        </li>  
+        <li>
+            <a href="/pages/group/discussion.html" data-select="discussion.html">Discussion</a>
+        </li>
+        <!-- <li>
+            <a href="/pages/group/channels-2.html" data-select="channels-2.html">Channels </a>
+        </li> -->
+        <li>
+            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Channels</a>
+        </li>
+       
+        <li>
+            <a href="/pages/group/channels-4.html" data-select="channels-4.html">Channels-mobile</a>
+        </li>
+        <li>
+            <a href="/pages/group/about.html" data-select="about.html">Om</a>
+        </li>
+    </ul>
+</nav>
+
+<link rel="stylesheet" href="/styles/pages/group/discussion.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
+<script defer src="/scripts/pages/notifications/index.js"></script>
+
+<div class="page">
+<div class="channels__container">
+    <div class="channels__left-panel" id="left">
+        <div class="discussion">
+            <div class="discussion__header-mobile">
+                <div class="discussion__header-left-panel">
+                    <a class="discussion__action-back"><img
+                            src="/images/pages/arrow-left-short.svg" class="discussion__action-back-button" data-element="mobile-back-button" /></a>
+                    <div class="discussion__channel-title">General</div>
+                </div>
+                <div class="discussion__header-right-panel">
+                    <img src="/images/pages/person-fill-add.svg" title="Add members"
+                        class="discussion__add-people-button" />
+
+                    <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
+                    <img class="discussion__more-actions-button" src="/images/pages/three-dots-vertical.svg"
+                         />
+                </div>
+            </div>
+            <div class="discussion__comments MOBILE" id="comments">
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>16 Nov</span>
+                        </div>
+                        <div>Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
+                            leo
+                            dolor,
+                            tempus non, auctor et, hendrerit quis, nisi.</div>
+                        <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">5
+                            replies</a>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-1.jpg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
+                                H</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
+                            nulla et
+                            sollicitudin laoreet, eros lectus consectetur leo</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-2.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
+                                R</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>Quisque porttitor augue nec risus bibendum iaculis. Fusce eget posuere erat.
+                            Suspendisse
+                            mauris neque, maximus nec libero sed, pulvinar cursus mauris.</div>
+
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>Integer blandit vestibulum ante ut pellentesque.</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Sarah
+                                M</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>Fusce malesuada, leo vel eleifend placerat, nunc risus porttitor felis, fermentum
+                            accumsan
+                            ipsum nisl eu enim. Donec eget tellus orci</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-2.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
+                                R</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div> Morbi lacus dui, lobortis quis mi et, consequat dictum nisi. Mauris mattis nisl
+                            eget
+                            justo
+                            vulputate vestibulum. Pellentesque ac convallis justo</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>Fusce sed sapien laoreet, mattis felis nec, placerat magna. Vestibulum ac elementum
+                            mi,
+                            sed
+                            commodo libero. Duis ac nisi vitae nulla interdum posuere.</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium eros leo, non
+                        pharetra urna dapibus in.
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Sarah
+                                M</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div> Fusce sed sapien laoreet, mattis felis nec, placerat magna.</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div>Duis ac nisi vitae nulla interdum
+                            posuere.</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>18 Nov</span></span>
+                        </div>
+                        <div class="discussion__comment-poll">
+                            <div class="discussion__comment-poll-question">
+                                Which one of these topics would you all like to discuss tomorrow?
+                            </div>
+                            <div class="discussion__comment-poll-options">
+                                <div class="discussion__comment-poll-option">
+                                    Async/await
+                                </div>
+                                <div class="discussion__comment-poll-option">
+                                    Promises
+                                </div>
+                                <div class="discussion__comment-poll-option">
+                                    Closures
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-1.jpg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
+                                H</span>
+                            <span class="discussion__comment-meta"><span>20 Nov</span></span>
+                        </div>
+                        <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
+                            nulla et
+                            sollicitudin laoreet, eros lectus consectetur leo</div>
+                        <div class="discussion__comment-reply">Reply</div>
+                    </div>
+                </div>
+                <div class="discussion__comment">
+                    <div class="discussion__commented-by">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="discussion__comment-content">
+                        <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                S</span>
+                            <span class="discussion__comment-meta"><span>20 Dec</span>
+                        </div>
+                        <div>Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
+                            leo
+                            dolor,
+                            tempus non, auctor et, hendrerit quis, nisi.</div>
+                        <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">5
+                            replies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="discussion__add-comment">
+                <input type="text" class="discussion__add-input" placeholder="" autofocus>
+            </div>
+        </div>
+    </div>
+    <div class="channels__right-panel WHITE HIDE" id="right">
+        <div class="channels__right-panel-content">
+            <div class="channels__right-panel-header" data-component="expandable">
+                <h3>Channels</h3>
+                <img class="channels__right-panel-actions" src="/images/pages/three-dots-vertical.svg"
+                    data-element="expandable.toggle-button" />
+                <div class="channels__actions-menu-items">
+                    <div class="channels__actions-menu-item" data-element="modal-open-button">
+                        Add channel
+                    </div>
+                    <div class="channels__actions-menu-item">
+                        Add section
+                    </div>
+                    <a href="/pages/group/channels.html" class="channels__actions-menu-item">
+                        Browse all channels
+                    </a>
+                </div>
+            </div>
+            <div class="channels__menu">
+                <div class="channels__menu-item SELECTED">
+                    General
+                </div>
+                <div class="channels__menu-item">
+                    Announcements
+                </div>
+                <div class="channels__menu-item">
+                    Questions
+                </div>
+                <div class="channels__menu-item UNREAD">
+                    Internships
+                </div>
+                <div class="channels__menu-section EXPANDED">
+                    <div class="channels__menu-section-name">Design</div>
+                    <div class="channels__menu-items">
+                        <div class="channels__menu-item UNREAD">
+                            design-thinking
+                        </div>
+                        <div class="channels__menu-item">
+                            design-methods
+                        </div>
+                    </div>
+                </div>
+                <div class="channels__menu-section EXPANDED">
+                    <div class="channels__menu-section-name" >JS questions
+                    </div>
+                    <div class="channels__menu-items">
+                        <div class="channels__menu-item UNREAD">
+                            React
+                        </div>
+                        <div class="channels__menu-item UNREAD">
+                            Classes
+                        </div>
+                        <div class="channels__menu-item UNREAD">
+                            Functions
+                        </div>
+                        <div class="channels__menu-item">
+                            Arrays
+                        </div>
+                    </div>
+                </div>
+                <div class="channels__menu-section">
+                    <div class="channels__menu-section-name">All channels
+                    </div>
+                    <div class="channels__menu-items">
+                        <div class="channels__menu-item">
+                            Help
+                        </div>
+                        <div class="channels__menu-item">
+                            random
+                        </div>
+                        <div class="channels__menu-item">
+                            resources
+                        </div>
+                        <div class="channels__menu-item">
+                            features
+                        </div>
+                        <div class="channels__menu-item">
+                            best-practices
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>

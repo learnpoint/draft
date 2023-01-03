@@ -6,13 +6,8 @@
 <script defer src="/scripts/pages/notifications/index.js"></script>
 
 <div class="page">
-    <div class="page__breadcrumb">
-        <a href="/pages/group/channels.html">
-            All channels
-        </a>
-    </div>
     <div class="channels__container">
-        <div class="channels__left-panel">
+        <div class="channels__left-panel NARROW">
             <div class="discussion">
                 <div class="discussion__header">
                     <!-- <button class="button">Add people</button> -->
@@ -20,6 +15,8 @@
                     <img src="/images/pages/person-fill-add.svg" title="Add members"
                         class="discussion__add-people-button" />
                     <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
+                    <img class="discussion__more-actions-button" src="/images/pages/three-dots-vertical.svg"
+                         />
                 </div>
                 <div class="discussion__comments" id="comments">
                     <div class="discussion__comment">
@@ -251,6 +248,9 @@
                         <div class="channels__actions-menu-item">
                             Add section
                         </div>
+                        <a href="/pages/group/channels.html" class="channels__actions-menu-item">
+                            Browse all channels
+                        </a>
                     </div>
                 </div>
                 <div class="channels__menu">
@@ -263,41 +263,56 @@
                     <div class="channels__menu-item">
                         Questions
                     </div>
-                    <div class="channels__menu-item">
+                    <div class="channels__menu-item UNREAD">
                         Internships
                     </div>
-                    <div class="channels__menu-section" data-component="expandable">
+                    <div class="channels__menu-section EXPANDED" data-component="expandable">
                         <div class="channels__menu-section-name" data-element="expandable.toggle-button">Design</div>
                         <div class="channels__menu-items">
-                            <div class="channels__menu-item">
-                                Design thinking
+                            <div class="channels__menu-item UNREAD">
+                                design-thinking
                             </div>
                             <div class="channels__menu-item">
-                                Creative solutions
-                            </div>
-                            <div class="channels__menu-item">
-                                Design frameworks
+                                design-methods
                             </div>
                         </div>
                     </div>
-                    <div class="channels__menu-section" data-component="expandable">
+                    <div class="channels__menu-section EXPANDED" data-component="expandable">
                         <div class="channels__menu-section-name" data-element="expandable.toggle-button">JS questions
                         </div>
                         <div class="channels__menu-items">
-                            <div class="channels__menu-item">
+                            <div class="channels__menu-item UNREAD">
                                 React
                             </div>
-                            <div class="channels__menu-item">
+                            <div class="channels__menu-item UNREAD">
                                 Classes
                             </div>
-                            <div class="channels__menu-item">
+                            <div class="channels__menu-item UNREAD">
                                 Functions
                             </div>
                             <div class="channels__menu-item">
-                                API's
+                                Arrays
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channels__menu-section" data-component="expandable">
+                        <div class="channels__menu-section-name" data-element="expandable.toggle-button">All channels
+                        </div>
+                        <div class="channels__menu-items">
+                            <div class="channels__menu-item">
+                                Help
                             </div>
                             <div class="channels__menu-item">
-                                Arrays
+                                random
+                            </div>
+                            <div class="channels__menu-item">
+                                resources
+                            </div>
+                            <div class="channels__menu-item">
+                                features
+                            </div>
+                            <div class="channels__menu-item">
+                                best-practices
                             </div>
                         </div>
                     </div>

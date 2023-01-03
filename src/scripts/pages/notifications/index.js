@@ -10,6 +10,18 @@ document.addEventListener(render.ready, () => {
 
         const elm = ev.target;
 
+        if(elm == document.querySelector('[data-element="mobile-back-button"]')) {
+
+            elm.classList.add('HIDE')
+
+            const leftPanel = document.getElementById("left");
+            leftPanel.classList.add('HIDE');
+
+            const rightPanel = document.getElementById("right");
+            rightPanel.classList.remove('HIDE');
+            return;
+        }
+
         if(elm == document.querySelector('[data-element="modal-open-button"]')) {
             const target = document.getElementById("modal");
             target.classList.add('OPEN');
