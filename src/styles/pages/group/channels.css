@@ -31,7 +31,7 @@
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
     border-radius: 6px;
-    max-width: 700px;
+    width: 740px;
 }
 
 
@@ -112,26 +112,29 @@
     /* font-weight: 600; */
     padding: 12px 2px 0 0;
     cursor: pointer;
+    position: relative;
+    left:-6px;
 }
 
 .channels__menu-section-name::before {
     content: url('/images/pages/caret-right-fill.svg');
     position: relative;
-    /* top:2px; */
-    left: -4px;
-    opacity: 0.7;
+    top:2px; 
+    left: -3px;
+    opacity: 0.6;
 }
 
 .channels__menu-section.EXPANDED .channels__menu-section-name::before {
-     content: url('/images/pages/caret-down-fill.svg');
+     content: url('/images/pages/chevron-down.svg');
      position: relative;
-    /* top:2px; */
-    left: -4px;
-    opacity: 0.7;
-   } 
+    top:2px; 
+    left: -3px;
+    opacity: 0.6;
+} 
 
 .channels__menu-items {
     display: none;
+    margin-top: 4px;
 }
 
 .channels__menu-section.EXPANDED .channels__menu-items {
@@ -139,27 +142,38 @@
 }
 
 .channels__menu-item {
-    padding: 1px 6px 0 12px;
+    padding: 1px 6px 0 14px;
     margin: 4px 0;
     cursor: pointer;
     /* font-size: 14px; */
-    color:#666;
-}
-
-.channels__right-panel.WHITE .channels__menu-item.SELECTED {
-    border-left: none;
-    color: inherit;
 }
 
 .channels__menu-item.SELECTED {
-    border-left: 2px solid #0079f2 ;
-    color: #0079f2;
-    padding-left: 10px;
+    background-color: #777;
+    color: #fff;
+    padding: 4px 4px 4px 14px;
+    border-radius: 6px;
 }
 
 .channels__menu-item.UNREAD {
    font-weight: 600;
    color: #000;
+}
+
+.channels__browse-all {
+    margin: 8px 0 4px 0;
+}
+
+.channels__browse-all a {
+   color: #323C46;
+}
+
+.channels__browse-all a::before {
+    content: url(/images/pages/plus.svg);
+    position: relative;
+    top: 0; 
+    left: -6px;
+    opacity: .5;
 }
 
 .channels__channel-threads {
@@ -256,18 +270,21 @@
     border-bottom: none;
 }
 
-.channels__channel,
-.channels__channel-add {
-    /* width: 236px; */
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
-    box-sizing: border-box;
-    /* text-align: center; */
-    line-height: 22px;
-    font-size: 16px;
+.channels__channel {
+  display:flex;
+  align-items:center;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
 }
+
+.channels__channel-info {
+    flex:1;
+}
+
+.channels__channel-name {
+    font-weight: 600;
+}
+
 
 .channels__channel-add {
     text-align:center;
@@ -278,12 +295,8 @@
 }
 
 .channels__channel-members-count {
-    padding: 6px 0 0;
     color: #888;
     font-size: 14px;
-    display: flex;
-    align-items:center;
-    gap: 6px;
 }
 
 /* 

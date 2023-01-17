@@ -7,9 +7,6 @@
         <div class="modal__content">
             <div class="modal__header">
                 <h3 class="modal__title">Add channel</h3>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button> -->
             </div>
             <div class="modal__body">
                 <div class="add-channel">
@@ -19,22 +16,23 @@
                         </span>
                         <input type="text" placeholder="Name" class="textbox BIG BLOCK">
                     </div>
-                    <!-- <div class="add-channel__description">
-                        <span class="add-channel__description-label">
-                            Description
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Members
                         </span>
-                        <input type="text" placeholder="Description" class="textbox BIG BLOCK">
-                    </div> -->
+                        <div>
+                        <select>
+                            <option value="All">All</option>
+                            <option value="Later">Add members later</option>
+                          </select>
+                        </div>
+                    </div>
                     <div class="add-channel__actions">
-                        <button class="button LARGE" data-element="modal-close-button">Avbryt</button>
-                        <input type="button" value="Spara" class="button PRIMARY LARGE">
+                        <button class="button LARGE" data-element="modal-close-button">Cancel</button>
+                        <a href="/pages/group/channels-new.html" type="button" class="button PRIMARY LARGE">Add</a>
                     </div>
                 </div>
             </div>
-            <!-- <div class="modal__actions">
-                <button type="button" class="button" >Close</button>
-                <button type="button" class="button PRIMARY">Save</button>
-            </div> -->
         </div>
     </div>
 </div>

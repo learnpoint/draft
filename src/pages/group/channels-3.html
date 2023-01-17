@@ -10,46 +10,65 @@
         <div class="channels__left-panel NARROW">
             <div class="discussion">
                 <div class="discussion__header">
-                    <!-- <button class="button">Add people</button> -->
-                    <!-- <img src="/images/pages/person-fill-add.svg" title="Add members"
-                        class="discussion__add-people-button" /> -->
                     <div class="discussion__channel-title">General</div>
                     <div class="discussion__channel-threads-view" data-component="expandable">
-                        <div class="discussion__channel-threads-button" data-element="expandable.toggle-button">
-                            <!-- <span>Threads</span>
-                            <span class="discussion__channel-threads-new-indicator"></span> -->
-                            <img src="/images/pages/chat-text.svg" title="Add members"
-                                class="discussion__add-people-button" />
+                        <div class="discussion__channel-threads-button" data-element="expandable.toggle-button" title="View threads">
+                           
+                            <img src="/images/pages/wechat.svg" class="discussion__thread-button"  />
+                             <span class="discussion__channel-threads-new-indicator"></span>
                         </div>
 
                         <div class="discussion__channel-threads">
+                            <h4 class="discussion__channel-threads-title">New in threads</h4>
                             <div class="discussion__channel-thread NEW">
-                                Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
-                                leo
-                            </div>
-                            <div class="discussion__channel-thread NEW">
-                                In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
-                                nulla et
-                            </div>
-                            <div class="discussion__channel-thread">
-                                Integer blandit vestibulum ante ut pellentesque.
+                                <span>
+                                    Facilisis ut pellen
+                                </span> 
+                                <span>•</span>
+                                <span>15 replies</span>
                             </div>
                             <div class="discussion__channel-thread NEW">
-                                Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
-                                nulla et
+                                <span>In dapibus ante</span> 
+                                <span>•</span>
+                                <span>9 replies</span>
                             </div>
-                            <div class="discussion__channel-thread">
-                                Vestibulum ante ut pellentesque.
+                            <div class="discussion__channel-thread NEW">
+                                <span>Integer blandit</span>
+                                <span>•</span>
+                                <span>5 replies</span>
                             </div>
-
+                            <div class="discussion__channel-thread NEW">
+                                <span>Cras quis vulput</span> 
+                                <span>•</span>
+                                <span>13 replies</span>
+                            </div>
+                            <div class="discussion__channel-thread NEW">
+                               <span></span>Vestibulum ante 
+                                <span>•</span>
+                                <span>10 replies</span>
+                            </div>
                             <div class="discussion__channel-thread-view-all">
-                                Load more
+                                View all threads
                             </div>
                         </div>
                     </div>
-                    <!--                     
-                    <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" /> -->
-                    <img class="discussion__more-actions-button" src="/images/pages/three-dots-vertical.svg" />
+                    <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
+                
+                    <div class="discussion__channel-more-actions" data-component="expandable">
+                        <img src="/images/pages/three-dots-vertical.svg" title=""
+                            class="discussion__more-actions-button" data-element="expandable.toggle-button" />
+                        <div class="discussion__channel-more-actions-menu" data-component="expandable">
+                            <div class="discussion__channel-more-actions-menu-item" >
+                                Add members
+                            </div>
+                            <div class="discussion__channel-more-actions-menu-item">
+                                Edit channel
+                            </div>
+                            <div class="discussion__channel-more-actions-menu-item">
+                                View threads
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="discussion__comments" id="comments">
                     <div class="discussion__comment">
@@ -62,7 +81,7 @@
                                 <!-- <span class="discussion__comment-meta"><span>16 Nov<span>•</span>
                                         <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                             Reply</a></span> -->
-                                        </span>
+                                </span>
                             </div>
                             <div>Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
                                 leo
@@ -81,7 +100,7 @@
                                     <!-- <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         Reply</a></span> -->
-                                    </span>
+                                </span>
                             </div>
                             <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
                                 nulla et
@@ -100,7 +119,7 @@
                                     <!-- <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         Reply</a> -->
-                                    </span>
+                                </span>
                             </div>
                             <div>Quisque porttitor augue nec risus bibendum iaculis. Fusce eget posuere erat.
                                 Suspendisse
@@ -136,7 +155,7 @@
                                     <!-- <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         Reply</a> -->
-                                    </span>
+                                </span>
                             </div>
                             <div>Fusce malesuada, leo vel eleifend placerat, nunc risus porttitor felis, fermentum
                                 accumsan
@@ -156,7 +175,7 @@
                                     <!-- <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         Reply</a> -->
-                                    </span>
+                                </span>
                             </div>
                             <div> Morbi lacus dui, lobortis quis mi et, consequat dictum nisi. Mauris mattis nisl
                                 eget
@@ -272,11 +291,11 @@
                         <div class="discussion__comment-content">
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
                                     H</span>
-                                <span class="discussion__comment-meta"><span>20 Nov</span> 
-                                <!-- <span>•</span>
+                                <span class="discussion__comment-meta"><span>20 Nov</span>
+                                    <!-- <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         Reply</a> -->
-                                    </span>
+                                </span>
                             </div>
                             <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
                                 nulla et
@@ -296,13 +315,13 @@
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">7
                                         replies</a>
                             </div>
-                            <div>Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
+                            <a href="/pages/group/channel-thread.html"
+                                class="discussion__comment-content-text">Pellentesque facilisis. Etiam imperdiet
+                                imperdiet orci. Nunc nec neque. Phasellus
                                 leo
                                 dolor,
-                                tempus non, auctor et, hendrerit quis, nisi?</div>
-
+                                tempus non, auctor et, hendrerit quis, nisi?</a>
                         </div>
-
                     </div>
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
@@ -315,12 +334,10 @@
                                     <span>•</span>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         5 replies</a>
-
-                                    <img class="discussion__comment-more-actions-button"
-                                        src="/images/pages/three-dots-vertical.svg" />
                                 </span>
                             </div>
-                            <div>Auctor et, hendrerit quis, nisi?</div>
+                            <a href="/pages/group/channel-thread.html" class="discussion__comment-content-text">Auctor
+                                et, hendrerit quis, nisi?</a>
                         </div>
 
                     </div>
@@ -328,6 +345,7 @@
                 <div class="discussion__add-comment">
                     <input type="text" class="discussion__add-input" placeholder="" autofocus>
                 </div>
+
             </div>
         </div>
         <div class="channels__right-panel">
@@ -350,7 +368,7 @@
                 </div>
                 <div class="channels__menu">
                     <div>
-                        <div class="channels__menu-item SELECTED">General</div>                     
+                        <div class="channels__menu-item SELECTED">General</div>
                     </div>
                     <div class="channels__menu-item">
                         Announcements
@@ -361,7 +379,7 @@
                     <div class="channels__menu-item UNREAD">
                         Internships
                     </div>
-                    <div class="channels__menu-section EXPANDED" data-component="expandable">
+                    <div class="channels__menu-section EXPANDED">
                         <div class="channels__menu-section-name" data-element="expandable.toggle-button">Design
                         </div>
                         <div class="channels__menu-items">
@@ -373,7 +391,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="channels__menu-section EXPANDED" data-component="expandable">
+                    <div class="channels__menu-section EXPANDED">
                         <div class="channels__menu-section-name" data-element="expandable.toggle-button">JS
                             questions
                         </div>
@@ -392,14 +410,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="channels__menu-section" data-component="expandable">
-                        <div class="channels__menu-section-name" data-element="expandable.toggle-button">All
-                            channels
+                    <div class="channels__menu-section EXPANDED">
+                        <div class="channels__menu-section-name">
+                            Resources
                         </div>
                         <div class="channels__menu-items">
-                            <a href="/pages/group/channels-5.html"  class="channels__menu-item">
-                                Help
-                            </a>
+                            <div class="channels__menu-item">
+                                reviews
+                            </div>
                             <div class="channels__menu-item">
                                 random
                             </div>
@@ -413,6 +431,10 @@
                                 best-practices
                             </div>
                         </div>
+                    </div>
+                    <div class="channels__browse-all">
+                        <a href="/pages/group/channels.html">Join channels
+                        </a>
                     </div>
                 </div>
             </div>

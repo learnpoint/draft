@@ -18,12 +18,12 @@ document.addEventListener('click', event => {
     }
 
     // if link or button:
-    event.preventDefault();
-    toggleButton.setAttribute('aria-expanded', toggleButton.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+    // event.preventDefault();
+    // toggleButton.setAttribute('aria-expanded', toggleButton.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
     expandable.classList.toggle('EXPANDED');  
-    const expandedMenu = expandable.querySelector('[data-element="expandable.menu"]');
-    expandedMenu.focus();
-    document.addEventListener('keydown',TrapFocusOnExpandable);  
+    // const expandedMenu = expandable.querySelector('[data-element="expandable.menu"]');
+    // expandedMenu.focus();
+    // document.addEventListener('keydown',TrapFocusOnExpandable);  
   
 });
 
@@ -58,6 +58,6 @@ function collapseAll() {
     const expandables = document.querySelectorAll('[data-component="expandable"]');
     expandables.forEach(expandable => {
         expandable.classList.remove('EXPANDED');
-        expandable.querySelector('[data-element="expandable.toggle-button"]').setAttribute('aria-expanded', "false");
+        // expandable.querySelector('[data-element="expandable.toggle-button"]').setAttribute('aria-expanded', "false");
     });
 }

@@ -34,7 +34,7 @@
 }
 
 .discussion__more-actions-button {
-    padding-left: 8px;
+    padding-left: 4px;
     opacity: .6;
 }
 
@@ -59,6 +59,40 @@
     flex:1;
 }
 
+.discussion__channel-more-actions {
+    position:relative;
+}
+
+.discussion__channel-more-actions.EXPANDED .discussion__channel-more-actions-menu {
+    font-size: 14px;
+    opacity: 1;
+    width: 160px;
+    visibility: visible;
+}
+
+.discussion__channel-more-actions-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    top: 95%;
+    top: 100%;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+    transition: opacity .1s ease;
+    border-radius: 4px;
+}
+
+.discussion__channel-more-actions-menu-item {
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+    padding: 8px 10px;
+    display:block;
+}
+
 .discussion__channel-threads-button {
     /* border: 1px solid #bbb;
     padding:4px 10px;
@@ -67,15 +101,20 @@
     cursor: pointer;
     line-height: 20px;
     font-size:14px; */
+    margin-left: 8px;
+    position:relative;
+    top:-2px;
 }
 
 .discussion__channel-threads-new-indicator {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     background-color: #0780ff;
     border-radius: 50%;
     display:inline-block;
-    margin-left: 3px;
+    position:relative;
+    top: -12px;
+    left: -4px;
 }
 
 .discussion__channel-threads-view {
@@ -90,10 +129,10 @@
 .discussion__channel-threads {
     position: absolute;
     font-size: 14px;
-    top: 40px;
+    top: 28px;
     right:0;
     border: 1px solid #ddd;
-    padding:0 12px;
+    padding:0 16px;
     border-radius: 8px;
     cursor: pointer;
     width: 350px;
@@ -107,14 +146,18 @@
     display:block;
 }
 
-/* .discussion__channel-thread.NEW {
-    border: 1px solid #0079f2;
-} */
+.discussion__channel-thread.NEW {
+    font-weight:600;
+} 
 
 .discussion__channel-thread {
     border-bottom: 1px solid #ccc;
-    padding: 12px;
+    padding: 12px 0;
     cursor: pointer;
+}
+
+.discussion__channel-threads-title {
+    margin: 18px 0 -4px;
 }
 
 .discussion__channel-thread:last-child {
@@ -128,10 +171,10 @@
     cursor: pointer; 
 }
 
-.discussion__add-people-button {
-    width: 20px;
-    height: 20px;
-    opacity: .5;
+.discussion__thread-button {
+    width: 22px;
+    height: 22px;
+    opacity: .4;
     /* margin-right: 10px; */
     position: relative;
     top: 3px;
@@ -139,7 +182,7 @@
 }
 
 .discussion__comments {
-    max-height: calc(100vh - 280px);
+    height: calc(100vh - 280px);
     overflow-y: scroll;
     padding: 0 1em;
 }
@@ -176,15 +219,6 @@
     font-size: 14px;
     margin: 2px 0;
     flex:1;
-}
-
-.discussion__comment-more-actions-button  {
-    opacity: 0;
-    float: right;
-}
-
-.discussion__comment:hover .discussion__comment-more-actions-button  {
-    opacity: .6;
 }
 
 .discussion__reply-mark-as-answered {
@@ -280,6 +314,10 @@
     color: #888;
     font-size:13px;
     flex:1;
+}
+
+.discussion__comment-content-text {
+    color: #000;
 }
 
 .discussion__comment-replies {
@@ -441,7 +479,12 @@
     margin: 16px 0 0;
 }
 
+.discussion__actions-container {
+    margin-top: 270px;
+}
+
 .discussion__actions {
     text-align:center;
-    padding: 12px;
+    padding: 16px;
+    box-sizing:border-box;
 }
