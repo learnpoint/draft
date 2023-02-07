@@ -10,6 +10,7 @@
     background-color: #fff;   
     border-bottom: 1px solid #ddd;
     padding: 16px;
+    gap:6px;
 }
 
 .discussion__header-mobile {
@@ -35,7 +36,8 @@
 
 .discussion__more-actions-button {
     padding-left: 4px;
-    opacity: .6;
+    opacity: .4;
+    padding-top: 4px;
 }
 
 .discussion__action {
@@ -103,7 +105,7 @@
     font-size:14px; */
     margin-left: 8px;
     position:relative;
-    top:-2px;
+    top:-4px;
 }
 
 .discussion__channel-threads-new-indicator {
@@ -115,6 +117,7 @@
     position:relative;
     top: -12px;
     left: -4px;
+    display: none;
 }
 
 .discussion__channel-threads-view {
@@ -175,14 +178,14 @@
     width: 22px;
     height: 22px;
     opacity: .4;
-    /* margin-right: 10px; */
+    margin-right: 8px;
     position: relative;
-    top: 3px;
+    top: 7px;
     cursor: pointer;    
 }
 
 .discussion__comments {
-    height: calc(100vh - 280px);
+    height: calc(100vh - 208px);
     overflow-y: scroll;
     padding: 0 1em;
 }

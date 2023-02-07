@@ -214,6 +214,46 @@ hr {
     background-color: #5d67f1; 
 }
 
+.notification__avatar.ICON-CHANNEL{
+    background-color: #70ce0c;
+    /* background-color: #761d76;   */
+}
+
+.notification__avatar.ICON-COMMENT {
+    background-color: #34aadc; 
+}
+
+
+.notification__avatar.ICON-CHANNEL-1  {
+    background-color: #70ce0c;
+    /* background-color: #761d76;   */
+}
+
+.notification__avatar.ICON-CHANNEL img{
+    width: 1.5em;
+    height: 1.5em; 
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+.notification__avatar.ICON-COMMENT img{
+    width: 1.5em;
+    height: 1.5em; 
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+.notification__avatar.ICON-CHANNEL-1 img{
+    width: 1.2em;
+    height: 1.2em; 
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+
+
 .notification__avatar img {
     width: 1.8em;
     height: 1.8em; 

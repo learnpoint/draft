@@ -12,6 +12,7 @@
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 .is-mobile .channels__container {
@@ -114,6 +115,8 @@
     cursor: pointer;
     position: relative;
     left:-6px;
+    text-transform: uppercase;
+    font-size:12px;
 }
 
 .channels__menu-section-name::before {
@@ -127,7 +130,7 @@
 .channels__menu-section.EXPANDED .channels__menu-section-name::before {
      content: url('/images/pages/chevron-down.svg');
      position: relative;
-    top:2px; 
+    top:4px; 
     left: -3px;
     opacity: 0.6;
 } 
@@ -142,7 +145,7 @@
 }
 
 .channels__menu-item {
-    padding: 1px 6px 0 14px;
+    padding: 1px 6px 0 12px;
     margin: 4px 0;
     cursor: pointer;
     /* font-size: 14px; */
@@ -174,6 +177,9 @@
     top: 0; 
     left: -6px;
     opacity: .5;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
 }
 
 .channels__channel-threads {
@@ -351,9 +357,17 @@
 
 
 .add-channel {
-    /* max-width: 400px;
-    margin: 0 auto; */
+    max-width: 400px;
+    margin: 0 auto; 
 }
+
+.add-channel__container {
+  height: calc(100vh - 184px);
+  padding: 0 16px;
+  max-width: 400px;
+margin: 0 auto; 
+}
+
 
 .add-channel__name,
 .add-channel__description {
@@ -384,4 +398,36 @@
     padding:8px 16px;
     margin: 16px 0;
     font-size: 12px  
+}
+
+.add-members {
+  
+}
+
+.add-members__list {
+}
+
+.add-members__list-item {
+    display: flex;
+    padding: 12px 0;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.add-members__user-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+
+.add-members__user-name {
+    flex: 1;
+}
+
+.add-members__actions {
+    margin: 24px 0 0;
+    text-align: right;
 }

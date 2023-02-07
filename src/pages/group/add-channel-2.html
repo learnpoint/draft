@@ -1,0 +1,133 @@
+<!-- header.html, { title: "Javascript 3" } -->
+<!-- sub-nav.html -->
+
+<link rel="stylesheet" href="/styles/pages/group/discussion.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
+<script defer src="/scripts/pages/notifications/index.js"></script>
+
+<div>
+    <div class="channels__container">
+        <div class="channels__left-panel NARROW">
+            <div class="discussion">
+                <div class="discussion__header">
+                    <div class="discussion__channel-title">Add channel</div>
+
+                </div>
+                <div class="add-channel__container">
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Name
+                        </span>
+                        <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__description">
+                        <span class="add-channel__description-label">
+                            Description
+                        </span>
+                        <input type="text" placeholder="Description" class="textbox BIG BLOCK">
+                    </div>
+
+                    <div class="add-channel__actions">
+                        <a class="button LARGE" href="/pages/group/channels.html">Avbryt</a>
+                        <input type="button" value="Spara" class="button PRIMARY LARGE">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="channels__right-panel">
+            <div class="channels__right-panel-content">
+                <div class="channels__right-panel-header" data-component="expandable">
+                    <h3>Channels</h3>
+                    <img class="channels__right-panel-actions" src="/images/pages/three-dots-vertical.svg"
+                        data-element="expandable.toggle-button" />
+                    <div class="channels__actions-menu-items">
+                        <div class="channels__actions-menu-item" data-element="modal-open-button">
+                            Add channel
+                        </div>
+                        <div class="channels__actions-menu-item">
+                            Add section
+                        </div>
+                        <a href="/pages/group/channels.html" class="channels__actions-menu-item">
+                            Browse all channels
+                        </a>
+                    </div>
+                </div>
+                <div class="channels__menu">
+                    <div>
+                        <div class="channels__menu-item">General</div>
+                    </div>
+                    <div class="channels__menu-item">
+                        Announcements
+                    </div>
+                    <div class="channels__menu-item">
+                        Questions
+                    </div>
+                    <div class="channels__menu-item UNREAD">
+                        Internships
+                    </div>
+                    <div class="channels__menu-section EXPANDED">
+                        <div class="channels__menu-section-name" data-element="expandable.toggle-button">Design
+                        </div>
+                        <div class="channels__menu-items">
+                            <div class="channels__menu-item UNREAD">
+                                design-thinking
+                            </div>
+                            <div class="channels__menu-item">
+                                design-methods
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channels__menu-section EXPANDED">
+                        <div class="channels__menu-section-name" data-element="expandable.toggle-button">JS
+                            questions
+                        </div>
+                        <div class="channels__menu-items">
+                            <div class="channels__menu-item UNREAD">
+                                React
+                            </div>
+                            <div class="channels__menu-item UNREAD">
+                                Classes
+                            </div>
+                            <div class="channels__menu-item UNREAD">
+                                Functions
+                            </div>
+                            <div class="channels__menu-item">
+                                Arrays
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channels__menu-section EXPANDED">
+                        <div class="channels__menu-section-name">
+                            Resources
+                        </div>
+                        <div class="channels__menu-items">
+                            <div class="channels__menu-item">
+                                reviews
+                            </div>
+                            <div class="channels__menu-item">
+                                random
+                            </div>
+                            <div class="channels__menu-item">
+                                resources
+                            </div>
+                            <div class="channels__menu-item">
+                                features
+                            </div>
+                            <div class="channels__menu-item">
+                                best-practices
+                            </div>
+                        </div>
+                    </div>
+                    <div class="channels__browse-all">
+                        <a href="/pages/group/add-channel.html">Add channel
+                        </a>
+                    </div>
+                    <div class="channels__browse-all">
+                        <a href="/pages/group/channels.html">Join channels
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

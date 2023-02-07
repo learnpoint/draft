@@ -34,10 +34,10 @@
     <div class="modal__dialog">
         <div class="modal__content">
             <div class="modal__header">
-                <h3 class="modal__title">Add channel</h3>
+                <h3 class="modal__title">Add members</h3>
             </div>
             <div class="modal__body">
-                <div class="add-channel">
+                <!-- <div class="add-channel">
                     <div class="add-channel__name">
                         <span class="add-channel__name-label">
                             Name
@@ -56,6 +56,55 @@
                         </div>
                     </div>
                     <div class="add-channel__actions">
+                        <button class="button LARGE" data-element="modal-close-button">Cancel</button>
+                        <a href="/pages/group/channels-new.html" type="button" class="button PRIMARY LARGE">Add</a>
+                    </div>
+                </div> -->
+
+                <div class="add-members">
+                    <div class="add-members__list">
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-2.jpeg" />
+                            <div class="add-members__user-name">Ronny R</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-1.jpg" />
+                            <div class="add-members__user-name">Stig B</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpeg" />
+                            <div class="add-members__user-name">Emma S</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpg" />
+                            <div class="add-members__user-name">Enid K</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-1.jpg" />
+                            <div class="add-members__user-name">Edvin C</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-2.jpeg" />
+                            <div class="add-members__user-name">Oscar P</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpg" />
+                            <div class="add-members__user-name">Elsa S</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpeg" />
+                            <div class="add-members__user-name">Pelle P</div>
+                            <input type="checkbox" >
+                        </div>
+                    </div>
+                    <div class="add-members__actions">
                         <button class="button LARGE" data-element="modal-close-button">Cancel</button>
                         <a href="/pages/group/channels-new.html" type="button" class="button PRIMARY LARGE">Add</a>
                     </div>
@@ -103,6 +152,77 @@
 <script defer src="/scripts/pages/notifications/index.js"></script>
 <link rel="stylesheet" href="/styles/pages/notifications/index.css">
 <link rel="stylesheet" type="text/css" href="/styles/core/button.css">
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="notifications">
+            <div class="notifications__new">
+                <div class="notifications__header">
+                    <h1 class="notifications__title">Icons for channel notifications</h1>
+                    <a href="" class="notifications__mark-as-read" data-element="mark-all-as-read-btn">Markera alla som lästa
+                    </a>
+                    <a class="notifications__settings-link" href="/pages/notifications/settings.html"><img
+                            src="/images/pages/cog.svg" aria-label="Notification settings" /> </a>
+                </div>
+
+                <div class="notifications__new-list">
+    
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-CHANNEL-1">
+                            <img src="/images/pages/hash.svg" />
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__description">
+                               Announcements</div>
+                            <span class="notification__type-name">Inlägg i Kanal</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-COMMENT">
+                            <img src="/images/pages/discussion.svg" />
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__description">
+                               Re: Announcements</div>
+                            <span class="notification__type-name">Kommentar på Inlägg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
 
 
 <div class="page">
@@ -367,7 +487,7 @@
     </div>
 </div> 
 
-<div class="page">
+<!-- <div class="page">
     <div class="page__sheet">
         <div class="notifications">
             <div class="notifications__new">
@@ -634,7 +754,7 @@
             </div>
         </div>
     </div>
-</div> 
+</div>  -->
 
 <div class="page">
     <div class="page__sheet">
@@ -698,6 +818,56 @@
                             <span class="notification__type-name">Kommentar på nyhet</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Stig Berg</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-CHANNEL">
+                            <img src="/images/pages/hash.svg" />
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__description">
+                               Re: Announcements</div>
+                            <span class="notification__type-name">Kanal</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__group-name">Javascript 3</span>
+                            <span class="notification__separator">•</span>
+                            <span class="notification__date">Nov 10</span>
+                        </div>
+                        <div class="notification__actions">
+                            <img class="notification__actions-icon" src="/images/pages/three-dots.svg"
+                                data-element="expandable.toggle-button" />
+                            <div class="notification__actions-menu">
+                                <div class="notification__actions-menu-item" data-element="move-btn"><img
+                                        src="/images/pages/check.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Mark as read</span> </div>
+                                <div class="notification__actions-menu-item"><img src="/images/pages/bell-off.svg"
+                                        class="notification__actions-menu-item-icon" /><span>Unsubscribe</span></div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li class="notification" data-component="expandable">
+                        <div class="notification__avatar ICON-CHANNEL-1">
+                            <img src="/images/pages/hash1.svg" />
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__description">
+                               Announcements</div>
+                            <span class="notification__type-name">Inlägg i Kanal</span>
                             <span class="notification__separator">•</span>
                             <span class="notification__group-name">Javascript 3</span>
                             <span class="notification__separator">•</span>

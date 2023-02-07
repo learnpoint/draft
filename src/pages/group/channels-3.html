@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/styles/pages/group/channels.css">
 <script defer src="/scripts/pages/notifications/index.js"></script>
 
-<div class="page">
+<div>
     <div class="channels__container">
         <div class="channels__left-panel NARROW">
             <div class="discussion">
@@ -58,7 +58,7 @@
                         <img src="/images/pages/three-dots-vertical.svg" title=""
                             class="discussion__more-actions-button" data-element="expandable.toggle-button" />
                         <div class="discussion__channel-more-actions-menu" data-component="expandable">
-                            <div class="discussion__channel-more-actions-menu-item" >
+                            <div class="discussion__channel-more-actions-menu-item"  data-element="modal-open-button" >
                                 Add members
                             </div>
                             <div class="discussion__channel-more-actions-menu-item">
@@ -431,6 +431,14 @@
                                 best-practices
                             </div>
                         </div>
+                    </div>
+                    <div class="channels__browse-all">
+                        <a href="/pages/group/add-channel.html">Add channel
+                        </a>
+                    </div>
+                    <div class="channels__browse-all">
+                        <a href="/pages/group/add-channel-2.html">Add channel
+                        </a>
                     </div>
                     <div class="channels__browse-all">
                         <a href="/pages/group/channels.html">Join channels
