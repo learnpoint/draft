@@ -34,7 +34,7 @@
     <div class="modal__dialog">
         <div class="modal__content">
             <div class="modal__header">
-                <h3 class="modal__title">Add members</h3>
+                <h3 class="modal__title">Arkivera kanalen?</h3>
             </div>
             <div class="modal__body">
                 <!-- <div class="add-channel">
@@ -62,7 +62,10 @@
                 </div> -->
 
                 <div class="add-members">
-                    <div class="add-members__list">
+                    <div>
+
+                    </div>
+                    <!-- <div class="add-members__list">
                         <div class="add-members__list-item">
                             <img class="add-members__user-image" src="/images/pages/users/user-2.jpeg" />
                             <div class="add-members__user-name">Ronny R</div>
@@ -103,10 +106,10 @@
                             <div class="add-members__user-name">Pelle P</div>
                             <input type="checkbox" >
                         </div>
-                    </div>
+                    </div> -->
                     <div class="add-members__actions">
-                        <button class="button LARGE" data-element="modal-close-button">Cancel</button>
-                        <a href="/pages/group/channels-new.html" type="button" class="button PRIMARY LARGE">Add</a>
+                        <button class="button" data-element="modal-close-button">Avbryt</button>
+                        <a href="/pages/group/channels-6.html" type="button" class="button PRIMARY DANGER">Arkivera</a>
                     </div>
                 </div>
             </div>
@@ -201,11 +204,11 @@
                 <div class="discussion__header">
                     <div class="discussion__channel-title">General</div>
                     <div class="discussion__channel-threads-view" data-component="expandable">
-                        <div class="discussion__channel-threads-button" data-element="expandable.toggle-button" title="View threads">
+                        <!-- <div class="discussion__channel-threads-button" data-element="expandable.toggle-button" title="View threads">
                            
                             <img src="/images/pages/wechat.svg" class="discussion__thread-button"  />
                              <span class="discussion__channel-threads-new-indicator"></span>
-                        </div>
+                        </div> -->
 
                         <div class="discussion__channel-threads">
                             <h4 class="discussion__channel-threads-title">New in threads</h4>
@@ -247,14 +250,14 @@
                         <img src="/images/pages/three-dots-vertical.svg" title=""
                             class="discussion__more-actions-button" data-element="expandable.toggle-button" />
                         <div class="discussion__channel-more-actions-menu" data-component="expandable">
-                            <div class="discussion__channel-more-actions-menu-item"  data-element="modal-open-button" >
-                                Add members
+                            <div class="discussion__channel-more-actions-menu-item"   >
+                                Medlemmar
                             </div>
                             <div class="discussion__channel-more-actions-menu-item">
-                                Edit channel
+                                Redigera
                             </div>
-                            <div class="discussion__channel-more-actions-menu-item">
-                                View threads
+                            <div class="discussion__channel-more-actions-menu-item" data-element="modal-open-button">
+                                Arkivera
                             </div>
                         </div>
                     </div>
@@ -621,17 +624,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="channels__browse-all">
-                        <a href="/pages/group/add-channel.html">Add channel
-                        </a>
-                    </div>
-                    <div class="channels__browse-all">
-                        <a href="/pages/group/add-channel-2.html">Add channel
-                        </a>
-                    </div>
-                    <div class="channels__browse-all">
-                        <a href="/pages/group/channels.html">Join channels
-                        </a>
+                    <div class="channels__more-action-links">
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/add-channel.html">Add channel
+                            </a>
+                        </div>
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/add-channel-2.html">Add channel
+                            </a>
+                        </div>
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/channels.html">Join channels
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

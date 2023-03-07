@@ -37,7 +37,7 @@
 
 
 .channels__right-panel {
-   padding:8px 20px;
+   padding:8px 16px;
    width: 260px;
    position: relative;
 }
@@ -64,6 +64,7 @@
      display: flex;
      align-items:baseline;
      position:relative;
+     display: none;
 }
 
 .channels__right-panel h3 {
@@ -163,6 +164,12 @@
    color: #000;
 }
 
+
+.channels__more-action-links {
+    margin-top: 16px;
+    border-top: 1px solid #ddd;
+}
+
 .channels__browse-all {
     margin: 8px 0 4px 0;
 }
@@ -198,6 +205,11 @@
     color:#0079f2;
 }
 
+.channels__archived-channels-link {
+    text-align:center;
+    margin: 8px 0 32px;
+}
+
 .channels__tabs {
     display: flex;
     align-items: center;
@@ -231,8 +243,7 @@
 .channels__channel-list {
     flex-wrap: wrap;
     gap: 28px;
-    display: none;
-    padding-bottom: 24px;
+    padding-bottom: 8px;
 }
 
 .channels__section-tiles {
@@ -279,7 +290,7 @@
 .channels__channel {
   display:flex;
   align-items:center;
-  padding: 16px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ddd;
 }
 
