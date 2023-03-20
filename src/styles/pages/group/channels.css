@@ -373,10 +373,8 @@
 }
 
 .add-channel__container {
-  height: calc(100vh - 184px);
-  padding: 0 16px;
-  max-width: 400px;
-margin: 0 auto; 
+    max-width: 400px;
+    margin: 0 auto; 
 }
 
 

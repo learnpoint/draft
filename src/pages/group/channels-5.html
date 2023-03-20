@@ -8,12 +8,12 @@
 <div>
     <div class="channels__container">
         <div class="channels__left-panel NARROW">
-            <div class="discussion">
+            <div class="discussion ARCHIVED">
                 <div class="discussion__header">
 
                     <div class="discussion__channel-title">Help</div>
                 </div>
-                <div class="discussion__comments" id="comments">
+                <div class="discussion__comments " id="comments">
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
                             <img src="/images/pages/users/user-4.jpeg" />
@@ -221,8 +221,6 @@
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         5 replies</a>
 
-                                    <img class="discussion__comment-more-actions-button"
-                                        src="/images/pages/three-dots-vertical.svg" />
                                 </span>
                             </div>
                             <div>Auctor et, hendrerit quis, nisi?</div>
@@ -231,7 +229,8 @@
                     </div>
                 </div>
                 <div class="discussion__actions">
-                    <button class="button SMALL">Unarchive channel</button>
+                    <div  class="discussion__actions-message">Kanalen är borttagen och försvinner permanent efter 30 dagar.</div>
+                    <button class="button SMALL">Återställ kanal</button>
                 </div>
             </div>
         </div>
@@ -319,9 +318,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="channels__browse-all">
-                        <a href="/pages/group/channels.html">Join channels
-                        </a>
+                    <div class="channels__more-action-links">
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/add-channel.html">Lägg till kanal
+                            </a>
+                        </div>
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/add-channel-2.html">Lägg till kategori
+                            </a>
+                        </div>
+                        <div class="channels__browse-all">
+                            <a href="/pages/group/channels.html">Alla kanaler
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

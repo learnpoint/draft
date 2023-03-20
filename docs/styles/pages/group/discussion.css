@@ -51,9 +51,9 @@
 }
 
 .discussion__action-back-button {
-    width: 24px;
-    height: 24px; 
-    margin-bottom: -4px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: -9px;
 }
 
 .discussion__channel-title {
@@ -82,7 +82,7 @@
 .discussion__channel-more-actions.EXPANDED .discussion__channel-more-actions-menu {
     font-size: 14px;
     opacity: 1;
-    width: 160px;
+    width: 120px;
     visibility: visible;
 }
 
@@ -199,8 +199,16 @@
 }
 
 .discussion.ARCHIVED .discussion__comments {
-    height: calc(100vh - 194px);
+    height: calc(100vh - 238px);
     overflow-y: hidden;
+    padding: 0 1em;
+    opacity: .5;
+}
+
+
+.discussion__add-channel {
+    height: calc(100vh - 144px);
+    overflow-y: auto;
     padding: 0 1em;
 }
 
@@ -514,6 +522,21 @@
 
 .discussion__actions {
     text-align:center;
-    padding: 10px;
+    padding: 12px;
     box-sizing:border-box;
 }
+
+.discussion__actions-message {
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.discussion__channels-message {
+    padding: 16px 0;
+    font-weight: 600;
+    text-align: center;
+    background-color: #ffe5e5;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
