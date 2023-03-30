@@ -379,14 +379,52 @@
 
 
 .add-channel__name,
-.add-channel__description {
+.add-channel__category {
     margin-top: 24px;
 }
 
-.add-channel__name-label,
-.add-channel__description-label {
+.add-channel__name-label {
    font-weight: 600;
+   margin-bottom: 2px;
 }
+
+.add-channel__add-category-link{
+    padding: 4px;
+    color: #666;
+    font-size:13px;
+    cursor: pointer;
+}
+
+.add-channel__add-category-textbox {
+    display: none;
+}
+
+.add-channel__category.EXPANDED .add-channel__add-category-textbox {
+    display: block;
+}
+
+.add-channel__category.EXPANDED .add-channel__category-select {
+    display: none;
+}
+
+.add-channel__category.EXPANDED .add-channel__category-select,
+.add-channel__category.EXPANDED .add-channel__add-category-link {
+    display: none;
+}
+
+
+.add-channel__add-category-link::before {
+    content: url(/images/pages/plus.svg);
+    position: relative;
+    top: 0;
+    opacity: .5;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+
+}
+
+ 
 
 .add-channel__actions {
     margin: 32px 0 8px;

@@ -62,7 +62,6 @@
                                 Medlemmar
                             </div>
                             <a href="/pages/group/add-channel-2.html" class="discussion__channel-more-actions-menu-item">Redigera</a>
-                            <a href="/pages/group/move-channel-to.html" class="discussion__channel-more-actions-menu-item">Flytta till</a>
                             <div class="discussion__channel-more-actions-menu-item" data-element="modal-open-button">
                                 Ta bort
                             </div>
@@ -234,7 +233,10 @@
                                     Reply</a></span> -->
                                 </span>
                             </div>
-                            <div> Fusce sed sapien laoreet, mattis felis nec, placerat magna.</div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/pages/pdf.png" />
+                                <span class="discussion__comment-file-name">Studieplan.pdf</span> 
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
@@ -258,33 +260,6 @@
                     </div>
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
-                            <img src="/images/pages/users/user-4.jpeg" />
-                        </div>
-                        <div class="discussion__comment-content">
-                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
-                                    S</span>
-                                <span class="discussion__comment-meta"><span>18 Nov</span></span>
-                            </div>
-                            <div class="discussion__comment-poll">
-                                <div class="discussion__comment-poll-question">
-                                    Which one of these topics would you all like to discuss tomorrow?
-                                </div>
-                                <div class="discussion__comment-poll-options">
-                                    <div class="discussion__comment-poll-option">
-                                        Async/await
-                                    </div>
-                                    <div class="discussion__comment-poll-option">
-                                        Promises
-                                    </div>
-                                    <div class="discussion__comment-poll-option">
-                                        Closures
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="discussion__comment">
-                        <div class="discussion__commented-by">
                             <img src="/images/pages/users/user-1.jpg" />
                         </div>
                         <div class="discussion__comment-content">
@@ -296,9 +271,7 @@
                                         Reply</a> -->
                                 </span>
                             </div>
-                            <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
-                                nulla et
-                                sollicitudin laoreet, eros lectus consectetur leo?</div>
+                            <div class="discussion__comment-content-image">  <img src="/images/pages/test.jpg" /></div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
@@ -310,7 +283,7 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>20 Dec</span>
-                                    <span>•</span>
+                                    <!-- <span>•</span> -->
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">7
                                         replies</a>
                             </div>
@@ -330,7 +303,7 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>20 Dec</span>
-                                    <span>•</span>
+                                    <!-- <span>•</span> -->
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
                                         5 replies</a>
                                 </span>
@@ -342,7 +315,8 @@
                     </div>
                 </div>
                 <div class="discussion__add-comment">
-                    <input type="text" class="discussion__add-input" placeholder="" autofocus>
+                    <img class="discussion__add-file-icon" src="/images/pages/paperclip.svg" />
+                    <input type="text" class="discussion__add-input" placeholder="Skriv inlägg..." >
                 </div>
 
             </div>
@@ -433,11 +407,11 @@
                     </div>
                     <div class="channels__more-action-links">
                         <div class="channels__browse-all">
-                            <a href="/pages/group/add-channel.html">Lägg till kanal
+                            <a href="/pages/group/add-channel-2.html">Ny kanal
                             </a>
                         </div>
                         <div class="channels__browse-all">
-                            <a href="/pages/group/add-channel-2.html">Lägg till kategori
+                            <a href="/pages/group/add-channel-2.html">Ny kategori
                             </a>
                         </div>
                         <div class="channels__browse-all">

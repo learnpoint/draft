@@ -531,3 +531,7 @@ hr {
 b {
     font-weight: 600;
 }
+
+:focus {
+   outline: none;
+}

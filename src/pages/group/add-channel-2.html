@@ -10,28 +10,40 @@
         <div class="channels__left-panel NARROW">
             <div class="discussion">
                 <div class="discussion__header">
-                    <a class="discussion__action-back" href="/pages/group/channels-3.html"><img src="/images/pages/arrow-left-short.svg" class="discussion__action-back-button">
-                    </a>
-                    <div class="discussion__channel-title">Redigera</div>
+                    <!-- <a class="discussion__action-back" href="/pages/group/channels-3.html"><img src="/images/pages/arrow-left-short.svg" class="discussion__action-back-button">
+                    </a> -->
+                    <div class="discussion__channel-title">Ny kanal</div>
                 </div>
                 <div class="discussion__add-channel">
                     <div class="add-channel">
                         <div class="add-channel__name">
-                            <span class="add-channel__name-label">
-                                Name
-                            </span>
-                            <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                            <div class="add-channel__name-label">
+                                Namn
+                            </div>
+                            <input type="text" placeholder="kanal namn..." class="textbox BIG BLOCK">
                         </div>
-                        <div class="add-channel__description">
-                            <div class="add-channel__description-label">
+                        <div class="add-channel__category" data-component="expandable">
+                            <div class="add-channel__name-label">
                                 Kategori
                             </div>
-                            <select name="categories" id="categories">
+                            <select  class="add-channel__category-select"  name="categories" id="categories">
+                                <option>Inga kategori</option>
                                 <option>Design</option>
                                 <option>JS questions</option>
                                 <option>Resources</option>
                             </select>
+                            <a class="add-channel__add-category-link" data-element="expandable.toggle-button">
+                               Ny kategori
+                            </a>
+                            <div class="add-channel__add-category" >
+                               
+                                <div class="add-channel__add-category-textbox">
+                                    <input type="text" placeholder="Kategori namn..." class="textbox BIG BLOCK">
+                                </div>
+                            </div>
+                           
                         </div>
+
                         <div class="add-channel__actions">
                             <a class="button" href="/pages/group/channels-3.html">Avbryt</a>
                             <input type="button" value="Spara" class="button PRIMARY">
@@ -126,11 +138,11 @@
                     </div>
                     <div class="channels__more-action-links">
                         <div class="channels__browse-all">
-                            <a href="/pages/group/add-channel.html">Lägg till kanal
+                            <a href="/pages/group/add-channel.html">Ny kanal
                             </a>
                         </div>
                         <div class="channels__browse-all">
-                            <a href="/pages/group/add-channel-2.html">Lägg till kategori
+                            <a href="/pages/group/add-channel-2.html">Ny kategori
                             </a>
                         </div>
                         <div class="channels__browse-all">
