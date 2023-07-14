@@ -132,7 +132,7 @@
         <ul>
             <courses>
                 <li>
-                    <a href="/pages/group/content3.html?course_id=[[id]]">
+                    <a href="/pages/group/content-5.html?course_id=[[id]]">
                         [[name]]
                     </a>
                 </li>
@@ -157,8 +157,11 @@
 <nav class="sub-nav">
     <ul>
         <li>
-            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll</a>
+            <a href="/pages/group/content-5.html" data-select="content-5.html">Innehåll</a>
         </li>
+        <!-- <li>
+            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll</a>
+        </li> -->
         <li>
             <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
         </li>
@@ -198,7 +201,7 @@
         <div class="channels__left-panel NARROW">
             <div class="discussion">
                 <div class="discussion__header">
-                    <div class="discussion__channel-title">General</div>
+                    <div class="discussion__channel-title">File Icons</div>
                     <div class="discussion__channel-threads-view" data-component="expandable">
                         <!-- <div class="discussion__channel-threads-button" data-element="expandable.toggle-button" title="View threads">
                            
@@ -211,12 +214,12 @@
                             <div class="discussion__channel-thread NEW">
                                 <span>
                                     Facilisis ut pellen
-                                </span> 
+                                </span>
                                 <span>•</span>
                                 <span>15 replies</span>
                             </div>
                             <div class="discussion__channel-thread NEW">
-                                <span>In dapibus ante</span> 
+                                <span>In dapibus ante</span>
                                 <span>•</span>
                                 <span>9 replies</span>
                             </div>
@@ -226,12 +229,12 @@
                                 <span>5 replies</span>
                             </div>
                             <div class="discussion__channel-thread NEW">
-                                <span>Cras quis vulput</span> 
+                                <span>Cras quis vulput</span>
                                 <span>•</span>
                                 <span>13 replies</span>
                             </div>
                             <div class="discussion__channel-thread NEW">
-                               <span></span>Vestibulum ante 
+                                <span></span>Vestibulum ante
                                 <span>•</span>
                                 <span>10 replies</span>
                             </div>
@@ -241,15 +244,16 @@
                         </div>
                     </div>
                     <img src="/images/pages/notification-bell-0780ff.svg" class="discussion__subscribe-button" />
-                
+
                     <div class="discussion__channel-more-actions" data-component="expandable">
                         <img src="/images/pages/three-dots-vertical.svg" title=""
                             class="discussion__more-actions-button" data-element="expandable.toggle-button" />
                         <div class="discussion__channel-more-actions-menu" data-component="expandable">
-                            <div class="discussion__channel-more-actions-menu-item"   >
+                            <div class="discussion__channel-more-actions-menu-item">
                                 Medlemmar
                             </div>
-                            <a href="/pages/group/add-channel-2.html" class="discussion__channel-more-actions-menu-item">Redigera</a>
+                            <a href="/pages/group/add-channel-2.html"
+                                class="discussion__channel-more-actions-menu-item">Redigera</a>
                             <div class="discussion__channel-more-actions-menu-item" data-element="modal-open-button">
                                 Ta bort
                             </div>
@@ -264,10 +268,11 @@
                         <div class="discussion__comment-content">
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
-                                <!-- <span class="discussion__comment-meta"><span>16 Nov<span>•</span>
-                                        <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                            Reply</a></span> -->
-                                </span>
+                                <div class="discussion__comment-actions" data-component="expandable">
+                                    <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                        data-element="expandable.toggle-button" />
+                                    <img class="discussion__comment-delete-icon" src="/images/pages/trash-fill.svg" />
+                                </div>
                             </div>
                             <div>Pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus
                                 leo
@@ -283,10 +288,12 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
                                     H</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a></span> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
                             <div>In at dapibus ante. Cras quis vulputate magna, vitae aliquam sapien. Ut porta,
                                 nulla et
@@ -302,10 +309,12 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
                                     R</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
                             <div>Quisque porttitor augue nec risus bibendum iaculis. Fusce eget posuere erat.
                                 Suspendisse
@@ -313,6 +322,54 @@
 
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
+                    </div>
+
+                    <div class="discussion__comment">
+                        <div class="discussion__commented-by">
+                            <img src="/images/pages/users/user-1.jpg" />
+                        </div>
+                        <div class="discussion__comment-content">
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
+                                    H</span>
+                                <span class="discussion__comment-meta"><span>20 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="discussion__comment-content-image">
+                                <img src="/images/pages/code.png" />
+                                <span class="discussion__comment-file-link">Download</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="discussion__comment">
+                        <div class="discussion__commented-by">
+                            <img src="/images/pages/users/user-4.jpg" />
+                        </div>
+                        <div class="discussion__comment-content">
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Sarah
+                                    M</span>
+                                <span class="discussion__comment-meta"><span>18 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
+                            </div>
+                            <div class="discussion__comment-content-video"><iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/ID0fwi2q028" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe></div>
+                            <!-- <div class="discussion__comment-reply">Reply</div> -->
+                        </div>
+
                     </div>
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
@@ -322,33 +379,22 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a></span></span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
-                            <div>Integer blandit vestibulum ante ut pellentesque.</div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-text-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Testplan.txt</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
-                    </div>
-                    <div class="discussion__comment">
-                        <div class="discussion__commented-by">
-                            <img src="/images/pages/users/user-4.jpg" />
-                        </div>
-                        <div class="discussion__comment-content">
-                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Sarah
-                                    M</span>
-                                <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a> -->
-                                </span>
-                            </div>
-                            <div>Fusce malesuada, leo vel eleifend placerat, nunc risus porttitor felis, fermentum
-                                accumsan
-                                ipsum nisl eu enim. Donec eget tellus orci</div>
-                            <!-- <div class="discussion__comment-reply">Reply</div> -->
-                        </div>
-
                     </div>
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
@@ -358,15 +404,72 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
                                     R</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
-                            <div> Morbi lacus dui, lobortis quis mi et, consequat dictum nisi. Mauris mattis nisl
-                                eget
-                                justo
-                                vulputate vestibulum. Pellentesque ac convallis justo</div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-zip-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Assignments.zip</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
+                            <!-- <div class="discussion__comment-reply">Reply</div> -->
+                        </div>
+                    </div>
+                    <div class="discussion__comment">
+                        <div class="discussion__commented-by">
+                            <img src="/images/pages/users/user-2.jpeg" />
+                        </div>
+                        <div class="discussion__comment-content">
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
+                                    R</span>
+                                <span class="discussion__comment-meta"><span>18 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
+                            </div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon"
+                                    src="/images/fileicons/file-music-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Music.mp4</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
+                            <!-- <div class="discussion__comment-reply">Reply</div> -->
+                        </div>
+                    </div>
+                    <div class="discussion__comment">
+                        <div class="discussion__commented-by">
+                            <img src="/images/pages/users/user-2.jpeg" />
+                        </div>
+                        <div class="discussion__comment-content">
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Ronny
+                                    R</span>
+                                <span class="discussion__comment-meta"><span>18 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
+                            </div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon"
+                                    src="/images/fileicons/file-play-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">How to user test.mov</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
@@ -378,15 +481,22 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                    Reply</a></span> -->
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                                 </span>
                             </div>
-                            <div>Fusce sed sapien laoreet, mattis felis nec, placerat magna. Vestibulum ac elementum
-                                mi,
-                                sed
-                                commodo libero. Duis ac nisi vitae nulla interdum posuere.</div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-ppt-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Usability testing
+                                        introduction.ppt</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
@@ -398,13 +508,21 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                    Reply</a></span> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium eros leo, non
-                            pharetra urna dapibus in.
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon"
+                                    src="/images/fileicons/file-spreadsheet-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Spreadsheet.xlsx</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
@@ -416,14 +534,19 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Sarah
                                     M</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span>
-                                <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                    Reply</a></span> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
                             <div class="discussion__comment-file">
-                                <img class="discussion__comment-file-icon" src="/images/pages/pdf.png" />
-                                <span class="discussion__comment-file-name">Studieplan.pdf</span> 
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-pdf-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Studieplan.pdf</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
                             </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
@@ -436,31 +559,67 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>18 Nov</span>
-                                    <!-- <span>•</span> -->
-                                    <!-- <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a></span> -->
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
-                            <div>Duis ac nisi vitae nulla interdum
-                                posuere?</div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-doc-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Master thesis.docx</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
                             <!-- <div class="discussion__comment-reply">Reply</div> -->
                         </div>
                     </div>
                     <div class="discussion__comment">
                         <div class="discussion__commented-by">
-                            <img src="/images/pages/users/user-1.jpg" />
+                            <img src="/images/pages/users/user-4.jpeg" />
                         </div>
                         <div class="discussion__comment-content">
-                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Harry
-                                    H</span>
-                                <span class="discussion__comment-meta"><span>20 Nov</span>
-                                    <!-- <span>•</span>
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        Reply</a> -->
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                    S</span>
+                                <span class="discussion__comment-meta"><span>18 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
+                            </div>
+                            <div class="discussion__comment-file">
+                                <img class="discussion__comment-file-icon" src="/images/fileicons/file-image-fill.svg" />
+                                <div class="discussion__comment-file-info">
+                                    <span class="discussion__comment-file-name">Image.jpeg</span>
+                                    <span class="discussion__comment-file-link">Download</span>
+                                </div>
+                            </div>
+                            <!-- <div class="discussion__comment-reply">Reply</div> -->
+                        </div>
+                    </div>
+                    <div class="discussion__comment">
+                        <div class="discussion__commented-by">
+                            <img src="/images/pages/users/user-4.jpeg" />
+                        </div>
+                        <div class="discussion__comment-content">
+                            <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
+                                    S</span>
+                                <span class="discussion__comment-meta"><span>18 Nov</span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                                 </span>
                             </div>
-                            <div class="discussion__comment-content-image">  <img src="/images/pages/test.jpg" /></div>
-                            <!-- <div class="discussion__comment-reply">Reply</div> -->
+                            <div>Duis ac nisi vitae nulla interdum
+                                posuere?</div>
+
                         </div>
                     </div>
                     <div class="discussion__comment">
@@ -471,7 +630,12 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>20 Dec</span>
-                                    <!-- <span>•</span> -->
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                                     <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">7
                                         replies</a>
                             </div>
@@ -491,10 +655,12 @@
                             <div class="discussion__comment-info"><span class="discussion__commented-by-name">Siri
                                     S</span>
                                 <span class="discussion__comment-meta"><span>20 Dec</span>
-                                    <!-- <span>•</span> -->
-                                    <a href="/pages/group/channel-thread.html" class="discussion__comment-reply">
-                                        5 replies</a>
-                                </span>
+                                    <div class="discussion__comment-actions" data-component="expandable">
+                                        <img class="discussion__comment-actions-icon" src="/images/pages/three-dots.svg"
+                                            data-element="expandable.toggle-button" />
+                                        <img class="discussion__comment-delete-icon"
+                                            src="/images/pages/trash-fill.svg" />
+                                    </div>
                             </div>
                             <a href="/pages/group/channel-thread.html" class="discussion__comment-content-text">Auctor
                                 et, hendrerit quis, nisi?</a>
@@ -504,7 +670,7 @@
                 </div>
                 <div class="discussion__add-comment">
                     <img class="discussion__add-file-icon" src="/images/pages/paperclip.svg" />
-                    <input type="text" class="discussion__add-input" placeholder="Skriv inlägg..." >
+                    <input type="text" class="discussion__add-input" placeholder="Skriv inlägg...">
                 </div>
 
             </div>

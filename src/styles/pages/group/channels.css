@@ -112,7 +112,7 @@
 
 .channels__menu-section-name {
     /* font-weight: 600; */
-    padding: 12px 2px 0 0;
+    padding: 12px 2px 0 16px;
     cursor: pointer;
     position: relative;
     left:-6px;
@@ -120,21 +120,6 @@
     font-size:12px;
 }
 
-.channels__menu-section-name::before {
-    content: url('/images/pages/caret-right-fill.svg');
-    position: relative;
-    top:2px; 
-    left: -3px;
-    opacity: 0.6;
-}
-
-.channels__menu-section.EXPANDED .channels__menu-section-name::before {
-     content: url('/images/pages/chevron-down.svg');
-     position: relative;
-    top:4px; 
-    left: -3px;
-    opacity: 0.6;
-} 
 
 .channels__menu-items {
     display: none;
@@ -395,22 +380,20 @@
     cursor: pointer;
 }
 
+.add-channel__add-category {
+    margin-top: 8px;
+}
+
+
 .add-channel__add-category-textbox {
     display: none;
 }
 
 .add-channel__category.EXPANDED .add-channel__add-category-textbox {
     display: block;
+    margin-top: 16px;
 }
 
-.add-channel__category.EXPANDED .add-channel__category-select {
-    display: none;
-}
-
-.add-channel__category.EXPANDED .add-channel__category-select,
-.add-channel__category.EXPANDED .add-channel__add-category-link {
-    display: none;
-}
 
 
 .add-channel__add-category-link::before {
@@ -423,8 +406,6 @@
     background-size: 16px 16px;
 
 }
-
- 
 
 .add-channel__actions {
     margin: 32px 0 8px;
@@ -477,4 +458,80 @@
 .add-members__actions {
     margin: 24px 0 0;
     text-align: right;
+}
+
+.select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 100%;
+}
+.select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size:16px;
+}
+
+.select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    color: #3b3b3b;
+    height: 36px;
+    line-height: 60px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #d0d0d0;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 8px;
+    color: #3b3b3b;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.custom-option:hover {
+    cursor: pointer;
+    background-color: #d0d0d0;
+}
+
+.custom-option.ACTION {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.arrow {
+    background-image: url(/images/pages/caret-down-fill.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: .3;
 }

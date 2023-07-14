@@ -580,11 +580,16 @@
 }
 
 .discussion__comment-content-image {
-    width: 360px;
+    width: 460px;
     margin:8px 0 0;
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     box-sizing: border-box;
     border-radius: 4px;
+}
+
+.discussion__comment-content-video {
+    margin:8px 0 0;
+ 
 }
 
 .discussion__comment-content-image img {
@@ -598,30 +603,68 @@
     align-items: center;
     gap: 6px;
     box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,.12);
-    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 12px;
     margin-right: 2px;
     margin: 4px 0;
-    padding: 4px 12px 4px 8px;
+    padding: 10px;
     background-color: rgba(0,0,0,.03);
     color: #000;
     cursor: pointer;
 }
 
+.discussion__comment-file:hover {
+    background-color: rgba(0,0,0,.06);
+}
+
 .discussion__comment-file-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+}
+
+.discussion__comment-file-info {
+    line-height: 1.2;
 }
 
 .discussion__comment-file-name {
-    display: inline-block;
+    display: block;
     max-width: 100%;
     box-sizing: border-box;
-    line-height: 2;
-    font-size: 15px;
+    font-size: 16px;
     color: inherit;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     font-weight: 600;
+}
+
+.discussion__comment-file-link {
+    text-decoration:underline;
+    font-size: 13px;
+    color: #999;
+    display: none;
+}
+
+
+
+.discussion__comment-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    opacity: 0.3;
+    margin: 4px 0 0 4px;
+}
+
+.discussion__comment-actions-icon {
+   
+}
+
+.discussion__comment-delete-icon {
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.discussion__comment-actions.EXPANDED .discussion__comment-delete-icon {
+   opacity: 1;
+    transition: opacity .3s ease;
 }

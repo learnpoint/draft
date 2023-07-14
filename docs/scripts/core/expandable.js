@@ -1,3 +1,5 @@
+
+
 document.addEventListener('click', event => {
 
     const toggleButton = event.target.closest('[data-element="expandable.toggle-button"]');
@@ -17,15 +19,10 @@ document.addEventListener('click', event => {
         return;
     }
 
-    // if link or button:
-    // event.preventDefault();
-    // toggleButton.setAttribute('aria-expanded', toggleButton.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
     expandable.classList.toggle('EXPANDED');  
-    // const expandedMenu = expandable.querySelector('[data-element="expandable.menu"]');
-    // expandedMenu.focus();
-    // document.addEventListener('keydown',TrapFocusOnExpandable);  
   
 });
+
 
 
 

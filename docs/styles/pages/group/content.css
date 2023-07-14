@@ -111,3 +111,12 @@
 .content__card-text {
     font-weight: 600;
 }
+
+.content__copy-content-actions {
+    text-align: center;
+    Margin: 0 auto;
+}
+
+.content__copy-content-actions-text{
+    margin: 12px;
+}

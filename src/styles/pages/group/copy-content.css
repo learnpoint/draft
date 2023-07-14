@@ -1,0 +1,132 @@
+.copy-content {
+
+}
+
+.copy-content__groups-actions {
+    display: flex;
+}
+
+.copy-content__groups-options {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+}
+
+.copy-content__radio {
+    display: flex;
+    gap: 4px;
+    align-items:center;
+}
+
+.copy-content__groups-list-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.copy-content__groups-list-item:last-child {
+    border-bottom: none;
+}
+
+.copy-content__group-name {
+    font-size: 16px;
+    color: #323C46;
+    font-weight: 600;
+}
+
+.copy-content__group-info {
+    flex: 1;
+
+}
+
+.copy-content__group-code {
+    font-size: 13px;
+    color: #676767;
+}
+
+.copy-content__group-satrt-end-date {
+    text-align:right;
+    color: #676767;
+    font-size: 14px;
+}
+
+
+.copy-content__group-title {
+    text-align: center;
+    margin: 0;
+}
+
+.copy-content__group-sub-title {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 2px;
+}
+
+.copy-content__section {
+    margin-bottom: 24px;
+}
+
+.copy-content__course-item {
+   border-bottom: 1px solid #e5e5e5;
+   padding: 10px;
+   display: flex;
+   align-items:center;
+   gap: 8px;
+}
+
+.copy-content__new-item {
+    font-size: 13px;
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    padding: 10px;
+ }
+
+.copy-content__section-name {
+    font-weight: bold;
+    font-size: 15px;
+    flex: 1;
+}
+
+.copy-content__course-item-name {
+   font-size: 14px;
+   flex: 1;
+}
+
+.copy-content__actions {
+    text-align: right;
+ }
+
+ .copy-content__section-container {
+    background-color: #fff;
+    margin: 0 0 12px 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    padding: 8px;
+ }
+
+ .copy-content__publish-status {
+    text-align: right;
+    font-style: italic;
+    color: #aaa;
+    font-size: 13px;
+ }
+
+.copy-content__create-section {
+    Text-align: center;
+    margin-top: 16px;
+}
+
+
+.copy-content__view-content {
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.copy-content__view-content-title,
+.copy-content__view-content-actions {
+    text-align:center;
+    margin: 0;
+}

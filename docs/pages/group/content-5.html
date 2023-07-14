@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="render__rendering">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
+
+    <script defer src="/scripts/core/db.js"></script>
+    <script defer src="/scripts/core/render.js"></script>
+    <script defer src="/scripts/core/utils.js"></script>
+    <script defer src="/scripts/core/is-mobile.js"></script>
+    <script defer src="/scripts/core/site.js"></script>
+    <script defer src="/scripts/core/lazy-src.js"></script>
+    <script defer src="/scripts/core/expandable.js"></script>
+
+    <link rel="stylesheet" href="/styles/core/render.css">
+    <link rel="stylesheet" href="/styles/core/body.css">
+    <link rel="stylesheet" href="/styles/core/site.css">
+    <link rel="stylesheet" href="/styles/core/page.css">
+    <link rel="stylesheet" href="/styles/core/button.css">
+    <link rel="stylesheet" href="/styles/core/table.css">
+    <link rel="stylesheet" href="/styles/core/textbox.css">
+
+</head>
+
+<body class="body">
+    <link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/channels.css">
+
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Ta bort kanalen?</h3>
+            </div>
+            <div class="modal__body">
+                <!-- <div class="add-channel">
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Name
+                        </span>
+                        <input type="text" placeholder="Name" class="textbox BIG BLOCK">
+                    </div>
+                    <div class="add-channel__name">
+                        <span class="add-channel__name-label">
+                            Members
+                        </span>
+                        <div>
+                        <select>
+                            <option value="All">All</option>
+                            <option value="Later">Add members later</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="add-channel__actions">
+                        <button class="button LARGE" data-element="modal-close-button">Cancel</button>
+                        <a href="/pages/group/channels-new.html" type="button" class="button PRIMARY LARGE">Add</a>
+                    </div>
+                </div> -->
+
+                <div class="add-members">
+                    <div>
+
+                    </div>
+                    <!-- <div class="add-members__list">
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-2.jpeg" />
+                            <div class="add-members__user-name">Ronny R</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-1.jpg" />
+                            <div class="add-members__user-name">Stig B</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpeg" />
+                            <div class="add-members__user-name">Emma S</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpg" />
+                            <div class="add-members__user-name">Enid K</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-1.jpg" />
+                            <div class="add-members__user-name">Edvin C</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-2.jpeg" />
+                            <div class="add-members__user-name">Oscar P</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpg" />
+                            <div class="add-members__user-name">Elsa S</div>
+                            <input type="checkbox" >
+                        </div>
+                        <div class="add-members__list-item">
+                            <img class="add-members__user-image" src="/images/pages/users/user-4.jpeg" />
+                            <div class="add-members__user-name">Pelle P</div>
+                            <input type="checkbox" >
+                        </div>
+                    </div> -->
+                    <div class="add-members__actions">
+                        <button class="button" data-element="modal-close-button">Avbryt</button>
+                        <a href="/pages/group/channels-6.html" type="button" class="button PRIMARY DANGER">Ta bort</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+    <div class="site__left-nav">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/pages/notifications/">Aviseringar</a>              
+            </li>
+            <li>
+                <a href="/pages/notifications/notifications-v1.html">Notifications</a>              
+            </li>
+        </ul>
+        <h3>Grupper</h3>
+        <ul>
+            <courses>
+                <li>
+                    <a href="/pages/group/content-5.html?course_id=[[id]]">
+                        [[name]]
+                    </a>
+                </li>
+            </courses>
+        </ul>
+    </div>
+
+    <div class="site__header">
+        <img class="site__header-hamburger" src="/images/pages/list.svg" />
+        <div class="site__header-group-info">
+            <span>Javascript 3</span>
+        </div>
+    
+    </div>
+
+    <main class="site__main">
+
+ 
+<script defer src="/scripts/components/sub-nav.js"></script>
+<link rel="stylesheet" href="/styles/components/sub-nav.css">
+
+<nav class="sub-nav">
+    <ul>
+        <li>
+            <a href="/pages/group/content-5.html" data-select="content-5.html">Innehåll</a>
+        </li>
+        <!-- <li>
+            <a href="/pages/group/content3.html" data-select="content3.html">Innehåll</a>
+        </li> -->
+        <li>
+            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
+        </li>
+        <li>
+            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade.html" data-select="/grade.html">Betyg</a>
+        </li>
+        <li>
+            <a href="/pages/group/grade2.html" data-select="grade2.html">Betyg 2</a>
+        </li>          
+        <li>
+            <a href="/pages/group/group-chat.html" data-select="group-chat.html">Chat</a>
+        </li>  
+        <li>
+            <a href="/pages/group/discussion.html" data-select="discussion.html">Diskussion</a>
+        </li>
+        <!-- <li>
+            <a href="/pages/group/channels-2.html" data-select="channels-2.html">Channels </a>
+        </li> -->
+        <li>
+            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Kanaler</a>
+        </li>
+        <li>
+            <a href="/pages/group/about.html" data-select="about.html">Om</a>
+        </li>
+    </ul>
+</nav>
+<link rel="stylesheet" href="/styles/pages/group/content.css">
+
+<div class="page">
+    <div class="page__sheet">
+        <div class="page__content-wrap">
+            <div class="content__copy-content-actions">
+                <input type="button" value="Nytt avsnitt" class="button PRIMARY LARGE">
+                <div class="content__copy-content-actions-text">eller</div>
+                <a href="/pages/group/copy-content.html" class="button LARGE">
+                    Importera innehåll
+                </a>
+            </div>
+         
+        </div>
+    </div>
+</div>

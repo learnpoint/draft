@@ -22,28 +22,48 @@
                             </div>
                             <input type="text" placeholder="kanal namn..." class="textbox BIG BLOCK">
                         </div>
-                        <div class="add-channel__category" data-component="expandable">
+                        <!-- <div class="add-channel__category" data-component="select">
                             <div class="add-channel__name-label">
                                 Kategori
                             </div>
-                            <select  class="add-channel__category-select"  name="categories" id="categories">
+                            <select name="categories"  id="categorySelector">
                                 <option>Inga kategori</option>
+                                <option >Lägg till ny kategori</option>
                                 <option>Design</option>
                                 <option>JS questions</option>
                                 <option>Resources</option>
                             </select>
-                            <a class="add-channel__add-category-link" data-element="expandable.toggle-button">
-                               Ny kategori
-                            </a>
-                            <div class="add-channel__add-category" >
-                               
+                            <div class="add-channel__add-category" >                     
                                 <div class="add-channel__add-category-textbox">
                                     <input type="text" placeholder="Kategori namn..." class="textbox BIG BLOCK">
                                 </div>
                             </div>
                            
+                        </div> -->
+                        <div class="add-channel__category" data-component="expandable">
+                            <div class="add-channel__name-label">
+                                Kategori
+                            </div>
+                            <div class="select-wrapper">
+                                <div class="select">
+                                    <div class="select__trigger"><span>Inga kategori</span>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option selected" data-value="Inga kategori">Inga kategori</span>
+                                        <span class="custom-option ACTION" data-value="Ny kategori"
+                                            data-element="expandable.toggle-button">Lägg till ny kategori</span>
+                                        <span class="custom-option" data-value="Design">Design</span>
+                                        <span class="custom-option" data-value="JS">JS</span>
+                                        <span class="custom-option" data-value="Random">Random</span>
+                                        <span class="custom-option" data-value="Social">Social</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-channel__add-category-textbox">
+                                <input type="text" placeholder="Kategori namn..." class="textbox BIG BLOCK">
+                            </div>
                         </div>
-
                         <div class="add-channel__actions">
                             <a class="button" href="/pages/group/channels-3.html">Avbryt</a>
                             <input type="button" value="Spara" class="button PRIMARY">

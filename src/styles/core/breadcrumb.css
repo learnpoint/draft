@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 6px;
+    font-size: 15px;
+    min-height: 22px; /* Should have height even when empty. */
+}
+
+.is-mobile .breadcrumb {
+    gap: 4px 4px;
+}
+
+.breadcrumb.HIDDEN {
+    opacity: 0;
+}
+
+
+
+/* ==========================================================================
+   Node
+   ========================================================================== */
+
+.breadcrumb > * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex; /* Flex needed for mobile where we insert svg using ::before. */
+    align-items: center;
+    gap: 2px;
+}
+
+/* Last node shouldn't look like a link, but don't style if last
+   node happens to be a shortcuts-select */
+.breadcrumb > *:last-child:not(.breadcrumb__shortcuts-select-button) {
+    cursor: default;
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+
+/* ==========================================================================
+   Mobile Node
+   ========================================================================== */
+
+/* This will hide all nodes except 3rd from end, the link to "previous" page. */
+.is-mobile .breadcrumb > *:not(*:nth-last-child(3)) {
+    display: none;
+}
+
+.is-mobile .breadcrumb *:nth-last-child(3)::before {
+    content: '';
+    background-image: url(/Images/svg-icons/chevron-left-0079f2.svg);
+    height: 1.4em;
+    width: 1.4em;
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+
+
