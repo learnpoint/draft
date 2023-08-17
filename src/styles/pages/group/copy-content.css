@@ -19,11 +19,20 @@
 }
 
 .copy-content__groups-list-item {
-    padding: 8px;
+    padding: 16px;
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    gap: 16px
+    gap: 8px
+}
+
+.copy-content__groups-list-header {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
 }
 
 .copy-content__groups-list-item:last-child {
@@ -32,24 +41,36 @@
 
 .copy-content__group-name {
     font-size: 16px;
-    color: #323C46;
-    font-weight: 600;
+    /* color: #323C46; */
+    /* font-weight: 600; */
+    text-align: left;
 }
 
 .copy-content__group-info {
-    flex: 1;
-
+    flex:2;
+    text-align: left;
 }
 
 .copy-content__group-code {
-    font-size: 13px;
-    color: #676767;
+    color: #323C46;
+    font-size: .9em;
+    text-align: left;
+    flex: 1;
 }
 
-.copy-content__group-satrt-end-date {
+.copy-content__group-start-end-date {
     text-align:right;
-    color: #676767;
-    font-size: 14px;
+    color: #323C46;
+    font-size: 12px;
+}
+
+
+.copy-content__group-end-date,
+.copy-content__group-start-date {
+    color: #323C46;
+    font-size: .9em;
+    text-align: left;
+    flex: 1;
 }
 
 
@@ -93,6 +114,8 @@
 .copy-content__course-item-name {
    font-size: 14px;
    flex: 1;
+   cursor: pointer;
+   flex: 1;
 }
 
 .copy-content__actions {
@@ -129,4 +152,11 @@
 .copy-content__view-content-actions {
     text-align:center;
     margin: 0;
+}
+
+.copy-content__course-item-status {
+    font-style: italic;
+    font-size: 13px;
+    text-align:right;
+    color: #a4a1a1;
 }

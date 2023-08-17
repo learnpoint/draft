@@ -1,12 +1,14 @@
 <!-- header.html, { title: "Javascript 3" } -->
 <!-- sub-nav.html -->
+
 <link rel="stylesheet" href="/styles/pages/group/copy-content.css">
 <link rel="stylesheet" href="/styles/core/breadcrumb.css">
+<script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
     <div class="page__breadcrumb">
         <nav class="breadcrumb">
-            <a href="/pages/group/content-5.html">Innehåll</a>
+            <a href="/pages/group/content-7.html">Innehåll</a>
             <span>/</span>
             <a href="/pages/group/copy-content.html">Importera innehåll</a>
             <span>/</span>
@@ -21,31 +23,32 @@
                 <h3 class="copy-content__group-sub-title">FE20_JS</h3>
                 <div  class="copy-content__section">
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" data-element="check-all" name="group"  >
                         <span class="copy-content__section-name">
                             Week 1
                         </span>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
-                        <a class="copy-content__course-item-name" href="/pages/group/view-content.html">
+                        <input type="checkbox" id="group" name="group-all">
+                        <a class="copy-content__course-item-name" data-element="modal-open-button">
+                             Arrays
+                        </a>
+                    </div>
+                    <div class="copy-content__course-item">
+                        <input type="checkbox" id="group" name="group-all">
+                        <a class="copy-content__course-item-name" >
                             Variables
                         </a>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
-                        <a class="copy-content__course-item-name">
-                            Arrays
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group" name="group-all" data-element="indeterminate-checkbox-toggler">
                         <a class="copy-content__course-item-name">
                             Loops
                         </a>
+                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group" name="group-all">
                         <a class="copy-content__course-item-name">
                             Functions
                         </a>
@@ -53,31 +56,32 @@
                 </div>
                 <div  class="copy-content__section">
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group" data-element="check-all">
                         <span class="copy-content__section-name">
                             Week 2
                         </span>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group">
                         <a class="copy-content__course-item-name">
                             Inheritance
                         </a>
+                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group">
                         <a class="copy-content__course-item-name">
                             Closures
                         </a>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group">
                         <a class="copy-content__course-item-name">
                             Promise
                         </a>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group">
+                        <input type="checkbox" id="group">
                         <a class="copy-content__course-item-name">
                             Higher order functions
                         </a>
@@ -87,7 +91,7 @@
                     <a href="/pages/group/content-5.html" class="button ">
                         Avbryt
                     </a>
-                    <a href="/pages/group/content-6.html" class="button PRIMARY ">Kopiera</a>
+                    <a href="/pages/group/content-6.html" class="button PRIMARY ">Importera</a>
                 </div>
             </div>
         </div>

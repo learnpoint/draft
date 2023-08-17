@@ -1,39 +1,58 @@
 
-document.querySelector('.select-wrapper').addEventListener('click', function() {
-    this.querySelector('.select').classList.toggle('open');
-})
+// document.querySelector('.select-wrapper').addEventListener('click', function() {
+//     this.querySelector('.select').classList.toggle('open');
+// })
 
-for (const option of document.querySelectorAll(".custom-option")) {
-    option.addEventListener('click', function() {
-        if (!this.classList.contains('selected')) {
-            this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-            this.classList.add('selected');
-            this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
-        }
-    })
-}
+// for (const option of document.querySelectorAll(".custom-option")) {
+//     option.addEventListener('click', function() {
+//         if (!this.classList.contains('selected')) {
+//             this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+//             this.classList.add('selected');
+//             this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
+//         }
+//     })
+// }
 
-window.addEventListener('click', function(e) {
-    const select = document.querySelector('.select')
-    if (!select.contains(e.target)) {
-        select.classList.remove('open');
-    }
-});
+// window.addEventListener('click', function(e) {
+//     const select = document.querySelector('.select')
+//     if (!select.contains(e.target)) {
+//         select.classList.remove('open');
+//     }
+// });
 
 
 document.addEventListener(render.ready, () => {
 
-    var commentsContainer = document.getElementById("comments");
-    if(!commentsContainer) {
-        return;
-    }
-    commentsContainer.scrollTo(0, commentsContainer.scrollHeight);
+    // var commentsContainer = document.getElementById("comments");
+    // if(!commentsContainer) {
+    //     return;
+    // }
+    // commentsContainer.scrollTo(0, commentsContainer.scrollHeight);
+
+    // var checkbox = document.getElementById("indeterminate-checkbox");
+    // checkbox.indeterminate = true;
+
 
     document.addEventListener('click', (ev) => {
 
         const elm = ev.target;
 
-        if(elm == document.querySelector('[data-element="mobile-back-button"]')) {
+        if (elm == document.querySelector('[data-element="check-all"]')) {
+            checkUncheck(elm);
+        }
+
+        if (elm == document.querySelector('[data-element="indeterminate-checkbox-toggler"]')) {
+            var checkbox = document.getElementById("indeterminate-checkbox");
+            if(checkbox.indeterminate) {
+                checkbox.indeterminate = false;
+            } else {
+                checkbox.indeterminate = true;
+            }
+            
+        }
+
+
+        if (elm == document.querySelector('[data-element="mobile-back-button"]')) {
 
             elm.classList.add('HIDE')
 
@@ -45,29 +64,29 @@ document.addEventListener(render.ready, () => {
             return;
         }
 
-        if(elm == document.querySelector('[data-element="modal-open-button"]')) {
+        if (elm == document.querySelector('[data-element="modal-open-button"]')) {
             const target = document.getElementById("modal");
             target.classList.add('OPEN');
             return;
         }
 
-        if(elm == document.querySelector('[data-element="modal-close-button"]')) {
+        if (elm == document.querySelector('[data-element="modal-close-button"]')) {
             const target = document.getElementById("modal");
             target.classList.remove('OPEN');
             return;
         }
 
-        if(elm == document.querySelector('[data-element="notification-icon"]')) {
+        if (elm == document.querySelector('[data-element="notification-icon"]')) {
             const target = document.getElementById("header-meta");
             target.classList.toggle('OPEN');
             return;
         }
 
-        if(elm == document.querySelector('[data-element="mark-all-as-read-btn"]')) {
+        if (elm == document.querySelector('[data-element="mark-all-as-read-btn"]')) {
             markAllAsRead(elm);
             return;
         }
-        
+
         const togglers = Array.from(document.querySelectorAll('[data-element="expand-btn"]'));
         if (togglers.includes(elm)) {
             const selector = elm.getAttribute('data-target');
@@ -81,7 +100,7 @@ document.addEventListener(render.ready, () => {
             collapse(selector);
         }
 
-      
+
 
     }, false);
 
@@ -91,12 +110,20 @@ document.addEventListener(render.ready, () => {
         target.classList.toggle('EXPAND');
     }
 
+    function checkUncheck(checkBox) {
+        get = document.getElementsByName('group-all');
+        for (var i = 0; i < get.length; i++) {
+            get[i].checked = checkBox.checked;
+        }
+
+    }
+
     const collapse = (selector) => {
         const target = document.getElementById(selector);
         target.classList.remove('EXPAND');
     }
 
-    const  moveItem = (e) => {
+    const moveItem = (e) => {
         e.target.innerText == "Mark as read" ? e.target.innerText = 'Mark as unread' : e.target.innerText = "Mark as read";
         const newList = document.getElementById("new");
         const previousList = document.getElementById("previous");
@@ -124,7 +151,7 @@ document.addEventListener(render.ready, () => {
         });
 
     }
-    
+
     const moveButtons = document.querySelectorAll('[data-element="move-btn"]');
     moveButtons.forEach(moveButton => {
         moveButton.addEventListener("click", moveItem);
