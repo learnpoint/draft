@@ -87,7 +87,7 @@
 
 .copy-content__section {
     margin-bottom: 24px;
-}
+} 
 
 .copy-content__course-item {
    border-bottom: 1px solid #e5e5e5;
@@ -107,7 +107,7 @@
 
 .copy-content__section-name {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     flex: 1;
 }
 

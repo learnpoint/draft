@@ -33,32 +33,59 @@
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
         <div class="modal__content">
-            <div class="modal__header">
-                <h3 class="modal__title">Arrays</h3>
-            </div>
-            <div class="modal__body">
-
-                <div>
-                    <p>Introduction
-                        An array in JavaScript is a type of global object that is used to store data. Arrays consist of an ordered collection or list containing zero or more data types, and use numbered indices starting from 0 to access specific items.
-                        
-                        <p>Arrays are very useful as they store multiple values in a single variable, which can condense and organize our code, making it more readable and maintainable. Arrays can contain any data type, including numbers, strings, and objects.
-                        </p>
-                        <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to their own variables.</p>
-                    </p>
-                    <p>A JavaScript array has the following characteristics:
-
-                        First, an array can hold values of mixed types. For example, you can have an array that stores
-                        elements with the types number, string, boolean, and null.
-                        Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
-                        specify the array size up front.
-                        Creating JavaScript arrays
-                        JavaScript provides you with two ways to create an array. The first one is to use the Array
-                        constructor as follows:</p>
+            <div class="modal__content-scroll">
+                <div class="modal__header">
+                    <h2 class="modal__title">Arrays</h2>
+                    <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
                 </div>
+                <div class="modal__body">
 
-                <div class="add-members__actions">
-                    <button class="button" data-element="modal-close-button">Avbryt</button>
+                    <div>
+                        <h3>Arrays in JavaScript</h3>
+                        <p>
+                            An array in JavaScript is a type of global object that is used to store data. Arrays consist
+                            of an ordered collection or list containing zero or more data types, and use numbered
+                            indices starting from 0 to access specific items.
+
+                        <p>Arrays are very useful as they store multiple values in a single variable, which can condense
+                            and organize our code, making it more readable and maintainable. Arrays can contain any data
+                            type, including numbers, strings, and objects.
+                        </p>
+                        <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
+                            their own variables.</p>
+                        </p>
+
+                        <img src="/images/pages/javascript-array.webp" class="modal__image">
+                        <p>A JavaScript array has the following characteristics:
+
+                            First, an array can hold values of mixed types. For example, you can have an array that
+                            stores
+                            elements with the types number, string, boolean, and null.
+                            Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
+                            specify the array size up front.
+
+                        </p>
+                        <h3>Loop through array</h3>
+                        <p>
+                            There are many ways to loop through an array but we are going to discuss the most common
+                            ways to loop through an array.
+
+                            We are going to discuss 2 different ways to loop through an array:
+                        <ul>
+                            <li>
+                                Using for loop
+                            </li>
+                            <li>
+                                Using forEach loop
+                            </li>
+                        </ul>
+
+                        </p>
+                    </div>
+
+                    <div class="add-members__actions">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,32 +185,32 @@
                 <h3 class="copy-content__group-sub-title">FE20_JS</h3>
                 <div  class="copy-content__section">
                     <div class="copy-content__course-item">
-                        <input type="checkbox" data-element="check-all" name="group"  >
+                        <input type="checkbox" data-element="check-all" name="group" id="check-all" >
                         <span class="copy-content__section-name">
                             Week 1
                         </span>
                     </div>
                     <div class="copy-content__course-item">
                         <input type="checkbox" id="group" name="group-all">
-                        <a class="copy-content__course-item-name" data-element="modal-open-button">
+                        <a class="copy-content__course-item-name" data-element="modal-open-button" data-element="check-all-toggler">
                              Arrays
                         </a>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all">
+                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
                         <a class="copy-content__course-item-name" >
                             Variables
                         </a>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="indeterminate-checkbox-toggler">
+                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
                         <a class="copy-content__course-item-name">
                             Loops
                         </a>
                         <span class="copy-content__course-item-status">Har importerats tidigare</span>
                     </div>
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all">
+                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
                         <a class="copy-content__course-item-name">
                             Functions
                         </a>
@@ -191,7 +218,7 @@
                 </div>
                 <div  class="copy-content__section">
                     <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" data-element="check-all">
+                        <input type="checkbox" id="group" data-element="check-all" data-element="check-all-toggler">
                         <span class="copy-content__section-name">
                             Week 2
                         </span>

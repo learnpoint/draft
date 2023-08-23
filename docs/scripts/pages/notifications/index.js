@@ -41,16 +41,15 @@ document.addEventListener(render.ready, () => {
             checkUncheck(elm);
         }
 
-        if (elm == document.querySelector('[data-element="indeterminate-checkbox-toggler"]')) {
-            var checkbox = document.getElementById("indeterminate-checkbox");
-            if(checkbox.indeterminate) {
-                checkbox.indeterminate = false;
+        if (elm.matches('[data-element="check-all-toggler"]')) {
+            var checkbox = document.getElementById("check-all");
+            if(elm.checked) {
+                checkbox.checked = true;
             } else {
-                checkbox.indeterminate = true;
+                checkbox.checked = false;
             }
             
         }
-
 
         if (elm == document.querySelector('[data-element="mobile-back-button"]')) {
 

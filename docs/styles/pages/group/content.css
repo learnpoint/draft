@@ -113,9 +113,16 @@
 }
 
 .content__copy-content {
-    width: 200px;
-    margin: 16px auto;
+    width: 800px;
+    margin: 20px auto;
+    text-align: center;
 }
+
+.content__copy-content-actions-container {
+    width: 165px;
+    margin: 16px auto 10px;
+}
+
 
 .content__copy-content-actions {
     display: flex;
