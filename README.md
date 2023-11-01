@@ -30,6 +30,6 @@ Let's say you want to draft an idea for the Learnpoint gradebook...
 
 4. Open your editor and write your draft in ```gradebook-idea/src```.
 
-### Contribute
+### Contribute 
 
 If you're a Learnpoint developer, feel free to fork this repo, write improvements, and make pull requests. Thank you!
