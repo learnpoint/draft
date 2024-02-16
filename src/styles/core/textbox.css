@@ -75,3 +75,11 @@
     display: block;
     width: 100%;
 }
+
+.textbox:not([readonly]):focus {
+    border-color: #3C9AF4;
+    border-color: #0780ff;
+    outline: 0;
+    box-shadow: 0 0 3px rgba(60, 154, 244, .6);
+    box-shadow: 0 0 3px rgba(7, 128, 255, 1);
+}

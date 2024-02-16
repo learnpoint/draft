@@ -65,12 +65,14 @@ document.addEventListener(render.ready, () => {
 
         if (elm == document.querySelector('[data-element="modal-open-button"]')) {
             const target = document.getElementById("modal");
+            document.body.classList.add("DISABLE-SCROLL");
             target.classList.add('OPEN');
             return;
         }
 
         if (elm == document.querySelector('[data-element="modal-close-button"]')) {
             const target = document.getElementById("modal");
+            document.body.classList.remove("DISABLE-SCROLL");
             target.classList.remove('OPEN');
             return;
         }

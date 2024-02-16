@@ -22,3 +22,11 @@ section {
     display: flex;
     gap: 32px;
 }
+
+.body.DISABLE-SCROLL {
+    overflow: hidden;
+}
+
+.quiz__title {
+    text-align: center;
+}
