@@ -41,18 +41,19 @@
                     <div class="modal__body">    
                         <div class="modal__body-content">                           
                             <div class="quiz">      
-                                <h2 class="quiz__title">Countries quiz</h2>  
-                                <div style="text-align: center;"><em>Edit mode design</em></div>                     
+                                <h2 class="quiz__title">Countries quiz (edit mode)</h2>  
+                                <div style="text-align: center;">Total points: <b>0</b></div>                     
                                 <div class="quiz__questions">
                                  
                                     <div class="quiz__edit-question">
                                         <div class="quiz__edit-question-header">
                                             <h2>Fråga 1</h2>
-                                            <div class="quiz__edit-question-multiple-choice-answer-options">
+                                            <!-- <div class="quiz__edit-question-multiple-choice-answer-options">
                                                 <input type="checkbox" checked> <span>Flera rätta svar</spam>
-                                            </div>
-                                            <select name="answer-options" id="pet-select">
-                                                <option value="Multiple">Multiple choice</option>
+                                            </div> -->
+                                            <select name="answer-options" id="pet-select">                                                                                              
+                                                <option value="Single">Single correct answer</option>                                               
+                                                <option value="Multiple" selected>Multiple correct answer</option>
                                                 <option value="Text">Text answer</option>
                                               </select>
                                               <div class="quiz__edit-question-add-points">
@@ -104,11 +105,12 @@
                                         <div class="quiz__edit-question-header">
                                             <h2>Fråga 2</h2>
                                          
-                                            <div class="quiz__edit-question-multiple-choice-answer-options">
+                                            <!-- <div class="quiz__edit-question-multiple-choice-answer-options">
                                                 <input type="checkbox"> <span>Flera rätta svar</spam>
-                                            </div>
+                                            </div> -->
                                             <select name="answer-options" id="pet-select">
-                                                <option value="Multiple">Multiple choice</option>
+                                                <option value="Single" selected>Single correct answer</option>                                              
+                                                <option value="Multiple">Multiple correct answer</option>
                                                 <option value="Text">Text answer</option>
                                               </select>
                                             <div class="quiz__edit-question-add-points">
@@ -117,7 +119,7 @@
                                         </div>
                                         <div class="quiz__edit-question-content">
                                             <div class="quiz__edit-question-content-header">
-                                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">What is the capital city of Australia?</textarea>
+                                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which is the capital city of Australia?</textarea>
                                                 <!-- <input type="text" class="textbox BLOCK" placeholder="Skriv fråga..." value="What is the capital city of Australia?"> -->
                                             </div>
                                             <div class="quiz__edit-question-content-answer-options-header">
@@ -158,7 +160,8 @@
                                         <div class="quiz__edit-question-header">
                                             <h2>Fråga 3</h2>
                                             <select name="answer-options" id="pet-select">
-                                                <option value="Multiple">Multiple choice</option>
+                                                <option value="Single" selected>Single correct answer</option>                                              
+                                                <option value="Multiple">Multiple correct answer</option>
                                                 <option value="Text" selected>Text answer</option>
                                               </select>
                                               <div class="quiz__edit-question-add-points">
@@ -189,8 +192,8 @@
                             </div>
                             <hr style="margin:100px 0">
                             <div class="quiz" >      
-                                <h2 class="quiz__title">Countries quiz </h2>
-                                <div style="text-align: center;"><em>View mode design</em></div>                    
+                                <h2 class="quiz__title">Countries quiz (view mode)</h2>
+                                <div style="text-align: center;">Total points: <b> 10</b></div>                    
                                 <div class="quiz__questions">
                                     <div class="quiz__edit-question">
                                         <div class="quiz__edit-question-header">
@@ -205,22 +208,24 @@
                                             <div class="quiz__edit-question-content-header">
                                                 <h2>Which of these cities are located in Spain?</h2>                                        
                                             </div>
-                                            <div class="quiz__edit-question-content-answer-options">
-                                                <div class="quiz__edit-question-content-answer-option">
+                                            <div class="quiz__question-content-answer-options">
+                                                <div class="quiz__question-content-answer-option CORRECT">
                                                     <input type="checkbox">
-                                                    <span>Valencia</span>
+                                                    <span class="quiz__question-content-answer-option-text">Valencia</span>
+                                                    <img class="quiz__question-content-correct-answer-option-indicator" src="/images/pages/check-lg.svg" />
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option CORRECT">
                                                     <input type="checkbox">
-                                                    <span>Cordoba</span>
+                                                    <span class="quiz__question-content-answer-option-text">Cordoba</span>
+                                                    <img class="quiz__question-content-correct-answer-option-indicator" src="/images/pages/check-lg.svg" />
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option">
                                                     <input type="checkbox" title="Markera rätt svar">
-                                                    <span>Verona</span>
+                                                    <span class="quiz__question-content-answer-option-text">Verona</span>
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option">
                                                     <input type="checkbox" title="Markera rätt svar">
-                                                    <span>Palermo</span>
+                                                    <span class="quiz__question-content-answer-option-text">Palermo</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,24 +241,25 @@
                                         </div>
                                         <div class="quiz__edit-question-content">
                                             <div class="quiz__edit-question-content-header">
-                                                <h2>What is the capital city of Australia?</h2>
+                                                <h2>Which is the capital city of Australia?</h2>
                                             </div>
-                                            <div class="quiz__edit-question-content-answer-options">
-                                                <div class="quiz__edit-question-content-answer-option">
+                                            <div class="quiz__question-content-answer-options">
+                                                <div class="quiz__question-content-answer-option">
                                                     <input type="radio">
-                                                    <span>Sydney</span>
+                                                    <span class="quiz__question-content-answer-option-text">Sydney</span>
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option ">
                                                     <input type="radio">
-                                                    <span>Melbourne</span>
+                                                    <span class="quiz__question-content-answer-option-text">Melbourne</span>
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option CORRECT">
                                                     <input type="radio">
-                                                    <span>Canberra</span>
+                                                    <span class="quiz__question-content-answer-option-text">Canberra</span>
+                                                    <img class="quiz__question-content-correct-answer-option-indicator" src="/images/pages/check-lg.svg" />
                                                 </div>
-                                                <div class="quiz__edit-question-content-answer-option" >
+                                                <div class="quiz__question-content-answer-option" >
                                                     <input type="radio" title="Markera rätt svar">
-                                                    <span>Brisbane</span>
+                                                    <span class="quiz__question-content-answer-option-text">Brisbane</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,6 +277,101 @@
                                             <div class="quiz__edit-question-content-header">
                                                 <h2>The geography of Inner China was more attractive than Outer China because...</h2>
                                             </div>
+                                            <div class="quiz__question-content-answer-options">
+                                                <div class="quiz__question-content-answer-option">
+                                                    <textarea id="text" name="text" rows="5" cols="33" class="textbox">
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="quiz__add-question-action">
+                                    <input type="button" value="Lägg till fråga" class="button LARGE">
+                                </div>
+                               
+                            </div>
+                            <hr style="margin:100px 0">
+                            <div class="quiz" >      
+                                <h2 class="quiz__title">Countries quiz (student view)</h2>
+                                <div style="text-align: center;">Total points: <b> 10</b></div>                    
+                                <div class="quiz__questions">
+                                    <div class="quiz__edit-question">
+                                        <div class="quiz__edit-question-header">
+                                            <h2>Fråga 1</h2>
+                                            <div class="quiz__edit-question-add-points">
+                                                <span>Poäng <b>2</b></span>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="quiz__edit-question-content">
+                                            <div class="quiz__edit-question-content-header">
+                                                <h2>Which of these cities are located in Spain?</h2>                                        
+                                            </div>
+                                            <div class="quiz__edit-question-content-answer-options">
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="checkbox">
+                                                    <span>Valencia</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="checkbox">
+                                                    <span>Cordoba</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="checkbox" title="Markera rätt svar">
+                                                    <span>Verona</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="checkbox" title="Markera rätt svar">
+                                                    <span>Palermo</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div> 
+                                    <div class="quiz__edit-question">
+                                        <div class="quiz__edit-question-header">
+                                            <h2>Fråga 2</h2>
+                                            <div class="quiz__edit-question-add-points">
+                                                <span>Poäng <b>2</b></span> 
+                                            </div>
+                                        </div>
+                                        <div class="quiz__edit-question-content">
+                                            <div class="quiz__edit-question-content-header">
+                                                <h2>Which is the capital city of Australia?</h2>
+                                            </div>
+                                            <div class="quiz__edit-question-content-answer-options">
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="radio">
+                                                    <span>Sydney</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="radio">
+                                                    <span>Melbourne</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option">
+                                                    <input type="radio">
+                                                    <span>Canberra</span>
+                                                </div>
+                                                <div class="quiz__question-content-answer-option" >
+                                                    <input type="radio" title="Markera rätt svar">
+                                                    <span>Brisbane</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div> 
+                                    <div class="quiz__edit-question">
+                                        <div class="quiz__edit-question-header">
+                                            <h2>Fråga 3</h2>
+                                              <div class="quiz__edit-question-add-points">
+                                                <span>Poäng <b>6</b></span>
+                                            </div>
+                                        </div>
+                                        <div class="quiz__edit-question-content">
+                                            <div class="quiz__edit-question-content-header">
+                                                <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                                            </div>
                                             <div class="quiz__edit-question-content-answer-options">
                                                 <div class="quiz__edit-question-content-answer-option">
                                                     <textarea id="text" name="text" rows="5" cols="33" class="textbox">
@@ -281,7 +382,7 @@
                                     </div> 
                                 </div>
                                 <div class="quiz__add-question-action">
-                                    <input type="button" value="Lägg till fråga" class="button LARGE">
+                                    <input type="button" value="Lämna in" class="button PRIMARY">
                                 </div>
                                
                             </div>

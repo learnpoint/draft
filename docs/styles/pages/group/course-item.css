@@ -4,7 +4,7 @@
 
 .course-item__page-title {
     margin: 0;
-    text-align: center; 
+    /* text-align: center;  */
 }
 
 .course-item__course-name {
@@ -49,10 +49,14 @@
 
 .course-item__content {
     padding:32px;
+    margin:0 auto;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 640px;
 }
 
 .course-item__content-text {
-    margin:0 auto;
+    margin:32px auto;
     font-size: 16px;
     line-height: 30px;
     max-width: 640px;
