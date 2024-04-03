@@ -1,0 +1,274 @@
+<link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/quiz.css">
+
+<div class="modal FULL-SCREEN" id="modal-student" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__content-scroll">
+                    <div class="modal__header">
+                        <h2 class="modal__title">Quiz</h2>
+                        <h4 class="modal__sub-title">Countries quiz</h4>
+                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-student-close-button">
+                    </div>
+                    <div class="modal__body">    
+                        <div class="modal__body-content">  
+                            <div class="quiz" data-component="expandable">    
+                                <div class="quiz">      
+                                    <div style="text-align: center; margin:16px 0; padding-left: 18px;">Total points: <b> 10</b></div>                    
+                                    <div class="quiz__questions">
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 1</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng <b>2</b></span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>Which of these cities are located in Spain?</h2>                                        
+                                                </div>
+                                                <div class="quiz__edit-question-content-answer-options">
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="checkbox">
+                                                        <span>Valencia</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="checkbox">
+                                                        <span>Cordoba</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="checkbox" title="Markera rätt svar">
+                                                        <span>Verona</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="checkbox" title="Markera rätt svar">
+                                                        <span>Palermo</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 2</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng <b>2</b></span> 
+                                                </div>
+                                            </div>
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>Which is the capital city of Australia?</h2>
+                                                </div>
+                                                <div class="quiz__edit-question-content-answer-options">
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="radio">
+                                                        <span>Sydney</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="radio">
+                                                        <span>Melbourne</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <input type="radio">
+                                                        <span>Canberra</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option" >
+                                                        <input type="radio" title="Markera rätt svar">
+                                                        <span>Brisbane</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 3</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng <b>6</b></span>
+                                                </div>
+                                            </div>
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                                                </div>
+                                                <div class="quiz__edit-question-content-answer-options">
+                                                    <div class="quiz__edit-question-content-answer-option">
+                                                        <textarea id="text" name="text" rows="5" cols="33" class="textbox">
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="quiz__add-question-action">
+                                        <input type="button" value="Lämna in" class="button PRIMARY">
+                                    </div>
+                                
+                                </div>
+                                <hr style="margin:100px 0;display:none;">
+                                <div class="quiz" style="display:none;">      
+                                    <h2 class="quiz__title">Stig Berg</h2>
+                                    <div style="text-align: center;">Total points: <b> 8/10</b></div>                    
+                                    <div class="quiz__questions">
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 1</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng</span> <input type="text" class="textbox" value="2">
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>Which of these cities are located in Spain?</h2>                                        
+                                                </div>
+                                                <div class="quiz__question-content-answer-options">
+                                                    <div class="quiz__question-content-answer-option CORRECT">
+                                                        <span class="quiz__question-content-answer-option-text">Valencia</span>
+                                                        <img class="quiz__question-content-correct-answer-option-indicator" src="/images/pages/check-lg.svg" />
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option CORRECT">
+                                                        <span class="quiz__question-content-answer-option-text">Cordoba</span>
+                                                        <img class="quiz__question-content-correct-answer-option-indicator" src="/images/pages/check-lg.svg" />
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <span class="quiz__question-content-answer-option-text">Verona</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <span class="quiz__question-content-answer-option-text">Palermo</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 2</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng</span> <input type="text" class="textbox" value="0">
+                                                </div>
+                                            </div>
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>Which is the capital city of Australia?</h2>
+                                                </div>
+                                                <div class="quiz__question-content-answer-options">
+                                                    <div class="quiz__question-content-answer-option">
+                                                        <span class="quiz__question-content-answer-option-text">Sydney</span>
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option INCORRECT">
+                                                        <span class="quiz__question-content-answer-option-text">Melbourne</span>
+                                                        <img class="quiz__question-content-incorrect-answer-option-indicator" src="/images/pages/incorrect-red.svg" />
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option ">
+                                                        <span class="quiz__question-content-answer-option-text">Canberra</span>
+                                                        
+                                                    </div>
+                                                    <div class="quiz__question-content-answer-option" >
+                                                        <span class="quiz__question-content-answer-option-text">Brisbane</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div> 
+                                        <div class="quiz__edit-question">
+                                            <div class="quiz__edit-question-header">
+                                                <h2>Fråga 3</h2>
+                                                <div class="quiz__edit-question-add-points">
+                                                    <span>Poäng</span> <input type="text" class="textbox" value="6">
+                                                </div>
+                                            </div>
+                                            <div class="quiz__edit-question-content">
+                                                <div class="quiz__edit-question-content-header">
+                                                    <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                                                </div>
+                                                <div class="quiz__question-content-answer-options">
+                                                    <div class="quiz__question-content-answer-option">
+                                                        Suspendisse elementum, ex et viverra fringilla, ipsum eros interdum nisl, a vehicula quam lorem ut metus. Aliquam erat volutpat. Quisque congue, neque sed aliquam cursus, sapien elit consectetur metus, nec elementum felis ex a turpis. Integer ex nibh, consectetur sed tellus commodo, condimentum hendrerit arcu. Nunc ut convallis est, at porttitor leo. Mauris finibus aliquet commodo. Phasellus nec sollicitudin enim. Vestibulum luctus pharetra molestie. Fusce rutrum scelerisque arcu, et tempor neque varius a. In egestas ex a massa placerat mollis. Curabitur quis massa consectetur, laoreet enim et, vulputate lorem.
+
+                                                        Nullam eget rutrum felis, et pellentesque turpis. Suspendisse nunc magna, auctor vel tellus id, varius varius nunc. Quisque eu condimentum risus, nec dictum turpis. Aliquam placerat eu est a dapibus. Mauris quis pharetra tortor. Nunc sodales diam et egestas sodales. Donec imperdiet scelerisque fermentum. Vestibulum euismod congue mauris, sagittis rhoncus enim aliquet efficitur. Vestibulum commodo massa elit, eu rutrum mauris luctus nec. Fusce arcu nisl, dapibus nec viverra et, finibus nec mi. Morbi luctus augue ac congue scelerisque. Proin eu ipsum ac ante molestie tincidunt. Donec sed sapien porta, finibus quam et, volutpat sapien. Praesent sed condimentum leo, ac molestie est. Sed vestibulum mollis condimentum.
+                                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="quiz__add-question-action">
+                                        <input type="button" value="Spara" class="button PRIMARY">
+                                    </div>
+                                
+                                </div>
+                             </div>          
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__content-scroll">
+                    <div class="modal__header">
+                        <h2 class="modal__title">Arrays</h2>
+                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
+                    </div>
+                    <div class="modal__body">
+
+                        <div>
+                            <h3>Arrays in JavaScript</h3>
+                            <p>
+                                An array in JavaScript is a type of global object that is used to store data. Arrays consist
+                                of an ordered collection or list containing zero or more data types, and use numbered
+                                indices starting from 0 to access specific items.
+
+                            <p>Arrays are very useful as they store multiple values in a single variable, which can condense
+                                and organize our code, making it more readable and maintainable. Arrays can contain any data
+                                type, including numbers, strings, and objects.
+                            </p>
+                            <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
+                                their own variables.</p>
+                            </p>
+
+                            <img src="/images/pages/javascript-array.webp" class="modal__image">
+                            <p>A JavaScript array has the following characteristics:
+
+                                First, an array can hold values of mixed types. For example, you can have an array that
+                                stores
+                                elements with the types number, string, boolean, and null.
+                                Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
+                                specify the array size up front.
+
+                            </p>
+                            <h3>Loop through array</h3>
+                            <p>
+                                There are many ways to loop through an array but we are going to discuss the most common
+                                ways to loop through an array.
+
+                                We are going to discuss 2 different ways to loop through an array:
+                            <ul>
+                                <li>
+                                    Using for loop
+                                </li>
+                                <li>
+                                    Using forEach loop
+                                </li>
+                            </ul>
+
+                            </p>
+                        </div>
+
+                        <div class="add-members__actions">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

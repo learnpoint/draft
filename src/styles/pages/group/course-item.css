@@ -4,7 +4,7 @@
 
 .course-item__page-title {
     margin: 0;
-    /* text-align: center;  */
+    text-align: center; 
 }
 
 .course-item__course-name {

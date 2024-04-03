@@ -111,6 +111,12 @@
         "title": "Javascript 3",
         "description": "",
         "url": "/pages/group/content-student.html",
+        "content": "Innehåll Student Nyheter LIA Betyg Betyg 2 Chat Diskussion Channels --> Kanaler Om VG --> About Countries Countries quiz What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursinnehåll Javascript 3 About Jacascript What is advanced Javascript? What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursinnehåll Javascript 3 About Jacascript What is advanced Javascript? What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursbetyg -->"
+    },
+    {
+        "title": "Javascript 3",
+        "description": "",
+        "url": "/pages/group/content.html",
         "content": "Innehåll Student Nyheter LIA Betyg Betyg 2 Chat Diskussion Channels --> Kanaler Om Kursinnehåll VG About Jacascript What is advanced Javascript? What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursinnehåll Javascript 3 About Jacascript What is advanced Javascript? What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursinnehåll Javascript 3 About Jacascript What is advanced Javascript? What can we do with Javascript? About effective coding Async Javascript What is asynchronous Javascript? How to write async code Kursbetyg -->"
     },
     {
@@ -159,6 +165,12 @@
         "title": "Course Item",
         "description": "",
         "url": "/pages/group/course-item-quiz.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/course-item-student.html",
         "content": ""
     },
     {

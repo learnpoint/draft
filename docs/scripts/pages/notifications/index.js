@@ -63,6 +63,29 @@ document.addEventListener(render.ready, () => {
             return;
         }
 
+        if (elm == document.querySelector('[data-element="modal-student-close-button"]')) {
+            const target = document.getElementById("modal-student");
+            document.body.classList.remove("DISABLE-SCROLL");
+            target.classList.remove('OPEN');
+            return;
+        }
+
+
+        if (elm == document.querySelector('[data-element="modal-student-open-button"]')) {
+            const target = document.getElementById("modal-student");
+            document.body.classList.add("DISABLE-SCROLL");
+            target.classList.add('OPEN');
+            return;
+        }
+
+        if (elm == document.querySelector('[data-element="modal-close-button"]')) {
+            const target = document.getElementById("modal");
+            document.body.classList.remove("DISABLE-SCROLL");
+            target.classList.remove('OPEN');
+            return;
+        }
+
+
         if (elm == document.querySelector('[data-element="modal-open-button"]')) {
             const target = document.getElementById("modal");
             document.body.classList.add("DISABLE-SCROLL");
