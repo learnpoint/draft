@@ -109,14 +109,14 @@
 }
 .quiz__edit-question-content-answer-option {
     display: flex;
-    gap: 42px;
+    gap: 370px;
     align-items: center;
     margin: 16px 0;
 }
 
 .quiz__edit-question-content-answer-option-1 {
     display: flex;
-    gap: 36px;
+    gap: 370px;
     align-items: center;
     margin: 16px 0;
 }
@@ -131,6 +131,8 @@
 
 .quiz__edit-question-actions {
     text-align: right;
+    display: flex;
+    justify-content: space-between;
     margin-top: 48px;
 }
 
@@ -160,7 +162,8 @@
 .quiz__edit-question-content-answer-actions {
     display: flex;
     align-items: center;
-    gap: 374px;
+    /*gap: 374px;*/
+    justify-content: space-between;
 }
 
 .quiz__edit-question-content-add-answer-option {
@@ -383,4 +386,18 @@
 
   input:checked + .quiz__edit-question-content-switch::after {
     background-color: #0780ff;
+  }
+
+  .quiz__text-answer {
+    margin-left: 16px;
+  }
+
+  .quiz__text-answer-label {
+    font-size: 10px;
+    margin-top: 10px;
+
+  }
+
+  .quiz__text-answer-content {
+    
   }

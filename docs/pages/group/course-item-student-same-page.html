@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Javascript 3</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -932,7 +932,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Javascript 3</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -979,97 +979,104 @@
     </ul>
 </nav>
 
-<link rel="stylesheet" href="/styles/pages/group/copy-content.css">
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
 <script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
-    <div class="page__breadcrumb">
-        <nav class="breadcrumb">
-            <a href="/pages/group/content-7.html">Innehåll</a>
-            <span>/</span>
-            <a href="/pages/group/copy-content.html">Importera innehåll</a>
-            <span>/</span>
-            <span>JavaScript</span>
-        </nav>
-    </div>
     <div class="page__sheet">
-        <div class="page__content-wrap">
-           
-            <div class="copy-content__course-items-list">
-                <h2 class="copy-content__group-title">JavaScript </h2>
-                <h3 class="copy-content__group-sub-title">FE20_JS</h3>
-                <div  class="copy-content__section">
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" data-element="check-all" name="group" id="check-all" >
-                        <span class="copy-content__section-name">
-                            Week 1
-                        </span>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all">
-                        <a class="copy-content__course-item-name" data-element="check-all-toggler">
-                             Arrays
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name" >
-                            Variables
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name">
-                            Loops
-                        </a>
-                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name">
-                            Functions
-                        </a>
-                    </div>                 
+        <div class="course-item">
+            <div class="course-item__content">
+                <h2 class="course-item__page-title" style="margin-bottom: 10px">Countries quiz</h2>
+                <div class="quiz__questions">
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span> 
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which is the capital city of Australia?</h2>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Sydney</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Melbourne</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Canberra</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option" >
+                                    <input type="radio" title="Markera rätt svar">
+                                    <span>Brisbane</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 3</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>6</b></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option">
+                                    <textarea id="text" name="text" rows="5" cols="33" class="textbox">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                <div  class="copy-content__section">
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" data-element="check-all" data-element="check-all-toggler">
-                        <span class="copy-content__section-name">
-                            Week 2
-                        </span>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Inheritance
-                        </a>
-                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Closures
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Promise
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Higher order functions
-                        </a>
-                    </div>
+                <div class="quiz__add-question-action">
+                    <input type="button" value="Lämna in" class="button PRIMARY">
                 </div>
-                <div class="copy-content__actions">
-                    <a href="/pages/group/content-5.html" class="button ">
-                        Avbryt
-                    </a>
-                    <a href="/pages/group/content-6.html" class="button PRIMARY ">Importera</a>
-                </div>
+                
             </div>
         </div>
     </div>

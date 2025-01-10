@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Javascript 3</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -932,7 +932,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Javascript 3</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -979,98 +979,388 @@
     </ul>
 </nav>
 
-<link rel="stylesheet" href="/styles/pages/group/copy-content.css">
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
 <script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
-    <div class="page__breadcrumb">
-        <nav class="breadcrumb">
-            <a href="/pages/group/content-7.html">Innehåll</a>
-            <span>/</span>
-            <a href="/pages/group/copy-content.html">Importera innehåll</a>
-            <span>/</span>
-            <span>JavaScript</span>
-        </nav>
-    </div>
     <div class="page__sheet">
-        <div class="page__content-wrap">
-           
-            <div class="copy-content__course-items-list">
-                <h2 class="copy-content__group-title">JavaScript </h2>
-                <h3 class="copy-content__group-sub-title">FE20_JS</h3>
-                <div  class="copy-content__section">
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" data-element="check-all" name="group" id="check-all" >
-                        <span class="copy-content__section-name">
-                            Week 1
-                        </span>
+        <div class="course-item">
+            <img class="course-item__completion-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+            <div class="course-item__content">
+                <h2 class="course-item__page-title">Countries quiz</h2>
+                <!-- <div class="course-item__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lectus nec dui dignissim
+                    consequat
+                    vel nec leo. Aliquam imperdiet, nisl at vestibulum tristique, nibh ex elementum justo, vel porta
+                    odio
+                    ante imperdiet elit. Integer id mi mauris. Etiam posuere interdum magna eget hendrerit. In pretium,
+                    mi
+                    nec pellentesque dignissim, ipsum neque tincidunt augue, a semper quam sem non metus. Nullam risus
+                    nunc,
+                    porttitor sodales tincidunt id, tempus in orci. Etiam in felis nisi. Aliquam venenatis vehicula
+                    tellus
+                    non interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    egestas. Quisque non dictum quam. Aenean id feugiat nisl, quis placerat quam. Sed pellentesque magna
+                    ipsum, quis iaculis nisl rhoncus non.
+                </div> -->
+                <div class="course-item__student-settings-item">
+                    <div class="course-item__settings-item-name">
+                        Uppgift
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all">
-                        <a class="copy-content__course-item-name" data-element="check-all-toggler">
-                             Arrays
-                        </a>
+                    <div class="course-item__settings-item-state">
+                        Quiz
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name" >
-                            Variables
-                        </a>
+                    <div class="course-item__settings-item-name">
+                        Senast klar
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name">
-                            Loops
-                        </a>
-                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
+                    <div class="course-item__settings-item-state">
+                        16 jan
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" name="group-all" data-element="check-all-toggler">
-                        <a class="copy-content__course-item-name">
-                            Functions
-                        </a>
-                    </div>                 
-                </div>
-                <div  class="copy-content__section">
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group" data-element="check-all" data-element="check-all-toggler">
-                        <span class="copy-content__section-name">
-                            Week 2
-                        </span>
+                    <div class="course-item__settings-item-name">
+                        Points
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Inheritance
-                        </a>
-                        <span class="copy-content__course-item-status">Har importerats tidigare</span>
+                    <div class="course-item__settings-item-state">
+                        6/10
                     </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Closures
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Promise
-                        </a>
-                    </div>
-                    <div class="copy-content__course-item">
-                        <input type="checkbox" id="group">
-                        <a class="copy-content__course-item-name">
-                            Higher order functions
-                        </a>
+                    <div>
+                        <a>New attempt</a>
                     </div>
                 </div>
-                <div class="copy-content__actions">
-                    <a href="/pages/group/content-5.html" class="button ">
-                        Avbryt
-                    </a>
-                    <a href="/pages/group/content-6.html" class="button PRIMARY ">Importera</a>
+
+                <div class="quiz__questions">
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div>Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked>
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div>Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div>v</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked>
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div>v</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <span>Verona</span>
+                                    <div style="flex:1"></div>
+                                    <div>X</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: lightgreen;">
+                                    <input type="checkbox" checked>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div>v</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: lightgreen;">
+                                    <input type="checkbox" checked>
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div>v</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: lightcoral;">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <span>Verona</span>
+                                    <div style="flex:1"></div>
+                                    <div>X</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: lightgreen;">
+                                    <input type="checkbox" checked>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div>Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: lightgreen;">
+                                    <input type="checkbox" checked>
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div>Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: lightcoral;">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span> 
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which is the capital city of Australia?</h2>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio" checked>
+                                    <span>Sydney</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Melbourne</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Canberra</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option" >
+                                    <input type="radio" title="Markera rätt svar">
+                                    <span>Brisbane</span>
+                                </div>
+                            </div>
+                            <div>
+                                Correct answer: Canberra
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>2</b></span> 
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which is the capital city of Australia?</h2>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: lightcoral;">
+                                    <input type="radio" checked>
+                                    <span>Sydney</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Melbourne</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="radio">
+                                    <span>Canberra</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option" >
+                                    <input type="radio" title="Markera rätt svar">
+                                    <span>Brisbane</span>
+                                </div>
+                            </div>
+                            <div>
+                                Correct answer: Canberra
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 3</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>6</b></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div style="font-size: 9px; margin-left: 16px;">
+                                    Your answer:
+                                </div>
+                                <div style="margin-left: 16px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis massa eu ipsum venenatis sagittis. Aenean nibh enim, fauci
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 3</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <b>6</b></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                            </div>
+                            <div class="quiz__text-answer">
+                                <div class="quiz__text-answer-label">
+                                    Your answer:
+                                </div>
+                                <div class="quiz__text-answer-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis massa eu ipsum venenatis sagittis. Aenean nibh enim, fauci
+                                </div>
+                                <div class="quiz__text-answer-label">
+                                    Teacher's feedback:
+                                </div>
+                                <div class="quiz__text-answer-content">
+                                    eros a velit imperdiet, eu scelerisque metus efficitur. Nulla varius, mauris quis blandit fermentum, l
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
+
+                
             </div>
+            <link rel="stylesheet" href="/styles/components/comments-widget.css">
+
+<div class="comments-widget">
+    <div class="comments-widget__header">
+        <div class="comments-widget__info">
+            <!-- <img class="comments-widget__info-group-icon" src="/images/pages/noun-users.svg" /> -->
+            <!-- <div class="comments-widget__avatar-group">
+                <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/6.jpg" />
+                    <span class="comments-widget__avatar">+10</span>
+            </div> -->
+        </div>
+        <div class="comments-widget__notification">
+            <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>
+        </div>
+    </div>
+    <div class="comments-widget__content">
+        <div class="comments-widget__comments">
+            <div class="comments-widget__information-panel">
+                <div class="comments-widget__information-title">
+                    Aviseringar för gruppkommentarer
+                </div>
+                <!-- <div class="comments-widget__avatar-group">
+                    <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/6.jpg" />                        
+                </div>                -->
+                <div class="comments-widget__information-paragraph">
+                    Alla medlemmar i gruppen ska få aviseringar.                   
+                </div>
+                <div class="comments-widget__information-paragraph">
+                    Klicka på ikonen (klockan) uppe till höger för att stänga av eller slå på aviseringar.
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="comments-widget__footer " data-element="comments-widget.new-post-form">
+        <div class="comments-widget__new-post-input">
+            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar till gruppen..." Rows="2" style="    resize: none;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 48px;
+        ">
+        </div>
+        <a class="comments-widget__new-post-button"></a>
+    </div>
+</div>
         </div>
     </div>
 </div>

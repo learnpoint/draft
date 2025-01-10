@@ -136,3 +136,10 @@
     right: 20px;    
     opacity: .7;     
 }
+
+.modal__time {
+    margin: 4px 0 0;
+    text-align: left; 
+    flex: 1;
+    font-weight: normal;
+}
