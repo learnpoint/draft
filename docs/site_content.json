@@ -176,6 +176,12 @@
     {
         "title": "Course Item",
         "description": "",
+        "url": "/pages/group/course-item-quiz-teacher-result-review.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
         "url": "/pages/group/course-item-quiz-teacher-result.html",
         "content": ""
     },
@@ -280,6 +286,12 @@
         "description": "",
         "url": "/pages/group/posts.html",
         "content": "Innehåll Student Nyheter LIA Betyg Betyg 2 Chat Diskussion Channels --> Kanaler Om Skriv nyhet Continue writing your draft... Lorem ipsum Nam ipsum risus [[title]] [[name]] • Igår [[content]] -->"
+    },
+    {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/result-list-quiz.html",
+        "content": ""
     },
     {
         "title": "Study Groups",
