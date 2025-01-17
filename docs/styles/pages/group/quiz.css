@@ -58,7 +58,7 @@
 
 .quiz__edit-question {
     border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 0px 3px rgba(0,0,0,.2);
     background-color: #fff;
     /* padding: 16px; */
     margin: 0 0 24px 0;
@@ -67,7 +67,7 @@
 .quiz__edit-question-add-points {
     display: flex;
     gap: 4px;
-    font-size: 13px;
+    font-size: 14px;
     align-items: center;
 }
 
@@ -84,6 +84,14 @@
     border-top-left-radius:6px;
     border-top-right-radius:6px;
     background-color:#f9f7f7;
+}
+
+.quiz__edit-question-header.INCORRECT {
+    background-color:#fce8e6;
+}
+
+.quiz__edit-question-header.CORRECT {
+    background-color:#ccf6cc;
 }
 
 .quiz__edit-question-header h2 {
@@ -186,14 +194,14 @@
     gap: 8px;
     align-items: center;
     padding: 6px 4px;
-    margin: 16px 0;
+    margin: 6px 0;
+    border-radius: 4px;
 }
 
 .quiz__question-content-answer-option input[type='radio'],
 .quiz__question-content-answer-option input[type='checkbox'] {
     transform: scale(1.3);
 }
-
 
 .quiz .quiz__question-content-answer-option.CORRECT {
    background-color:#f0fff4;
@@ -401,3 +409,8 @@
   .quiz__text-answer-content {
     
   }
+
+.quiz__answer-correctness {
+    font-size: 13px;
+    color: #8d8d8d;
+}
