@@ -353,7 +353,7 @@
 }
 
 .course-item__student-list-item-new-submission-date {
-    width: 82px;
+    width: 62px;
     flex: 0 0 auto;
     margin: 0 4px;
     white-space: nowrap;
@@ -434,6 +434,50 @@
     margin: 0 4px;
     background-color: orange;
     border-radius: 50%;
+}
+
+.course-item__student-list-completion-text {
+    margin: 0 4px;
+    width: 160px;
+    flex: 0 1 auto;
+    text-align: right;
+    white-space: nowrap;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.course-item__student-list-item-points {
+    margin: 0 4px;
+    margin-left: 2px;
+}
+
+.course-item__student-list-item-points {
+    margin: 0 4px;
+}
+
+.course-item__student-list-item-points.UNREVIEWED {
+    font-weight: bold;
+}
+
+
+.course-item__student-list-review-text {
+    text-align: right;
+    font-style: italic;
+}
+
+.course-item__student-list-review-text.LEFT {
+    text-align: left;
+
+}
+
+.course-item__result-asterisk {
+    margin: 2px;
+
+}
+
+.course-item__result-asterisk-beginning {
+    position: absolute;
+    left: 0px;
 }
 
 
