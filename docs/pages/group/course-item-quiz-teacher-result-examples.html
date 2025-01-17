@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Course Item</title>
+    <title>Quiz result</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -930,121 +930,828 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Course Item</span>
+            <span>Quiz result</span>
         </div>
 
     </div>
 
     <main class="site__main">
-<script defer src="/scripts/components/sub-nav.js"></script>
-<link rel="stylesheet" href="/styles/components/sub-nav.css">
 
-<nav class="sub-nav">
-    <ul>
-        <li>
-            <a href="/pages/group/course-content.html" data-select="course-content.html">Innehåll</a>
-        </li>
-        <li>
-            <a href="/pages/group/content-student.html" data-select="content-student.html">Student</a>
-        </li>
-        <li>
-            <a href="/pages/group/posts.html" data-select="posts.html add-post.html">Nyheter</a>
-        </li>
-        <li>
-            <a href="/pages/group/lia.html" data-select="lia.html">LIA</a>
-        </li>
-        <li>
-            <a href="/pages/group/grade.html" data-select="/grade.html">Betyg</a>
-        </li>
-        <li>
-            <a href="/pages/group/grade2.html" data-select="grade2.html">Betyg 2</a>
-        </li>          
-        <li>
-            <a href="/pages/group/group-chat.html" data-select="group-chat.html">Chat</a>
-        </li>  
-        <li>
-            <a href="/pages/group/discussion.html" data-select="discussion.html">Diskussion</a>
-        </li>
-        <!-- <li>
-            <a href="/pages/group/channels-2.html" data-select="channels-2.html">Channels </a>
-        </li> -->
-        <li>
-            <a href="/pages/group/channels-3.html" data-select="channels-3.html">Kanaler</a>
-        </li>
-        <li>
-            <a href="/pages/group/about.html" data-select="about.html">Om</a>
-        </li>
-    </ul>
-</nav>
-
-<link rel="stylesheet" href="/styles/pages/group/discussion.css">
 <link rel="stylesheet" href="/styles/pages/group/course-item.css">
-
+<script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
     <div class="page__sheet">
         <div class="course-item">
-            <img class="course-item__completion-icon" src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">JavaScript Promises</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item.html">
-                        Content
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-comments.html">
-                        Work
-                    </a>
+            <img class="course-item__completion-icon"
+                src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" />
+            <div class="course-item__content-container">
+                <div class="course-item__content-header">
+                    <div class="course-item__content-header-avatar">
+                        <img src="/images/pages/users/user-1.jpg" />
+                        <div class="course-item__content-header-section">
+                            <div class="course-item__content-header-name">
+                               Harry Hansson
+                            </div>
+                            <div class="course-item__content-header-course">
+                                Country quiz
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="course-item__content-information">
+                    <div class="course-item__content-information-result">
+                        <div class="course-item__student-settings-item">
+                            <div class="course-item__settings-item-name">
+                                Inlämningsstatus
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Inlämnat 2 dec 2024 11:09 • <a>Visa historik</a>
+                            </div>
+                            <div class="course-item__settings-item-name">
+                                Tid
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                56:45
+                            </div>
+                            <div class="course-item__settings-item-name">
+                                Poäng
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                5/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item__content-betyg">
+                        <div class="course-item__settings-item-name">
+                            Betygsstatus
+                        </div>
+                        <div class="course-item__settings-item-state">
+                            Ej publicerad • <a>Visa historik</a>
+                        </div>
+                        <div class="course-item__settings-item-name">
+                            Betyg
+                        </div>
+                        <div class="course-item__settings-item-state">
+                            <span>-</span>  <span>IG</span> <span>G</span> <span>VG</span>
+                        </div>
+                        <div class="course-item__settings-item-name">
+                            Feedback
+                        </div>
+                        <div class="course-item__settings-item-state">
+                            Lägg till feedback
+                        </div>
+                    </div>
+
+                </div>
+
                 
-                <div class="course-item__work-info">
-                    <div class="course-item__work-info-item">
-                        <div class="course-item__work-info-name">
-                            Uppgift
+                
+
+                <div class="quiz__questions">
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
                         </div>
-                        <div class="course-item__work-info-value">
-                            Inlämningsuppgift
-                        </div>
-                    </div>
-                    <div class="course-item__work-info-item">
-                        <div class="course-item__work-info-name">
-                            Senast klar
-                        </div>
-                        <div class="course-item__work-info-value">
-                            Imorgon
-                        </div>
-                    </div>
-                    <div class="course-item__work-info-item">
-                        <div class="course-item__work-info-name">
-                            Din inlämning
-                        </div>
-                        <div class="course-item__work-info-value">
-                            Ej inlämnad
-                        </div>
-                    </div>
                     
-                <div class="course-item__work-submit">
-                    <input type="button" class="button PRIMARY " value="Lägg till"/> <span>eller släpp fil här</span>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-incorrect">Incorrect</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers">
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-incorrect">Incorrect</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers">
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-correct">Correct</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers"></div>
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-incorrect HIGHLIGHT">Incorrect</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers">
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-incorrect HIGHLIGHT">Incorrect</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers">
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__question-result-correct HIGHLIGHT">Correct</div>
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>   
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Verona</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            <div class="quiz__question-content-answers"></div>
+                                <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                <div class="quiz__question-content-annswer-options">
+                                    <div>Valencia, Cordoba</div>
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc; padding: 8px;">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;padding: 8px;">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Wrong answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc; padding: 8px;">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Wrong answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                  
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" >
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct </div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Wrong</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Palermo</span>
+                                                                  
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Wrong</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header INCORRECT">
+                            <h2>Fråga 1 - Incorrect</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" >
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Palermo</span>
+                                                                  
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header CORRECT">
+                            <h2>Fråga 1 - Correct</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng<span class="quiz__edit-points">2/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled >
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Verona</span>                                    
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header INCORRECT">
+                            <h2>Fråga 1 </h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>Valencia</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" >
+                                    <span>Cordoba</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Verona</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>Palermo</span>
+                                                                  
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                </div>
+                            </div>
+                            
+                        <div class="quiz__question-content-answers">
+                            <div class="quiz__question-content-annswers-title">Correct answers</div>
+                            <div class="quiz__question-content-annswer-options">
+                                <div>Valencia, Cordoba</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header CORRECT">
+                            <h2>Fråga 1</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Which of these cities are located in Spain?</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Valencia</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled >
+                                    <span>Cordoba</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Verona</span>                                    
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Palermo</span>
+                                </div>
+                            </div>
+                            
+                        <div class="quiz__question-content-answers">
+                            <div class="quiz__question-content-annswers-title">Correct answers</div>
+                            <div class="quiz__question-content-annswer-options">
+                                <div>Valencia, Cordoba</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header CORRECT">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Identify the correct sentence structure:</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Running quickly, the dog chased the cat.</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled >
+                                    <span>The dog chased the cat, running quickly.</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>The dog, running quickly, chased the cat.</span>                                    
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Chased the cat, the dog running quickly.</span>
+                                </div>
+                            </div>
+                            
+                        <div class="quiz__question-content-answers">
+                            <div class="quiz__question-content-annswers-title">Correct answers</div>
+                            <div class="quiz__question-content-annswer-options">
+                                <div>• Running quickly, the dog chased the cat.</div>
+                                <div>• The dog chased the cat, running quickly.</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Identify the correct sentence structure:</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Running quickly, the dog chased the cat.</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>The dog chased the cat, running quickly.</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled  title="Markera rätt svar" >
+                                    <span>The dog, running quickly, chased the cat.</span>  
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>                                  
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>Chased the cat, the dog running quickly.</span>
+                                </div>
+                            </div>
+                            
+                        <div class="quiz__question-content-answers">
+                            <div class="quiz__question-content-annswers-title">Correct answers</div>
+                            <div class="quiz__question-content-annswer-options">
+                                <div>• Running quickly, the dog chased the cat.</div>
+                                <div>• The dog chased the cat, running quickly.</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Identify the correct sentence structure:</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled>
+                                    <span>a. Running quickly, the dog chased the cat.</span>
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/check-lg.svg" /></div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>b. The dog chased the cat, running quickly.</span>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" checked disabled  title="Markera rätt svar" >
+                                    <span>c. The dog, running quickly, chased the cat.</span>  
+                                    <div style="flex:1"></div>
+                                    <div><img src="/images/pages/incorrect-red.svg" /></div>                                  
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar" >
+                                    <span>d. Chased the cat, the dog running quickly.</span>
+                                </div>
+                            </div>
+                            
+                        <div class="quiz__question-content-answers">
+                            <div class="quiz__question-content-annswers-title">Correct answers</div>
+                            <div class="quiz__question-content-annswer-options">
+                                <div>a. Running quickly, the dog chased the cat.</div>
+                                <div>b. The dog chased the cat, running quickly.</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Identify the correct sentence structure:</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Running quickly, the dog chased the cat.</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox">
+                                    <span>The dog chased the cat, running quickly.</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>The dog, running quickly, chased the cat.</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness">Wrong answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Chased the cat, the dog running quickly.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="quiz__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <h2>Identify the correct sentence structure:</h2>                                        
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                    <input type="checkbox" checked disabled>
+                                    <span>Running quickly, the dog chased the cat.</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness" style="color:#008800;">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                    <input type="checkbox">
+                                    <span>The dog chased the cat, running quickly.</span>
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness" style="color:#008800;">Correct answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                    <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                    <span>The dog, running quickly, chased the cat.</span>                                    
+                                    <div style="flex:1"></div>
+                                    <div class="quiz__answer-correctness" style="color:#bb0000;">Wrong answer</div>
+                                </div>
+                                <div class="quiz__question-content-answer-option">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <span>Chased the cat, the dog running quickly.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                </div> 
+
                 
             </div>
             <link rel="stylesheet" href="/styles/components/comments-widget.css">
 
 <div class="comments-widget">
-    <div class="comments-widget__header"> 
+    <div class="comments-widget__header">
         <div class="comments-widget__info">
-            <div class="comments-widget__people">
+            <!-- <img class="comments-widget__info-group-icon" src="/images/pages/noun-users.svg" /> -->
+            <!-- <div class="comments-widget__avatar-group">
+                <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
                     <img class="comments-widget__avatar"
-                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
-                        <img class="comments-widget__avatar"
-                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
-                        <img class="comments-widget__avatar"
-                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />                       
-            </div>
-            <!-- <span>Gruppkommentarer</span>
-            <span>•</span>
-           <span>24 medlemmar</span>  -->
-        </div>    
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                    <img class="comments-widget__avatar"
+                    src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/6.jpg" />
+                    <span class="comments-widget__avatar">+10</span>
+            </div> -->
+        </div>
         <div class="comments-widget__notification">
             <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>
         </div>
@@ -1053,20 +1760,32 @@
         <div class="comments-widget__comments">
             <div class="comments-widget__information-panel">
                 <div class="comments-widget__information-title">
-                    Aviseringar för kommentarer
+                    Aviseringar för gruppkommentarer
+                </div>
+                <!-- <div class="comments-widget__avatar-group">
+                    <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <img class="comments-widget__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/6.jpg" />                        
+                </div>                -->
+                <div class="comments-widget__information-paragraph">
+                    Alla medlemmar i gruppen ska få aviseringar.                   
                 </div>
                 <div class="comments-widget__information-paragraph">
                     Klicka på ikonen (klockan) uppe till höger för att stänga av eller slå på aviseringar.
-                </div>
-                <div class="comments-widget__information-paragraph">
-                    För att slå på aviseringar behöver du registreras som medlem i gruppen.
-                </div>
+                </div>                
             </div>
         </div>
     </div>
     <div class="comments-widget__footer " data-element="comments-widget.new-post-form">
         <div class="comments-widget__new-post-input">
-            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar till lärare..." Rows="2" style="    resize: none;
+            <input type="text" class="textbox BLOCK" placeholder="Skriv kommentar till gruppen..." Rows="2" style="    resize: none;
             overflow: hidden;
             box-sizing: border-box;
             height: 48px;
