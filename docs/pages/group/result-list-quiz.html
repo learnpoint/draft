@@ -638,6 +638,7 @@
             <div class="modal__content">
                 <div class="modal__content-scroll">
                     <div class="modal__header">
+                        <h4 class="modal__time">Time passed: 2:34</h4>
                         <h2 class="modal__title">Quiz</h2>
                         <h4 class="modal__sub-title">Countries quiz</h4>
                         <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-student-close-button">
@@ -646,7 +647,7 @@
                         <div class="modal__body-content">  
                             <div class="quiz" data-component="expandable">    
                                 <div class="quiz">      
-                                    <div style="text-align: center; margin:116px 0 24px;">Total points: <b> 10</b></div>                    
+                                    <div style="text-align: center; margin:16px 0; padding-left: 18px;">Total points: <b> 10</b></div>                    
                                     <div class="quiz__questions">
                                         <div class="quiz__edit-question">
                                             <div class="quiz__edit-question-header">
@@ -664,7 +665,7 @@
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="checkbox">
                                                         <span>Valencia</span>
-                                                    </div>git 
+                                                    </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="checkbox">
                                                         <span>Cordoba</span>
@@ -828,6 +829,7 @@
                                     </div>
                                     <div class="quiz__add-question-action">
                                         <input type="button" value="Spara" class="button PRIMARY">
+        
                                     </div>
                                 
                                 </div>
@@ -986,236 +988,448 @@
             <div class="course-item__content">
                 <h2 class="course-item__page-title">Countries quiz</h2>
                 <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-quiz.html">
+                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
                         Planering
                     </a>
-                    <a class="course-item__menu-tab" href="/pages/group/result-list-quiz.html">
+                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
                         Uppföljning
                     </a>
-                </div>
-                <div class="course-item__settings">
-                    <div class="course-item__settings-content">
-                        <div class="course-item__settings-item">
-                            <div class="course-item__settings-item-name">
-                                Uppgift
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                Quiz
-                            </div>
-                            <!-- <div class="course-item__settings-action">
-                                <input type="button" value="Öppna quiz" class="button SMALL" data-element="modal-open-button">
-                            </div> -->
-                        </div>
-                        <div class="course-item__settings-item">
-                            <div class="course-item__settings-item-name">
-                                Tid
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                Ingen tid angiven
-                            </div>
-                        </div>
-                        <div class="course-item__settings-item">
-                            <div class="course-item__settings-item-name">
-                                Plats
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                Ingen plats angiven                            
-                            </div>
-                        </div>
-                        <div class="course-item__settings-item">
-                            <div class="course-item__settings-item-name">
-                                Betyg
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                IG-VG
-                            </div>
-                        </div>
-                        <div class="course-item__settings-item-name">
-                            Duration
-                        </div>
-                        <div class="course-item__settings-item-state">
-                            Ingen
-                            
-                        </div>
-                        <div class="course-item__settings-item-name">
-                            Points
-                        </div>
-                        <div class="course-item__settings-item-state">
-                            0
-                            
-                        </div>
-                        <!-- <div class="course-item__settings-item">
-                            <div class="course-item__settings-item-name">
-                                Innehållets synlighet
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                Synlig direkt
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="course-item__description">
-                    <h2 class="course-item__title">Countries quiz</h2>
-                    <div class="course-item__description-text">
-                        The quiz is about topic we discussed last lecture. 
-
-                    </div>
-                    <div class="course-item__content-text">
-                        The recommended time for completion is 10 minutes. For text answers do not write more than 2 sentences    
+                </div> 
+                
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
                     </div>
 
-                    <div class="quiz__edit-question">
-                        <div class="quiz__edit-question-header">
-                            <h2>Fråga 1</h2>
-                            <select name="answer-options" id="pet-select">                                                          
-                                <option value="Multiple" selected>Flerval</option>
-                                <option value="Text">Text</option>
-                            </select>
-                            <div class="quiz__edit-question-add-points">
-                                <span>Poäng</span> <input type="text" class="textbox" value="2">
-                            </div>
-                        </div>                                      
-                        <div class="quiz__edit-question-content">
-                            <div class="quiz__edit-question-content-header">
-                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which of these cities are located in Spain?</textarea>                                        
-                            </div>
-                            
-                            <div class="quiz__edit-question-content-answer-options-header">
-                                <div class="quiz__edit-question-content-answer-options-column">
-                                    Svarsalternativ                                  
-                                </div>
-                                <div class="quiz__edit-question-content-correct-answer-column">
-                                    Rätt svar
-                                </div>
-                            </div>
-                            <div class="quiz__edit-question-content-answer-options">
-                                <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="text" class="textbox" value="Valencia">
-                                    <input type="checkbox" title="Markera rätt svar">
-                                </div>
-                                <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="text" class="textbox" value="Cordoba">
-                                    <input type="checkbox" title="Markera rätt svar">
-                                </div>
-                                <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="text" class="textbox" value="Verona">
-                                    <input type="checkbox" title="Markera rätt svar">
-                                </div>
-                                <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="text" class="textbox" value="Palermo">
-                                    <input type="checkbox" title="Markera rätt svar">
-                                </div>
-                                <div class="quiz__edit-question-content-answer-actions">
-                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
-                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
-                                        <div class="quiz__edit-question-content-switch-wrap">
-                                        <input type="checkbox" checked id="multiple-answers" />
-                                        <div class="quiz__edit-question-content-switch"></div>
-                                        </div>
-                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
-                                    </label>
-                                </div>
-                                <div class="quiz__edit-question-actions">
-                                    <input type="button" value="Avbryt" class="button SMALL">
-                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
-                                </div> 
-                            </div>
-                        </div>                                       
-                    </div>                  
-                    <div class="quiz__creation-panel">      
-    
-                        <div class="quiz__questions">           
-                            <div class="quiz__edit-question">
-                                <div class="quiz__edit-question-header">
-                                    <h2>Fråga 2</h2>
-    
-                                    <select name="answer-options" id="pet-select">                                           
-                                        <option value="Multiple" selected >Flerval</option>
-                                        <option value="Text">Text</option>
-                                    </select>
-                                    <div class="quiz__edit-question-add-points">
-                                        <span>Poäng</span> <input type="text" class="textbox" value="2">
-                                    </div>
-                                </div>
-                                <div class="quiz__edit-question-content">
-                                    <div class="quiz__edit-question-content-header">
-                                        <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which is the capital city of Australia?</textarea>
-                                    </div>
-                                    <div class="quiz__edit-question-content-answer-options-header">
-                                        <div class="quiz__edit-question-content-answer-options-column">
-                                            Svarsalternativ                                  
-                                        </div>
-                                        <div class="quiz__edit-question-content-correct-answer-column">
-                                            Rätt svar
-                                        </div>
-                                    </div>
-                                    <div class="quiz__edit-question-content-answer-options">
-                                        <div class="quiz__edit-question-content-answer-option">
-                                            <input type="text" class="textbox" value="Sydney">
-                                            <input type="radio" title="Markera rätt svar">
-                                        </div>
-                                        <div class="quiz__edit-question-content-answer-option">
-                                            <input type="text" class="textbox" value="Melbourne">
-                                            <input type="radio" title="Markera rätt svar">
-                                        </div>
-                                        <div class="quiz__edit-question-content-answer-option">
-                                            <input type="text" class="textbox" value="Canberra ">
-                                            <input type="radio" title="Markera rätt svar">
-                                        </div>
-                                        <div class="quiz__edit-question-content-answer-option" >
-                                            <input type="text" class="textbox" value="Brisbane">
-                                            <input type="radio" title="Markera rätt svar">
-                                        </div>
-                                        <div class="quiz__edit-question-content-answer-actions">
-                                            <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
-                                            <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
-                                                <div class="quiz__edit-question-content-switch-wrap">
-                                                <input type="checkbox"  id="multiple-answers" />
-                                                <div class="quiz__edit-question-content-switch"></div>
-                                                </div>
-                                                <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
-                                            </label>
-                                        </div>
-                                        <div class="quiz__edit-question-actions">
-                                            <input type="button" value="Avbryt" class="button SMALL">
-                                            <input type="button" value="Spara" class="button PRIMARY SMALL">
-                                        </div> 
-                                    </div>
-                                </div>
-                            
-                            </div> 
-                            <div class="quiz__edit-question">
-                                <div class="quiz__edit-question-header">
-                                    <h2>Fråga 3</h2>
-                                    <select name="answer-options" id="pet-select">                                            
-                                        <option value="Multiple">Flerval</option>
-                                        <option value="Text" selected>Text</option>
-                                    </select>
-                                    <div class="quiz__edit-question-add-points">
-                                        <span>Poäng</span> <input type="text" class="textbox" value="6">
-                                    </div>
-                                </div>
-                                <div class="quiz__edit-question-content">
-                                    <div class="quiz__edit-question-content-header">
-                                        <textarea id="text" name="text" rows="2" class="textbox BLOCK">The geography of Inner China was more attractive than Outer China because...</textarea>
-                                    </div>
-                                    <div class="quiz__edit-question-content-answer-options">
-                                        <!-- <div class="quiz__edit-question-content-answer-option">
-                                            <textarea id="text" name="text" rows="5" cols="33" class="textbox">
-                                            </textarea>
-                                        </div> -->
-                                        <div class="quiz__edit-question-actions">
-                                            <input type="button" value="Avbryt" class="button SMALL">
-                                            <input type="button" value="Spara" class="button PRIMARY SMALL">
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div> 
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date" style="color: red;">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-indication">
+                            !
                         </div>
-                        <div class="quiz__add-question-action">
-                            <input type="button" value="Lägg till fråga" class="button LARGE">
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-indication">
+                            !
                         </div>
-                </div>           
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-indication">
+                            !
+                        </div>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-indication">
+                            !
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <div class="course-item__student-list-item-indication-beginning">
+
+                        </div>
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <div class="course-item__student-list-item-indication-beginning">
+
+                        </div>
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <div class="course-item__student-list-item-indication-beginning">
+
+                        </div>
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <div class="course-item__student-list-item-indication-beginning">
+
+                        </div>
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <div class="course-item__student-list-item-indication-beginning">
+
+                        </div>
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-indication">review required</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-indication">review required</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-indication">review required</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>                          
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="course-item__student-list">
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-indicator-middle">!</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-indicator-middle">!</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-indicator-middle">!</div>                            
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>                          
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="course-item__mark-as-reviewed">
+                    <input type="button" value="Publish" class="button PRIMARY SMALL">
+                </div>
             </div>
         </div>
     </div>
