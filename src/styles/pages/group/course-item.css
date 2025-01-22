@@ -197,6 +197,7 @@
     padding: 4px 16px 4px 0;
     padding: 4px 0 0;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .course-item__settings-item-state {
@@ -363,6 +364,25 @@
     min-width: 160px;
 }
 
+.course-item__result-student-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    font-size: 14px;
+} 
+
+.course-item__result-completion-status {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 14px;
+    font-size: 10px;
+    color: #888;
+}
+
 .course-item__student-list-item-new-submission-indicator {
     width: 7px;
     height: 7px;
@@ -439,7 +459,7 @@
 
 .course-item__settings-review {
     font-size: 13px;
-    color: orange;
+    /*color: orange;*/
 
 }
 
@@ -454,6 +474,7 @@
     flex: 0 0 auto;
     margin: 0 4px;
     background-color: orange;
+    /* background-color: #0094EF; */
     border-radius: 50%;
 }
 
@@ -470,6 +491,7 @@
 .course-item__student-list-item-points {
     margin: 0 4px;
     margin-left: 2px;
+    width: 50px;
 }
 
 .course-item__student-list-item-points {
