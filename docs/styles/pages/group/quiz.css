@@ -414,3 +414,13 @@
     font-size: 13px;
     color: #8d8d8d;
 }
+
+.quiz__question-content-answer-option-box {
+    width: 20px;
+    height: 20px;
+}
+
+.quiz__question-content-answer-option-box img {
+    width: 100%;
+    height: 100%;
+}
