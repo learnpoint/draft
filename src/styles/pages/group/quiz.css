@@ -79,7 +79,7 @@
 
 .quiz__edit-question-header {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     align-items: center;
     padding:8px;
     margin-bottom: 0px;
@@ -216,6 +216,7 @@
 
 .quiz__question-content-answer-option-text {
     flex: 1;
+    line-height: 1.2;;
  }
  
 
@@ -433,6 +434,25 @@
     font-size: 14px;
     background-color:#ffcc66;
 }
+
+.quiz__question-review-message-v1 {
+    padding: 0 4px;
+    border-radius: 6px;
+    font-size: 14px;
+    color:#fc8e00;
+    font-weight: 600;
+}
+.quiz__question-review-message-v2 {
+    font-size: 14px;
+    color:#fc8e00;
+    font-weight: 600;
+}
+
+.quiz__question-review-required {
+    background-color:#ffebc3;
+}
+
+
 
 .quiz__question-content-answer-option-text {
     flex: 1;
