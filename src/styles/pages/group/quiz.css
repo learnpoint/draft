@@ -62,6 +62,8 @@
     background-color: #fff;
     /* padding: 16px; */
     margin: 0 0 24px 0;
+    max-width: 760px;
+    margin: 0 auto 42px;
 }
 
 .quiz__edit-question-add-points {
@@ -77,13 +79,13 @@
 
 .quiz__edit-question-header {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     align-items: center;
-    padding:16px 16px;
+    padding:8px;
     margin-bottom: 0px;
     border-top-left-radius:6px;
     border-top-right-radius:6px;
-    background-color:#f9f7f7;
+    background-color:#efebebe0;
 }
 
 .quiz__edit-question-header.INCORRECT {
@@ -214,6 +216,7 @@
 
 .quiz__question-content-answer-option-text {
     flex: 1;
+    line-height: 1.2;;
  }
  
 
@@ -423,4 +426,34 @@
 .quiz__question-content-answer-option-box img {
     width: 100%;
     height: 100%;
+}
+
+.quiz__question-review-message {
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color:#ffcc66;
+}
+
+.quiz__question-review-message-v1 {
+    padding: 0 4px;
+    border-radius: 6px;
+    font-size: 14px;
+    color:#fc8e00;
+    font-weight: 600;
+}
+.quiz__question-review-message-v2 {
+    font-size: 14px;
+    color:#fc8e00;
+    font-weight: 600;
+}
+
+.quiz__question-review-required {
+    background-color:#ffebc3;
+}
+
+
+
+.quiz__question-content-answer-option-text {
+    flex: 1;
 }
