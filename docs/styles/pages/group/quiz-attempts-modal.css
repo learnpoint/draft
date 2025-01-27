@@ -1,0 +1,41 @@
+.attempt-history__row {
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 4px;
+    position: relative;
+}
+
+.attempt-history__row-number {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.attempt-history__row-date {
+    flex: 0 0 auto;
+    width: 100px;
+    margin-right: 20px
+}
+
+.attempt-history__row-duration {
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.attempt-history__row-points {
+    width: 100px;
+
+}
+
+.attempt-history__row-grade {
+    width: 30px;
+}
+
+.attempt-history__row-grade-icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    flex: 0 0 auto;
+    margin-right: 50px;
+}

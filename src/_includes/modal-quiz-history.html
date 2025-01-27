@@ -1,18 +1,51 @@
-<link rel="stylesheet" href="/styles/components/modal.css">
-<link rel="stylesheet" href="/styles/pages/group/quiz.css">
+<link rel="stylesheet" href="/styles/pages/group/quiz-attempts-modal.css">
 
 <div class="modal" id="modal-quiz-history" tabindex="-1" role="dialog">
     <div class="modal__overlay"></div>
         <div class="modal__dialog">
             <div class="modal__content">
-                <div class="modal__content-scroll">
+                <div class="modal__content-scroll" style="height: auto;">
                     <div class="modal__header">
                         <h2 class="modal__title">Attempts</h2>
                         <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-quiz-history-close-button">
                     </div>
                     <div class="modal__body">  
                         <div class="modal__body-content">
-                            Test
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">3.</div>
+                                <div class="attempt-history__row-date">23 jan 15:30</div>
+                                <div class="attempt-history__row-duration">30:00</div>
+                                <div class="attempt-history__row-points">3/10</div>
+                                <div class="attempt-history__row-grade"></div>
+                                <div class="attempt-history__row-grade-icon">
+                                    
+                                </div> 
+                                <a>View</a>
+
+                            </div>
+
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">2.</div>
+                                <div class="attempt-history__row-date">21 jan 15:30</div>
+                                <div class="attempt-history__row-duration">45:00</div>
+                                <div class="attempt-history__row-points">8/10</div>
+                                <div class="attempt-history__row-grade">G</div>
+                                <div class="attempt-history__row-grade-icon">
+                                    <img class="course-item__student-list-item-icon"
+                                    src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                                </div> 
+                                <a>View</a>
+                            </div>
+
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">1.</div>
+                                <div class="attempt-history__row-date">20 jan 15:30</div>
+                                <div class="attempt-history__row-duration" style="color: red;">78:00</div>
+                                <div class="attempt-history__row-points">9/10</div>
+                                <div class="attempt-history__row-grade"></div>
+                                <div class="attempt-history__row-grade-icon"></div>
+                                <a>View</a>
+                            </div>
 
                         </div>  
                     </div>
