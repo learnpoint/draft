@@ -78,6 +78,21 @@ document.addEventListener(render.ready, () => {
             return;
         }
 
+        if (elm == document.querySelector('[data-element="modal-quiz-history-close-button"]')) {
+            const target = document.getElementById("modal-quiz-history");
+            document.body.classList.remove("DISABLE-SCROLL");
+            target.classList.remove('OPEN');
+            return;
+        }
+
+
+        if (elm == document.querySelector('[data-element="modal-quiz-history-open-button"]')) {
+            const target = document.getElementById("modal-quiz-history");
+            document.body.classList.add("DISABLE-SCROLL");
+            target.classList.add('OPEN');
+            return;
+        }
+
         if (elm == document.querySelector('[data-element="modal-close-button"]')) {
             const target = document.getElementById("modal");
             document.body.classList.remove("DISABLE-SCROLL");
