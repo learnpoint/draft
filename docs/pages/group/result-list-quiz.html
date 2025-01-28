@@ -903,6 +903,126 @@
         </div>
     </div>
 </div> -->
+     <link rel="stylesheet" href="/styles/pages/group/quiz-attempts-modal.css">
+
+<div class="modal" id="modal-quiz-history" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__content-scroll" style="height: auto;">
+                    <div class="modal__header">
+                        <h2 class="modal__title">Attempts</h2>
+                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-quiz-history-close-button">
+                    </div>
+                    <div class="modal__body">  
+                        <div class="modal__body-content">
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">3.</div>
+                                <div class="attempt-history__row-date">23 jan 15:30</div>
+                                <div class="attempt-history__row-duration">30:00</div>
+                                <div class="attempt-history__row-points">3/10</div>
+                                <div class="attempt-history__row-grade"></div>
+                                <div class="attempt-history__row-grade-icon">
+                                    
+                                </div> 
+                                <a>View</a>
+
+                            </div>
+
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">2.</div>
+                                <div class="attempt-history__row-date">21 jan 15:30</div>
+                                <div class="attempt-history__row-duration">45:00</div>
+                                <div class="attempt-history__row-points">8/10</div>
+                                <div class="attempt-history__row-grade">G</div>
+                                <div class="attempt-history__row-grade-icon">
+                                    <img class="course-item__student-list-item-icon"
+                                    src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                                </div> 
+                                <a>View</a>
+                            </div>
+
+                            <div class="attempt-history__row">
+                                <div class="attempt-history__row-number">1.</div>
+                                <div class="attempt-history__row-date">20 jan 15:30</div>
+                                <div class="attempt-history__row-duration" style="color: red;">78:00</div>
+                                <div class="attempt-history__row-points">9/10</div>
+                                <div class="attempt-history__row-grade"></div>
+                                <div class="attempt-history__row-grade-icon"></div>
+                                <a>View</a>
+                            </div>
+
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal__overlay"></div>
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__content-scroll">
+                    <div class="modal__header">
+                        <h2 class="modal__title">Arrays</h2>
+                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
+                    </div>
+                    <div class="modal__body">
+
+                        <div>
+                            <h3>Arrays in JavaScript</h3>
+                            <p>
+                                An array in JavaScript is a type of global object that is used to store data. Arrays consist
+                                of an ordered collection or list containing zero or more data types, and use numbered
+                                indices starting from 0 to access specific items.
+
+                            <p>Arrays are very useful as they store multiple values in a single variable, which can condense
+                                and organize our code, making it more readable and maintainable. Arrays can contain any data
+                                type, including numbers, strings, and objects.
+                            </p>
+                            <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
+                                their own variables.</p>
+                            </p>
+
+                            <img src="/images/pages/javascript-array.webp" class="modal__image">
+                            <p>A JavaScript array has the following characteristics:
+
+                                First, an array can hold values of mixed types. For example, you can have an array that
+                                stores
+                                elements with the types number, string, boolean, and null.
+                                Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
+                                specify the array size up front.
+
+                            </p>
+                            <h3>Loop through array</h3>
+                            <p>
+                                There are many ways to loop through an array but we are going to discuss the most common
+                                ways to loop through an array.
+
+                                We are going to discuss 2 different ways to loop through an array:
+                            <ul>
+                                <li>
+                                    Using for loop
+                                </li>
+                                <li>
+                                    Using forEach loop
+                                </li>
+                            </ul>
+
+                            </p>
+                        </div>
+
+                        <div class="add-members__actions">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
     <div class="site__left-nav">
         <ul>
             <li>
@@ -999,74 +1119,151 @@
                         <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
                         <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
                             <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-publish-indicator">✦</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">4/10</div>
                             <div class="course-item__student-list-item-grade">G</div>
-                            <div class="course-item__student-list-item-icon">
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            </div> 
-                        </a>
-
-                        <div class="course-item__not-published-indicator-flag-section">
-                            <div class="course-item__not-published-indicator-flag"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
+                            <div class="course-item__student-list-item-publish-indicator" style="margin-right: 5px;">✦</div>  
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
                         </a>
-                        <div class="course-item__not-published-indicator-flag-section">
-                            <div class="course-item__not-published-indicator-flag"></div>
-                        </div>
                     </div>
-
                     <div class="course-item__student-list-item">
                         <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
                         <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
+                
+                            <div class="course-item__student-list-item-publish-indicator" style="margin-right: 5px;">✦</div>  
                         </a>
-                        <div class="course-item__not-published-indicator-flag-section">
-                            <div class="course-item__not-published-indicator-flag"></div>
-                        </div>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-publish-indicator" style="position: absolute; right: -10px;">✦</div>  
                     </div>
 
                     <div class="course-item__student-list-item">
                         <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
                         <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
-
+                        <div class="course-item__student-list-item-publish-indicator" style="position: absolute; right: -10px;">✲</div>  
                     </div>
 
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-publish-indicator" style="position: absolute; right: -10px;">⌬</div>  
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-publish-indicator" style="position: absolute; right: -10px;">░</div>  
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-publish-indicator" style="position: absolute; right: -10px;">◆</div>  
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade">
+                                <span style="color: #0780ff;">◂</span>
+                                <span>G</span>
+                                <span style="color: #0780ff;">▸</span>
+                            </div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a> 
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-review-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade" style="background-color: #077fff51; min-width: 0;">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                    </div>
                     <div class="course-item__student-list-item">
                         <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
                         <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
@@ -1084,14 +1281,11 @@
                             <div class="course-item__not-published-indicator-flag"></div>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
 
-        <div class="course-item" style="margin-top: 50px;">
+        <div class="course-item">
             <div class="course-item__content">
                 <h2 class="course-item__page-title">Countries quiz</h2>
                 <div class="course-item__menu-tabs">
@@ -1112,17 +1306,11 @@
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__completion-text-alt"></div>
                             <div class="course-item__student-list-item-grade">G</div>
-                            <div class="course-item__student-list-item-icon">
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            </div> 
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
-
-                        <div class="course-item__not-published-indicator-chevron-section">
-                            <div class="course-item__not-published-indicator-chevron"></div>
-                        </div>
-
                     </div>
 
                     <div class="course-item__student-list-item">
@@ -1133,228 +1321,10 @@
                             <div class="course-item__student-list-item-new-submission-date">Idag</div>
                             <div class="course-item__student-list-item-new-comment">2</div>
                             <div class="course-item__student-list-item-points">8/10</div>
+                            <div class="course-item__completion-text-alt">Ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
-                        </a>
-                        <div class="course-item__not-published-indicator-chevron-section">
-                            <div class="course-item__not-published-indicator-chevron"></div>
-                        </div>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
-                        </a>
-                        <div class="course-item__not-published-indicator-chevron-section">
-                            <div class="course-item__not-published-indicator-chevron"></div>
-                        </div>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        
-                        </a>
-                        <div class="course-item__not-published-indicator-chevron-section">
-                            <div class="course-item__not-published-indicator-chevron"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item" style="margin-top: 50px;">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <div class="course-item__student-list-item-icon">
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            </div> 
-                        </a>
-
-                        <div class="course-item__not-published-indicator-shape-section">
-                            <div class="course-item__not-published-indicator-shape"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
-                        </a>
-                        <div class="course-item__not-published-indicator-shape-section">
-                            <div class="course-item__not-published-indicator-shape"></div>
-                        </div>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            
-                        </a>
-                        <div class="course-item__not-published-indicator-shape-section">
-                            <div class="course-item__not-published-indicator-shape"></div>
-                        </div>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        
-                        </a>
-                        <div class="course-item__not-published-indicator-shape-section">
-                            <div class="course-item__not-published-indicator-shape"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item" style="margin-top: 50px;">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-grade-column">
-                                <div class="course-item__student-list-item-grade">G</div>
-                                <img class="course-item__student-list-item-icon" 
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                                <div class="course-item__not-published-indicator"></div>
-                            </div>
-                            
-                        </a>
-                        
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-grade-column">
-                                <div class="course-item__student-list-item-grade">G</div>  
-                                <img class="course-item__student-list-item-icon"
-                                    src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                                <div class="course-item__not-published-indicator"></div>
-                            </div> 
                         </a>
                     </div>
 
@@ -1366,187 +1336,25 @@
                             <div class="course-item__student-list-item-new-submission-date">Idag</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__student-list-grade-column">
-                                <div class="course-item__student-list-item-grade">G</div>
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                                <div class="course-item__not-published-indicator"></div>
-                            </div>
-                            
-                        </a>
-                        
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-grade-column">
-                         
-                                <div class="course-item__student-list-item-grade">G</div>
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-grade-column">
-                                
-                                <div class="course-item__student-list-item-grade">G</div>
-                                <img class="course-item__student-list-item-icon"
-                                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                                <div class="course-item__not-published-indicator"></div>
-                            </div>
-                        
-                        </a>
-                        
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item" style="margin-top: 50px;">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <!-- <div class="course-item__student-list-item-new-submission-indicator"></div> -->
-                            <div class="course-item__student-list-item-new-submission-date"></div>
-                            <div class="course-item__student-list-item-points"></div>
-                            <div class="course-item__student-list-item-grade"></div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <!-- <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div> -->
-                            <!-- <div class="course-item__student-list-item-new-comment">2</div> -->
-                            <div class="course-item__student-list-item-points"></div>
-                            <div class="course-item__student-list-item-grade">IG</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment" style="background-color: transparent;"></div>
-                            <div class="course-item__student-list-item-points"></div>
-                            <div class="course-item__student-list-item-grade"></div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-review-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment" style="background-color: transparent;"></div>
-                            <div class="course-item__student-list-item-points"></div>
-                            <div class="course-item__student-list-item-grade"></div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <!-- <div class="course-item__student-list-item-new-submission-indicator"></div> -->
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-item-grade">IG</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" />
-                            <div class="course-item__not-published-indicator"></div>
-                        </a>
-                    </div>
-
-
-                    <!-- <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                             <div class="course-item__student-list-item-new-submission-indicator"></div> 
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">-/10</div>
-                            <div class="course-item__student-list-item-grade">IG</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" />
-                            <div class="course-item__not-published-indicator"></div>
-                        </a>
-                    </div> -->
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <!-- <div class="course-item__student-list-item-new-submission-indicator"></div> -->
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">0/10</div>
-                            <div class="course-item__student-list-item-grade">IG</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" />
-                            <div class="course-item__not-published-indicator"></div>
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
+                            <div class="course-item__completion-text-alt">Ändring ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        <div class="course-item__not-published-indicator"></div>
+                        </a>
+                    </div>
+
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-item-points">5/10</div>
+                            <div class="course-item__completion-text-alt">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-item-grade">G</div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
                     </div>
 
@@ -1646,262 +1454,6 @@
                         
                         </a>
                         <div class="course-item__not-published-indicator"></div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-review-text">
-                        * Some answers require manual review
-                    </div>
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__completion-text-alt"></div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__completion-text-alt">Ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__completion-text-alt">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__completion-text-alt">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Anna Kronér</div>
-                                <div class="course-item__result-completion-status">Submitted idag</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator" style="margin-right: 20px;"></div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">10/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Clara Qvist</div>
-                                <div class="course-item__result-completion-status">Submitted idag</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator" style="margin-right: 20px;"></div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Jennie Ahl</div>
-                                <div class="course-item__result-completion-status">Submitted 15 jan</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator" style="margin-right: 20px;"></div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">9/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Lova Gronskog</div>
-                                <div class="course-item__result-completion-status">Submitted 13 jan</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator" style="margin-right: 20px;"></div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">3/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Anna Kronér</div>
-                                <div class="course-item__result-completion-status">10/10</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Clara Qvist</div>
-                                <div class="course-item__result-completion-status">4/10 • manual review required</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Jennie Ahl</div>
-                                <div class="course-item__result-completion-status">3/10 • manual review required</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">
-                                <div class="course-item__result-student-name">Lova Gronskog</div>
-                                <div class="course-item__result-completion-status">5/10</div>
-                            </div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
                     </div>
 
 
@@ -2032,272 +1584,6 @@
             </div>
         </div>
 
-
-        <div class="course-item">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-review-text">
-                        * Some answers require manual review
-                    </div>
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points UNREVIEWED">2/10<span class="course-item__result-asterisk">*</span></div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points UNREVIEWED">5/10<span class="course-item__result-asterisk">*</span></div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-review-text">
-                        * Some answers require manual review
-                    </div>
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__result-asterisk">*</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__result-asterisk">*</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="course-item" style="margin-top: 50px;">
-            <div class="course-item__content">
-                <h2 class="course-item__page-title">Countries quiz</h2>
-                <div class="course-item__menu-tabs">
-                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz.html">
-                        Planering
-                    </a>
-                    <a class="course-item__menu-tab SELECTED" href="/pages/group/result-list-quiz.html">
-                        Uppföljning
-                    </a>
-                </div> 
-                
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-review-text LEFT">
-                        * Some answers require manual review
-                    </div>
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <span class="course-item__result-asterisk-beginning">*</span>
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Jennie Ahl</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <span class="course-item__result-asterisk-beginning">*</span>
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Lova Grönskog</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">2 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Clara Qvist</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">Idag</div>
-                            <div class="course-item__student-list-item-new-comment">2</div>
-                            <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
         <div class="course-item" style="margin-top: 50px;">
             <div class="course-item__content">
                 <h2 class="course-item__page-title">Countries quiz</h2>
@@ -2319,7 +1605,7 @@
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-completion-text">Not reviewed</div>
+                            <div class="course-item__student-list-completion-text" style="width: 120px;">Ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
@@ -2334,7 +1620,7 @@
                             <div class="course-item__student-list-item-new-submission-date">Idag</div>
                             <div class="course-item__student-list-item-new-comment">2</div>
                             <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Not reviewed</div>
+                            <div class="course-item__student-list-completion-text" style="width: 120px;">Ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
@@ -2349,7 +1635,7 @@
                             <div class="course-item__student-list-item-new-submission-date">Idag</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">2/10</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-completion-text" style="width: 120px;">Ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
@@ -2364,7 +1650,7 @@
                             <div class="course-item__student-list-item-new-submission-date">2 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
                             <div class="course-item__student-list-item-points">5/10</div>
-                            <div class="course-item__student-list-completion-text"></div>
+                            <div class="course-item__student-list-completion-text" style="width: 120px;"></div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
@@ -2379,7 +1665,7 @@
                             <div class="course-item__student-list-item-new-submission-date">Idag</div>
                             <div class="course-item__student-list-item-new-comment">2</div>
                             <div class="course-item__student-list-item-points">8/10</div>
-                            <div class="course-item__student-list-completion-text">Ej publicerad</div>
+                            <div class="course-item__student-list-completion-text" style="width: 120px;">Ej publicerad</div>
                             <div class="course-item__student-list-item-grade">G</div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
@@ -2404,78 +1690,7 @@
                     </a>
                 </div> 
                 
-                <div class="course-item__student-list">
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-review-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text"></div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-review-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-review-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text"></div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-review-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text"></div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                    </div>
-
-                </div>
+                
 
                 <div class="course-item__student-list">
                     <div class="course-item__student-list-item">
@@ -2558,9 +1773,9 @@
                             <div class="course-item__student-list-item-new-submission-indicator"></div>
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-completion-text"></div>
                             <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
+                            <div class="course-item__student-list-item-grade"></div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
@@ -2575,9 +1790,9 @@
                             <div class="course-item__student-list-item-new-submission-indicator"></div>
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-completion-text"></div>
                             <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
+                            <div class="course-item__student-list-item-grade"></div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
@@ -2589,26 +1804,9 @@
                             <div class="course-item__student-list-item-new-submission-indicator"></div>
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-completion-text"></div>
                             <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
-                            <img class="course-item__student-list-item-icon"
-                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
-                        </a>
-                        <div class="course-item__student-list-item-indication">
-                            !
-                        </div>
-                    </div>
-                    <div class="course-item__student-list-item">
-                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                        <a class="course-item__student-list-item-link">
-                            <div class="course-item__student-list-item-name">Anna Kronér</div>
-                            <div class="course-item__student-list-item-new-submission-indicator"></div>
-                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
-                            <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
-                            <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
+                            <div class="course-item__student-list-item-grade"></div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
@@ -2623,9 +1821,26 @@
                             <div class="course-item__student-list-item-new-submission-indicator"></div>
                             <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                             <div class="course-item__student-list-item-new-comment">1</div>
-                            <div class="course-item__student-list-completion-text">Ändring ej publicerad</div>
+                            <div class="course-item__student-list-completion-text"></div>
                             <div class="course-item__student-list-item-points">4/10</div>
-                            <div class="course-item__student-list-item-grade">G</div>
+                            <div class="course-item__student-list-item-grade"></div>
+                            <img class="course-item__student-list-item-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+                        </a>
+                        <div class="course-item__student-list-item-indication">
+                            !
+                        </div>
+                    </div>
+                    <div class="course-item__student-list-item">
+                        <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
+                        <a class="course-item__student-list-item-link">
+                            <div class="course-item__student-list-item-name">Anna Kronér</div>
+                            <div class="course-item__student-list-item-new-submission-indicator"></div>
+                            <div class="course-item__student-list-item-new-submission-date">13 jan</div>
+                            <div class="course-item__student-list-item-new-comment">1</div>
+                            <div class="course-item__student-list-completion-text"></div>
+                            <div class="course-item__student-list-item-points">4/10</div>
+                            <div class="course-item__student-list-item-grade"></div>
                             <img class="course-item__student-list-item-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
                         </a>
