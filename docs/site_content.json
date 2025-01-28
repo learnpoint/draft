@@ -296,6 +296,12 @@
     {
         "title": "Course Item",
         "description": "",
+        "url": "/pages/group/quiz-results.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
         "url": "/pages/group/result-list-quiz.html",
         "content": ""
     },

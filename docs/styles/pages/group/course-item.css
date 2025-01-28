@@ -1,6 +1,7 @@
 .course-item {
     position:relative;  
     color: #000;
+    font-size: 14px;
 }
 
 .course-item__content-container {
@@ -385,6 +386,23 @@
     color: #888;
 }
 
+.course-item__result-completion-status-v1 {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    line-height: 15px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+.course-item__student-list-item-unublished-indicator {
+    color: #0780ff;
+    margin-right: -6px;
+    margin-left: 8px;
+}
+
+
 .course-item__student-list-item-new-submission-indicator {
     width: 7px;
     height: 7px;
@@ -408,6 +426,19 @@
     margin: 0px 4px;
     text-align: right;
     min-width: 22px;
+}
+
+
+.course-item__student-list-item-grade-v1 {
+    margin: 0px 4px;
+    text-align: right;
+    min-width: 22px;
+    font-weight: 600;
+}
+
+.course-item__student-list-item-grade-v1.UNPUBLISHED {
+    font-weight: normal;
+    color: #bbb;
 }
 
 .course-item__student-list-item-icon {
@@ -564,40 +595,50 @@
     margin-left: 10px;
 }
 
-.course-item__not-published-indicator-flag-section {
-position: absolute;
-top: 34px;
-right: 8px;
-
+.course-item__completion-text-alt-v1 {
+    width: 70px;
+    white-space: normal;
+    font-size: 12px;
+    line-height: 11px;
+    margin-left: 10px;
+    font-style: italic;
+    color: #a0a0a0;
 }
 
-  .course-item__not-published-indicator-flag {
-    width: 10px;
-    height: 5px;
-    box-sizing: content-box;
-    padding-top: 10px;
-    position: relative;
-    background: #0780ff;
-    color: white;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .course-item__not-published-indicator-flag:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 5px solid white;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-  }
 
-  .course-item__student-list-item-publish-indicator {
-    color: #0780ff;
-    width: 10px;
-  }
+.course-item__not-published-indicator-flag-section {
+    position: absolute;
+    top: 34px;
+    right: 8px;
+}
+
+.course-item__not-published-indicator-flag {
+width: 10px;
+height: 5px;
+box-sizing: content-box;
+padding-top: 10px;
+position: relative;
+background: #0780ff;
+color: white;
+font-size: 11px;
+letter-spacing: 0.2em;
+text-align: center;
+text-transform: uppercase;
+}
+
+.course-item__not-published-indicator-flag:after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 0;
+border-bottom: 5px solid white;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+}
+
+.course-item__student-list-item-publish-indicator {
+color: #0780ff;
+width: 10px;
+}
