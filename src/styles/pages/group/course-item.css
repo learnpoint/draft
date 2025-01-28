@@ -564,96 +564,12 @@
     margin-left: 10px;
 }
 
-.course-item__student-list-grade-column {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .04);
-    min-height: 48px;
-}
-
-.course-item__not-published-indicator-square {
-    border-left: 12px solid #0780ff;
-    /* border-right: 10px solid #0780ff; */
-    border-bottom: 12px solid #0780ff;
-    height: 0;
-    width: 0;
-    position: absolute;
-    right: 0;
-    z-index: 0;
-    display: block;
-    top: 0px;
-}
-
-.course-item__not-published-indicator-shape-section {
-    position: absolute; 
-    top: 16px; 
-    right: 2px;
-}
-
-.course-item__not-published-indicator-shape {
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    position: relative;
-    z-index: 10;
+.course-item__not-published-indicator-flag-section {
+position: absolute;
+top: 34px;
+right: 8px;
 
 }
-
-.course-item__not-published-indicator-shape::before {
-    top: 0;
-    right: 0;
-    box-shadow: 20px -20px 0 0 #0780ff;
-    content: "";
-    display: block;
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    border-radius: 40%;
-}
-
-.course-item__not-published-indicator-chevron-section {
-    position: absolute;
-    top: 21px;
-    right: -10px;
-}
-
-.course-item__not-published-indicator-chevron {
-    position: relative;
-    text-align: center;
-    padding: 0px;
-    margin-bottom: 6px;
-    height: 10px;
-    width: 20px;
-    transform: rotate(-90deg);
-  }
-  .course-item__not-published-indicator-chevron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 51%;
-    background: #0780ff;
-    transform: skew(0deg, 6deg);
-  }
-  .course-item__not-published-indicator-chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50%;
-    width: 51%;
-    background: #0780ff;
-    transform: skew(0deg, -6deg);
-  }
-
-  .course-item__not-published-indicator-flag-section {
-    position: absolute;
-    top: 34px;
-    right: 8px;
-
-  }
 
   .course-item__not-published-indicator-flag {
     width: 10px;
@@ -679,4 +595,9 @@
     border-bottom: 5px solid white;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+  }
+
+  .course-item__student-list-item-publish-indicator {
+    color: #0780ff;
+    width: 10px;
   }
