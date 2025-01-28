@@ -667,6 +667,7 @@
     text-align: center;
     text-transform: uppercase;
   }
+  
   .course-item__not-published-indicator-flag:after {
     content: "";
     position: absolute;
