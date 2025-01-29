@@ -605,6 +605,11 @@
     color: #a0a0a0;
 }
 
+.course-item__completion-text-alt-v2 {
+    width: 80px;
+    margin-left: 10px;
+}
+
 
 .course-item__not-published-indicator-flag-section {
     position: absolute;
