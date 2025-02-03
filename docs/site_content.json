@@ -176,7 +176,13 @@
     {
         "title": "Quiz result",
         "description": "",
-        "url": "/pages/group/course-item-quiz-teacher-result-examples.html",
+        "url": "/pages/group/course-item-quiz-result-examples.html",
+        "content": ""
+    },
+    {
+        "title": "Quiz result",
+        "description": "",
+        "url": "/pages/group/course-item-quiz-student-result-page.html",
         "content": ""
     },
     {

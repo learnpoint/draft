@@ -3,11 +3,12 @@
    ========================================================================== */
 
 .breadcrumb {
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     gap: 1px 6px;
-    font-size: 15px;
-    min-height: 22px; /* Should have height even when empty. */
+    font-size: 14px;
+    min-height: 22px;
+    padding-top: 10px;
 }
 
 .is-mobile .breadcrumb {
@@ -31,15 +32,7 @@
     display: flex; /* Flex needed for mobile where we insert svg using ::before. */
     align-items: center;
     gap: 2px;
-}
-
-/* Last node shouldn't look like a link, but don't style if last
-   node happens to be a shortcuts-select */
-.breadcrumb > *:last-child:not(.breadcrumb__shortcuts-select-button) {
-    cursor: default;
-    color: inherit;
-    text-decoration: none;
-    pointer-events: none;
+    color: #888;
 }
 
 

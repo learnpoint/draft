@@ -5,7 +5,7 @@
 }
 
 .course-item__content-container {
-    padding: 32px;
+    padding: 16px;
 }
 
 .course-item__page-title {
@@ -179,7 +179,7 @@
 
 .course-item__student-settings-item {
     position: relative;
-    padding: 10px 32px 10px 8px;
+    padding: 0px 32px 10px 8px;
     border-radius: 6px;
     /* border-top: 1px solid #f7f7f7; */
     transition-property: padding, background-color, margin;
@@ -272,8 +272,8 @@
 }
 
 .course-item__content-header-avatar img {
-    width: 2.5em;
-    height: 2.5em;
+    width: 3.5em;
+    height: 3.5em;
     border-radius: 50%;
 }
 
