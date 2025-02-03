@@ -648,3 +648,14 @@ border-right: 5px solid transparent;
 color: #0780ff;
 width: 10px;
 }
+
+.course-item__view-quiz-history-link {
+    text-align: end;
+    font-size: 10px;
+}
+
+.course-item__view-quiz-history-link a {
+    color: rgba(0, 0, 0, 0.386);
+    text-decoration: underline;
+    cursor: pointer;
+}
