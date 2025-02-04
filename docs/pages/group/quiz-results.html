@@ -566,69 +566,6 @@
     </div>
 </div>
 
-<!-- <div class="modal" id="modal" tabindex="-1" role="dialog">
-    <div class="modal__overlay"></div>
-        <div class="modal__dialog">
-            <div class="modal__content">
-                <div class="modal__content-scroll">
-                    <div class="modal__header">
-                        <h2 class="modal__title">Arrays</h2>
-                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
-                    </div>
-                    <div class="modal__body">
-
-                        <div>
-                            <h3>Arrays in JavaScript</h3>
-                            <p>
-                                An array in JavaScript is a type of global object that is used to store data. Arrays consist
-                                of an ordered collection or list containing zero or more data types, and use numbered
-                                indices starting from 0 to access specific items.
-
-                            <p>Arrays are very useful as they store multiple values in a single variable, which can condense
-                                and organize our code, making it more readable and maintainable. Arrays can contain any data
-                                type, including numbers, strings, and objects.
-                            </p>
-                            <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
-                                their own variables.</p>
-                            </p>
-
-                            <img src="/images/pages/javascript-array.webp" class="modal__image">
-                            <p>A JavaScript array has the following characteristics:
-
-                                First, an array can hold values of mixed types. For example, you can have an array that
-                                stores
-                                elements with the types number, string, boolean, and null.
-                                Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
-                                specify the array size up front.
-
-                            </p>
-                            <h3>Loop through array</h3>
-                            <p>
-                                There are many ways to loop through an array but we are going to discuss the most common
-                                ways to loop through an array.
-
-                                We are going to discuss 2 different ways to loop through an array:
-                            <ul>
-                                <li>
-                                    Using for loop
-                                </li>
-                                <li>
-                                    Using forEach loop
-                                </li>
-                            </ul>
-
-                            </p>
-                        </div>
-
-                        <div class="add-members__actions">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
     <link rel="stylesheet" href="/styles/components/modal.css">
 <link rel="stylesheet" href="/styles/pages/group/quiz.css">
 
@@ -839,71 +776,1739 @@
         </div>
     </div>
 </div>
+   
+    <link rel="stylesheet" href="/styles/components/modal.css">
+<link rel="stylesheet" href="/styles/pages/group/quiz.css">
 
-<!-- <div class="modal" id="modal" tabindex="-1" role="dialog">
+<div class="modal FULL-SCREEN" id="modal-student-results" tabindex="-1" role="dialog">
     <div class="modal__overlay"></div>
         <div class="modal__dialog">
             <div class="modal__content">
                 <div class="modal__content-scroll">
                     <div class="modal__header">
-                        <h2 class="modal__title">Arrays</h2>
-                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
+                        <h2 class="modal__title">Quiz</h2>
+                        <h4 class="modal__sub-title">Countries quiz • Försök 1 . </h4>
+                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-student-results-close-button">
                     </div>
-                    <div class="modal__body">
+                    <div class="modal__body">    
+                        <div class="modal__body-content">                                    
+                            <div class="quiz__questions">                 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 1</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of these cities are located in Spain?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Valencia</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" >
+                                                <span>Cordoba</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct </div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Verona</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6; padding: 8px;">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Palermo</span>
+                                                                                
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                  
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header INCORRECT">
+                                        <h2>Fråga 1 - Incorrect</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of these cities are located in Spain?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Valencia</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" >
+                                                <span>Cordoba</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Verona</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Palermo</span>
+                                                                                
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header CORRECT">
+                                        <h2>Fråga 1 - Correct</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng<span class="quiz__edit-points">2/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of these cities are located in Spain?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Valencia</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled >
+                                                <span>Cordoba</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Verona</span>                                    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Palermo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header INCORRECT">
+                                        <h2>Fråga 1 </h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of these cities are located in Spain?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Valencia</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" >
+                                                <span>Cordoba</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Verona</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>Palermo</span>
+                                                                                
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="quiz__question-content-answers">
+                                        <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                        <div class="quiz__question-content-annswer-options">
+                                            <div>Valencia, Cordoba</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header CORRECT">
+                                        <h2>Fråga 1</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of these cities are located in Spain?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Valencia</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled >
+                                                <span>Cordoba</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Verona</span>                                    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Palermo</span>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="quiz__question-content-answers">
+                                        <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                        <div class="quiz__question-content-annswer-options">
+                                            <div>Valencia, Cordoba</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header CORRECT">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">2/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled >
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="quiz__question-content-answers">
+                                        <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                        <div class="quiz__question-content-annswer-options">
+                                            <div>• Running quickly, the dog chased the cat.</div>
+                                            <div>• The dog chased the cat, running quickly.</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled  title="Markera rätt svar" >
+                                                <span>The dog, running quickly, chased the cat.</span>  
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>                                  
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="quiz__question-content-answers">
+                                        <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                        <div class="quiz__question-content-annswer-options">
+                                            <div>• Running quickly, the dog chased the cat.</div>
+                                            <div>• The dog chased the cat, running quickly.</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled>
+                                                <span>a. Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>b. The dog chased the cat, running quickly.</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" checked disabled  title="Markera rätt svar" >
+                                                <span>c. The dog, running quickly, chased the cat.</span>  
+                                                <div style="flex:1"></div>
+                                                <div><img src="/images/pages/incorrect-red.svg" /></div>                                  
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar" >
+                                                <span>d. Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                        
+                                    <div class="quiz__question-content-answers">
+                                        <div class="quiz__question-content-annswers-title">Correct answers</div>
+                                        <div class="quiz__question-content-annswer-options">
+                                            <div>a. Running quickly, the dog chased the cat.</div>
+                                            <div>b. The dog chased the cat, running quickly.</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#008800;">Correct answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#008800;">Correct answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#bb0000;">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#008800;">Correct</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#008800;">Correct</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" style="color:#bb0000;">Incorrect</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Incorrect option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" /></div>
+                                                <span style="color:#008800;">Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" /></div>
+                                                <span style="color:#bb0000;">The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Incorrect option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" /></div>
+                                                <span style="color:#008800;">Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_circle-cross_64_0_bb0000_none.png" /></div>
+                                                <span style="color:#bb0000;">The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/feather_1-1-0_record_64_0_aaaaaa_none.png" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Incorrect option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #eee;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #eee;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #eee;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill-008800.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #eee;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill-bb0000.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill-008800.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill-bb0000.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill-008800.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill-bb0000.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/stop-circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/stop-circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-circle-fill.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-circle-fill.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-circle-fill-008800.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="border-bottom:1px solid #ddd;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-circle-fill-bb0000.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-circle-fill-008800.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-circle-fill-bb0000.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div class="quiz__answer-correctness" ><img src="/images/pages/check-lg.svg" /></div></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-circle-fill-bb0000.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill-008800.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div class="quiz__answer-correctness" ><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div class="quiz__answer-correctness" ><img src="/images/pages/check-lg.svg" /></div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/x-square-fill-bb0000.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <input type="checkbox" checked disabled>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                         
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>The dog, running quickly, chased the cat.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>The dog, running quickly, chased the cat.</span>      
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2> Which of the following sentences is a compound-complex sentence?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>She opened the window to let in some fresh air and heard the birds singing.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Although it was late, he decided to go out for a walk, and he took his dog with him.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>When the rain stopped, she went outside to walk in the garden.</span>                                    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>He runs every morning and lifts weights in the evening.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2> Which of the following sentences is a compound-complex sentence?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>She opened the window to let in some fresh air and heard the birds singing.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong answer</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Although it was late, he decided to go out for a walk, and he took his dog with him.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>When the rain stopped, she went outside to walk in the garden.</span>          
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>He runs every morning and lifts weights in the evening.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2> Which of the following sentences is a compound-complex sentence?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>She opened the window to let in some fresh air and heard the birds singing.</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox">
+                                                <span>Although it was late, he decided to go out for a walk, and he took his dog with him.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>When the rain stopped, she went outside to walk in the garden.</span>          
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>He runs every morning and lifts weights in the evening.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" >
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Wrong option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Identify the correct sentence structure:</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>Running quickly, the dog chased the cat.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" >
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>The dog chased the cat, running quickly.</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg" /></div>
+                                                <span>The dog, running quickly, chased the cat.</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/square.svg" /></div>
+                                                <span>Chased the cat, the dog running quickly.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">4/5</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of the following are components of the cell theory?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">All living organisms are composed of one or more cells.</span>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">The cell is the basic unit of life</span>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">All cells arise from pre-existing cells. </span> 
+                                                <div class="quiz__answer-correctness">Correct option</div>         
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">Cells contain hereditary information that is passed from cell to cell during cell division.</span>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option"  style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text"> Cells can spontaneously generate under certain conditions.</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span class="quiz__question-content-answer-option-text">Cells are the smallest units of matter that can carry on all the processes of life.  </span>   
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span>Cells can be seen with the naked eye.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">3/5</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Which of the following are components of the cell theory?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">All living organisms are composed of one or more cells.</span>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">The cell is the basic unit of life</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">All cells arise from pre-existing cells. </span> 
+                                                <div class="quiz__answer-correctness">Correct option</div>         
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text">Cells contain hereditary information that is passed from cell to cell during cell division.</span>
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option"  style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span class="quiz__question-content-answer-option-text"> Cells can spontaneously generate under certain conditions.</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <input type="checkbox" title="Markera rätt svar">
+                                                <span class="quiz__question-content-answer-option-text">Cells are the smallest units of matter that can carry on all the processes of life.  </span>   
+                                                <div class="quiz__answer-correctness">Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/check-square-fill.svg"></div>
+                                                <span>Cells can be seen with the naked eye.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                    
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option"  >
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" style="background-color: #fce8e6;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/stop-circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" >
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 2</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">0/2</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>What is the value of the mathematical constant π (pi) to five decimal places?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/stop-circle.svg"/></div>                               
+                                                <span>3.14159</span>
+                                                <div style="flex:1"></div>
+                                                <div class="quiz__answer-correctness" >Correct option</div>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14259</span>
+                                            </div>
+                                            <div class="quiz__question-content-answer-option" >
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span> 3.14149</span>    
+                                            </div>
+                                            <div class="quiz__question-content-answer-option">
+                                                <div class="quiz__question-content-answer-option-box"><img src="/images/pages/circle.svg" /></div>
+                                                <span>3.14169</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 3</h2>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">--/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                        <div>
-                            <h3>Arrays in JavaScript</h3>
-                            <p>
-                                An array in JavaScript is a type of global object that is used to store data. Arrays consist
-                                of an ordered collection or list containing zero or more data types, and use numbered
-                                indices starting from 0 to access specific items.
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 3 </h2> <span class="quiz__question-review-message">Needs manual review</span>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">--/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                            <p>Arrays are very useful as they store multiple values in a single variable, which can condense
-                                and organize our code, making it more readable and maintainable. Arrays can contain any data
-                                type, including numbers, strings, and objects.
-                            </p>
-                            <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
-                                their own variables.</p>
-                            </p>
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <h2>Fråga 3 </h2> <span class="quiz__question-review-message-v1">Needs manual review</span>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">--/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                            <img src="/images/pages/javascript-array.webp" class="modal__image">
-                            <p>A JavaScript array has the following characteristics:
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header quiz__question-review-required">
+                                        <h2>Fråga 3 </h2> <span class="quiz__question-review-message-v1">Needs manual review</span>
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">--/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                                First, an array can hold values of mixed types. For example, you can have an array that
-                                stores
-                                elements with the types number, string, boolean, and null.
-                                Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
-                                specify the array size up front.
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header">
+                                        <div style="display: flex; flex-direction: column; flex: 1;line-height: 1.3;">
+                                            <h2>Fråga 3 </h2> <div class="quiz__question-review-message-v2">Needs manual review</div>
+                                        </div>
+                                    
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">--/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                            </p>
-                            <h3>Loop through array</h3>
-                            <p>
-                                There are many ways to loop through an array but we are going to discuss the most common
-                                ways to loop through an array.
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="quiz__edit-question">
+                                    <div class="quiz__edit-question-header quiz__question-review-required">
+                                        <div style="display: flex; flex-direction: column; flex: 1;line-height: 1.3;">
+                                            <h2>Fråga 3 </h2> <div class="quiz__question-review-message-v2">Needs manual review</div>
+                                        </div>
+                                    
+                                        <div class="quiz__edit-question-add-points">
+                                            <span>Poäng <span class="quiz__edit-points">8/10</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content">
+                                        <div class="quiz__edit-question-content-header">
+                                            <h2>Discuss the impact of human activities on the carbon cycle. What are the potential consequences for the environment?</h2>                                        
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options">
+                                            <div class="quiz__question-content-answer-option">
+                                                Human activities, such as burning fossil fuels, deforestation, and industrial processes, have significantly altered the carbon cycle. These activities increase the concentration of carbon dioxide (CO₂) in the atmosphere, leading to enhanced greenhouse effect and global warming. Deforestation reduces the number of trees available to absorb CO₂, further exacerbating the problem.
 
-                                We are going to discuss 2 different ways to loop through an array:
-                            <ul>
-                                <li>
-                                    Using for loop
-                                </li>
-                                <li>
-                                    Using forEach loop
-                                </li>
-                            </ul>
-
-                            </p>
-                        </div>
-
-                        <div class="add-members__actions">
-
-                        </div>
+                                                The potential consequences of these changes include:
+                                                
+                                                Climate Change: Increased global temperatures, altered weather patterns, and more frequent extreme weather events.
+                                                Ocean Acidification: Higher CO₂ levels lead to more CO₂ being absorbed by oceans, causing acidification that affects marine life.
+                                                Loss of Biodiversity: Changing climates and habitats can lead to the extinction of species unable to adapt quickly enough.
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="quiz__mark-as-reviewed">
+                                            <input type="button" value="Spara" class="button PRIMARY LARGE">
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
-     <link rel="stylesheet" href="/styles/pages/group/quiz-attempts-modal.css">
+</div>
+
+  
+    <link rel="stylesheet" href="/styles/pages/group/quiz-attempts-modal.css">
 
 <div class="modal" id="modal-quiz-history" tabindex="-1" role="dialog">
     <div class="modal__overlay"></div>
@@ -959,70 +2564,6 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="modal" id="modal" tabindex="-1" role="dialog">
-    <div class="modal__overlay"></div>
-        <div class="modal__dialog">
-            <div class="modal__content">
-                <div class="modal__content-scroll">
-                    <div class="modal__header">
-                        <h2 class="modal__title">Arrays</h2>
-                        <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
-                    </div>
-                    <div class="modal__body">
-
-                        <div>
-                            <h3>Arrays in JavaScript</h3>
-                            <p>
-                                An array in JavaScript is a type of global object that is used to store data. Arrays consist
-                                of an ordered collection or list containing zero or more data types, and use numbered
-                                indices starting from 0 to access specific items.
-
-                            <p>Arrays are very useful as they store multiple values in a single variable, which can condense
-                                and organize our code, making it more readable and maintainable. Arrays can contain any data
-                                type, including numbers, strings, and objects.
-                            </p>
-                            <p>To demonstrate how arrays can be useful, consider assigning the five oceans of the world to
-                                their own variables.</p>
-                            </p>
-
-                            <img src="/images/pages/javascript-array.webp" class="modal__image">
-                            <p>A JavaScript array has the following characteristics:
-
-                                First, an array can hold values of mixed types. For example, you can have an array that
-                                stores
-                                elements with the types number, string, boolean, and null.
-                                Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to
-                                specify the array size up front.
-
-                            </p>
-                            <h3>Loop through array</h3>
-                            <p>
-                                There are many ways to loop through an array but we are going to discuss the most common
-                                ways to loop through an array.
-
-                                We are going to discuss 2 different ways to loop through an array:
-                            <ul>
-                                <li>
-                                    Using for loop
-                                </li>
-                                <li>
-                                    Using forEach loop
-                                </li>
-                            </ul>
-
-                            </p>
-                        </div>
-
-                        <div class="add-members__actions">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
     <div class="site__left-nav">
         <ul>
             <li>
@@ -2151,15 +3692,15 @@
                     
                     <div class="course-item__student-list">
                         <div class="course-item__student-list-item">
-                            <img class="course-item__student-list-item-avatar" src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg"/>
-                            <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-teacher-result-review.html">
+                            <img class="course-item__student-list-item-avatar" src="/images/pages/users/user-1.jpg"/>
+                            <a class="course-item__student-list-item-link" href="/pages/group/course-item-quiz-student-result-page.html">
                                 <div class="course-item__student-list-item-name">
-                                    <div class="course-item__result-student-name">Anna Kronér</div>
+                                    <div class="course-item__result-student-name">Harry Hansson</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">1</div>
-                                <div class="course-item__student-list-item-points">9/10</div>
+                                <div class="course-item__student-list-item-points">40/50</div>
                                 <div class="course-item__student-list-item-grade">VG</div>
                                 <div class="course-item__student-list-item-unublished-indicator">◆</div>
                                 <img class="course-item__student-list-item-icon"
@@ -2172,10 +3713,10 @@
                                 <div class="course-item__student-list-item-name">
                                     <div class="course-item__result-student-name">Clara Qvist</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">1</div>
-                                <div class="course-item__student-list-item-points">6/10</div>
+                                <div class="course-item__student-list-item-points">35/50</div>
                                 <div class="course-item__student-list-item-grade">G</div>
                                 <div class="course-item__student-list-item-unublished-indicator"></div>
                                 <img class="course-item__student-list-item-icon"
@@ -2188,10 +3729,10 @@
                                 <div class="course-item__student-list-item-name">
                                     <div class="course-item__result-student-name">Jennie Ahl</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">2</div>
-                                <div class="course-item__student-list-item-points">2/10</div>
+                                <div class="course-item__student-list-item-points">25/50</div>
                                 <div class="course-item__student-list-item-grade">IG</div>
                                 <div class="course-item__student-list-item-unublished-indicator"></div>
                                 <img class="course-item__student-list-item-icon"
@@ -2204,10 +3745,10 @@
                                 <div class="course-item__student-list-item-name">
                                     <div class="course-item__result-student-name">Anna Kronér</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">1</div>
-                                <div class="course-item__student-list-item-points">9/10</div>
+                                <div class="course-item__student-list-item-points">30/50</div>
                                 <div class="course-item__student-list-item-grade">VG</div>
                                 <div class="course-item__student-list-item-unublished-indicator">◆</div>
                                 <img class="course-item__student-list-item-icon"
@@ -2220,10 +3761,10 @@
                                 <div class="course-item__student-list-item-name">
                                     <div class="course-item__result-student-name">Clara Qvist</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">1</div>
-                                <div class="course-item__student-list-item-points">6/10</div>
+                                <div class="course-item__student-list-item-points">45/50</div>
                                 <div class="course-item__student-list-item-grade">G</div>
                                 <div class="course-item__student-list-item-unublished-indicator">◆</div>
                                 <img class="course-item__student-list-item-icon"
@@ -2236,10 +3777,10 @@
                                 <div class="course-item__student-list-item-name">
                                     <div class="course-item__result-student-name">Jennie Ahl</div>
                                 </div>
-                                <div class="course-item__student-list-item-new-submission-indicator"></div>
+                                <div class="course-item__student-list-item-review-submission-indicator"></div>
                                 <div class="course-item__student-list-item-new-submission-date">13 jan</div>
                                 <div class="course-item__student-list-item-new-comment">2</div>
-                                <div class="course-item__student-list-item-points">2/10</div>
+                                <div class="course-item__student-list-item-points">29/50</div>
                                 <div class="course-item__student-list-item-grade">IG</div>
                                 <div class="course-item__student-list-item-unublished-indicator">◆</div>
                                 <img class="course-item__student-list-item-icon"

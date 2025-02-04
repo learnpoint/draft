@@ -209,6 +209,23 @@
     position: relative;
 }
 
+.course-item__settings-item-state .course-item__attempt-history {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 6px;
+    background-color: #fff;
+    top: 20px;
+    width: 640px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .08), 2px 4px 8px rgba(0, 0, 0, .08), 4px 8px 16px rgba(0, 0, 0, .08), 8px 16px 32px rgba(0, 0, 0, .08);
+    
+}
+
+
+.course-item__settings-item-state.EXPANDED .course-item__attempt-history {
+    display: block;
+}
+
 .course-item__description {
     max-width: 640px;
     padding: 24px 12px;

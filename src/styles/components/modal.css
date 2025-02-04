@@ -121,6 +121,7 @@
 .modal__body-content {
     max-width: 760px;
     margin: 0 auto;
+    padding: 32px;
 }
 
 .modal__image {
