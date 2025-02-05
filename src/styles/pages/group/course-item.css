@@ -158,6 +158,11 @@
     font-size: 13px;
 }
 
+.course-item__settings-publish-button-container {
+    text-align: center;
+    margin: 16px 0;
+}
+
 .course-item__settings-content {
     padding: 0px 6px 0;
     max-width: 480px;

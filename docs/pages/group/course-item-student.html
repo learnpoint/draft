@@ -35,7 +35,7 @@
             <div class="modal__content">
                 <div class="modal__content-scroll">
                     <div class="modal__header">
-                        <h2 class="modal__title">Countries quiz / Quiz</h2>
+                        <h2 class="modal__title">Countries quiz</h2>
                         <!-- <h4 class="modal__sub-title"></h4> -->
                         <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-close-button">
                     </div>
@@ -99,8 +99,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
-                                
+                                </div>                           
                                 <div class="quiz__edit-question">
                                     <div class="quiz__edit-question-header">
                                         <h2>Fråga 1</h2>
@@ -268,8 +267,7 @@
                                     </div>
                                 
                                 </div>
-                                <hr style="margin:100px 0;">
-                                <div class="quiz">      
+                                <div class="quiz"  style="display:none;">      
                                     <!-- <h2 class="quiz__title">Countries quiz (view mode)</h2> -->
                                     <div style="text-align: center;margin-bottom: 10px;">Total points: <b> 10</b></div>                    
                                     <div class="quiz__questions">
@@ -465,7 +463,7 @@
                                 
                                 </div>
                                 <hr style="margin:100px 0;display:none;">
-                                <div class="quiz" style="display:none;">      
+                                <div class="quiz"  style="display:none;">      
                                     <h2 class="quiz__title">Stig Berg</h2>
                                     <div style="text-align: center; margin-bottom: 10px;">Total points: <b> 8/10</b></div>                    
                                     <div class="quiz__questions">
@@ -583,7 +581,7 @@
                         <div class="modal__body-content">  
                             <div class="quiz" data-component="expandable">    
                                 <div class="quiz">      
-                                    <div style="text-align: center; margin:116px 0 24px;">Total points: <b> 10</b></div>                    
+                                    <div style="text-align: center; margin:16px 0 24px;">Total points: <b> 10</b></div>                    
                                     <div class="quiz__questions">
                                         <div class="quiz__edit-question">
                                             <div class="quiz__edit-question-header">
@@ -601,7 +599,7 @@
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="checkbox">
                                                         <span>Valencia</span>
-                                                    </div>git 
+                                                    </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="checkbox">
                                                         <span>Cordoba</span>
@@ -2662,13 +2660,13 @@
                     <div class="course-item__content-information-result">
                         <div class="course-item__student-settings-item">
                             <div class="course-item__settings-item-name">
-                                Points
+                                Poäng
                             </div>
                             <div class="course-item__settings-item-state" style="display: flex;">
                                 10
                             </div>
                             <div class="course-item__settings-item-name">
-                                Duration
+                                Tid
                             </div>
                             <div class="course-item__settings-item-state">
                                 60 min
@@ -2677,9 +2675,11 @@
                                 Din inlämning
                             </div>
                             <div class="course-item__settings-item-state">
-                                No submission
+                                Ej inlämnad
                             </div>
-                            
+                            <div class="course-item__work-link">
+                                <input type="button"  data-element="modal-student-open-button" class="button PRIMARY" value="Starta quiz" />
+                            </div>
                         </div>
                     </div>
                     <div class="course-item__content-betyg">
@@ -2696,14 +2696,12 @@
                     </div>
 
                 </div>
-                <div class="course-item__work-link">
-                    <input type="button"  data-element="modal-student-open-button" class="button PRIMARY" value="Starta quiz" />
-                </div>
-                <div class="course-item__view-quiz-history-link" >
+           
+                <!-- <div class="course-item__view-quiz-history-link" >
                     <a>
                         View quiz history
                     </a>
-                </div>
+                </div> -->
                 
                 
             </div>

@@ -176,6 +176,11 @@
     justify-content: space-between;
 }
 
+.quiz__edit-question-content-correct-answer-column {
+    text-align: right;
+    flex: 1;
+}
+
 .quiz__edit-question-content-add-answer-option {
     display: flex;
     gap: 8px;
@@ -268,8 +273,9 @@
 }
 
 .quiz__settings {
+    display: none;
     padding: 8px;
-    margin: 80px 0 24px;
+    margin: 0px 0 24px;
     border-radius: 6px;
     /* border-bottom: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5; */
