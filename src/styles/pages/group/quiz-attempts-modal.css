@@ -4,6 +4,11 @@
     border-radius: 6px;
 }
 
+.attempt-history-v1 {
+    width: 360px;
+}
+
+
 .attempt-history__row {
     border-top: 1px solid #e5e5e5;
     display: flex;
@@ -22,8 +27,20 @@
     position: relative;
 }
 
+.attempt-history__row-v1 a {
+   color: #000000;
+}
+
 .attempt-history__row-header {
     display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 4px;
+    font-weight: 600;
+}
+
+.attempt-history__row-header-v1 {
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 8px 4px;

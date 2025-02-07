@@ -207,7 +207,7 @@
 }
 
 .course-item__settings-item-state {
-    padding: 0;
+    padding: 0 0 10px 0;
     flex: auto;
     display: flex;
     gap: 12px;
