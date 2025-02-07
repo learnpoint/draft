@@ -302,6 +302,18 @@
     {
         "title": "Course Item",
         "description": "",
+        "url": "/pages/group/quiz-page-settings.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/quiz-page.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
         "url": "/pages/group/quiz-results.html",
         "content": ""
     },

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Javascript 3</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -2589,7 +2589,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Javascript 3</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -2635,100 +2635,187 @@
         </li> -->
     </ul>
 </nav>
-<link rel="stylesheet" href="/styles/pages/group/copy-content.css">
-<link rel="stylesheet" href="/styles/pages/group/content.css">
-<link rel="stylesheet" href="/styles/core/breadcrumb.css">
+
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
+<script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
-    <div class="copy-content__course-items-list">
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 1
-                </span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz.html">
-                    Geography quiz
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-2a.html">
-                    Countries quiz 2
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-student-result-page.html">
-                    Quiz result page
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/quiz-results.html">
-                    Quiz results list
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Loops
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-          
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 2
-                </span>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Inheritance
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Closures
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Promise
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Higher order functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-    </div>
-    <div class="content__copy-content">
-        <div class="content__copy-content-actions-container">
-            <div class="content__copy-content-actions">
-                <input type="button" value="Nytt avsnitt" class="button PRIMARY LARGE">
+    <div class="page__sheet">
+        <nav class="breadcrumb">     
+            <a>Innehåll</a>  
+            <span> › </span>
+            <a >Countries quiz</a>
 
-                <a href="/pages/group/copy-content.html" class="button LARGE">
-                    Importera innehåll
-                </a>
+            
+        </nav>
+        <div class="course-item">
+            <div class="course-item__content">                    
+                <div class="course-item__menu-tabs">
+                    <a class="course-item__menu-tab SELECTED">
+                        Questions
+                    </a>
+                    <a class="course-item__menu-tab" href="/pages/group/quiz-page-settings.html">
+                        Settings
+                    </a>
+                </div>
+
+                <div style="text-align: center;">
+                    Points: 10
+                </div>
+
+                <div class="quiz__edit-question">
+                    <div class="quiz__edit-question-header">
+                        <h2>Fråga 1</h2>
+                        <select name="answer-options" id="pet-select">                                                          
+                            <option value="Multiple" selected>Flerval</option>
+                            <option value="Text">Text</option>
+                        </select>
+                        <div class="quiz__edit-question-add-points">
+                            <span>Poäng</span> <input type="text" class="textbox" value="2">
+                        </div>
+                    </div>                                      
+                    <div class="quiz__edit-question-content">
+                        <div class="quiz__edit-question-content-header">
+                            <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which of these cities are located in Spain?</textarea>                                        
+                        </div>
+                        
+                        <div class="quiz__edit-question-content-answer-options-header">
+                            <div class="quiz__edit-question-content-answer-options-column">
+                                Svarsalternativ                                  
+                            </div>
+                            <div class="quiz__edit-question-content-correct-answer-column">
+                                Rätt svar
+                            </div>
+                        </div>
+                        <div class="quiz__edit-question-content-answer-options">
+                            <div class="quiz__edit-question-content-answer-option-1">
+                                <input type="text" class="textbox" value="Valencia">
+                                <input type="checkbox" title="Markera rätt svar">
+                            </div>
+                            <div class="quiz__edit-question-content-answer-option-1">
+                                <input type="text" class="textbox" value="Cordoba">
+                                <input type="checkbox" title="Markera rätt svar">
+                            </div>
+                            <div class="quiz__edit-question-content-answer-option-1">
+                                <input type="text" class="textbox" value="Verona">
+                                <input type="checkbox" title="Markera rätt svar">
+                            </div>
+                            <div class="quiz__edit-question-content-answer-option-1">
+                                <input type="text" class="textbox" value="Palermo">
+                                <input type="checkbox" title="Markera rätt svar">
+                            </div>
+                            <div class="quiz__edit-question-content-answer-actions">
+                                <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                    <div class="quiz__edit-question-content-switch-wrap">
+                                    <input type="checkbox" checked id="multiple-answers" />
+                                    <div class="quiz__edit-question-content-switch"></div>
+                                    </div>
+                                    <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                </label>
+                            </div>
+                            <div class="quiz__edit-question-actions">
+                                <input type="button" value="Avbryt" class="button SMALL">
+                                <input type="button" value="Spara" class="button PRIMARY SMALL">
+                            </div> 
+                        </div>
+                    </div>                                       
+                </div>                  
+                <div class="quiz__creation-panel">      
+
+                    <div class="quiz__questions">           
+                        <div class="quiz__edit-question">
+                            <div class="quiz__edit-question-header">
+                                <h2>Fråga 2</h2>
+
+                                <select name="answer-options" id="pet-select">                                           
+                                    <option value="Multiple" selected >Flerval</option>
+                                    <option value="Text">Text</option>
+                                </select>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng</span> <input type="text" class="textbox" value="2">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="quiz__edit-question-content-header">
+                                    <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which is the capital city of Australia?</textarea>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options-header">
+                                    <div class="quiz__edit-question-content-answer-options-column">
+                                        Svarsalternativ                                  
+                                    </div>
+                                    <div class="quiz__edit-question-content-correct-answer-column">
+                                        Rätt svar
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-content-answer-option">
+                                        <input type="text" class="textbox" value="Sydney">
+                                        <input type="radio" title="Markera rätt svar">
+                                    </div>
+                                    <div class="quiz__edit-question-content-answer-option">
+                                        <input type="text" class="textbox" value="Melbourne">
+                                        <input type="radio" title="Markera rätt svar">
+                                    </div>
+                                    <div class="quiz__edit-question-content-answer-option">
+                                        <input type="text" class="textbox" value="Canberra ">
+                                        <input type="radio" title="Markera rätt svar">
+                                    </div>
+                                    <div class="quiz__edit-question-content-answer-option" >
+                                        <input type="text" class="textbox" value="Brisbane">
+                                        <input type="radio" title="Markera rätt svar">
+                                    </div>
+                                    <div class="quiz__edit-question-content-answer-actions">
+                                        <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                        <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                            <div class="quiz__edit-question-content-switch-wrap">
+                                            <input type="checkbox"  id="multiple-answers" />
+                                            <div class="quiz__edit-question-content-switch"></div>
+                                            </div>
+                                            <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                        </label>
+                                    </div>
+                                    <div class="quiz__edit-question-actions">
+                                        <input type="button" value="Avbryt" class="button SMALL">
+                                        <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                    </div> 
+                                </div>
+                            </div>
+                        
+                        </div> 
+                        <div class="quiz__edit-question">
+                            <div class="quiz__edit-question-header">
+                                <h2>Fråga 3</h2>
+                                <select name="answer-options" id="pet-select">                                            
+                                    <option value="Multiple">Flerval</option>
+                                    <option value="Text" selected>Text</option>
+                                </select>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng</span> <input type="text" class="textbox" value="6">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="quiz__edit-question-content-header">
+                                    <textarea id="text" name="text" rows="2" class="textbox BLOCK">The geography of Inner China was more attractive than Outer China because...</textarea>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-actions">
+                                        <input type="button" value="Avbryt" class="button SMALL">
+                                        <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="quiz__add-question-action">
+                        <input type="button" value="Lägg till fråga" class="button LARGE">
+                    </div>
             </div>
 
+                
+            </div>                    
         </div>
-        <a href="/pages/group/copy-content.html">
-            Visa borttagna
-        </a>
+
+        
     </div>
 </div>

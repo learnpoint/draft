@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Javascript 3</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -2589,7 +2589,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Javascript 3</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -2635,100 +2635,91 @@
         </li> -->
     </ul>
 </nav>
-<link rel="stylesheet" href="/styles/pages/group/copy-content.css">
-<link rel="stylesheet" href="/styles/pages/group/content.css">
-<link rel="stylesheet" href="/styles/core/breadcrumb.css">
+
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
+<script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
-    <div class="copy-content__course-items-list">
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 1
-                </span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz.html">
-                    Geography quiz
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-2a.html">
-                    Countries quiz 2
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-student-result-page.html">
-                    Quiz result page
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/quiz-results.html">
-                    Quiz results list
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Loops
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-          
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 2
-                </span>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Inheritance
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Closures
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Promise
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Higher order functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-    </div>
-    <div class="content__copy-content">
-        <div class="content__copy-content-actions-container">
-            <div class="content__copy-content-actions">
-                <input type="button" value="Nytt avsnitt" class="button PRIMARY LARGE">
+    <div class="page__sheet">
+        <div class="course-item">
+            <nav class="breadcrumb">     
+                <a>Innehåll</a>  
+                <span> › </span>
+                <a >Countries quiz</a>
+    
+                
+            </nav>
+            <div class="course-item__content">
+                <div class="course-item__menu-tabs">
+                    <a class="course-item__menu-tab" href="/pages/group/quiz-page.html">
+                        Questions
+                    </a>
+                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-quiz-teacher-result.html">
+                        Settings
+                    </a>
+                </div>
 
-                <a href="/pages/group/copy-content.html" class="button LARGE">
-                    Importera innehåll
-                </a>
-            </div>
+               
+            
+                <div class="course-item__settings">
+                    <div class="course-item__settings-content">
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name">
+                                Tid
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Ingen tid angiven
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name">
+                                Plats
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Ingen plats angiven                            
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name">
+                                Betyg
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                IG-VG
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name">
+                                Duration
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                10 minuter
+                            </div>
+                        </div>
+                        <!-- <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name">
+                                Poäng
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                10
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
 
+                <div class="course-item__description">
+                    <h2 class="course-item__title">Countries quiz</h2>
+                    <div class="course-item__description-text">
+                        The quiz is about topic we discussed last lecture. 
+
+                    </div>
+                    <div class="course-item__content-text">
+                        The recommended time for completion is 10 minutes. For text answers do not write more than 2 sentences    
+                    </div>
+                </div>
+                
+            </div>                    
         </div>
-        <a href="/pages/group/copy-content.html">
-            Visa borttagna
-        </a>
+
+        
     </div>
 </div>

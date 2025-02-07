@@ -212,6 +212,7 @@
     display: flex;
     gap: 12px;
     position: relative;
+    flex-direction: column;
 }
 
 .course-item__settings-item-state .course-item__attempt-history {
@@ -681,3 +682,23 @@ width: 10px;
     text-decoration: underline;
     cursor: pointer;
 }
+
+.course-item__section-tabs {
+    display: flex;
+    margin: 1.5em 0 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-item__section-tab {
+    text-decoration: none;
+    flex: 0 0 auto;
+    width: 72px;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px 12px;
+    color: #444;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #777;
+}
+
