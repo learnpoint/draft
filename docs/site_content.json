@@ -164,6 +164,12 @@
     {
         "title": "Course Item",
         "description": "",
+        "url": "/pages/group/course-item-long-quiz.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
         "url": "/pages/group/course-item-quiz-2a.html",
         "content": ""
     },

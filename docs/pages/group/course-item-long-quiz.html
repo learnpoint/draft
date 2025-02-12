@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Geography</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -2589,7 +2589,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Geography</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -2635,106 +2635,748 @@
         </li> -->
     </ul>
 </nav>
-<link rel="stylesheet" href="/styles/pages/group/copy-content.css">
-<link rel="stylesheet" href="/styles/pages/group/content.css">
-<link rel="stylesheet" href="/styles/core/breadcrumb.css">
+
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
+<link rel="stylesheet" href="/styles/pages/group/quiz.css">
+<script defer src="/scripts/pages/notifications/index.js"></script> 
 
 <div class="page">
-    <div class="copy-content__course-items-list">
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 1
-                </span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-long-quiz.html">
-                    Photosynthesis quiz
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz.html">
-                    Geography quiz
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-2a.html">
-                    Countries quiz 2
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/course-item-quiz-student-result-page.html">
-                    Quiz result page
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name" href="/pages/group/quiz-results.html">
-                    Quiz results list
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Loops
-                </a>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-          
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-        <div class="copy-content__section-container">
-            <div class="copy-content__course-item">
-                <span class="copy-content__section-name">
-                    Week 2
-                </span>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Inheritance
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Closures
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Promise
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__course-item">
-                <a class="copy-content__course-item-name">
-                    Higher order functions
-                </a>
-                <span class="copy-content__publish-status">Ej publicerad</span>
-            </div>
-            <div class="copy-content__new-item"><img src="/images/pages/plus.svg" />Ny kursdel</div>
-        </div>
-    </div>
-    <div class="content__copy-content">
-        <div class="content__copy-content-actions-container">
-            <div class="content__copy-content-actions">
-                <input type="button" value="Nytt avsnitt" class="button PRIMARY LARGE">
+    <div class="page__sheet">
+        <div class="course-item">
+            <div class="course-item__content">
+                <h2 class="course-item__page-title">Photosynthesis quiz</h2>
+                <div class="course-item__menu-tabs">
+                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-quiz-2a.html">
+                        Planering
+                    </a>
+                    <a class="course-item__menu-tab" href="/pages/group/course-item-quiz-teacher-result.html">
+                        Uppföljning
+                    </a>
+                </div>
+                <div class="course-item__settings">
+                    <div class="course-item__settings-content">
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name-large">
+                                Uppgift
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Quiz
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name-large">
+                                Tid
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Ingen tid angiven
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name-large">
+                                Plats
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Ingen plats angiven                            
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name-large">
+                                Betyg
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                IG-VG
+                            </div>
+                        </div>
+                        <div class="course-item__settings-item">
+                            <div class="course-item__settings-item-name-large">
+                                Duration
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                10 minuter
+                            </div>
+                        </div>
 
-                <a href="/pages/group/copy-content.html" class="button LARGE">
-                    Importera innehåll
-                </a>
-            </div>
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Number of attempts
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Unlimited
+                            </div>
+                        </div>
 
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Number of questions per page
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Unlimited
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Random subset of questions 
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                All questions visible
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Randomize questions
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                No
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Show correct answers in the end
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Yes
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Show points after the quiz
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Yes
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Partial points
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                No
+                            </div>
+                        </div>
+
+                        <div class="course-item__settings-item UNUSED">
+                            <div class="course-item__settings-item-name-large">
+                                Shuffle options
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Yes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item__total-points-section-before">
+                    Total points: 28
+                </div>
+                <div class="course-item__description" style="padding: 0 12px;">
+                    <h2 class="course-item__title">Photosynthesis quiz</h2>
+                    <div class="course-item__description-text">
+                        Photosynthesis is the process that allows plants to make their own food using sunlight. It happens in the leaves, where special cells contain chlorophyll, a green pigment that captures sunlight. The plant takes in carbon dioxide from the air through tiny openings in its leaves and absorbs water from the soil through its roots. Using the energy from sunlight, the plant transforms these ingredients into food in the form of sugars. As a result, oxygen is released into the air, which is essential for humans and animals to breathe.
+                    
+                    </div>
+
+                    <div class="course-item__content-text">
+                        This process is important because it provides food for plants, which in turn feed other living things. It also helps clean the air by reducing carbon dioxide and releasing oxygen. Without photosynthesis, life on Earth would not exist as we know it.
+                    
+                    </div>
+
+                    <div class="course-item__content-text">
+                        You can now test your knowledge. For text answers, keep your answer about 2 senteces long.
+                    </div>
+                </div>
+
+                <div class="course-item__questions-section">
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">What do plants need for photosynthesis to happen?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Sunlight ">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Water">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Carbon dioxide ">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Soil">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" checked id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 2</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Where does photosynthesis mainly take place in a plant?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Roots ">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Stems">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Leaves">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Flowers">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 3</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which gas do plants take in to perform photosynthesis?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Nitrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Carbon dioxide">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Hydrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 4</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which gas do plants take in to perform photosynthesis?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Nitrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Carbon dioxide">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Hydrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 5</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which gas do plants take in to perform photosynthesis?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Nitrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Carbon dioxide">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Hydrogen">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 6</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which part of the plant contains chlorophyll?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Stem">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Roots">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Leaves">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Flowers">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 7</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which part of the plant contains chlorophyll?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Stem">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Roots">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Leaves">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Flowers">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question-header">
+                            <h2>Fråga 8</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="quiz__edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="quiz__edit-question-content">
+                            <div class="quiz__edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">Which of the following are products of photosynthesis?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Oxygen ">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Carbon dioxide">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Glucose">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Water">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Starch">
+                                    <input type="checkbox" checked title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="ATP">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="text" class="textbox" value="Sunlight">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                </div>
+
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" checked id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="quiz__edit-question-header">
+                                <h2>Fråga 9</h2>
+                                <select name="answer-options" id="pet-select">                                            
+                                    <option value="Multiple">Flerval</option>
+                                    <option value="Text" selected>Text</option>
+                                </select>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng</span> <input type="text" class="textbox" value="6">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="quiz__edit-question-content-header">
+                                    <textarea id="text" name="text" rows="2" class="textbox BLOCK">Explain the role of chlorophyll in photosynthesis.</textarea>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-actions">
+                                        <input type="button" value="Avbryt" class="button SMALL">
+                                        <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="course-item__edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="quiz__edit-question-header">
+                                <h2>Fråga 10</h2>
+                                <select name="answer-options" id="pet-select">                                            
+                                    <option value="Multiple">Flerval</option>
+                                    <option value="Text" selected>Text</option>
+                                </select>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng</span> <input type="text" class="textbox" value="6">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="quiz__edit-question-content-header">
+                                    <textarea id="text" name="text" rows="2" class="textbox BLOCK">Describe one way in which photosynthesis benefits the environment.</textarea>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-actions">
+                                        <input type="button" value="Avbryt" class="button SMALL">
+                                        <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                                                         
+                </div>
+
+                <div class="quiz__add-question-action">
+                    <input type="button" value="Lägg till fråga" class="button LARGE">
+                </div>
+
+                <div class="course-item__total-points-section-end">
+                    Total points: 28
+                </div>
+            </div>                    
         </div>
-        <a href="/pages/group/copy-content.html">
-            Visa borttagna
-        </a>
+
+        
     </div>
+
+
 </div>
