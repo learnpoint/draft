@@ -872,3 +872,7 @@ width: 10px;
     right: -20px;
 
 }
+
+.course-item__quiz-edit-question-content .quiz__edit-question-content-answer-option-1 input[type="text"] {
+    flex: 1
+}
