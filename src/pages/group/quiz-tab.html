@@ -41,7 +41,7 @@
                         </div>
                     </div>
 
-                    <div class="course-item__settings-item UNUSED">
+                    <!-- <div class="course-item__settings-item UNUSED">
                         <div class="course-item__settings-item-name-large">
                             Number of attempts
                         </div>
@@ -125,10 +125,11 @@
                         <div class="course-item__settings-item-state">
                             No
                         </div>
-                    </div>
+                    </div> -->
                 </div>                
                 
                 <div class="course-item__questions-section">
+                    edit mode:
                     <div class="course-item__quiz-edit-question">
                         <div class="course-item__quiz-edit-question-header">
                             <h2>Fråga 1</h2>
@@ -155,7 +156,7 @@
                             </div>
                             <div class="quiz__edit-question-content-answer-options">
                                 <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
                                     <input type="text" class="textbox" value="Sunlight ">
                                     <div>☓</div>
                                 </div>
@@ -165,13 +166,13 @@
                                     <div>☓</div>
                                 </div>
                                 <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
                                     <input type="text" class="textbox" value="Water">
                                     <div>☓</div>
                                 </div>
                                 <div class="quiz__edit-question-content-answer-option-1">
-                                    <input type="checkbox" title="Markera rätt svar">
-                                    <input type="text" class="textbox" value="Carbon dioxide ">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Carbon dioxide " >
                                     <div>☓</div>
                                 </div>
                                 <div class="quiz__edit-question-content-answer-option-1">
@@ -201,6 +202,1036 @@
 
                     </div>
 
+                    <div class="course-item__quiz-edit-question">
+                        <div class="course-item__quiz-edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="course-item__quiz-edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="course-item__quiz-edit-question-content">
+                            <div class="course-item__quiz-edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">What do plants need for photosynthesis to happen?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Sunlight ">
+                                    <div>
+                                        <img src="/images/pages/x.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <div>
+                                        <img src="/images/pages/x.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Water">
+                                    <div>
+                                        <img src="/images/pages/x.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Carbon dioxide " >
+                                    <div>
+                                        <img src="/images/pages/x.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Soil">
+                                    <div>
+                                        <img src="/images/pages/x.svg">
+                                    </div>
+                                </div>
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" checked id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Ta bort" class="button DANGER SMALL" style="display: none;">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="course-item__quiz-edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="course-item__quiz-edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="course-item__quiz-edit-question-content">
+                            <div class="course-item__quiz-edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">What do plants need for photosynthesis to happen?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Sunlight ">
+                                    <div>
+                                        <img src="/images/pages/trash-fill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <div>
+                                        <img src="/images/pages/trash-fill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Water">
+                                    <div>
+                                        <img src="/images/pages/trash-fill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Carbon dioxide " >
+                                    <div>
+                                        <img src="/images/pages/trash-fill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Soil">
+                                    <div>
+                                        <img src="/images/pages/trash-fill.svg">
+                                    </div>
+                                </div>
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" checked id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Ta bort" class="button DANGER SMALL" style="display: none;">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="course-item__quiz-edit-question-header">
+                            <h2>Fråga 1</h2>
+                            <select name="answer-options" id="pet-select">                                                          
+                                <option value="Multiple" selected>Flerval</option>
+                                <option value="Text">Text</option>
+                            </select>
+                            <div class="course-item__quiz-edit-question-add-points">
+                                <span>Poäng</span> <input type="text" class="textbox" value="2">
+                            </div>
+                        </div>                                      
+                        <div class="course-item__quiz-edit-question-content">
+                            <div class="course-item__quiz-edit-question-content-header">
+                                <textarea id="text" name="text" rows="2" class="textbox BLOCK">What do plants need for photosynthesis to happen?</textarea>                                        
+                            </div>
+                            
+                            <div class="quiz__edit-question-content-answer-options-header">
+                                <div class="quiz__edit-question-content-correct-answer-column">
+                                    Rätt svar
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options-column">
+                                    Svarsalternativ                                  
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content-answer-options">
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Sunlight ">
+                                    <div>
+                                        <img src="/images/pages/trash-unfill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Oxygen">
+                                    <div>
+                                        <img src="/images/pages/trash-unfill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Water">
+                                    <div>
+                                        <img src="/images/pages/trash-unfill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar" checked>
+                                    <input type="text" class="textbox" value="Carbon dioxide " >
+                                    <div>
+                                        <img src="/images/pages/trash-unfill.svg">
+                                    </div>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-option-1">
+                                    <input type="checkbox" title="Markera rätt svar">
+                                    <input type="text" class="textbox" value="Soil">
+                                    <div>
+                                        <img src="/images/pages/trash-unfill.svg">
+                                    </div>
+                                </div>
+    
+    
+                                <div class="quiz__edit-question-content-answer-actions">
+                                    <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                    <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                        <div class="quiz__edit-question-content-switch-wrap">
+                                        <input type="checkbox" checked id="multiple-answers" />
+                                        <div class="quiz__edit-question-content-switch"></div>
+                                        </div>
+                                        <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                    </label>
+                                </div>
+                                <div class="quiz__edit-question-actions">
+                                    <input type="button" value="Ta bort" class="button DANGER SMALL" style="display: none;">
+                                    <input type="button" value="Avbryt" class="button SMALL">
+                                    <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                </div> 
+                            </div>
+                        </div>  
+
+                    </div>
+
+                    edit position:
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+
+                                <div class="quiz__edit-question-actions">
+                                    <div style="flex:1"></div>
+                                    <input type="button" value="Edit" class="button PRIMARY SMALL">
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+
+                                <div class="quiz__edit-question-actions">
+                                    <div style="flex:1"></div>
+                                    <input type="button" value="Edit" class="button SMALL">
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+
+                                <div class="quiz__edit-question-actions">
+                                    <div style="flex:1"></div>
+                                    <input type="button" value="Edit" class="button SMALL">
+                                    <div>
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    view mode:
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span style="font-weight: 300;">Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span style="font-weight: 300;">Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <!-- #eff7cf, #a1d2ce, #78cad2, #fae1df -->
+                                    <div class="quiz__question-content-answer-option" style="background-color: #fae1df;">
+                                        <input type="checkbox" disabled>
+                                        <span>Sunlight </span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" disabled>
+                                        <span>Oxygen</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Carbon dioxide</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 1</h2>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                        
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option" >
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option" style="background-color: #ccf6cc;">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                        <div style="flex: 1"></div>
+                                        <span class="quiz__answer-correctness">Correct answer</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                        </div> 
+                            
+                    </div>
+                    
+
+                    alternative question designs:
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>1. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <!-- <div class="course-item__quiz-edit-question-header" style="background-color: inherit;">
+                                <div style="flex:1"></div>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                            </div> -->
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span style="margin-right: 10px;">Question type:</span>
+                                    <select name="answer-options" id="pet-select" style="margin-right: 30px;">                                                          
+                                        <option value="Multiple" selected>Flerval</option>
+                                        <option value="Text">Text</option>
+                                    </select>
+
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-edit-question-content">
+                                    <div class="course-item__quiz-edit-question-content-header" style="display: flex;">
+                                        <div style="margin-right: 10px;">1.</div>
+                                        <textarea id="text" name="text" rows="2" class="textbox BLOCK">What do plants need for photosynthesis to happen?</textarea>                                        
+                                    </div>
+                                    
+                                    <div class="quiz__edit-question-content-answer-options-header">
+                                        <div class="quiz__edit-question-content-correct-answer-column">
+                                            Rätt svar
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-options-column">
+                                            Svarsalternativ                                  
+                                        </div>
+                                    </div>
+                                    <div class="quiz__edit-question-content-answer-options">
+                                        <div class="quiz__edit-question-content-answer-option-1">
+                                            <input type="checkbox" title="Markera rätt svar" checked>
+                                            <input type="text" class="textbox" value="Sunlight ">
+                                            <div>☓</div>
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-option-1">
+                                            <input type="checkbox" title="Markera rätt svar">
+                                            <input type="text" class="textbox" value="Oxygen">
+                                            <div>☓</div>
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-option-1">
+                                            <input type="checkbox" title="Markera rätt svar" checked>
+                                            <input type="text" class="textbox" value="Water">
+                                            <div>☓</div>
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-option-1">
+                                            <input type="checkbox" title="Markera rätt svar" checked>
+                                            <input type="text" class="textbox" value="Carbon dioxide " >
+                                            <div>☓</div>
+                                        </div>
+                                        <div class="quiz__edit-question-content-answer-option-1">
+                                            <input type="checkbox" title="Markera rätt svar">
+                                            <input type="text" class="textbox" value="Soil">
+                                            <div>☓</div>
+                                        </div>
+            
+            
+                                        <div class="quiz__edit-question-content-answer-actions">
+                                            <div class="quiz__edit-question-content-add-answer-option-1"><img src="/images/pages/plus.svg"><span>Lägg till svarsalternativ</span></div>
+                                            <label class="quiz__edit-question-content-switch-wraper" for="multiple-answers">                      
+                                                <div class="quiz__edit-question-content-switch-wrap">
+                                                <input type="checkbox" checked id="multiple-answers" />
+                                                <div class="quiz__edit-question-content-switch"></div>
+                                                </div>
+                                                <span class="quiz__edit-question-content-switch-label">Flera rätta svar</span>
+                                            </label>
+                                        </div>
+                                        <div class="quiz__edit-question-actions">
+                                            <input type="button" value="Ta bort" class="button DANGER SMALL" style="display: none;">
+                                            <input type="button" value="Avbryt" class="button SMALL">
+                                            <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                        </div> 
+                                    </div>
+                            </div>
+                        
+                        </div> 
+                        </div>
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>1. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>2. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>3. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>4. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                        
+                            <div class="quiz__edit-question-content">
+                                <div style="display: flex; justify-content: end; font-size: 12px; line-height: 12px; align-items: center;">
+                                    <span>Poäng: <b>2</b></span>
+                                    <div style="margin-left: 10px">
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div>
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>5. What do plants need for photosynthesis to happen?</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Sunlight </span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" checked disabled>
+                                        <span>Oxygen</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Water</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" checked disabled>
+                                        <span>Carbon dioxide</span>
+                                    </div>
+                                    <div class="quiz__question-content-answer-option">
+                                        <input type="checkbox" title="Markera rätt svar" disabled>
+                                        <span>Soil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div> 
+                            
+                    </div>
+
+
+                    text:
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 9</h2>
+                                <select name="answer-options" id="pet-select">                                            
+                                    <option value="Multiple">Flerval</option>
+                                    <option value="Text" selected>Text</option>
+                                </select>
+                                <div class="quiz__edit-question-add-points">
+                                    <span>Poäng</span> <input type="text" class="textbox" value="6">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="quiz__edit-question-content-header">
+                                    <textarea id="text" name="text" rows="2" class="textbox BLOCK">Explain the role of chlorophyll in photosynthesis.</textarea>
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-actions">
+                                        <input type="button" value="Avbryt" class="button SMALL">
+                                        <input type="button" value="Spara" class="button PRIMARY SMALL">
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="course-item__quiz-edit-question">
+                        <div class="quiz__edit-question">
+                            <div class="course-item__quiz-edit-question-header">
+                                <h2>Fråga 9</h2>
+                                <div class="course-item__quiz-edit-question-add-points">
+                                    <span>Poäng <b>2</b></span>
+                                </div>
+                                <div>
+                                    <img src="/images/pages/three-dots-vertical.svg">
+                                </div>
+                            </div>
+                            <div class="quiz__edit-question-content">
+                                <div class="course-item__quiz-question-content-header">
+                                    <h2>Explain the role of chlorophyll in photosynthesis.</h2>                                        
+                                </div>
+                                <div class="quiz__edit-question-content-answer-options">
+                                    <div class="quiz__edit-question-content-header">
+                                        <textarea id="text" name="text" rows="2" class="textbox BLOCK" disabled></textarea>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="quiz__edit-question-actions">
+                                    <div style="flex:1"></div>
+                                    <input type="button" value="Edit" class="button SMALL">
+                                    <div>
+                                        <img src="/images/pages/three-dots-vertical.svg">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div> 
+                    </div>
+
+
+
+                    old:
                     <div class="course-item__quiz-edit-question">
                         <div class="quiz__edit-question">
                             <div class="course-item__quiz-edit-question-header">
