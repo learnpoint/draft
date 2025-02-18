@@ -874,5 +874,15 @@ width: 10px;
 }
 
 .course-item__quiz-edit-question-content .quiz__edit-question-content-answer-option-1 input[type="text"] {
-    flex: 1
+    flex: 1;
+    margin-left: 55px;
+    margin-right: 10px;
+}
+
+.course-item__quiz-edit-question .quiz__edit-question-content-answer-option-1 {
+    gap: 0px;
+}
+
+.quiz__question-content-answer-option.CORRECT {
+    background-color: #cfe8e4ba;
 }

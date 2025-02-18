@@ -34,7 +34,6 @@ document.addEventListener(render.ready, () => {
 
 
     document.addEventListener('click', (ev) => {
-
         const elm = ev.target;
 
         if (elm == document.querySelector('[data-element="check-all"]')) {
@@ -146,6 +145,20 @@ document.addEventListener(render.ready, () => {
         if (collapsebuttons.includes(elm)) {
             const selector = elm.getAttribute('data-target');
             collapse(selector);
+        }
+
+        if (elm == document.querySelector('[data-element="save-uppgift-btn"]')) {
+            const uppgiftInput = document.querySelector('input[name="uppgift"]:checked')
+           const quizTab = document.getElementById('quiz-tab');
+           const visibility = document.getElementById('visibility-setting');
+
+           if (uppgiftInput.value === 'Ingen') {
+            quizTab.style.display = 'none';
+            visibility.style.display = 'flex';
+           } else {
+            quizTab.style.display = 'block';
+            visibility.style.display = 'none';
+           }
         }
 
 
