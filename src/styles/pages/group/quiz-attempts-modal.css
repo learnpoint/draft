@@ -8,6 +8,9 @@
     width: 360px;
 }
 
+.attempt-history-v2 {
+    width: 360px;
+}
 
 .attempt-history__row {
     border-top: 1px solid #e5e5e5;
@@ -27,6 +30,10 @@
     position: relative;
 }
 
+.attempt-history__row-v1:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
 .attempt-history__row-v1 a {
    color: #000000;
 }
@@ -43,7 +50,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 4px;
+    padding: 0px 4px 4px;
     font-weight: 600;
 }
 
@@ -79,8 +86,7 @@
 }
 
 .attempt-history__row-points {
-    width: 100px;
-
+    width: 80px;
 }
 
 .attempt-history__row-grade {
