@@ -5,7 +5,7 @@
    .comments-widget {
     position: relative;
     border-top: 1px solid #d9d9d9;
-    background-color: #f4f4f4;
+    background-color: transparent;
 }
 
 .print .comments-widget {
@@ -15,82 +15,19 @@
 
 
 /* ==========================================================================
-   Header
+   Notification
    ========================================================================== */
 
-   .comments-widget__header {
-    display: flex;
+.comments-widget__notification {
     position:absolute;
-    right:0;
-    top:0;
-    left:0;
+    right:17px;
+    top:6px;
     z-index: 1;
-    padding: 4px;
 }
 
-
-
-/* ==========================================================================
-   Info
-   ========================================================================== */
-
-   .comments-widget__info {
-    flex: 1;
-    color: #222;
-    font-size: 14px;
-    display: flex;
-    align-items:center;
-    /* font-weight: 600; */
-    display: flex;
-    align-items:center;
-}
-
-
-
-/* ==========================================================================
-   Group icon
-   ========================================================================== */
-
-.comments-widget__info-group-icon {
-    width: 32px;
-    height: 32px;
-    opacity: .6;
-    padding: 6px 0 0 4px;
-}
-
-.comments-widget__avatar-group {
-   
-}
-
-.comments-widget__avatar-group,
-.comments-widget__avatar-people {
-    margin: 8px 0 8px 6px;
-    display: flex;
-    justify-content: center;
-}
-
-.comments-widget__people {
-    padding: 8px 0 8px 12px;
-    font-size: 14px; 
-}
-
-.comments-widget__avatar {
-    width: 1.6em;
-    height: 1.6em; 
-    border-radius: 50%;
-}
-
-.comments-widget__avatar-group .comments-widget__avatar:not(:first-child) {
-    margin-left: -6px;
-}
-
-.comments-widget__avatar:last-child {
-    margin-left :0;
-}
-
-.comments-widget__avatar-group .comments-widget__avatar:last-child {
-    margin-left: 0;
-    padding-left: 6px;
+.is-mobile .comments-widget__notification {
+    right:12px;
+    top:6px;
 }
 
 
@@ -116,22 +53,75 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     vertical-align: baseline;
-    position: absolute;
-    right: 6px;
-    top: 6px;
-    z-index: 1;
 }
 
 .comments-widget__notification-icon-enabled {
     background-image: url('/images/pages/notification-bell-0780ff.svg')
 }
 
+.comments-widget__notification-icon-disabled {
+    background-image: url('../../../../Images/svg-icons/notification-bell-off-aaaaaa.svg');
+}
+
+.comments-widget__notification-icon--animate {
+    animation: comments-widget__notification-icon--fade-in .16s ease;
+}
+
+@keyframes comments-widget__notification-icon--fade-in {
+  0% { 
+      opacity:0; 
+      transform:scale(.6);
+  }
+  80% {
+      transform:scale(1.2);
+  }
+  100% { 
+      opacity:1; 
+      transform:scale(1);
+  }
+}
+
+.comments-widget__notification-icon-enabled.LOADING,
+.comments-widget__notification-icon-disabled.LOADING {
+    animation: comments-widget__notification-icon--fade-out .16s ease;
+    opacity:0;
+    transform:scale(.6);
+}
+
+@keyframes comments-widget__notification-icon--fade-out {
+  0% { 
+      opacity:1; 
+      transform:scale(1);
+  }
+  100% { 
+      opacity:0; 
+      transform:scale(.8);
+  }
+}
+
+.comments-widget__notification-icon:focus {
+    outline:none;
+}
+
+
+
+/* ==========================================================================
+   Container
+   ========================================================================== */
+
+.comments-widget__container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
 
 .comments-widget__content {
-    padding: 48px 32px 0;
+    padding: 48px 16px 0;
     min-height: 218px;
     box-sizing: border-box;
     animation: comments-widget__loaded-comments--fade-in .5s ease;
@@ -143,6 +133,23 @@
 
 .is-mobile .comments-widget__content {
     padding: 32px 16px 0;
+}
+
+
+
+/* ==========================================================================
+   Load Comments
+   ========================================================================== */
+
+
+@keyframes comments-widget__loaded-comments--fade-in {
+    0% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -168,7 +175,7 @@
     margin: 20px auto 60px;
     text-align: center;
     color: #444;
-    font-size: 13px;
+    font-size: 14px;
     max-width: 320px;
 }
 
@@ -177,6 +184,9 @@
     margin: 16px auto 30px;
 }
 
+.print .comments-widget__information-panel {
+    display: none;
+}
 
 .comments-widget__information-title {
      font-weight: bold;
@@ -194,15 +204,354 @@
 
 
 /* ==========================================================================
+   New Comments Count
+   ========================================================================== */
+
+.comments-widget__new-comments-count {
+    margin: 0 4px;
+    color: #000;
+    background-color: #CBEEFA;
+    line-height: 20px;
+    font-size: 13px;
+    min-width: 20px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+/* ==========================================================================
+   Load Comments Link
+   ========================================================================== */
+
+.comments-widget__load-comments-link {
+      position:absolute;
+      width:100%;
+      left:16px;
+      top: 100px;
+}
+
+.is-mobile .comments-widget__load-comments-link {
+    display:block;
+    text-align:center;
+    padding:16px 0;
+    left: 0;
+    margin-top:-16px; /* offset content padding */
+}
+
+.comments-widget__load-comments-link.LOADING {
+    animation-name: comments-widget__load-comments-link--loading;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+
+.comments-widget__load-comments-link.LOADING::after {
+    animation-name: comments-widget__load-comments-link--loading--after;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    display:inline;
+    content:'';
+}
+
+
+@keyframes comments-widget__load-comments-link--loading--after {
+     0% { content:''; }
+    25% { content:' . '; }
+    50% { content:' . .'; }
+    75% { content:' . . .'; }
+   100% { content:' . . . .'; }    
+}
+
+
+
+/* ==========================================================================
+   Post
+   ========================================================================== */
+
+.comments-widget__post {
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    gap: 16px;
+}
+
+.is-mobile .comments-widget__post {
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+
+
+/* ==========================================================================
+   Avatar
+   ========================================================================== */
+
+.comments-widget__avatar {
+    font-size: 16px;
+}
+
+.is-mobile .comments-widget__avatar {
+    font-size: 14px;
+}
+
+
+
+/* ==========================================================================
+   Wrap
+   ========================================================================== */
+
+.comments-widget__wrap { }
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.comments-widget__post-header {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.is-mobile .comments-widget__post-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+
+
+/* ==========================================================================
+   Post Author
+   ========================================================================== */
+
+.comments-widget__post-author {
+    font-weight: 600;
+}
+
+
+
+/* ==========================================================================
+   Date and Actions Wrap
+   ========================================================================== */
+
+.comments-widget__date-and-actions-wrap {
+    display: flex;
+    gap: 8px;
+}
+
+
+
+/* ==========================================================================
+   Post Date
+   ========================================================================== */
+
+.comments-widget__post-date {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+
+/* ==========================================================================
+   Post Undo Link
+   ========================================================================== */
+
+.comments-widget__post-undo-link {
+    display:none;
+    color:#444;
+    font-size:12px;
+    padding-left:3px;
+}
+
+
+
+/* ==========================================================================
+   Post Deleted Flag
+   ========================================================================== */
+
+ .comments-widget__post-deleted-flag {
+     font-style:italic;
+     display:inline;
+     opacity:0.6;
+ }
+
+
+
+/* ==========================================================================
+   Actions
+   ========================================================================== */
+
+.comments-widget__post-header-actions-wrapper {
+    position:relative;
+    min-height:18px;
+    min-width:60px;
+}
+
+.comments-widget__post-header-actions-panel {
+    position:absolute;
+    top: -4px;
+    color: rgba(0,0,0,.76);
+    cursor: pointer;
+    display:flex;   
+    align-items:center;   
+    border:1px solid transparent;
+    height: 24px;
+    line-height:24px;
+}
+
+.is-desktop .comments-widget__post-header-actions-panel:hover{
+    border-radius:4px;
+    border:1px solid rgba(0,0,0,.1);
+    background-color:rgba(255,255,255,.7);
+}
+
+.comments-widget__post-header-actions-panel--open {
+    border-radius:4px;
+    border:1px solid rgba(0,0,0,.1);
+    background-color:rgba(255,255,255,.7);
+}
+
+.comments-widget__post-header-actions-icon {
+    padding:0 7px;
+    width:26px;
+    opacity: .6;
+    align-self:center;
+    box-sizing:border-box;
+}
+
+.comments-widget__post-header-actions-panel:hover .comments-widget__post-header-actions-icon {
+     opacity:1;
+}
+
+.comments-widget__post-header-actions-panel--open .comments-widget__post-header-actions-icon {
+     border-right: 1px solid rgba(0,0,0,.1);
+     opacity:1;
+}
+
+.comments-widget__post-header-actions-icon:hover {
+    opacity: 1;
+}
+
+.comments-widget__post-header-actions {
+    max-width:0;
+    overflow:hidden;
+    font-size: 11px;
+    white-space:nowrap;    
+    transition:max-width .2s ease;
+    display:flex;
+}
+
+
+.comments-widget__post-header-actions--actions-slide-out {
+    max-width:100px;    
+    transition:max-width .3s ease;
+}
+
+
+.comments-widget__post-header-action-item {
+    cursor:pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 28px;
+    height: 24px;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 12px 12px;
+    opacity: .8;
+}
+
+.comments-widget__post-header-action-item:hover {
+    color:#000;
+}
+
+
+.comments-widget__post-header-action-item--delete {  
+    background-image: url('../../../../Images/ma/material-icons_3-0-1_delete_32_0_333333_none.png');
+}
+
+.comments-widget__post-header-action-item--edit {
+    background-image: url('../../../../Images/ma/material-icons_3-0-1_edit_32_0_333333_none.png');
+}
+
+.comments-widget__post-header-action-item--undo {
+    background-image: url('../../../../Images/Icons/undo.png');
+    opacity:0.6;
+}
+
+
+
+/* ==========================================================================
+   Post Just Added
+   ========================================================================== */
+
+.comments-widget__post--just-added {
+    animation: comments-widget__post--fade-in 1s ease;
+}
+
+@keyframes comments-widget__post--fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ==========================================================================
+   Show More Comments Panel
+   ========================================================================== */
+
+.comments-widget__show-more-comments-panel {
+    margin:0px 0 12px;
+    height:20px;
+}
+
+.is-mobile .comments-widget__show-more-comments-panel {
+    padding:0 0 0 4px;
+}
+
+
+
+/* ==========================================================================
+   Show More Comments
+   ========================================================================== */
+
+.comments-widget__show-more-comments {      
+    display:inline-block;
+    outline: 0;
+    font-size:12px;
+    text-decoration: none;
+    color: #0094EF;
+    background-color: transparent; 
+}
+
+
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
-   .comments-widget__footer {
+.comments-widget__footer {
     background-color: rgba(0,0,0,.03);
+    background-color: transparent;
     display: flex;
-    padding: 10px;
+    padding: 10px 8px 32px;
     border-top: 1px solid #ddd;
+    border: 0;
     align-items: flex-end;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.is-mobile .comments-widget__footer {
+    display:none;
 }
 
 .is-mobile .comments-widget--open .comments-widget__footer {
@@ -210,14 +559,55 @@
     padding:8px;
 }
 
+.print .comments-widget__footer,
+.print.is-mobile .comments-widget__footer {
+    display: none;
+}
+
 
 
 /* ==========================================================================
-   New Post Input
+   Textbox Container
    ========================================================================== */
 
-.comments-widget__new-post-input {
+.comments-widget__textbox-container {
     flex:1;
+    position: relative;
+}
+
+
+
+/* ==========================================================================
+   Textbox
+   ========================================================================== */
+
+.comments-widget__textbox {
+    display: block;
+    resize: none;
+    margin: 0;
+    padding: 12px 42px 13px 12px;
+    font-size: 15px;
+    font-family: inherit;
+    line-height: 20px;
+    color: inherit;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    width: 100%;
+    vertical-align: baseline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+}
+
+.is-mobile .comments-widget__textbox {
+    border-color: #bbb;
+    padding: 9px 42px 9px 12px;
+    /*border-radius: 18px;*/
+}
+
+
+.comments-widget__textbox::placeholder {
+    color: #aaa;
 }
 
 
@@ -227,19 +617,99 @@
    ========================================================================== */
 
 .comments-widget__new-post-button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    margin-left: 8px;
-    background-color: #3C9AF4;
+    appearance: none;
     background-color: #0780ff;
-    text-align: center;
-    background-image: url('/images/pages/send_80_0_ffffff_none.png');
-    background-size: 22px 22px;
-    background-repeat: no-repeat;
-    background-position:11px 13px;
+    color: #fff;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease;
+    border: none;
+    margin: 0 2px 5px 10px;
+}
+
+.comments-widget__new-post-button:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.is-mobile .comments-widget__new-post-button {
+    right: 4px;
+    bottom: 1px;
+}
+
+.comments-widget__new-post-button.keyboard-focus:focus {
+    box-shadow: 0 0 1px 3px rgba(60, 154, 244, .6);
+}
+
+.comments-widget__new-post-button.LOADING,
+.comments-widget__new-post-button.keyboard-focus.LOADING {
+    cursor: default;
+    pointer-events: none;
+    background-color: #ccc;
+    box-shadow: none;
 }
 
 
 
+
+
+/* ==========================================================================
+   New Post Button
+   ========================================================================== */
+
+.comments-widget__new-post-button svg {
+    display: block;
+    position: absolute;
+    color: inherit;
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: 5px;
+    transition: color .1s;
+    pointer-events: none;
+}
+
+
+
+/* ==========================================================================
+   New Messages
+   ========================================================================== */
+
+.comments-widget__new-messages {
+    display:flex;
+    color:#e00;
+    color:#000;
+    font-size:11px;
+    height:20px;
+    align-items:flex-start;
+    margin:-4px 20px 16px 0;
+}
+
+.print .comments-widget__new-messages {
+    display: none;
+}
+
+.comments-widget__new-messages-text {
+    line-height:20px;
+    padding-right:16px;
+    padding:2px 12px;
+    margin-right:16px;
+    background-color:#CBEEFA;
+    border-radius:8px;
+}
+
+.comments-widget__new-messages::after {
+    flex:1;
+    content:' ';
+    border-bottom:1px solid #f00;
+    border-bottom:1px solid #CBEEFA;
+    border-bottom:1px solid #A4E4F9;
+    height:10px;
+}
