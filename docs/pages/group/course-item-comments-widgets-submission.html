@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Geography</title>
+    <title>Course Item</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/svg+xml" href="/images/core/favicon.svg" />
 
@@ -2626,7 +2626,7 @@
     <div class="site__header">
         <img class="site__header-hamburger" src="/images/pages/list.svg" />
         <div class="site__header-group-info">
-            <span>Geography</span>
+            <span>Course Item</span>
         </div>
 
     </div>
@@ -2672,145 +2672,143 @@
         </li> -->
     </ul>
 </nav>
-<link rel="stylesheet" href="/styles/pages/group/content.css">
+
+<link rel="stylesheet" href="/styles/pages/group/course-item.css">
+<link rel="stylesheet" href="/styles/pages/components/comments-widget.css">
 
 <div class="page">
     <div class="page__sheet">
-        <div class="page__content-wrap">
-            <div class="content__container">
-                <div class="content__info">
-                    <!-- <div class="content__info-grading-text">VG</div>
-                    <img class="content__info-grading-image" src="/images/pages/green-check.png" /> -->
+        <div class="course-item">
+            <img class="course-item__completion-icon"
+                src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
+            <div class="course-item__content">
+                <h2 class="course-item__page-title">JavaScript Promises</h2>
+                <h3 class="course-item__page-sub-title">Avsnitt: JavaScript</h3>
+                <div class="course-item__page-meta"><span>Inlämningsuppgift</span><span>•</span><span>Senast klar 26 feb</span><span>•</span><span>IG-VG</span></div>
+                <div class="course-item__menu-tabs">
+                    <a class="course-item__menu-tab" href="/pages/group/course-item-comments-widgets.html">
+                        Innehåll
+                    </a>
+                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-comments-widgets-submission.html">
+                        Arbete
+                    </a>
+                </div>
+
+                <div class="course-item__content-information" style="justify-content: space-between;">
+                    <div class="course-item__content-information-result">
+                        <div class="course-item__student-settings-item">
+                            <div class="course-item__settings-item-name">
+                                Uppgift
+                            </div>
+                            <div class="course-item__settings-item-state" style="display: flex; padding-bottom: 10px;">
+                                Inlämningsuppgift
+                            </div>
+                            <div class="course-item__settings-item-name" style="white-space: nowrap;">
+                                Din inlämning
+                            </div>
+                            <div class="course-item__settings-item-state">
+                                Ej inlämnad
+                            </div>
+                            <div class="course-item__work-link">
+                                <input type="button"  data-element="modal-student-open-button" class="button PRIMARY" value="Starta inlämning" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item__content-betyg">
+                        <div class="course-item__settings-item-name">
+                            Betygsskala
+                            
+                        </div>
+                        <div class="course-item__settings-item-state">
+                            IG - VG
+                        </div>
+                        <div class="course-item__settings-item-name">
+                            Ditt betyg
+                        </div>
+                    </div>
 
                 </div>
-                <div class="content__section">
-                    <div class="content__section-title">About Countries</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <a href="/pages/group/course-item-student.html" class="content__section-items-text">Geography quiz</a>
-                    </div>
-                    <!-- <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <a href="/pages/group/course-item-student-same-page.html" class="content__section-items-text">Countries quiz 2</a>
-                    </div> -->
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <a href="/pages/group/course-item-student-quiz-result.html" class="content__section-items-text">Geography quiz result</a>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <a class="content__section-items-text" href="/pages/group/course-item.html"> Javascript Promises</a>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <a class="content__section-items-text" href="/pages/group/course-item-comments-tab.html">Javascript Promises..</a>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <a class="content__section-items-text" href="/pages/group/course-item-comments-widgets.html"> Javascript Promises 2</a>
-                    </div>
-                </div>
-                <div class="content__section">
-                    <div class="content__section-title">Async Javascript</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">What is asynchronous Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">How to write async code</div>
-                    </div>
+    
+            </div>
+            <div class="course-item__comments-header" style="display: flex; background-color: white;">
+                <h3 class="course-item__comments-title">Kommentarer</h3>
+                <div class="comments-widget__notification" style="position: relative;">
+                    <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>
                 </div>
             </div>
+            <link rel="stylesheet" href="/styles/components/comments-widget.css">
+
+<div class="comments-widget">
+    <div class="comments-widget__header">
+        <!-- <div class="comments-widget__notification">
+            <a class="comments-widget__notification-icon-enabled" title="Stäng av aviseringar"></a>
+        </div> -->
+    </div>
+    <div  class="comments-widget__container">
+        <div class="comments-widget__content">
+            <div class="comments-widget__comments">
+                <div class="comments-widget__comment">
+                    <div class="comments-widget__avatar">
+                        <img src="/images/pages/users/user-4.jpeg" />
+                    </div>
+                    <div class="comments-widget__post-wrap">
+                        <div class="comments-widget__post-header">
+                            <span class="comments-widget__post-author">Rose Pink</span>
+                            <span class="comments-widget__date-and-actions-wrap">
+                                <span class="comments-widget__post-date">1 Mar 10.10</span>
+                                <div class="comments-widget__post-header-actions-wrapper"></div>
+                            </span>
+                        </div>
+                        <div class="comments-widget__post-content">
+                            I reuploaded the file in proper format.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comments-widget__comment">
+                    <div class="comments-widget__avatar">
+                        <img src="/images/pages/users/user-4.jpg" />
+                    </div>
+                    <div class="comments-widget__post-wrap">
+                        <div class="comments-widget__post-header">
+                            <span class="comments-widget__post-author">Jenny Red</span>
+                            <span class="comments-widget__date-and-actions-wrap">
+                                <span class="comments-widget__post-date">Idag 12.10</span>
+                                <div class="comments-widget__post-header-actions-wrapper"></div>
+                            </span>
+                        </div>
+                        <div class="comments-widget__post-content">
+                            Good job!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="comments-widget__footer " data-element="comments-widget.new-post-form">
+        <div class="comments-widget__textbox-container">
+            <input type="text" class="comments-widget__textbox" placeholder="Skriv kommentar..." Rows="2" style="    resize: none;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 48px;
+        ">
+        <!-- <div class="comments-widget__warning-message">
+            <span>Your message will be visible to everyone in the group</span>
+        </div> -->
+        
         </div>
     </div>
 </div>
-
-<!-- <div class="page">
-    <div class="page__sheet">
-        <div class="page__content-wrap">
-            <div class="content__container">
-                <div class="content__info">
-                    <div class="content__info-title">Kursinnehåll</div>
-                    <img class="content__info-grading-image" src="/images/pages/grey-circle.png" />
-                    <div class="content__info-coursename">Javascript 3</div> 
-                </div>
-                <div class="content__section">
-                    <div class="content__section-title">About Jacascript</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <div class="content__section-items-text">What is advanced Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <div class="content__section-items-text">What can we do with Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">About effective coding</div>
-                    </div>
-                </div>
-                <div class="content__section">
-                    <div class="content__section-title">Async Javascript</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">What is asynchronous Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">How to write async code</div>
-                    </div>
-                </div>
-            </div>
         </div>
+        
+    <div class="course-item__navigation">
+        <a  title="Föregående kursdel" class="course-item__previous-link" href="">
+            <img src="/images/pages/angle-left_80_0_000000_none.png">
+        </a>
+        <a  title="Nästa kursdel" noid="true" class="course-item__next-link" href="">
+            <img src="/images/pages/angle-right_80_0_000000_none.png">
+        </a>
+    </div>
     </div>
 </div>
-
-
-<div class="page">
-    <div class="page__sheet">
-        <div class="page__content-wrap">
-            <div class="content__container">
-                <div class="content__info">
-                    <div class="content__info-title">Kursinnehåll</div>
-                    <div class="content__info-coursename">Javascript 3</div> <
-                </div>
-                <div class="content__section">
-                    <div class="content__section-title">About Jacascript</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <div class="content__section-items-text">What is advanced Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/green-check.png" />
-                        <div class="content__section-items-text">What can we do with Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">About effective coding</div>
-                    </div>
-                </div>
-                <div class="content__section">
-                    <div class="content__section-title">Async Javascript</div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">What is asynchronous Javascript?</div>
-                    </div>
-                    <div class="content__section-items">
-                        <img class="content__section-items-image" src="/images/pages/grey-circle.png" />
-                        <div class="content__section-items-text">How to write async code</div>
-                    </div>
-                </div>
-                <hr class="content__separator">
-                <div class="content__info-grading">
-                    <div class="content__info-grading-title">Kursbetyg</div>
-                    <img class="content__info-grading-image" src="/images/pages/grey-circle.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-</main>
-</body>
-
-</html>

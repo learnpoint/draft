@@ -159,7 +159,14 @@
 
 .course-item__comments-title {
     flex: 1;
+    font-weight: 600;
+    font-size: 17px;
     margin: 0;
+    line-height: 1.1;
+    word-break: break-word;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .course-item__avatar {
