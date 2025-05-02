@@ -161,6 +161,14 @@ document.addEventListener(render.ready, () => {
            }
         }
 
+        if (elm == document.querySelector('[data-element="save-edit-question"]')) {
+            const editQuestion = document.getElementById('quiz-edit-question');
+            const viewQuestion = document.getElementById('quiz-view-question');
+
+            editQuestion.style.display = 'none';
+            viewQuestion.style.display = 'block';
+        }
+
 
 
     }, false);
