@@ -194,13 +194,19 @@
     {
         "title": "Course Item",
         "description": "",
-        "url": "/pages/group/course-item-quiz-2a.html",
+        "url": "/pages/group/course-item-quiz-creation-plannering.html",
         "content": ""
     },
     {
         "title": "Course Item",
         "description": "",
-        "url": "/pages/group/course-item-quiz-2b.html",
+        "url": "/pages/group/course-item-quiz-creation-questions.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
+        "url": "/pages/group/course-item-quiz-creation-quiz-tab.html",
         "content": ""
     },
     {
@@ -345,12 +351,6 @@
         "title": "Course Item",
         "description": "",
         "url": "/pages/group/quiz-results.html",
-        "content": ""
-    },
-    {
-        "title": "Course Item",
-        "description": "",
-        "url": "/pages/group/quiz-tab.html",
         "content": ""
     },
     {
