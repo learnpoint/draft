@@ -155,6 +155,14 @@
     padding: 16px;
 }
 
+.quiz__edit-question-content p {
+    margin: 4px 0;
+}
+
+.quiz__edit-question-content-answer-options {
+    margin-top: 20px;
+}
+
 .quiz .quiz__edit-question-content-answer-option input[type='checkbox'] {
     transform: scale(1.3);
     margin-left: 18px;
@@ -201,7 +209,6 @@
     gap: 8px;
     align-items: center;
     padding: 6px 4px;
-    margin: 6px 0;
     border-radius: 4px;
 }
 

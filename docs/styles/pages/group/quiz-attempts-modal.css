@@ -10,6 +10,7 @@
 
 .attempt-history-v2 {
     width: 360px;
+    margin-top: 8px;
 }
 
 .attempt-history__row {
@@ -50,7 +51,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 0px 4px 4px;
+    /* padding: 0px 4px 4px; */
     font-weight: 600;
 }
 

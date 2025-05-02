@@ -611,7 +611,7 @@
                 <div class="modal__content-scroll">
                     <div class="modal__header">
                         <h2 class="modal__title">Quiz</h2>
-                        <h4 class="modal__sub-title">Geography quiz</h4>
+                        <h4 class="modal__sub-title">JavaScript quiz</h4>
                         <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-student-close-button">
                     </div>
                     <div class="modal__body">    
@@ -630,24 +630,28 @@
                                         
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>Which of these cities are located in Spain?</h2>                                        
+                                                    <h2>What is the output of the following code?</h2>    
+                                                    <p>console.log(typeof null);</p> 
+                                                    <p>  console.log(typeof undefined);</p> 
+                                                    <p>  console.log(typeof []);</p> 
+                                                    <p>  console.log(typeof NaN);</p>                                    
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox">
-                                                        <span>Valencia</span>
+                                                        <input type="radio">
+                                                        <span>object, undefined, object, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox">
-                                                        <span>Cordoba</span>
+                                                        <input type="radio">
+                                                        <span>object, undefined, array, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox" title="Markera rätt svar">
-                                                        <span>Verona</span>
+                                                        <input type="radio" >
+                                                        <span>null, undefined, object, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox" title="Markera rätt svar">
-                                                        <span>Palermo</span>
+                                                        <input type="radio" >
+                                                        <span>object, undefined, object, NaN</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -662,24 +666,26 @@
                                             </div>
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>Which is the capital city of Australia?</h2>
+                                                    <h2>How would you embed variables name and age into the string below?</h2>
+                                                    <p>const name = "Alice";</p>
+                                                        <p> const age = 30;</p>
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Sydney</span>
+                                                        <span>console.log("Name: " + name + ", Age: " + age);</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Melbourne</span>
+                                                        <span>console.log(Name: name,Age:name,Age:{age});</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Canberra</span>
+                                                        <span> console.log("Name: $name, Age: $age");</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option" >
                                                         <input type="radio" title="Markera rätt svar">
-                                                        <span>Brisbane</span>
+                                                        <span>console.log(Name: {name}, Age: {age});</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -694,7 +700,10 @@
                                             </div>
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                                                    <h2>What does this code log, and why?</h2>
+                                                    <p>for (var i = 0; i < 3; i++) {</p>
+                                                        <p> setTimeout(() => console.log(i), 0);</p>
+                                                        <p> }</p>
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__edit-question-content-answer-option">

@@ -611,7 +611,7 @@
                 <div class="modal__content-scroll">
                     <div class="modal__header">
                         <h2 class="modal__title">Quiz</h2>
-                        <h4 class="modal__sub-title">Geography quiz</h4>
+                        <h4 class="modal__sub-title">JavaScript quiz</h4>
                         <img src="/images/pages/close.svg" class="modal__close-button" data-element="modal-student-close-button">
                     </div>
                     <div class="modal__body">    
@@ -630,24 +630,28 @@
                                         
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>Which of these cities are located in Spain?</h2>                                        
+                                                    <h2>What is the output of the following code?</h2>    
+                                                    <p>console.log(typeof null);</p> 
+                                                    <p>  console.log(typeof undefined);</p> 
+                                                    <p>  console.log(typeof []);</p> 
+                                                    <p>  console.log(typeof NaN);</p>                                    
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox">
-                                                        <span>Valencia</span>
+                                                        <input type="radio">
+                                                        <span>object, undefined, object, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox">
-                                                        <span>Cordoba</span>
+                                                        <input type="radio">
+                                                        <span>object, undefined, array, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox" title="Markera rätt svar">
-                                                        <span>Verona</span>
+                                                        <input type="radio" >
+                                                        <span>null, undefined, object, number</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
-                                                        <input type="checkbox" title="Markera rätt svar">
-                                                        <span>Palermo</span>
+                                                        <input type="radio" >
+                                                        <span>object, undefined, object, NaN</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -662,24 +666,26 @@
                                             </div>
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>Which is the capital city of Australia?</h2>
+                                                    <h2>How would you embed variables name and age into the string below?</h2>
+                                                    <p>const name = "Alice";</p>
+                                                        <p> const age = 30;</p>
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Sydney</span>
+                                                        <span>console.log("Name: " + name + ", Age: " + age);</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Melbourne</span>
+                                                        <span>console.log(Name: name,Age:name,Age:{age});</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option">
                                                         <input type="radio">
-                                                        <span>Canberra</span>
+                                                        <span> console.log("Name: $name, Age: $age");</span>
                                                     </div>
                                                     <div class="quiz__question-content-answer-option" >
                                                         <input type="radio" title="Markera rätt svar">
-                                                        <span>Brisbane</span>
+                                                        <span>console.log(Name: {name}, Age: {age});</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -694,7 +700,10 @@
                                             </div>
                                             <div class="quiz__edit-question-content">
                                                 <div class="quiz__edit-question-content-header">
-                                                    <h2>The geography of Inner China was more attractive than Outer China because...</h2>
+                                                    <h2>What does this code log, and why?</h2>
+                                                    <p>for (var i = 0; i < 3; i++) {</p>
+                                                        <p> setTimeout(() => console.log(i), 0);</p>
+                                                        <p> }</p>
                                                 </div>
                                                 <div class="quiz__edit-question-content-answer-options">
                                                     <div class="quiz__edit-question-content-answer-option">
@@ -2682,65 +2691,53 @@
             <img class="course-item__completion-icon"
                 src="/images/pages/feather_1-1-0_circle-check_64_0_008800_none.png" />
             <div class="course-item__content">
-                <h2 class="course-item__page-title">Geography quiz</h2>
-                <div class="course-item__content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in lectus nec dui dignissim
-                    consequat
-                    vel nec leo. Aliquam imperdiet, nisl at vestibulum tristique, nibh ex elementum justo, vel porta
-                    odio
-                    ante imperdiet elit. Integer id mi mauris. Etiam posuere interdum magna eget hendrerit. In pretium,
-                    mi
-                    nec pellentesque dignissim, ipsum neque tincidunt augue, a semper quam sem non metus. Nullam risus
-                    nunc,
-                </div>
-                <div class="course-item__content-information" style="justify-content: space-between;">
-                    <div class="course-item__content-information-result">
-                        <div class="course-item__student-settings-item">
-                            <div class="course-item__settings-item-name">
-                                Poäng
-                            </div>
-                            <div class="course-item__settings-item-state" style="display: flex; padding-bottom: 10px;">
-                                10
-                            </div>
-                            <div class="course-item__settings-item-name">
-                                Tid
-                            </div>
-                            <div class="course-item__settings-item-state" style="white-space: nowrap; padding-bottom: 10px;">
-                                60 min
-                            </div>
-                            <div class="course-item__settings-item-name" style="white-space: nowrap;">
-                                Din inlämning
-                            </div>
-                            <div class="course-item__settings-item-state">
-                                Ej inlämnad
-                            </div>
-                            <div class="course-item__work-link">
-                                <input type="button"  data-element="modal-student-open-button" class="button PRIMARY" value="Starta quiz" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-item__content-betyg">
-                        <div class="course-item__settings-item-name">
-                            Betygsskala
-                            
-                        </div>
-                        <div class="course-item__settings-item-state">
-                            IG - VG
-                        </div>
-                        <div class="course-item__settings-item-name">
-                            Ditt betyg
-                        </div>
-                    </div>
-
-                </div>
-           
-                <!-- <div class="course-item__view-quiz-history-link" >
-                    <a>
-                        View quiz history
+                <h2 class="course-item__page-title">JavaScript</h2>
+                <div class="course-item__page-meta" style="margin-top: 8px;"><span>JavaScript Intro</span><span>•</span><span>Quiz</span><span>•</span><span>Senast klar 26 feb</span><span>•</span><span>IG-VG</span><span>•</span><span>Poäng: 50</span><span>•</span><span>30 minuter</span></div>
+                <div class="course-item__menu-tabs">
+                    <a class="course-item__menu-tab SELECTED" href="/pages/group/course-item-student.html">
+                        Innehåll
                     </a>
-                </div> -->
+                    <a class="course-item__menu-tab" href="/pages/group/course-item-student-assignment-page-quiz.html">
+                        Uppgift/Betyg
+                    </a>
+                </div>
+                <div class="course-item__content-text">
+                    A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+                    A Promise is in one of these states:
+                    
+                    pending: initial state, neither fulfilled nor rejected.
+                    fulfilled: meaning that the operation was completed successfully.
+                    rejected: meaning that the operation failed.
+                    The eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). When either of these options occur, the associated handlers queued up by a promise's then method are called. If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.
+                    
+                    A promise is said to be settled if it is either fulfilled or rejected, but not pending.
+                </div>
+                <img class="course-item__content-image"
+                src="/images/pages/promises.png" />
+                <div class="course-item__content-text">
+                    You will also hear the term resolved used with promises — this means that the promise is settled or "locked-in" to match the eventual state of another promise, and further resolving or rejecting it has no effect. The States and fates document from the original Promise proposal contains more details about promise terminology. Colloquially, "resolved" promises are often equivalent to "fulfilled" promises, but as illustrated in "States and fates", resolved promises can be pending or rejected as well. For example:
+                </div>
+                <div class="course-item__work-link">
+                    <a href="/pages/group/course-item-student-assignment-page-quiz.html" class="button PRIMARY">Gå till uppgift/betyg</a>
+                </div>
                 
-                
+            </div>
+            <div class="course-item__comments-header">
+                <h3 class="course-item__comments-title">Gruppkommentarer</h3>
+                <div class="course-item__avatar-group">
+                    <img class="course-item__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/2.jpg" />
+                        <img class="course-item__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/5.jpg" />
+                        <img class="course-item__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/4.jpg" />
+                        <img class="course-item__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/1.jpg" />
+                        <img class="course-item__avatar"
+                        src="https://raw.githubusercontent.com/learnpoint/mockdb/main/user-images/6.jpg" />
+                        <span class="course-item__avatar">+10</span>
+                </div>
             </div>
             <link rel="stylesheet" href="/styles/components/comments-widget.css">
 
@@ -2806,5 +2803,15 @@
     </div>
 </div>
         </div>
+        
+    <div class="course-item__navigation">
+        <a  title="Föregående kursdel" class="course-item__previous-link" href="">
+            <img src="/images/pages/angle-left_80_0_000000_none.png">
+        </a>
+        <a  title="Nästa kursdel" noid="true" class="course-item__next-link" href="">
+            <img src="/images/pages/angle-right_80_0_000000_none.png">
+        </a>
+    </div>
     </div>
 </div>
+

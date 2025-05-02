@@ -52,12 +52,13 @@
     margin: 1.5em 0 2em;
     align-items: center;
     justify-content: center;
+    line-height: 1.7;
 }
 
 .course-item__menu-tab {
     text-decoration: none;
     flex: 0 0 auto;
-    width: 72px;
+    width: 96px;
     text-align: center;
     cursor: pointer;
     padding: 4px 24px;
@@ -83,7 +84,7 @@
 .course-item__content {
     padding:32px;
     margin:0 auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     max-width: 640px;
 }
