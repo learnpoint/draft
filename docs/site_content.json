@@ -236,6 +236,12 @@
     {
         "title": "Course Item",
         "description": "",
+        "url": "/pages/group/course-item-quiz-teacher.html",
+        "content": ""
+    },
+    {
+        "title": "Course Item",
+        "description": "",
         "url": "/pages/group/course-item-quiz.html",
         "content": ""
     },
